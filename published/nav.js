@@ -140,9 +140,9 @@
       'bible_language_guide.html':           { pub: '2026-02-15', mod: '2026-06-22', type: 'WebPage'     },
       'judges_to_kings_timeline.html':       { pub: '2026-06-15', mod: '2026-06-22', type: 'WebPage'     },
       'dispensationalism_test.html':         { pub: '2026-01-01', mod: '2026-06-09', type: 'WebPage'     },
-      'how_this_project_works.html':         { pub: '2026-06-09', mod: '2026-07-13', type: 'WebPage'     },
-      'how_we_grade.html':                   { pub: '2026-06-09', mod: '2026-06-09', type: 'WebPage'     },
-      'about.html':                          { pub: '2023-01-01', mod: '2026-07-13', type: 'AboutPage'   },
+      'how_this_project_works.html':         { pub: '2026-06-09', mod: '2026-07-14', type: 'WebPage'     },
+      'how_we_grade.html':                   { pub: '2026-06-09', mod: '2026-07-14', type: 'WebPage'     },
+      'about.html':                          { pub: '2023-01-01', mod: '2026-07-14', type: 'AboutPage'   },
       'strongs.html':                        { pub: '2026-01-01', mod: '2026-06-09', type: 'WebPage'     },
       'kjv_reader.html':                     { pub: '2026-01-01', mod: '2026-06-23', type: 'WebPage'     }
     };
@@ -886,6 +886,7 @@
   credit.id = 'rts-credit';
   credit.innerHTML = '<a href="' + BASE + 'about.html">About</a>'
     + ' &nbsp;·&nbsp; <a href="mailto:lee.sadler@readthescripture.com">Contact</a>'
+    + ' &nbsp;·&nbsp; <a href="https://github.com/ostrakographos/readthescripture" target="_blank" rel="noopener">Public Record</a>'
     + ' &nbsp;·&nbsp; <a class="rts-support" href="https://ko-fi.com/readthescripture" target="_blank" rel="noopener">Support</a>'
     + '<span class="rts-cr-notice">Scripture quotations are taken from the New Revised Standard Version Updated Edition. '
     + 'Copyright © 2021 National Council of Churches of Christ in the United States of America. '
