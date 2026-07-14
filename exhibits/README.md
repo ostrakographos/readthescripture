@@ -69,3 +69,13 @@ The list may not be exhaustive — the reader is invited to keep going: grade th
 **Condition note.** The receipt names internal workbench files (trackers, standards, a working note) that are not part of this repository — the names stand per the exactness rule above. It predates the letter-grade retirement (2026-07-14), so it records a letter grade the site's pages no longer display; the numeric scores are unchanged. The wiring note at the end preserves a period detail: the session was fighting a file-corrupting sandbox mount, and says so.
 
 **Exactness:** exact copy, no redactions.
+
+### `zeruiah_lord_david_triad_2026-06-27.md` — a hypothesis under test *(2026-06-27)*
+
+**What it is.** A workbench trace of a structural hypothesis: three "characters" — the sons of Zeruiah (Joab, Abishai, Asahel), the LORD, and David — tracked across every scene in Samuel–Kings–Chronicles where two of the three stand together. A seventeen-row co-occurrence table; three scenes read closely with the Hebrew verified word by word; a table of the lexical threads that bind them (*šāḥat*, *rāʿāh*, *nāḥam*, *rāphāh*, *śāṭān*); and two addenda on the physical realia — what Joab's three *shevatim* actually were, and where the narrator puts each wound.
+
+**Why it's on display.** This is the method at the **hypothesis stage** — earlier than anything else in the gallery. The document's own "where it breaks" section lists four ways the pattern might be the reader's construction rather than the text's, *before* any of it is allowed near a published page; its addenda record the collaboration correcting in the uncomfortable direction — the editor's objection ("you do not need *three* clubs") overturning the model's earlier reading, with the lexicon, the syntax, and the ancient versions cited on the way down. The published Joab pages ([Study](https://readthescripture.com/joab_indispensable_adversary.html), [Marginalia](https://readthescripture.com/joab_from_gibeon_to_the_altar.html)) hold a reading this document calls a subset of the hypothesis; the hypothesis itself never shipped.
+
+**Condition note.** Marked **SPECULATIVE** in its own header, and that label is load-bearing: the structural "triad" reading is a hypothesis under test, not a site claim — the verse-and-Hebrew data is verified, the pattern built on it is not settled. A list of text-critical scholars (Thenius, Wellhausen, Budde, Hertzberg, Smith) is flagged *inside the document* as cited from lexicon sigla, unconfirmed against their primary texts. There is no published counterpart for the central hypothesis.
+
+**Exactness:** exact copy except **one redaction** — the name of a personal file under standing quarantine, the one class of name the exactness rule still masks.

@@ -46,7 +46,7 @@ Five dimensions, 0–4 each, scored independently.
 
 **D5 — Scope Appropriateness.** *Does the conclusion match the weight of the evidence?* 0 = conclusion dramatically exceeds (or falls short of) the evidence; 2 = roughly calibrated; 4 = exactly as strong as the evidence permits, with what is shown distinguished from what is implied.
 
-Letter bands: 18–20 A+, 16–17 A, 14–15 B+, 12–13 B, 10–11 C+, 8–9 C, below 8 D/F.
+Letter bands: 18–20 A+, 16–17 A, 14–15 B+, 12–13 B, 10–11 C+, 8–9 C, below 8 D/F. (The bands remain the graders' working vocabulary and the log retains every letter historically recorded, but **letter glyphs were retired from page display on 2026-07-14** — published grade blocks show the dimension scores and the numeric total only.)
 
 ## The fidelity rubric (F1–F3, /12)
 
