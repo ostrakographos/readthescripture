@@ -19,11 +19,11 @@ FORBIDDEN = [
     # private files and directories (workbench scaffolding)
     "REDACTED-PATH",
     "REDACTED-PATH",
-    "STANDING-CORRECTIONS",
+    "STANDING-CORRECTION",  # singular form also catches the plural
     "START-HERE",
     "OPEN-GATES",
     "RECEIPT-TEMPLATE",
-    "INVENTORY.md",
+    "INVENTORY",  # bare all-caps form also catches INVENTORY.md
     "receipts/",
     "rejected/",
     "drafts/",
