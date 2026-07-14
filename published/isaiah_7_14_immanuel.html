@@ -384,7 +384,7 @@ sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui);
 .grade-block {
   background: var(--nav-bg);
   border-radius: 6px;
-  padding: 16px 20px;
+  padding: 16px 20px 20px;
   margin: 32px 0 0;
   position: relative;
   overflow: hidden;
@@ -395,14 +395,41 @@ sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui);
   bottom: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
 }
-.grade-inner { display: flex; align-items: center; gap: 16px; }
-.grade-letter {
+.grade-note {
+  font-size: .75rem;
+  line-height: 1.6;
+  color: rgba(235,215,175,.55);
+  font-style: italic;
+  margin: 10px 0 0;
+}
+.grade-final {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(232,204,118,.15);
+}
+.grade-final-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.4);
+  margin-right: auto;
+}
+.grade-final-num {
   font-family: var(--font-d);
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--gold-pale);
   line-height: 1;
-  flex-shrink: 0;
+}
+.grade-final-den {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  color: rgba(232,204,118,.5);
 }
 .grade-label {
   font-family: var(--font-ui);
@@ -738,18 +765,17 @@ sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui);
 
 <!-- ═══ GRADE BLOCK (inserted after reasoning-logic review) ═══ -->
 <div class="grade-block">
-  <div class="grade-inner">
-    <div class="grade-letter">A+</div>
-    <div class="grade-detail">
-      <span class="grade-label">Reasoning · Logic Review</span>
-      <div class="grade-scores">
-        <span class="grade-score">Claim precision <strong>4/4</strong></span>
-        <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
-        <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
-        <span class="grade-score">Internal consistency <strong>4/4</strong></span>
-        <span class="grade-score">Scope <strong>4/4</strong></span>
-      </div>
-    </div>
+  <span class="grade-label">Reasoning · Logic Review</span>
+  <div class="grade-scores">
+    <span class="grade-score">Claim precision <strong>4/4</strong></span>
+    <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
+    <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+    <span class="grade-score">Internal consistency <strong>4/4</strong></span>
+    <span class="grade-score">Scope <strong>4/4</strong></span>
+  </div>
+  <div class="grade-final">
+    <span class="grade-final-label">Overall</span>
+    <span class="grade-final-num">19</span><span class="grade-final-den">/20</span>
   </div>
 </div>
 

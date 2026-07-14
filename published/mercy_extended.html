@@ -360,7 +360,7 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
 .grade-block {
   background: var(--nav-bg);
   border-radius: 6px;
-  padding: 16px 20px;
+  padding: 16px 20px 20px;
   margin: 32px 0 0;
   position: relative;
   overflow: hidden;
@@ -371,14 +371,34 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
   bottom: 0; left: 0; right: 0; height: 1px;
   background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
 }
-.grade-inner { display: flex; align-items: center; gap: 16px; }
-.grade-letter {
+.grade-final {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(232,204,118,.15);
+}
+.grade-final-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.4);
+  margin-right: auto;
+}
+.grade-final-num {
   font-family: var(--font-d);
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--gold-pale);
   line-height: 1;
-  flex-shrink: 0;
+}
+.grade-final-den {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  color: rgba(232,204,118,.5);
 }
 .grade-label {
   font-family: var(--font-ui);
@@ -635,20 +655,19 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
   <p style="font-family:var(--font-ui);font-size:.62rem;letter-spacing:.22em;color:var(--ink-4);text-transform:uppercase;margin:40px 0 0;">Published 2026 &nbsp;·&nbsp; Reviewed July 14, 2026 &nbsp;·&nbsp; Scripture: NRSVue</p>
 
   <div class="grade-block">
-    <div class="grade-inner">
-      <div class="grade-letter">A</div>
-      <div>
-        <span class="grade-label">Reasoning · Logic Review &nbsp;·&nbsp; 16 / 20 &nbsp;·&nbsp; Fidelity 8/12 &nbsp;·&nbsp; adjudicated A (blind panel 15&ndash;20), 2026-07-05</span>
-        <div class="grade-scores">
-          <span class="grade-score">Claim precision <strong>4/4</strong></span>
-          <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
-          <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
-          <span class="grade-score">Internal consistency <strong>3/4</strong></span>
-          <span class="grade-score">Scope <strong>2/4</strong></span>
-        </div>
-      </div>
+    <span class="grade-label">Reasoning · Logic Review &nbsp;·&nbsp; Fidelity 8/12 &nbsp;·&nbsp; adjudicated (blind panel 15&ndash;20), 2026-07-05</span>
+    <div class="grade-scores">
+      <span class="grade-score">Claim precision <strong>4/4</strong></span>
+      <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
+      <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+      <span class="grade-score">Internal consistency <strong>3/4</strong></span>
+      <span class="grade-score">Scope <strong>2/4</strong></span>
     </div>
-    <p class="grade-note">Adjudicated by reading the text, not by averaging the panel. Blind panel (2026-07-05, this version): ChatGPT 20/20, Sonnet&nbsp;5 15/20, Claude Opus&nbsp;4.8 16/20 &mdash; range 15&ndash;20, spanning B+ to A+. Here the read confirms the lower end, not the 20: the thesis selects confirming mercy cases and never engages the strongest counter &mdash; the same corporate-solidarity mechanism running toward <em>destruction</em> (Achan's household destroyed with him, Joshua 7; the flood's non-survivors) &mdash; a gap the 2026-06 panel also flagged. That omission is the load-bearing weakness. The earlier A (17/20, 2026-06, Fable-family) is superseded, not comparable. Fidelity 8/12: BDB-grounded (Strong's/BLB demoted); the "same structure" leap linking Acts 16:31/Luke 19:9 to the Genesis mercy-mechanism imposes a frame the text doesn't argue.</p>
+    <p class="grade-note">Adjudicated by reading the text, not by averaging the panel. Blind panel (2026-07-05, this version): ChatGPT 20/20, Sonnet&nbsp;5 15/20, Claude Opus&nbsp;4.8 16/20 &mdash; range 15&ndash;20. Here the read confirms the lower end, not the 20: the thesis selects confirming mercy cases and never engages the strongest counter &mdash; the same corporate-solidarity mechanism running toward <em>destruction</em> (Achan's household destroyed with him, Joshua 7; the flood's non-survivors) &mdash; a gap the 2026-06 panel also flagged. That omission is the load-bearing weakness. The earlier A (17/20, 2026-06, Fable-family) is superseded, not comparable. Fidelity 8/12: BDB-grounded (Strong's/BLB demoted); the "same structure" leap linking Acts 16:31/Luke 19:9 to the Genesis mercy-mechanism imposes a frame the text doesn't argue.</p>
+    <div class="grade-final">
+      <span class="grade-final-label">Overall</span>
+      <span class="grade-final-num">16</span><span class="grade-final-den">/20</span>
+    </div>
   </div>
 
   <div style="border-top:1px solid var(--rule-s);margin-top:36px;padding-top:22px;">

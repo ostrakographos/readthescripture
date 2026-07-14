@@ -56,7 +56,7 @@ bones on the altar and **spares both graves** — the man of God's and the old p
   literary link to 1 Kgs 13. The *real* bones-thread is internal: 1 Kgs 13 → 2 Kgs 23:18.
 - **The supplied commentary block (Cogan, Walsh, Guzik, Gospel Coalition, Toronto thesis;
   Blenkinsopp/Wilson/Petersen on man-of-God vs. prophet) is unverified.** `[Claude]` It was produced
-  by Claude in another chat and handed in as input; under [▮ redacted — internal standards file] rule 22, naming a
+  by Claude in another chat and handed in as input; under STANDING-CORRECTION rule 22, naming a
   scholar's position is a citation requiring primary-source confirmation before any of it ships. The
   in-chapter *terminology pattern* (Judahite = "man of God" throughout; Bethelite = "prophet") is
   real and checkable; specific counts ("eleven times") and what each scholar actually argues are not
@@ -141,7 +141,7 @@ into determinism).
   to **extend/seal the witness** (death-sign → travelers v25; the deceiver's confession v26; the
   preserved grave → Josiah 2 Kgs 23:18). Keeps faith with "useful, not necessary" (Gen 50:20 register
   — good drawn from a wrong, not the wrong reclassified as good). (b) **Determinism flag (open
-  question — do NOT settle, per project rule 7/[▮ redacted — internal tracker]).** What the narrative shows as
+  question — do NOT settle, per project rule 7/OPEN-GATES).** What the narrative shows as
   "predetermined" is the *prophetic word* (Josiah, named 300 years out, sure to land) — **not** the
   man's sin: the text pins the lie on the prophet and the disobedience on the man, keeping him
   genuinely culpable. Reading "the word was sure" as "the agents were puppets" is the jump into hard
@@ -183,5 +183,5 @@ fairness question and the freedom/sovereignty question both left standing, named
 3. Confirm the in-chapter terminology counts ("man of God" vs. "prophet") directly.
 4. If it becomes a Study: mode = Content, on-ramp banner (rule 20), bias statement in the intro,
    blind reasoning grade + Warrant pass, external/different-model check on any contestable landing,
-   receipt + [▮ redacted — internal file] row. The sovereignty/free-will tension stays an [▮ redacted — internal tracker] item — flag, don't
+   receipt + INVENTORY row. The sovereignty/free-will tension stays an OPEN-GATES item — flag, don't
    resolve.

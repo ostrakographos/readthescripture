@@ -101,15 +101,17 @@ sup.fn-ref{font-size:.65rem;color:var(--gold);font-family:var(--font-ui);vertica
 .source-card{padding:12px 16px;border-left:2px solid var(--cream-dd);margin-bottom:12px;}
 .source-ref{font-size:.95rem;color:var(--ink-3);margin:0 0 4px;line-height:1.6;}
 .source-position{font-size:.88rem;font-style:italic;color:var(--ink-4);margin:0;}
-.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
+.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
 .grade-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
-.grade-inner{display:flex;align-items:center;gap:16px;}
-.grade-letter{font-family:var(--font-d);font-size:2.2rem;font-weight:700;color:var(--gold-pale);line-height:1;flex-shrink:0;}
 .grade-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,204,118,.45);display:block;margin-bottom:6px;}
 .grade-scores{display:flex;gap:12px;flex-wrap:wrap;}
 .grade-score{font-size:.75rem;color:rgba(235,215,175,.55);}
 .grade-score strong{color:var(--gold-l);}
 .grade-caveat{font-size:.72rem;font-style:italic;color:var(--ink-4);margin:10px 0 0;line-height:1.6;}
+.grade-final{display:flex;align-items:baseline;justify-content:flex-end;gap:3px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(232,204,118,.15);}
+.grade-final-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,204,118,.4);margin-right:auto;}
+.grade-final-num{font-family:var(--font-d);font-size:1.5rem;font-weight:700;color:var(--gold-pale);line-height:1;}
+.grade-final-den{font-family:var(--font-ui);font-size:.75rem;color:rgba(232,204,118,.5);}
 .author-block{border-top:1px solid var(--rule-s);margin-top:20px;padding-top:20px;display:flex;align-items:flex-start;gap:14px;}
 .author-avatar{width:40px;height:40px;border-radius:50%;background:rgba(138,96,24,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .author-avatar span{font-family:var(--font-ui);font-size:.7rem;color:var(--gold-l);font-weight:500;}
@@ -363,12 +365,11 @@ sup.fn-ref{font-size:.65rem;color:var(--gold);font-family:var(--font-ui);vertica
   </div>
 
   <div class="grade-block">
-    <div class="grade-inner">
-      <div class="grade-letter">A+</div>
-      <div class="grade-detail">
-        <span class="grade-label">Reasoning · Logic Review — cold blind (fresh, input-blinded instance) 2026-06-24 · 20/20</span>
-        <div class="grade-scores"><span class="grade-score">Claim <strong>4/4</strong></span><span class="grade-score">Evidence <strong>4/4</strong></span><span class="grade-score">Honesty <strong>4/4</strong></span><span class="grade-score">Consistency <strong>4/4</strong></span><span class="grade-score">Scope <strong>4/4</strong></span></div>
-      </div>
+    <span class="grade-label">Reasoning · Logic Review — cold blind (fresh, input-blinded instance) 2026-06-24</span>
+    <div class="grade-scores"><span class="grade-score">Claim <strong>4/4</strong></span><span class="grade-score">Evidence <strong>4/4</strong></span><span class="grade-score">Honesty <strong>4/4</strong></span><span class="grade-score">Consistency <strong>4/4</strong></span><span class="grade-score">Scope <strong>4/4</strong></span></div>
+    <div class="grade-final">
+      <span class="grade-final-label">Overall</span>
+      <span class="grade-final-num">20</span><span class="grade-final-den">/20</span>
     </div>
   </div>
   <p class="grade-caveat">Cold, input-blinded grade by a fresh instance (2026-06-24) of this narrative-texture revision: A+ 20/20, all five dimensions 4/4. The same read scored the essay's single weakest strand — the <em>ḥōmeš</em> wound-word "signature" — at B+ 15/20 on its own; the concordance check has since confirmed the frequency claim (2026-06-25: four occurrences, all in 2 Samuel — footnote 1), and the thread is still offered as observation, not proof. <strong>The same-model ceiling (Standing Correction 17) was broken by two different-lab blind reads: GPT-5.5 A+ 19/20 · Fidelity 9/12 (2026-06-25) and Gemini A+ 18/20 · Fidelity 9/12 (2026-06-26); a human read remains ideal.</strong> The four featured NRSVue blockquotes (2 Sam 3:39; 19:22; 1 Chr 21:7; Exod 21:14) are carried verbatim from the prior graded version; the 2 Samuel 18:11 and 2:21 quotations were converted to NRSVue and verified verbatim on 2026-07-01. Rule-22 primary-source confirmation of the commentary attributions was completed 2026-06-27 (McCarter, Halpern, Alter confirmed; Day and Pritchard cited as standard reference works). BDB backstop applied 2026-06-25 for <em>śāṭān</em> (H7854), <em>śāṭan</em> (H7853), <em>ḥōmeš</em> (H2570).</p>

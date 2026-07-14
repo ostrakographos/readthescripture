@@ -128,10 +128,13 @@ hr.divider{border:none;border-top:1px solid var(--rule-s);margin:56px 0;}
 .residue-block ul li::before{content:'?';position:absolute;left:0;color:var(--gold-l);font-family:var(--font-ui);font-size:.7em;}
 
 /* Grade block */
-.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
+.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
 .grade-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
-.grade-inner{display:flex;align-items:center;gap:16px;}
-.grade-letter{font-family:var(--font-d);font-size:2.2rem;font-weight:700;color:var(--gold-pale);line-height:1;flex-shrink:0;}
+.grade-note{font-size:.75rem;line-height:1.6;color:rgba(235,215,175,.55);font-style:italic;margin:10px 0 0;}
+.grade-final{display:flex;align-items:baseline;justify-content:flex-end;gap:3px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(232,204,118,.15);}
+.grade-final-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,204,118,.4);margin-right:auto;}
+.grade-final-num{font-family:var(--font-d);font-size:1.5rem;font-weight:700;color:var(--gold-pale);line-height:1;}
+.grade-final-den{font-family:var(--font-ui);font-size:.75rem;color:rgba(232,204,118,.5);}
 .grade-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,204,118,.45);display:block;margin-bottom:6px;}
 .grade-scores{display:flex;gap:12px;flex-wrap:wrap;}
 .grade-score{font-size:.75rem;color:rgba(235,215,175,.55);}
@@ -493,19 +496,18 @@ sup.fn-ref{font-size:.65rem;color:var(--gold);font-family:var(--font-ui);vertica
 
   <!-- GRADE BLOCK -->
   <div class="grade-block" style="margin-top:40px;">
-    <div class="grade-inner">
-      <div class="grade-letter">A+</div>
-      <div class="grade-detail">
-        <span class="grade-label">Reasoning · Logic Review — cold blind (fresh, input-blinded instance) 2026-06-18 · 20/20</span>
-        <div class="grade-scores">
-          <span class="grade-score">Claim precision <strong>4/4</strong></span>
-          <span class="grade-score">Evidence grounding <strong>4/4</strong></span>
-          <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
-          <span class="grade-score">Internal consistency <strong>4/4</strong></span>
-          <span class="grade-score">Scope <strong>4/4</strong></span>
-        </div>
-        <p style="font-size:.75rem;color:rgba(235,215,175,.40);margin-top:8px;font-style:italic;">Cold, input-blinded grade by a fresh instance (2026-06-18): A+ 20/20, all five dimensions 4/4. Same-model ceiling (rule 17): grader and author are the same model, so a different-model or human read remains the real gate; cold grades run optimistic. NRSVue quotations were verified verbatim against Bible Gateway this pass; the named scholar positions (McCarter, Brueggemann, Baden, Finkelstein &amp; Silberman, Davis, Peterson, Alter) are characterized from their published descriptions and still owe primary-source confirmation (rule 22). BDB backstop applied 2026-06-25 for <em>rāʿâ</em> / <em>raʿ</em> (H7451), <em>məšîaḥ</em> (H4899).</p>
-      </div>
+    <span class="grade-label">Reasoning · Logic Review — cold blind (fresh, input-blinded instance) 2026-06-18</span>
+    <div class="grade-scores">
+      <span class="grade-score">Claim precision <strong>4/4</strong></span>
+      <span class="grade-score">Evidence grounding <strong>4/4</strong></span>
+      <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+      <span class="grade-score">Internal consistency <strong>4/4</strong></span>
+      <span class="grade-score">Scope <strong>4/4</strong></span>
+    </div>
+    <p class="grade-note">Cold, input-blinded grade by a fresh instance (2026-06-18): A+ 20/20, all five dimensions 4/4. Same-model ceiling (rule 17): grader and author are the same model, so a different-model or human read remains the real gate; cold grades run optimistic. NRSVue quotations were verified verbatim against Bible Gateway this pass; the named scholar positions (McCarter, Brueggemann, Baden, Finkelstein &amp; Silberman, Davis, Peterson, Alter) are characterized from their published descriptions and still owe primary-source confirmation (rule 22). BDB backstop applied 2026-06-25 for <em>rāʿâ</em> / <em>raʿ</em> (H7451), <em>məšîaḥ</em> (H4899).</p>
+    <div class="grade-final">
+      <span class="grade-final-label">Overall</span>
+      <span class="grade-final-num">20</span><span class="grade-final-den">/20</span>
     </div>
   </div>
 

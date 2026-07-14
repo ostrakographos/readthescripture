@@ -82,10 +82,13 @@ hr.divider{border:none;border-top:1px solid var(--rule-s);margin:56px 0;}
 .source-card{padding:12px 16px;border-left:2px solid var(--cream-dd);margin-bottom:12px;}
 .source-ref{font-size:.95rem;color:var(--ink-3);margin:0 0 4px;line-height:1.6;}
 .source-position{font-size:.88rem;font-style:italic;color:var(--ink-4);margin:0;}
-.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
+.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
 .grade-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
-.grade-inner{display:flex;align-items:center;gap:16px;}
-.grade-letter{font-family:var(--font-d);font-size:2.2rem;font-weight:700;color:var(--gold-pale);line-height:1;flex-shrink:0;}
+.grade-note{font-size:.75rem;line-height:1.6;color:rgba(235,215,175,.55);font-style:italic;margin:10px 0 0;}
+.grade-final{display:flex;align-items:baseline;justify-content:flex-end;gap:3px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(232,204,118,.15);}
+.grade-final-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,204,118,.4);margin-right:auto;}
+.grade-final-num{font-family:var(--font-d);font-size:1.5rem;font-weight:700;color:var(--gold-pale);line-height:1;}
+.grade-final-den{font-family:var(--font-ui);font-size:.75rem;color:rgba(232,204,118,.5);}
 .grade-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,204,118,.45);display:block;margin-bottom:6px;}
 .grade-scores{display:flex;gap:12px;flex-wrap:wrap;}
 .grade-score{font-size:.75rem;color:rgba(235,215,175,.55);}
@@ -278,19 +281,18 @@ hr.divider{border:none;border-top:1px solid var(--rule-s);margin:56px 0;}
 
   <!-- GRADE BLOCK -->
   <div class="grade-block">
-    <div class="grade-inner">
-      <div class="grade-letter">A+</div>
-      <div class="grade-detail">
-        <span class="grade-label">Reasoning · Logic Review — 19/20 &middot; Fidelity 10/12 &middot; cross-model blind (Sonnet 5, 2026-07-05)</span>
-        <div class="grade-scores">
-          <span class="grade-score">Claim precision <strong>4/4</strong></span>
-          <span class="grade-score">Evidence grounding <strong>4/4</strong></span>
-          <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
-          <span class="grade-score">Internal consistency <strong>3/4</strong></span>
-          <span class="grade-score">Scope <strong>4/4</strong></span>
-        </div>
-        <span class="grade-score" style="display:block;margin-top:10px;opacity:.78;line-height:1.55">Re-graded 2026-07-05 by a fresh, blind, different-model-family read (Sonnet 5, single run): 19/20 (previously 20/20, 2026-06-09), one point off internal consistency — the "two channels" architecture is explicitly conceded elsewhere in the piece as imposed rather than textually demonstrated, and the ephod cannot be the precondition of all David's access since he inquires before Abiathar arrives (23:2, 23:4 vs. 23:6), a qualification the piece names but which still costs the framing some tightness. Fidelity 10/12: lexical claims (ṣālaḥ, rûaḥ, raʿ) are grounded in BDB, with HALOT disclosed as unconsulted; three named alternative readings (McCarter, Alter, Brueggemann) are engaged with specific mechanisms rather than gestured at. Earlier note retained: the original 2026-06-09 grading instance re-verified the load-bearing Hebrew (the shared verb <em>ṣālaḥ</em> at 16:13 and 18:10; the divine-name attributions) against the Westminster Leningrad interlinear; the "into the hand" agency wording was tightened after that grading to match the Hebrew, where the verb varies (<em>nātan</em> 24:4; <em>nikkar</em> 23:7; <em>sāgar</em> 26:8) and the <em>bᵉyad</em> idiom is what recurs. Single blind run — a second independent read is owed before this grade is fully trusted.</span>
-      </div>
+    <span class="grade-label">Reasoning · Logic Review &middot; Fidelity 10/12 &middot; cross-model blind (Sonnet 5, 2026-07-05)</span>
+    <div class="grade-scores">
+      <span class="grade-score">Claim precision <strong>4/4</strong></span>
+      <span class="grade-score">Evidence grounding <strong>4/4</strong></span>
+      <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+      <span class="grade-score">Internal consistency <strong>3/4</strong></span>
+      <span class="grade-score">Scope <strong>4/4</strong></span>
+    </div>
+    <p class="grade-note">Re-graded 2026-07-05 by a fresh, blind, different-model-family read (Sonnet 5, single run): 19/20 (previously 20/20, 2026-06-09), one point off internal consistency — the "two channels" architecture is explicitly conceded elsewhere in the piece as imposed rather than textually demonstrated, and the ephod cannot be the precondition of all David's access since he inquires before Abiathar arrives (23:2, 23:4 vs. 23:6), a qualification the piece names but which still costs the framing some tightness. Fidelity 10/12: lexical claims (ṣālaḥ, rûaḥ, raʿ) are grounded in BDB, with HALOT disclosed as unconsulted; three named alternative readings (McCarter, Alter, Brueggemann) are engaged with specific mechanisms rather than gestured at. Earlier note retained: the original 2026-06-09 grading instance re-verified the load-bearing Hebrew (the shared verb <em>ṣālaḥ</em> at 16:13 and 18:10; the divine-name attributions) against the Westminster Leningrad interlinear; the "into the hand" agency wording was tightened after that grading to match the Hebrew, where the verb varies (<em>nātan</em> 24:4; <em>nikkar</em> 23:7; <em>sāgar</em> 26:8) and the <em>bᵉyad</em> idiom is what recurs. Single blind run — a second independent read is owed before this grade is fully trusted.</p>
+    <div class="grade-final">
+      <span class="grade-final-label">Overall</span>
+      <span class="grade-final-num">19</span><span class="grade-final-den">/20</span>
     </div>
   </div>
 

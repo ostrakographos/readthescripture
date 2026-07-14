@@ -22,7 +22,9 @@ Selection is the editor's judgment, against four tests:
 
 ## The exactness rule
 
-The default is an **exact copy** of the workbench file — byte-for-byte, imperfections included. Where something cannot cross the privacy or third-party line, it is **redacted on the record**: a visible marker in the text, never a silent rewrite. (This is a deliberate exception to this repository's usual rule that public documents are authored fresh rather than redacted — for an exhibit, the artifact itself is the object, so a marked redaction is the honest tool. A silently edited exhibit would be a forgery of a workbench document.) Each card below states whether its piece is exact or carries redactions.
+The default is an **exact copy** of the workbench file — byte-for-byte, imperfections included. Where something cannot cross the privacy or third-party line — personal material, other people's content, quarantined personal files — it is **redacted on the record**: a visible marker in the text, never a silent rewrite. (This is a deliberate exception to this repository's usual rule that public documents are authored fresh rather than redacted — for an exhibit, the artifact itself is the object, so a marked redaction is the honest tool. A silently edited exhibit would be a forgery of a workbench document.) Each card below states whether its piece is exact or carries redactions.
+
+One thing is deliberately **not** redacted: the names of internal workbench files — trackers, standards documents, working notes — that exhibits refer to in passing. The editor's ruling (2026-07-14): the names are harmless and several are mentioned on the site itself; what stays private is those files' content, not their existence. (An earlier display of one exhibit masked four such names; the marks were removed under this ruling — the repository's history shows both states.)
 
 ## An invitation
 
@@ -56,4 +58,14 @@ The list may not be exhaustive — the reader is invited to keep going: grade th
 
 **Condition note.** Ungraded working notes, dated 2026-06-28; the published pages, not these notes, carry the site's considered claims. The theological engagement in §5 is explicitly marked held-not-settled in the text itself.
 
-**Exactness:** exact copy except **four marked redactions, all of the same kind — names of internal workbench files.** Nothing else is altered; the rules those files contain are glossed inline where they fire, so no redaction removes an idea, only a filename.
+**Exactness:** exact copy, no redactions. (Its first display carried four filename redactions; removed under the exactness rule's naming ruling above.)
+
+### `receipt_1kings13_study_publish_2026-06-28.md` — the receipt that shipped the Study *(2026-06-28)*
+
+**What it is.** Every working session that touches content ends with a written record — a *receipt*. This is the one that shipped [*The True Word in a False Mouth*](https://readthescripture.com/the_true_word_in_a_false_mouth.html): an authoritative state table (what published, at what grade, with which gates still open), the durable items promoted out of the session, the open-gates delta, and a narrative log in which every load-bearing claim is tagged `[Lee]` or `[Claude]` so the next reader knows whose judgment it was.
+
+**Why it's on display.** With this piece the gallery holds a complete provenance chain for one work: the workbench notes (the exhibit above) → this receipt → the grade log → the published pages. The receipt's claims are checkable against the rest of this repository: the three blind runs it records appear in [`grading/grades.jsonl`](../grading/grades.jsonl) (runs 1–3, dated 2026-06-28), and the verse-by-verse NRSVue verification list can be held against the live page. It also shows the record's habit of deflating its own good news — the grade is reported with its limit attached: *"3 same-model runs cluster at A+ 20/20, which is the optimistic ceiling, not the real gate."* And the log preserves a pushback running the uncomfortable direction: the model correcting the editor's framing of a discovery, on the record, in the session that shipped the piece.
+
+**Condition note.** The receipt names internal workbench files (trackers, standards, a working note) that are not part of this repository — the names stand per the exactness rule above. It predates the letter-grade retirement (2026-07-14), so it records a letter grade the site's pages no longer display; the numeric scores are unchanged. The wiring note at the end preserves a period detail: the session was fighting a file-corrupting sandbox mount, and says so.
+
+**Exactness:** exact copy, no redactions.

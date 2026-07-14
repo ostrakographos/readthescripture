@@ -107,13 +107,16 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 52px 0; 
 .fn-num { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); flex-shrink: 0; padding-top: 3px; }
 .fn-text { font-size: .9rem; line-height: 1.68; color: var(--ink-4); }
 sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); vertical-align: super; }
-.grade-block { background: var(--nav-bg); border-radius: 8px; padding: 22px 26px; margin: 40px 0 8px; display: flex; align-items: center; gap: 20px; }
-.grade-letter { font-family: var(--font-d); font-size: 2.4rem; font-weight: 700; color: var(--gold-pale); flex-shrink: 0; }
+.grade-block { background: var(--nav-bg); border-radius: 8px; padding: 22px 26px 26px; margin: 40px 0 8px; }
 .grade-detail { font-size: .9rem; color: rgba(235,215,175,.7); line-height: 1.6; }
 .grade-detail strong { color: var(--gold-pale); }
 .grade-scores { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
 .grade-score { font-family: var(--font-ui); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: rgba(232,204,118,.55); }
 .grade-score strong { color: var(--gold-pale); }
+.grade-final { display: flex; align-items: baseline; justify-content: flex-end; gap: 3px; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(232,204,118,.15); }
+.grade-final-label { font-family: var(--font-ui); font-size: .56rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(232,204,118,.4); margin-right: auto; }
+.grade-final-num { font-family: var(--font-d); font-size: 1.5rem; font-weight: 700; color: var(--gold-pale); line-height: 1; }
+.grade-final-den { font-family: var(--font-ui); font-size: .75rem; color: rgba(232,204,118,.5); }
 .grade-caveat { font-size: .86rem; font-style: italic; color: var(--ink-4); line-height: 1.65; margin: 0 0 24px; }
 .source-list { border-top: 1px solid var(--rule-s); margin-top: 48px; padding-top: 24px; }
 .source-list-label { font-family: var(--font-ui); font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
@@ -279,10 +282,12 @@ sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui);
 <p>I am drawn to passages that resist resolution, and a reader who wants Scripture to yield a clean rule each time would press harder for the obedience lesson and let the trouble go — and the text would not stop them. But the discipline cuts the other way too: the aim was never to manufacture a mystery, only to refuse a comfort the narrator declined to give. Where 1 Kings 13 keeps its silence, I have tried to keep it with it.</p>
 
 <div class="grade-block">
-  <div class="grade-letter">A+</div>
-  <div class="grade-detail"><strong>Reasoning · Logic Review — 20/20.</strong> Three blind, fresh same-model instances (2026-06-28) independently scored 20/20, all five dimensions 4/4.
-    <div class="grade-scores"><span class="grade-score">Claim <strong>4/4</strong></span><span class="grade-score">Evidence <strong>4/4</strong></span><span class="grade-score">Honesty <strong>4/4</strong></span><span class="grade-score">Consistency <strong>4/4</strong></span><span class="grade-score">Scope <strong>4/4</strong></span></div>
-    <div class="grade-scores"><span class="grade-score">Fidelity · F1 <strong>3</strong> / F2 <strong>4</strong> / F3 <strong>4</strong> = 11/12</span></div>
+  <div class="grade-detail"><strong>Reasoning · Logic Review.</strong> Three blind, fresh same-model instances (2026-06-28) independently scored 20/20, all five dimensions 4/4.</div>
+  <div class="grade-scores"><span class="grade-score">Claim <strong>4/4</strong></span><span class="grade-score">Evidence <strong>4/4</strong></span><span class="grade-score">Honesty <strong>4/4</strong></span><span class="grade-score">Consistency <strong>4/4</strong></span><span class="grade-score">Scope <strong>4/4</strong></span></div>
+  <div class="grade-scores"><span class="grade-score">Fidelity · F1 <strong>3</strong> / F2 <strong>4</strong> / F3 <strong>4</strong> = 11/12</span></div>
+  <div class="grade-final">
+    <span class="grade-final-label">Overall</span>
+    <span class="grade-final-num">20</span><span class="grade-final-den">/20</span>
   </div>
 </div>
 <p class="grade-caveat"><strong>Same-model ceiling.</strong> The graders and the author are the same model (Claude), so a different-model or human read remains the real gate — cold same-model grades run optimistic. Fidelity F1 is held at 3/4 because the external sources cannot be verified from the text alone and a second Tel Dan source is owed. The graders' shared weakest point: the "death as witness" reading rests on an inference the chapter never states — conceded in the second objection box above. Scripture quotations are from the NRSVue (the site default), with the Hebrew consulted where a word is discussed. The reading was developed in collaboration with Claude — used to research, frame, reason, and argue the case both for and against; the conclusions, the bias, and the decision to leave the chapter's hard edge unresolved are the author's.</p>
