@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bible Study Language Guide — Original Languages & English Translations</title>
+  <link rel="canonical" href="https://readthescripture.com/bible_language_guide.html">
+<meta name="description" content="A guide to the original languages of the Bible — biblical Hebrew, Koine Greek, and Aramaic — including alphabets, key grammatical features, and how to use lexical tools without formal training.">
+<meta name="keywords" content="biblical languages guide, Hebrew Greek Aramaic Bible, biblical Hebrew guide, Koine Greek Bible, how to read Bible in original languages, Hebrew alphabet, Greek New Testament language">
+<meta property="og:title" content="Bible Study Language Guide — Original Languages &amp; English Translations">
+<meta property="og:description" content="A guide to the original languages of the Bible — biblical Hebrew, Koine Greek, and Aramaic — including alphabets, key grammatical features, and how to use lexical tools without formal training.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/bible_language_guide.html">
+<meta property="og:site_name" content="Read the Scripture">
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="images/x-icon" href="images/favicon.ico">
+
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+  /* ── DESIGN TOKENS ── */
+  :root {
+    --bg:         #0f1117;
+    --surface:    #181c27;
+    --surface2:   #1e2333;
+    --border:     #2c3350;
+    --border-lit: #3d4870;
+    --gold:       #c9a84c;
+    --gold-dim:   #7a6328;
+    --red:        #c0392b;
+    --blue:       #4a90d9;
+    --green:      #2ecc71;
+    --purple:     #9b59b6;
+    --teal:       #1abc9c;
+    --orange:     #e67e22;
+    --text:       #dce3f2;
+    --text-muted: #8a96b8;
+    --text-dim:   #5a6484;
+    --hebrew:     #f5c842;
+    --greek:      #7ec8e3;
+    --aramaic:    #b89bff;
+    --tag-h:      rgba(245,200,66,0.12);
+    --tag-g:      rgba(126,200,227,0.12);
+    --tag-a:      rgba(184,155,255,0.12);
+    --warn:       rgba(192,57,43,0.15);
+    --accent:     rgba(74,144,217,0.10);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── LAYOUT ── */
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 1.5rem 0 2rem;
+  }
+
+  .sidebar-logo {
+    padding: 0 1.2rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-logo h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  .sidebar-logo p {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+  }
+
+  .sidebar-section-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 0.8rem 1.2rem 0.3rem;
+  }
+
+  .sidebar nav a {
+    display: block;
+    padding: 0.3rem 1.2rem;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: all 0.15s;
+  }
+
+  .sidebar nav a:hover {
+    color: var(--text);
+    background: rgba(255,255,255,0.04);
+    border-left-color: var(--gold-dim);
+  }
+
+  .sidebar nav a.active {
+    color: var(--gold);
+    border-left-color: var(--gold);
+    background: rgba(201,168,76,0.06);
+  }
+
+  /* ── MAIN ── */
+  .main {
+    flex: 1;
+    min-width: 0;
+    max-width: 1000px;
+    padding: 0 2.5rem 4rem;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+  }
+
+  .hero h1 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 680px;
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── WORD ENTRY CARD ── */
+  .word-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    scroll-margin-top: 1rem;
+  }
+
+  .card-header {
+    padding: 1.2rem 1.6rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    background: var(--surface2);
+  }
+
+  .card-header-left h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .card-header-left .aliases {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+    font-style: italic;
+  }
+
+  .card-body { padding: 1.4rem 1.6rem; }
+
+  /* ── LANG ENTRIES ── */
+  .lang-entries { display: flex; flex-direction: column; gap: 1.2rem; margin-bottom: 1.4rem; }
+
+  .lang-entry {
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    border: 1px solid transparent;
+  }
+
+  .lang-entry.hebrew  { background: var(--tag-h); border-color: rgba(245,200,66,0.2); }
+  .lang-entry.greek   { background: var(--tag-g); border-color: rgba(126,200,227,0.2); }
+  .lang-entry.aramaic { background: var(--tag-a); border-color: rgba(184,155,255,0.2); }
+
+  .lang-badge {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.55rem;
+    border-radius: 3px;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+  }
+
+  .lang-badge.heb  { background: rgba(245,200,66,0.2);  color: var(--hebrew);  }
+  .lang-badge.grk  { background: rgba(126,200,227,0.2); color: var(--greek);   }
+  .lang-badge.aram { background: rgba(184,155,255,0.2); color: var(--aramaic); }
+
+  .lang-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .lang-term-block { display: flex; flex-direction: column; }
+
+  .original-script {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+  }
+
+  .hebrew .original-script  { color: var(--hebrew); }
+  .greek  .original-script  { color: var(--greek);  }
+  .aramaic .original-script { color: var(--aramaic);}
+
+  .transliteration {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.1rem;
+  }
+
+  .strongs {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+  }
+
+  .lang-def {
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.65;
+  }
+
+  /* ── TRANSLATION TABLE ── */
+  .trans-table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+
+  table.trans-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+
+  table.trans-table th {
+    background: var(--surface2);
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.55rem 0.8rem;
+    text-align: left;
+    border-bottom: 2px solid var(--border-lit);
+    white-space: nowrap;
+  }
+
+  table.trans-table td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text);
+    line-height: 1.55;
+  }
+
+  table.trans-table tr:last-child td { border-bottom: none; }
+
+  table.trans-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  table.trans-table td.context {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  table.trans-table .kjv   { color: #e0c97c; }
+  table.trans-table .niv   { color: #7ec8e3; }
+  table.trans-table .nrsv  { color: #a8d8a8; }
+  table.trans-table .nkjv  { color: #f0a88a; }
+  table.trans-table .nasb  { color: #c9a0dc; }
+  table.trans-table .esv   { color: #88ccee; }
+
+  .version-tag {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    margin-right: 0.3rem;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+
+  .vt-kjv  { background: rgba(224,201,124,0.15); color: #e0c97c; }
+  .vt-niv  { background: rgba(126,200,227,0.15); color: #7ec8e3; }
+  .vt-nrsv { background: rgba(168,216,168,0.15); color: #a8d8a8; }
+  .vt-nkjv { background: rgba(240,168,138,0.15); color: #f0a88a; }
+  .vt-nasb { background: rgba(201,160,220,0.15); color: #c9a0dc; }
+  .vt-esv  { background: rgba(136,204,238,0.15); color: #88ccee; }
+
+  /* ── NOTES ── */
+  .note {
+    background: rgba(74,144,217,0.07);
+    border-left: 3px solid var(--blue);
+    border-radius: 0 4px 4px 0;
+    padding: 0.7rem 1rem;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    margin-top: 0.8rem;
+    line-height: 1.65;
+  }
+
+  .note strong {
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .warn-note {
+    background: var(--warn);
+    border-left: 3px solid var(--red);
+    border-radius: 0 4px 4px 0;
+    padding: 0.7rem 1rem;
+    font-size: 0.86rem;
+    color: var(--text);
+    margin-top: 0.8rem;
+    line-height: 1.65;
+  }
+
+  .warn-note strong { color: #e74c3c; }
+
+  .interch-note {
+    background: rgba(46,204,113,0.07);
+    border-left: 3px solid var(--green);
+    border-radius: 0 4px 4px 0;
+    padding: 0.7rem 1rem;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    margin-top: 0.8rem;
+    line-height: 1.65;
+  }
+
+  .interch-note strong { color: var(--green); }
+
+  /* ── SECTION SEPARATOR ── */
+  .section-sep {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  .section-sep-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+
+  .section-sep-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--gold-dim), transparent);
+  }
+
+  /* ── KV CHIPS (for version comparison inline) ── */
+  .version-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .version-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+  }
+
+  .version-chip .label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 760px) {
+    .sidebar { display: none; }
+    .main { padding: 0 1.2rem 3rem; }
+    .hero h1 { font-size: 1.5rem; }
+    .card-header { flex-direction: column; }
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border-lit); border-radius: 3px; }
+
+  /* ── UTILITY ── */
+  .mt-sm { margin-top: 0.5rem; }
+  .mt-md { margin-top: 1rem; }
+  strong.em { color: #fff; }
+  em.hl { color: var(--gold); font-style: normal; }
+
+  /* ── INTRO NOTE BOX ── */
+  .intro-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .intro-box h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=18"></script>
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <h1>Bible Language Guide</h1>
+<span style="display:inline-flex;align-items:center;gap:7px;padding:5px 14px 5px 10px;border-radius:4px;font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;background:rgba(61,110,17,.12);color:#a8d472;border:1px solid rgba(61,110,17,.3);margin-top:16px;">&#9632; Resource</span>
+    <p>Original Languages → English</p>
+  </div>
+  <div class="sidebar-section-label">Word Studies</div>
+  <nav>
+    <a href="#love">Love</a>
+    <a href="#good">Good</a>
+    <a href="#bad">Bad</a>
+    <a href="#harm">Harm</a>
+    <a href="#evil">Evil</a>
+    <a href="#repent">Repent</a>
+    <a href="#relent">Relent</a>
+    <a href="#lord-of-hosts">Lord of Hosts</a>
+    <a href="#his-host">His Host / Armies</a>
+    <a href="#water">Water / Waters</a>
+    <a href="#earth">Earth / Land / Ground</a>
+    <a href="#sky">Sky / Heaven / Heavens</a>
+    <a href="#spirit">Spirit / Breath / Wind</a>
+  </nav>
+  <div class="sidebar-section-label" style="margin-top:1.2rem;">Anthropology</div>
+  <nav>
+    <a href="#sheol">Sheol / Hades</a>
+    <a href="#nephesh">Nephesh / Psychē</a>
+    <a href="#adam-word">Adam / Humanity</a>
+  </nav>
+  <div class="sidebar-section-label" style="margin-top:1.2rem;">Justice &amp; Ethics</div>
+  <nav>
+    <a href="#tsedaqah">Righteousness / Justice</a>
+  </nav>
+  <div class="sidebar-section-label" style="margin-top:1.2rem;">Time &amp; Eternity</div>
+  <nav>
+    <a href="#olam">Olam / Aiōnios</a>
+  </nav>
+  <div class="sidebar-section-label" style="margin-top:1.2rem;">NT Terms</div>
+  <nav>
+    <a href="#charis">Charis — Grace</a>
+    <a href="#ekklesia">Ekklēsia — Church</a>
+    <a href="#apollymi">Apollymi — Destroy</a>
+    <a href="#doxa">Doxa — Glory</a>
+  </nav>
+  <div class="sidebar-section-label" style="margin-top:1.2rem;">Languages</div>
+  <nav>
+    <a href="#lang-key">Hebrew</a>
+    <a href="#lang-key">Greek</a>
+    <a href="#lang-key">Aramaic</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Bible Study Reference</div>
+    <h1>Original Language Guide<br>to Key English Bible Words</h1>
+    <p>This guide traces twenty key English words through their Hebrew, Aramaic, and Greek originals, showing how the same source word is rendered differently — and sometimes interchangeably — across six major English translations: KJV, NIV, NRSVue, NKJV, NASB, and ESV.</p>
+    <p>Special attention is given to words that collapse important distinctions: <em>harm/bad/evil</em> from a single Hebrew root (רַע <em>raʿ</em>); <em>repent/relent/change</em> from נָחַם (<em>nāḥam</em>); <em>spirit/breath/wind</em> from רוּחַ (<em>rûaḥ</em>) and πνεῦמα (<em>pneuma</em>); and the many English words — <em>hell, grave, pit, soul, life, creature, righteousness, justice, eternal, everlasting, church, assembly, destroy, perish, glory</em> — that collapse distinct original-language concepts or scatter single Hebrew/Greek words across unrelated English renderings.</p>
+    <p>This expanded edition adds eight new studies covering the most consequential interchangeable translations in the KJV and other English versions: <strong>Sheol/Hades</strong>, <strong>Nephesh/Psychē</strong>, <strong>ʾĀdām</strong>, <strong>Tsedaqah/Mishpat</strong>, <strong>Olam/Aiōnios</strong>, <strong>Charis</strong>, <strong>Ekklēsia</strong>, <strong>Apollymi</strong>, and <strong>Doxa</strong>.</p>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Hebrew (OT)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7ec8e3"></div>Greek (NT / LXX)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#b89bff"></div>Aramaic (OT)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#2ecc71"></div>Interchangeable / Overlap Note</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c0392b"></div>Translation Caution</div>
+    </div>
+  </div>
+
+  <div class="intro-box" id="lang-key">
+    <h3>How to Use This Guide</h3>
+    Each entry shows: the original-language term(s) with Strong's number, transliteration, and semantic range; a comparison table of how six translations render the word in representative passages; and notes on where translations diverge, overlap, or potentially mislead the English reader.
+    <br><br>
+    <strong style="color:var(--gold)">Abbreviations:</strong>
+    <span class="version-tag vt-kjv">KJV</span> King James Version (1611) ·
+    <span class="version-tag vt-niv">NIV</span> New International Version (2011) ·
+    <span class="version-tag vt-nrsv">NRSVue</span> New Revised Standard Version Updated Ed. (2021) ·
+    <span class="version-tag vt-nkjv">NKJV</span> New King James Version (1982) ·
+    <span class="version-tag vt-nasb">NASB</span> New American Standard Bible (2020) ·
+    <span class="version-tag vt-esv">ESV</span> English Standard Version (2016)
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 1. LOVE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Relational & Moral Terms</span><span class="section-sep-line"></span></div>
+
+  <div class="word-card" id="love">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Love</h2>
+        <div class="aliases">Also expressed as: lovingkindness · steadfast love · affection · charity (KJV)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew — Primary</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">אַהֲבָה / אָהַב</span>
+              <span class="transliteration">ahavah / ahab (verb: ahav)</span>
+              <span class="strongs">H157 / H160</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">The primary Hebrew word for love</strong> — encompassing all forms: romantic love, family love, love of God, and love between friends. Unlike Greek, Hebrew uses one root for all love. It includes emotional attachment and volitional commitment. Used of God's love for Israel (Deut. 7:8), human romance (Song of Sol. 2:4; Ruth 1:16), and love of neighbor (Lev. 19:18).</div>
+        </div>
+
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew — Covenantal</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">חֶסֶד</span>
+              <span class="transliteration">ḥesed</span>
+              <span class="strongs">H2617</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">The most theologically rich Hebrew love-word.</strong> Combines loyalty, mercy, faithfulness, and covenant faithfulness. No single English word captures it fully — hence the variety of translations. It is primarily an action word: love expressed in concrete acts of rescue, loyalty, and mercy. God's <em>ḥesed</em> is called "steadfast" because it endures beyond merit (Ps. 136). Also: דֹּד (<em>dôd</em>, H1730) — romantic / erotic affection; primarily in Song of Solomon.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ἀγάπη / ἀγαπάω</span>
+              <span class="transliteration">agapē / agapaō</span>
+              <span class="strongs">G26 / G25</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">φιλέω / φιλία</span>
+              <span class="transliteration">phileō / philia</span>
+              <span class="strongs">G5368 / G5373</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">στοργή</span>
+              <span class="transliteration">storgē</span>
+              <span class="strongs">G4709</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ἀγάπη</strong> is the dominant NT love-word — selfless, unconditional, other-directed love (John 3:16; 1 Cor. 13). The Septuagint (LXX) uses it to translate <em>ḥesed</em>. <strong class="em">φιλέω</strong> is friendship/brotherly love, warm personal affection (John 11:3; John 21:15–17 — the famous exchange where Jesus uses <em>agapaō</em> and Peter responds with <em>phileō</em>). <strong class="em">στοργή</strong> is familial, natural affection — rarely standalone in the NT but present in compounds. <em>ἔρως</em> (erotic love) does NOT appear in the NT, though the LXX uses it.</div>
+        </div>
+
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Ps. 136:1 (ḥesed)</th>
+              <th>Deut. 6:5 (ahab)</th>
+              <th>John 3:16 (agapē)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"his mercy endureth forever"</td><td class="kjv">"love the LORD"</td><td class="kjv">"God so loved the world"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"his love endures forever"</td><td class="niv">"love the LORD"</td><td class="niv">"God so loved the world"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"his steadfast love endures forever"</td><td class="nrsv">"love the LORD"</td><td class="nrsv">"God loved the world"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"his mercy endures forever"</td><td class="nkjv">"love the LORD"</td><td class="nkjv">"God so loved the world"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"his faithfulness is everlasting"</td><td class="nasb">"love the LORD"</td><td class="nasb">"God so loved the world"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"his steadfast love endures forever"</td><td class="esv">"love the LORD"</td><td class="esv">"God so loved the world"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Translation Gap:</strong> The KJV and NKJV render <em>ḥesed</em> as "mercy," while NRSVue and ESV prefer "steadfast love," NASB uses "faithfulness," and NIV uses "love." These choices carry different theological weight. "Mercy" implies condescension; "steadfast love" implies covenantal loyalty; "faithfulness" emphasizes reliability. None is wrong, but none fully captures <em>ḥesed</em>.</div>
+      <div class="note"><strong>Note:</strong> KJV also renders <em>agapē</em> as "charity" in 1 Corinthians 13 (and throughout), reflecting 17th-century English where "charity" meant active benevolent love, not merely donations. All modern versions use "love."</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 2. GOOD -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="word-card" id="good">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Good</h2>
+        <div class="aliases">Also: goodness · well · better · beautiful · pleasant · profitable</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">טוֹב / טֹב</span>
+              <span class="transliteration">ṭôb / ṭōb</span>
+              <span class="strongs">H2896 (adj) / H2895 (verb)</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ṭôb</strong> is the core Hebrew word for "good" — functionally excellent, aesthetically pleasing, morally upright, beneficial, or harmonious. In Genesis 1, God sees creation as <em>ṭôb</em> ("good" / "very good") — meaning it functions as designed, not just that it is morally pure. The KJV translates it as good (361×), better (72×), well (20×), goodness (16×), goodly (9×), best (8×), merry (7×), fair (7×), and many more. <em>ṭôb</em> describes food (Gen. 2:9), a day (Eccl. 7:14), land (Num. 14:7), a heart (Ps. 112:7), and God himself (Ps. 34:8).</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ἀγαθός</span>
+              <span class="transliteration">agathos</span>
+              <span class="strongs">G18</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">καλός</span>
+              <span class="transliteration">kalos</span>
+              <span class="strongs">G2570</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ἀγαθός</strong> is moral/intrinsic goodness (Matt. 19:17, "No one is good [<em>agathos</em>] but God alone"). <strong class="em">καλός</strong> is outward goodness — beautiful, fitting, excellent (Matt. 13:8, "good soil"; John 10:11, "good shepherd"). Both are rendered "good" in English translations, though they differ in emphasis: <em>agathos</em> is internal virtue; <em>kalos</em> is functional beauty.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead><tr><th>Version</th><th>Gen. 1:31 (ṭôb meʾōd)</th><th>Ps. 34:8 (ṭôb)</th><th>Rom. 8:28 (agathos)</th></tr></thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"very good"</td><td class="kjv">"the LORD is good"</td><td class="kjv">"work together for good"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"very good"</td><td class="niv">"the LORD is good"</td><td class="niv">"in all things God works for the good"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"very good"</td><td class="nrsv">"the LORD is good"</td><td class="nrsv">"all things work together for good"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"very good"</td><td class="nkjv">"the LORD is good"</td><td class="nkjv">"work together for good"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"very good"</td><td class="nasb">"the LORD is good"</td><td class="nasb">"cause all things to work together for good"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"very good"</td><td class="esv">"the LORD is good"</td><td class="esv">"work together for good"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> All six translations agree closely on <em>ṭôb</em> as "good." The Hebrew word's full range (functional/aesthetic/moral) is rarely explained in translation alone. Context must guide interpretation.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 3. BAD + 4. HARM + 5. EVIL — CLUSTER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="word-card" id="bad">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Bad · Harm · Evil</h2>
+        <div class="aliases">Also rendered as: wicked · mischief · hurt · trouble · affliction · adversity · calamity · disaster · ill · sore · displeasure · naught</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="interch-note"><strong>⇄ KEY INTERCHANGEABILITY ALERT:</strong> In Hebrew, the words <em>bad</em>, <em>harm</em>, and <em>evil</em> frequently come from the <strong>same root</strong> — רַע (<em>raʿ</em>, H7451) and its verb רָעַע (<em>rāʿaʿ</em>, H7489). Whether a passage describes moral evil, physical disaster, or something simply "not good," the same word is used. Translators must determine from context whether to write "evil," "bad," "harm," "calamity," "disaster," or "trouble." <strong>This is one of the most translation-sensitive words in the entire Bible.</strong></div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew — All Three Concepts</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">רַע / רָעָה</span>
+              <span class="transliteration">raʿ / rāʿāh</span>
+              <span class="strongs">H7451 (adj/noun)</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">רָעַע</span>
+              <span class="transliteration">rāʿaʿ</span>
+              <span class="strongs">H7489 (verb)</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">raʿ</strong> is the single Hebrew root covering what English splits into several words: (1) <em>moral evil</em> — wickedness, sin, iniquity; (2) <em>physical harm</em> — disaster, calamity, distress; (3) <em>bad quality</em> — inferior, unpleasant, displeasing. The KJV alone translates H7451 as: evil (442×), wickedness (59×), wicked (25×), mischief (21×), hurt (20×), bad (13×), trouble (10×), and 14 other English words. The verb <em>rāʿaʿ</em> means "to break, spoil, make bad" — translated as: do evil, hurt, harm, afflict, do wickedly, deal ill. This is also the word used when God "repents of the evil/disaster" he planned (Exod. 32:14; Jonah 3:10) — see below.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">κακός</span>
+              <span class="transliteration">kakos</span>
+              <span class="strongs">G2556</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">πονηρός</span>
+              <span class="transliteration">ponēros</span>
+              <span class="strongs">G4190</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">φαῦλος</span>
+              <span class="transliteration">phaulos</span>
+              <span class="strongs">G5337</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">κακός</strong> = bad, evil, harmful, wrong (opposite of <em>agathos</em>). <strong class="em">πονηρός</strong> = actively, maliciously evil — causing harm, wicked in intent ("the evil one" = <em>ho ponēros</em>, Matt. 6:13). <strong class="em">φαῦλος</strong> = worthless, vile, morally base (John 3:20; 5:29). All are rendered "evil" or "bad" in English, obscuring the distinctions between passive badness and active malice.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 2:9 (raʿ — "bad")</th>
+              <th>Exod. 32:14 (rāʿāh — "harm/evil/disaster")</th>
+              <th>Jonah 3:10 (rāʿāh — disaster)</th>
+              <th>Isa. 45:7 (raʿ — "evil/disaster")</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"evil"</td><td class="kjv">"the evil which he thought to do"</td><td class="kjv">"the evil that he had said"</td><td class="kjv">"I create evil"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"evil"</td><td class="niv">"the disaster he had threatened"</td><td class="niv">"the calamity he had threatened"</td><td class="niv">"I bring disaster"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"evil"</td><td class="nrsv">"the disaster that he planned"</td><td class="nrsv">"the calamity that he had said"</td><td class="nrsv">"I create woe"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"evil"</td><td class="nkjv">"the harm which He said He would do"</td><td class="nkjv">"the disaster that He had said"</td><td class="nkjv">"I create calamity"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"evil"</td><td class="nasb">"the harm with which He had threatened"</td><td class="nasb">"the disaster He had declared"</td><td class="nasb">"I cause disaster"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"evil"</td><td class="esv">"the disaster that he had spoken of"</td><td class="esv">"the disaster that he had said"</td><td class="esv">"I create calamity"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Critical Note — Isaiah 45:7:</strong> The KJV's "I create evil" is a literal rendering of <em>rāʿāh</em> and has been used to argue God creates moral evil. Modern translations (NIV, NRSVue, NASB, ESV) choose "disaster," "calamity," or "woe" — correctly indicating the word means <em>harm/calamity</em> in this context (contrasted with peace/shalom), not moral wickedness. This is one of the most significant translation decisions in the OT.</div>
+
+      <div class="interch-note"><strong>⇄ Bad / Harm / Evil / Destroy / Disaster / Calamity / Trouble / Hurt are ALL possible renderings of one Hebrew root:</strong> רַע (<em>raʿ</em>). The English reader should be aware that whenever they see any of these words in the OT, the underlying Hebrew may be identical.</div>
+
+      <div class="word-card" id="harm" style="margin:1.2rem 0 0; border:1px solid var(--border-lit);">
+        <div class="card-header" style="padding:0.8rem 1.2rem;">
+          <div class="card-header-left"><h2 style="font-size:1.1rem;">Harm</h2><div class="aliases">→ Same Hebrew root as Bad &amp; Evil above (H7451 / H7489)</div></div>
+        </div>
+        <div class="card-body" style="padding:0.9rem 1.2rem;">
+          <div class="lang-def" style="font-size:0.87rem;">"Harm" is not a separate Hebrew concept — it is a contextual translation of <em>raʿ/rāʿāh</em>. When the harm is inflicted on people (physical damage, calamity), modern translations tend to use "harm" or "disaster." The KJV uses "hurt" (20×) and "harm" (3×) for the same word it elsewhere renders "evil." <em>Shāmar</em> (H8104 — "keep, guard") is often the contrasting verb: "keep you from harm."</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 6 & 7. REPENT / RELENT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Repentance Terms</span><span class="section-sep-line"></span></div>
+
+  <div class="word-card" id="repent">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Repent · Relent · Change · Turn Away</h2>
+        <div class="aliases">Also: change his mind · be sorry · turn from · have compassion · be comforted · take comfort (of humans)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="interch-note"><strong>⇄ MAJOR INTERCHANGEABILITY:</strong> In Hebrew, a single verb — נָחַם (<em>nāḥam</em>) — covers what English splits into <em>repent</em>, <em>relent</em>, <em>change one's mind</em>, <em>be sorry</em>, <em>turn from</em>, <em>have compassion</em>, and even <em>comfort</em>/<em>be comforted</em>. The word's meaning depends heavily on who is acting (God or human), what stem (Niphal, Piel) is used, and context. Modern translations differ substantially because of this range.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">נָחַם</span>
+              <span class="transliteration">nāḥam (Niphal: niḥam)</span>
+              <span class="strongs">H5162</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">שׁוּב</span>
+              <span class="transliteration">shûb</span>
+              <span class="strongs">H7725</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">nāḥam</strong> (Niphal) carries a range of deep emotional states — grief, sorrow, being moved to a change of course, relief, or consolation. It appears 100+ times in the OT. When applied to <em>humans</em>, it is often rendered "repent" (change behavior in sorrow). When applied to <em>God</em>, translators must choose whether to say God "repented," "relented," "changed his mind," or "was sorry" — each with different theological implications. <strong class="em">shûb</strong> (H7725, "turn, return") is the more common OT word for human repentance — physically and spiritually turning around. It is usually rendered "return," "turn," "repent," or "turn back."</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">μετανοέω / μετάνοια</span>
+              <span class="transliteration">metanoeō / metanoia</span>
+              <span class="strongs">G3340 / G3341</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">μεταμέλομαι</span>
+              <span class="transliteration">metamelomai</span>
+              <span class="strongs">G3338</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">μετανοέω</strong> — literally "change of mind/heart/direction" — the standard NT word for repentance (Matt. 4:17; Acts 2:38). It emphasizes a whole-person transformation of direction. <strong class="em">μεταμέλομαι</strong> means more specifically to regret or feel remorse after the fact (Matt. 27:3 — Judas "was remorseful"; Matt. 21:29 — the son who "changed his mind" and went to work). All six translations render <em>metanoia</em> as "repentance."</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Exod. 32:14 (nāḥam — of God)</th>
+              <th>Jonah 3:10 (nāḥam — of God)</th>
+              <th>1 Sam. 15:11 (nāḥam — of God)</th>
+              <th>1 Sam. 15:29 (nāḥam — negated)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"the LORD repented of the evil"</td><td class="kjv">"God repented of the evil"</td><td class="kjv">"It repenteth me"</td><td class="kjv">"will not repent"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"the LORD relented"</td><td class="niv">"he relented"</td><td class="niv">"I regret that I have made Saul king"</td><td class="niv">"does not lie or change his mind"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"the LORD changed his mind about the disaster"</td><td class="nrsv">"God changed his mind"</td><td class="nrsv">"I regret that I made Saul king"</td><td class="nrsv">"does not change his mind"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"the LORD relented from the harm"</td><td class="nkjv">"God relented from the disaster"</td><td class="nkjv">"I greatly regret that I have set up Saul"</td><td class="nkjv">"does not relent"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"the LORD changed His mind"</td><td class="nasb">"God relented"</td><td class="nasb">"I regret that I have made Saul king"</td><td class="nasb">"does not change His mind"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"the LORD relented from the disaster"</td><td class="esv">"God relented"</td><td class="esv">"I regret that I have made Saul king"</td><td class="esv">"does not lie or change his mind"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Major Theological Tension — 1 Sam. 15:</strong> The same Hebrew chapter says both "God <em>niḥam</em>" (regrets/repents, v.11) and "God does not <em>niḥam</em>" (v.29). The KJV reads the affirmation as "it repenteth me" and the negation as "will not repent." Modern translations use "regret" for the affirmation and "change his mind" or "lie" for the negation — distinguishing emotional regret from covenantal reliability. Scholars note this is not a contradiction but a two-register use of the same word: emotional responsiveness vs. covenantal steadfastness.</div>
+
+      <div class="interch-note" id="relent"><strong>⇄ Repent / Relent / Change his mind / Be sorry / Turn from:</strong> All of these can translate <em>nāḥam</em> in the OT. The KJV consistently uses "repent," including of God, which modern readers find misleading (implying God sinned). Modern translations split the renderings, using "relent" or "change his mind" when the subject is God, and "repent" when the subject is humans. This is a major area where translations diverge for theological, not linguistic, reasons.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 8. LORD OF HOSTS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Divine Title &amp; Military Terms</span><span class="section-sep-line"></span></div>
+
+  <div class="word-card" id="lord-of-hosts">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Lord of Hosts</h2>
+        <div class="aliases">Also: LORD Almighty · Lord of Heaven's Armies · Lord of armies · Jehovah Sabaoth · Lord of Sabaoth</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">יְהוָה צְבָאוֹת</span>
+              <span class="transliteration">YHWH Ṣĕbāʾôt</span>
+              <span class="strongs">H3068 + H6635</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">YHWH Ṣĕbāʾôt</strong> appears ~285 times in the OT — most heavily in Isaiah, Jeremiah, Zechariah, and Malachi. <em>Ṣābāʾ</em> (H6635) means an organized body — army, host, war-corps. The plural <em>ṣĕbāʾôt</em> encompasses: (1) angelic armies of heaven; (2) celestial bodies (stars as armies — Deut. 4:19; Ps. 33:6); (3) human armies of Israel; (4) all created forces under God's command. First use: 1 Sam. 1:3 (Hannah's prayer). Note: <em>Sabaoth</em> ≠ <em>Sabbath</em> — completely different Hebrew words and meanings.</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT (Quoted from LXX)</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">Κύριος Σαβαώθ</span>
+              <span class="transliteration">Kyrios Sabaōth</span>
+              <span class="strongs">G2962 + G4519</span>
+            </div>
+          </div>
+          <div class="lang-def">The NT uses "Lord Sabaoth" (a Greek transliteration of the Hebrew) in Rom. 9:29 (quoting Isa. 1:9) and James 5:4 — the only two NT occurrences. The LXX sometimes transliterated (kept as <em>sabaōth</em>) and sometimes translated (<em>pantokratōr</em> = "Almighty").</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead><tr><th>Version</th><th>Isa. 6:3</th><th>1 Sam. 1:3</th><th>James 5:4 (NT)</th></tr></thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"LORD of hosts"</td><td class="kjv">"LORD of hosts"</td><td class="kjv">"Lord of Sabaoth"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"Lord Almighty"</td><td class="niv">"Lord Almighty"</td><td class="niv">"Lord Almighty"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"Lord of hosts"</td><td class="nrsv">"Lord of hosts"</td><td class="nrsv">"Lord of hosts"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"Lord of hosts"</td><td class="nkjv">"Lord of hosts"</td><td class="nkjv">"Lord of Sabaoth"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"Lord of armies"</td><td class="nasb">"Lord of armies"</td><td class="nasb">"Lord of Sabaoth"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"Lord of hosts"</td><td class="esv">"Lord of hosts"</td><td class="esv">"Lord of hosts"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Translation Divergence:</strong> The NIV's "Lord Almighty" is a <em>dynamic equivalent</em> — it conveys power but loses the military imagery of "armies/hosts." The NASB's "Lord of armies" is more literal and recovers the military sense. KJV, NRSVue, NKJV, and ESV retain "Lord of hosts," which is accurate but opaque to modern readers who don't know what "hosts" means.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 9. HIS HOST / HIS ARMIES -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="word-card" id="his-host">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>His Host · His Army · His Armies</h2>
+        <div class="aliases">Also: the host of heaven · the heavenly army · troops · company · warfare · service</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">צָבָא</span>
+              <span class="transliteration">ṣābāʾ</span>
+              <span class="strongs">H6635</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">מַחֲנֶה</span>
+              <span class="transliteration">maḥăneh</span>
+              <span class="strongs">H4264</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>ṣābāʾ</em> (singular) can mean: (1) an army or military force; (2) service/warfare (including Levitical service, Num. 4:23); (3) the celestial bodies as God's ordered "host" (Gen. 2:1 — "all their hosts"). <em>maḥăneh</em> is specifically a military camp or company of troops. Context determines whether "his host" means angelic armies (Josh. 5:14–15), Israel's armies (Exod. 12:41), the stars (Isa. 34:4), or Levitical servants (Num. 8:24–25).</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">στρατιά</span>
+              <span class="transliteration">stratia</span>
+              <span class="strongs">G4756</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>stratia</em> = army, host. Used in Luke 2:13 ("a multitude of the heavenly host") and Acts 7:42 ("the host of heaven"). All translations render it "heavenly host" or "heavenly army" in Luke 2:13.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead><tr><th>Version</th><th>Gen. 2:1 (ṣābāʾ)</th><th>Luke 2:13 (stratia)</th><th>Josh. 5:14 (ṣābāʾ)</th></tr></thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"all the host of them"</td><td class="kjv">"heavenly host"</td><td class="kjv">"captain of the host of the LORD"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"all their vast array"</td><td class="niv">"heavenly host"</td><td class="niv">"commander of the army of the LORD"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"all their multitude"</td><td class="nrsv">"heavenly host"</td><td class="nrsv">"commander of the army of the LORD"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"all their host"</td><td class="nkjv">"heavenly host"</td><td class="nkjv">"Commander of the army of the LORD"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"all their hosts"</td><td class="nasb">"heavenly army"</td><td class="nasb">"captain of the army of the LORD"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"all their host"</td><td class="esv">"heavenly host"</td><td class="esv">"commander of the army of the LORD"</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 10. WATER / WATERS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Cosmological Terms</span><span class="section-sep-line"></span></div>
+
+  <div class="word-card" id="water">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Water · Waters</h2>
+        <div class="aliases">Hebrew always plural · Also: flood · deep · sea · the deep (tehom)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">מַיִם</span>
+              <span class="transliteration">mayim</span>
+              <span class="strongs">H4325</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">תְּהוֹם</span>
+              <span class="transliteration">tĕhôm</span>
+              <span class="strongs">H8415</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>mayim</em> is always grammatically plural ("waters") — reflecting the ancient Near Eastern understanding of water as a vast, plural, potentially chaotic force. English translations often toggle between "water" (singular) and "waters" (plural) based on context, not always on the Hebrew. <em>tĕhôm</em> (the "deep") appears in Gen. 1:2 — a primordial watery abyss, cognate with the Babylonian creation-monster Tiamat. Likely related to <em>shamayim</em> (heaven/sky): some scholars connect <em>sha-mayim</em> to "like waters." Note: <em>shamayim</em> (heaven/sky) may literally mean "place of waters" or "waters above."</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ὕδωρ</span>
+              <span class="transliteration">hydōr</span>
+              <span class="strongs">G5204</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>hydōr</em> = water. Used for literal water (John 2:7), baptismal water (John 3:5), living water (John 4:10), and the water of the Word (Eph. 5:26). All six translations render it "water."</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead><tr><th>Version</th><th>Gen. 1:2 (tĕhôm)</th><th>Gen. 1:6 (mayim)</th><th>John 4:10 (hydōr)</th></tr></thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"the deep"</td><td class="kjv">"the waters"</td><td class="kjv">"living water"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"the deep"</td><td class="niv">"the water"</td><td class="niv">"living water"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"the deep"</td><td class="nrsv">"the waters"</td><td class="nrsv">"living water"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"the deep"</td><td class="nkjv">"the waters"</td><td class="nkjv">"living water"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"the deep"</td><td class="nasb">"the waters"</td><td class="nasb">"living water"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"the deep"</td><td class="esv">"the waters"</td><td class="esv">"living water"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> Hebrew <em>mayim</em> is always plural; "water" (singular) in English translations is a concession to modern English usage. The plural form reflects the ancient cosmological sense of waters as a force, not just a substance.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 11. EARTH / LAND / GROUND -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="word-card" id="earth">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Earth · Land · Ground · Soil · Country</h2>
+        <div class="aliases">Also: the world · territory · dust · dirt · nation (sometimes contextual)</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="interch-note"><strong>⇄ INTERCHANGEABILITY:</strong> Hebrew uses two primary words — <em>eretz</em> and <em>adamah</em> — that English renders as "earth," "land," and "ground," often interchangeably. <em>eretz</em> alone is translated as both "the earth" (planet/world scale) and "the land" (a specific territory like Canaan) depending on context. This is not a modern planet-Earth concept — ancient writers had no notion of a globe.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew — Primary</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">אֶרֶץ</span>
+              <span class="transliteration">ʾereṣ</span>
+              <span class="strongs">H776</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">אֲדָמָה</span>
+              <span class="transliteration">ʾădāmāh</span>
+              <span class="strongs">H127</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ʾereṣ</strong>: the most common — translates as "earth" (655×), "land" (~1,580×), "ground" (occasional), "country" (44×), "world," "territory." In Gen. 1:1, paired with <em>shamayim</em> (sky/heaven), it refers to the created physical realm — not a planet but the dry land domain. In promises to Abraham (Gen. 12:1), it means the land of Canaan. The SAME WORD covers both. <strong class="em">ʾădāmāh</strong>: closer to "soil/ground/dirt" — the substance humans were formed from (Gen. 2:7; 3:19). Connected to <em>adam</em> (human). Usually rendered "ground" in Gen. 2–3, "land" elsewhere. Also implies agricultural fertility ("land from which you are taken").</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">γῆ</span>
+              <span class="transliteration">gē</span>
+              <span class="strongs">G1093</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>gē</em> = earth, land, ground, soil. Mirrors the Hebrew <em>eretz</em> in its range — used for the physical earth (Matt. 5:5), soil (Matt. 13:5), a specific land/country (Matt. 2:20), and the ground beneath one's feet (John 8:6).</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 1:1 (ʾereṣ)</th>
+              <th>Gen. 12:1 (ʾereṣ)</th>
+              <th>Gen. 2:7 (ʾădāmāh)</th>
+              <th>Gen. 3:19 (ʾădāmāh)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"the earth"</td><td class="kjv">"the land"</td><td class="kjv">"the ground"</td><td class="kjv">"the ground"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"the earth"</td><td class="niv">"the land"</td><td class="niv">"the ground"</td><td class="niv">"the ground"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"the earth"</td><td class="nrsv">"the land"</td><td class="nrsv">"the ground"</td><td class="nrsv">"the ground"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"the earth"</td><td class="nkjv">"a land"</td><td class="nkjv">"the ground"</td><td class="nkjv">"the ground"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"the earth"</td><td class="nasb">"the land"</td><td class="nasb">"the ground"</td><td class="nasb">"the ground"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"the earth"</td><td class="esv">"the land"</td><td class="esv">"the ground"</td><td class="esv">"the ground"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Earth vs. Land — The Same Hebrew Word:</strong> Eschatological and prophetic passages often hinge on whether <em>ʾereṣ</em> means "the whole earth/world" or "the land [of Israel/Canaan]." For example, flood passages ("all the earth" — Gen. 7:3) and many judgment prophecies may refer to a regional land rather than a global event. Modern translations usually retain "earth" for cosmological scope and "land" for territorial scope, but the Hebrew makes no grammatical distinction — it is purely contextual.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 12. SKY / HEAVEN / HEAVENS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="word-card" id="sky">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Sky · Heaven · Heavens</h2>
+        <div class="aliases">Always grammatically plural in Hebrew · Also: firmament · expanse · the heights · the skies</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">שָׁמַיִם</span>
+              <span class="transliteration">šāmayim</span>
+              <span class="strongs">H8064</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">רָקִיעַ</span>
+              <span class="transliteration">rāqîaʿ</span>
+              <span class="strongs">H7549</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">šāmayim</strong> is always grammatically plural and covers: (1) the physical sky — where birds fly, where clouds form (Gen. 1:20); (2) the atmosphere and space above; (3) the dwelling of God — "the highest heaven" (1 Kings 8:27). The word may derive from <em>mayim</em> (waters) + the prefix <em>sha-</em> ("like" or superlative) — meaning "like waters" or "place of waters," reflecting the ancient view of the firmament holding back the waters above. <strong class="em">rāqîaʿ</strong> ("firmament," "expanse") is the dome-like vault God creates on Day 2 to separate upper and lower waters — rendered variously as "firmament," "expanse," "vault," or "dome."</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">οὐρανός</span>
+              <span class="transliteration">ouranos</span>
+              <span class="strongs">G3772</span>
+            </div>
+          </div>
+          <div class="lang-def"><em>ouranos</em> = sky/heaven — used for the physical sky (Matt. 24:29), the abode of God (Matt. 6:9), and the eschatological "new heavens" (Rev. 21:1). Like <em>šāmayim</em>, it serves as a euphemism for God in Jewish usage (Kingdom of Heaven = Kingdom of God).</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 1:1 (šāmayim)</th>
+              <th>Gen. 1:7–8 (rāqîaʿ)</th>
+              <th>Matt. 6:9 (ouranos)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"the heaven"</td><td class="kjv">"the firmament"</td><td class="kjv">"Our Father which art in heaven"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"the heavens"</td><td class="niv">"the vault"</td><td class="niv">"Our Father in heaven"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"the heavens"</td><td class="nrsv">"the dome"</td><td class="nrsv">"Our Father in heaven"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"the heavens"</td><td class="nkjv">"the firmament"</td><td class="nkjv">"Our Father in heaven"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"the heavens"</td><td class="nasb">"the expanse"</td><td class="nasb">"Our Father who is in heaven"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"the heavens"</td><td class="esv">"the expanse"</td><td class="esv">"Our Father in heaven"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> The KJV's "firmament" (Gen. 1) preserves the Latin <em>firmamentum</em> (solid structure), reflecting the ancient view of a solid dome. NIV's "vault," NRSVue's "dome," and NASB/ESV's "expanse" are all translating the same word (<em>rāqîaʿ</em>) — a term implying something beaten or hammered out flat. The differing choices signal different cosmological assumptions the translators bring to the text.</div>
+      <div class="interch-note"><strong>⇄ Sky / Heaven / Heavens:</strong> <em>šāmayim</em> serves as both "sky" (physical) and "heaven" (divine dwelling) — the same word. English forces a distinction ("sky" vs. "heaven") that the Hebrew does not make. The NRSVue and some scholars prefer "sky" in creation contexts to avoid anachronistic theological baggage; other translations prefer "heaven" throughout.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 13. SPIRIT / BREATH / WIND -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Spirit & Life Terms</span><span class="section-sep-line"></span></div>
+
+  <div class="word-card" id="spirit">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Spirit · Breath · Wind</h2>
+        <div class="aliases">Also: Holy Ghost (KJV) · mind · courage · disposition · blast · gale · soul</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="interch-note"><strong>⇄ MOST THEOLOGICALLY LOADED INTERCHANGEABILITY:</strong> One Hebrew word — רוּחַ (<em>rûaḥ</em>) — and one Greek word — πνεῦμα (<em>pneuma</em>) — carry three core meanings simultaneously: <em>wind</em> (physical air movement), <em>breath</em> (the breath of life), and <em>spirit</em> (the animating divine force or human spirit). Jesus exploits this deliberate ambiguity in John 3:8 ("The wind blows where it will...so it is with everyone born of the Spirit") — a pun only recoverable in the original language. Translators must choose one English word per instance, invariably losing the others.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">רוּחַ</span>
+              <span class="transliteration">rûaḥ</span>
+              <span class="strongs">H7307</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">נְשָׁמָה</span>
+              <span class="transliteration">nĕšāmāh</span>
+              <span class="strongs">H5397</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">rûaḥ</strong> appears ~389 times in the OT. KJV renders it: spirit (232×), wind (92×), breath (27×), side (6×), mind (5×), blast (4×), and more. It means: (1) <em>Wind</em> — the wind over the waters (Gen. 1:2), the wind God sends at the Flood (Gen. 8:1), directional winds; (2) <em>Breath</em> — the breath of life in creatures (Gen. 6:17; Job 33:4); (3) <em>Spirit of God / Holy Spirit</em> — the divine animating presence (Gen. 1:2; Ps. 51:11); (4) <em>Human spirit</em> — the inner life, disposition, courage, or mood of a person (Exod. 6:9; Judg. 8:3); (5) <em>Spiritual beings</em> — "evil spirit" (1 Sam. 16:14). <strong class="em">nĕšāmāh</strong> (H5397) = specifically the breath of life God breathed into Adam (Gen. 2:7; 7:22). Usually translated "breath" — distinct from <em>rûaḥ</em> though the two overlap.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">πνεῦμα</span>
+              <span class="transliteration">pneuma</span>
+              <span class="strongs">G4151</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">πνοή</span>
+              <span class="transliteration">pnoē</span>
+              <span class="strongs">G4157</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">ἄνεμος</span>
+              <span class="transliteration">anemos</span>
+              <span class="strongs">G417</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">pneuma</strong> is the NT equivalent of <em>rûaḥ</em> — the LXX uniformly translates <em>rûaḥ</em> with <em>pneuma</em>. It covers: the Holy Spirit (<em>Pneuma Hagion</em>; Matt. 3:16), the human spirit (Matt. 5:3), evil/unclean spirits (Matt. 8:16), and wind/breath (John 3:8; Rev. 11:11). <strong class="em">pnoē</strong> (G4157) = specifically breath (Acts 2:2 — "a rushing mighty wind"; Acts 17:25 — "the breath of life"). <strong class="em">anemos</strong> (G417) = wind specifically as a physical weather phenomenon (Matt. 14:24; Mark 4:37) — never used of the Spirit.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 1:2 (rûaḥ Elohim)</th>
+              <th>Gen. 8:1 (rûaḥ — wind)</th>
+              <th>Ps. 51:11 (rûaḥ — Holy)</th>
+              <th>John 3:8 (pneuma — wind/Spirit)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"Spirit of God"</td><td class="kjv">"a wind"</td><td class="kjv">"thy holy spirit"</td><td class="kjv">"The wind bloweth…born of the Spirit"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"the Spirit of God"</td><td class="niv">"a wind"</td><td class="niv">"your Holy Spirit"</td><td class="niv">"The wind blows…born of the Spirit"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"a wind from God" *</td><td class="nrsv">"a wind"</td><td class="nrsv">"your holy spirit"</td><td class="nrsv">"The wind blows…born of the Spirit"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"the Spirit of God"</td><td class="nkjv">"a wind"</td><td class="nkjv">"Your Holy Spirit"</td><td class="nkjv">"The wind blows…born of the Spirit"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"the Spirit of God"</td><td class="nasb">"a wind"</td><td class="nasb">"Your Holy Spirit"</td><td class="nasb">"The wind blows…born of the Spirit"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"the Spirit of God"</td><td class="esv">"a wind"</td><td class="esv">"your Holy Spirit"</td><td class="esv">"The wind blows…born of the Spirit"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Genesis 1:2 — Most Controversial rûaḥ Translation:</strong> The NRSVue's "a wind from God" is a minority scholarly reading that interprets this as a mighty storm, not the Holy Spirit hovering. KJV, NIV, NKJV, NASB, ESV all render it "Spirit of God." The NRSVue footnotes both options. Both are grammatically possible — the Hebrew <em>rûaḥ Elohim</em> can mean "divine wind" or "Spirit of God." This is one of the most debated translation decisions in Genesis.</div>
+
+      <div class="note"><strong>Note — KJV "Holy Ghost":</strong> The KJV uses "Holy Ghost" for <em>Pneuma Hagion</em> throughout the NT (e.g., Matt. 3:11; Acts 1:8). All modern translations use "Holy Spirit." "Ghost" in 17th-century English simply meant "spirit" (<em>Geist</em> in German) — the shift to "Ghost" carrying connotations of apparitions is modern. This is purely a language drift issue, not a translation choice.</div>
+
+      <div class="interch-note"><strong>⇄ Spirit / Breath / Wind — One Hebrew Word, One Greek Word:</strong> Wherever the English reader sees <em>spirit</em>, <em>breath</em>, or <em>wind</em> in OT passages, the underlying Hebrew is almost always the same word: <em>rûaḥ</em>. The same is true in the NT with <em>pneuma</em>. Only context, capitalization decisions, and translator philosophy determine which English word appears. This means: poetic passages where God's "breath" creates life, the "wind" moves over waters, and the "Spirit" empowers prophets may all be drawing on the same Hebrew reality — an interconnected, intentional richness that English translations necessarily fracture.</div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION: ANTHROPOLOGICAL TERMS -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Anthropological Terms</span><span class="section-sep-line"></span></div>
+
+  <!-- SHEOL / HADES -->
+  <div class="word-card" id="sheol">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Sheol · Hades · Hell · Grave · Pit</h2>
+        <div class="aliases">Also rendered as: the Pit · the Realm of the Dead · the underworld · death</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="warn-note"><strong>⚠ Single Most Consequential Interchangeable Translation in the English Bible:</strong> The Hebrew <em>Sheol</em> and Greek <em>Hades</em> are a single concept — the intermediate realm of all the dead — yet the KJV renders <em>Sheol</em> as "hell" (31×), "grave" (31×), and "pit" (3×). A modern English reader who sees "the wicked shall be turned into hell" and "I will go down into the grave" treats them as describing different destinations. The original Hebrew uses the same word for both — and it does not mean the final place of judgment.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">שְׁאוֹל</span>
+              <span class="transliteration">Šĕʾôl</span>
+              <span class="strongs">H7585</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">Sheol</strong> is the Hebrew realm of the dead — a shadowy underworld where all the dead reside, righteous and wicked alike. It is not a place of punishment in the OT; it is simply where the dead go. Jacob expects to go to <em>Sheol</em> mourning for his son (Gen. 37:35). The righteous are rescued <em>from</em> Sheol (Ps. 16:10; 49:15). The wicked are <em>sent to</em> Sheol (Ps. 9:17) — but the difference is framing, not destination. No clear distinction between the fate of the righteous dead and the wicked dead in Sheol is made until very late OT texts (Dan. 12:2). The KJV renders it "hell" 31 times and "grave" 31 times with no consistent principle — context and translator preference determined which English word appeared.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT / LXX</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ᾅδης</span>
+              <span class="transliteration">Hadēs</span>
+              <span class="strongs">G86</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">γέεννα</span>
+              <span class="transliteration">Geenna</span>
+              <span class="strongs">G1067</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">τάρταρος</span>
+              <span class="transliteration">Tartaros</span>
+              <span class="strongs">G5020</span>
+            </div>
+          </div>
+          <div class="lang-def">The LXX translates <em>Sheol</em> uniformly with <strong class="em">Hadēs</strong> — the Greek underworld of the dead. The NT inherits this: Acts 2:27 (quoting Ps. 16:10), Matt. 16:18, Rev. 20:13–14. The KJV renders <em>Hadēs</em> as "hell" in all 10 NT occurrences — obscuring a critical distinction. <strong class="em">Geenna</strong> (Gehenna) is a entirely different word — it refers to the Valley of Hinnom south of Jerusalem, used by Jesus as an image of final destruction/judgment (Matt. 5:22, 29–30; 10:28; 23:33). The KJV renders <em>Geenna</em> as "hell" as well, collapsing two different Greek concepts. <strong class="em">Tartaros</strong> appears once (2 Pet. 2:4) for the place of imprisoned fallen angels — also rendered "hell" in the KJV. Three distinct Greek words; one English word.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Ps. 9:17 (Sheol)</th>
+              <th>Gen. 37:35 (Sheol)</th>
+              <th>Ps. 16:10 (Sheol / Hadēs)</th>
+              <th>Matt. 10:28 (Geenna)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"turned into hell"</td><td class="kjv">"go down into the grave"</td><td class="kjv">"leave my soul in hell"</td><td class="kjv">"destroy both soul and body in hell"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"go to the realm of the dead"</td><td class="niv">"go down to the grave"</td><td class="niv">"abandon me to the realm of the dead"</td><td class="niv">"destroy both soul and body in hell"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"depart to Sheol"</td><td class="nrsv">"go down to Sheol"</td><td class="nrsv">"abandon my soul to Sheol" / "Hades" (NT)</td><td class="nrsv">"destroy both soul and body in hell"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"return to Sheol"</td><td class="nkjv">"go down to the grave"</td><td class="nkjv">"leave my soul in Sheol"</td><td class="nkjv">"destroy both soul and body in hell"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"turn to Sheol"</td><td class="nasb">"go down to Sheol"</td><td class="nasb">"abandon my soul to Sheol"</td><td class="nasb">"destroy both soul and body in hell"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"depart to Sheol"</td><td class="esv">"go down to Sheol"</td><td class="esv">"abandon my soul to Sheol"</td><td class="esv">"destroy both soul and body in hell"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="interch-note"><strong>⇄ Three Greek Words, All = "Hell" in KJV:</strong> <em>Hadēs</em> (the realm of the dead — same as Sheol) · <em>Geenna</em> (Gehenna, final judgment) · <em>Tartaros</em> (place of imprisoned fallen angels). The ESV, NRSVue, NASB, and NKJV have partially corrected the OT problem by using "Sheol." No translation fully distinguishes all three Greek words in the NT.</div>
+    </div>
+  </div>
+
+  <!-- NEPHESH / PSYCHE -->
+  <div class="word-card" id="nephesh">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Nephesh · Psychē — Soul · Life · Being · Creature</h2>
+        <div class="aliases">Also rendered as: person · heart · mind · self · desire · appetite · breath</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="interch-note"><strong>⇄ KEY INTERCHANGEABILITY:</strong> The Hebrew <em>nephesh</em> and Greek <em>psychē</em> are both translated variously as "soul," "life," "creature," "person," "heart," and "mind" — often within chapters of each other in the same translation. The theological result of preferring "soul" is enormous: it imports a Greek philosophical concept of an immortal immaterial soul, which is not what the Hebrew word means. <em>Nephesh</em> in Genesis 2:7 is not something given <em>to</em> the human being — it is what the human <em>becomes</em>.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">נֶפֶשׁ</span>
+              <span class="transliteration">nepeš</span>
+              <span class="strongs">H5315</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">nepeš</strong> is the most-translated word in the OT (KJV renders it with at least 15 distinct English words). Its root sense is <em>throat/neck</em> — the channel of breath and desire — and by extension: a living being, the seat of desire and appetite, a person, life itself. Crucially, animals are described as <em>nepeš ḥayyāh</em> (living <em>nephesh</em>) in Gen. 1:20, 21, 24 — the same phrase used of the human in Gen. 2:7. Hebrew anthropology does not reserve <em>nephesh</em> for humans alone. Furthermore, Gen. 2:7 does not say God gave Adam a soul — it says the man <em>became</em> a living <em>nephesh</em>. The soul is the unified living being, not a component part installed inside a body. The Greek philosophical tradition of an immaterial immortal soul imprisoned in a mortal body is imposed <em>onto</em> this text, not derived <em>from</em> it.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT / LXX</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ψυχή</span>
+              <span class="transliteration">psychē</span>
+              <span class="strongs">G5590</span>
+            </div>
+          </div>
+          <div class="lang-def">The LXX translates <em>nephesh</em> with <em>psychē</em> throughout. In the NT, <em>psychē</em> is rendered: <strong class="em">"soul"</strong> — Matt. 16:26 ("what shall a man give in exchange for his <em>soul</em>?"); <strong class="em">"life"</strong> — Matt. 10:39 ("he that <em>loseth his life</em> for my sake shall find it"); John 10:11 ("the good shepherd <em>giveth his life</em>"). Matt. 10:39 and Matt. 16:26 both use <em>psychē</em> — yet KJV renders the first "life" and the second "soul." The theological question of whether Jesus means the eternal soul or physical life is not answered by the Greek — it is precisely <em>raised</em> by it. Picking one English word definitively over-translates.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 2:7 (nepeš)</th>
+              <th>Gen. 1:20 (nepeš — animals)</th>
+              <th>Matt. 10:39 (psychē)</th>
+              <th>Matt. 16:26 (psychē)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"living soul"</td><td class="kjv">"moving creature"</td><td class="kjv">"loseth his life"</td><td class="kjv">"lose his own soul"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"living being"</td><td class="niv">"living creatures"</td><td class="niv">"loses their life"</td><td class="niv">"forfeit their soul"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"living being"</td><td class="nrsv">"living creatures"</td><td class="nrsv">"loses their life"</td><td class="nrsv">"lose their life"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"living being"</td><td class="nkjv">"living creature"</td><td class="nkjv">"loses his life"</td><td class="nkjv">"lose his own soul"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"living being"</td><td class="nasb">"living creature"</td><td class="nasb">"loses his life"</td><td class="nasb">"forfeit his soul"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"living creature"</td><td class="esv">"living creatures"</td><td class="esv">"loses his life"</td><td class="esv">"forfeits his soul"</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warn-note"><strong>⚠ Holistic vs. Dualistic Anthropology:</strong> The shift from KJV's "living soul" to modern translations' "living being" in Gen. 2:7 is theologically significant. Hebrew anthropology is holistic: the human is not a soul <em>housed in</em> a body but a unified living being. The body/soul dualism familiar from Greek philosophy (and much popular Christianity) is not supported by <em>nephesh</em> in its OT context. M.R. Wilson (<em>Our Father Abraham</em>) and John Cooper (<em>Body, Soul, and Life Everlasting</em>) represent the range of scholarly opinion on whether the OT implies any afterlife of the soul separate from the body.</div>
+    </div>
+  </div>
+
+  <!-- ADAM -->
+  <div class="word-card" id="adam-word">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Adam · Man · Mankind · Human · Humanity</h2>
+        <div class="aliases">Also: son of man · son of Adam · mortal · human being</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="interch-note"><strong>⇄ PERSONAL NAME AND COMMON NOUN — SIMULTANEOUSLY:</strong> The Hebrew <em>ʾādām</em> functions as both the proper name "Adam" and the common noun "human being / humankind." In Genesis 1–5 the distinction is often irreducible: the first human being bears the name of the species. Translators must decide, passage by passage, which is primary — and those decisions are not always consistent or supported by clear contextual markers.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">אָדָם</span>
+              <span class="transliteration">ʾādām</span>
+              <span class="strongs">H120</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">אֲדָמָה</span>
+              <span class="transliteration">ʾădāmāh</span>
+              <span class="strongs">H127</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ʾādām</strong> is simultaneously: (1) the proper name Adam (Gen. 2:20; 4:1; 5:1–5); (2) the collective noun "humankind / humanity" (Gen. 1:26: <em>"let us make ʾādām"</em>); (3) the generic noun "a man / a human being." Genesis 5:1–2 uses it both ways in the same passage: <em>"When God created ʾādām… he called their name ʾādām."</em> The word is etymologically linked to <strong class="em">ʾădāmāh</strong> (ground, soil — H127): the human is literally the <em>earth-creature</em>, formed from and returning to the ground (Gen. 2:7; 3:19). This wordplay is entirely lost in translation. The phrase <em>ben-ʾādām</em> ("son of ʾādām / son of man") is used ~100 times in Ezekiel as a form of address, and once by Jesus of himself (Dan. 7:13 provides the eschatological background). Paul exploits the Adam/humanity fusion in Romans 5 and 1 Cor. 15, where "Adam" is both an individual and a representative head of the human race — a reading that depends on the Hebrew word's dual function.</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ἄνθρωπος</span>
+              <span class="transliteration">anthrōpos</span>
+              <span class="strongs">G444</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">Ἀδάμ</span>
+              <span class="transliteration">Adam</span>
+              <span class="strongs">G76</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ἄνθρωπος</strong> = a human being (generic, including women — contrast <em>anēr</em>, a male). The LXX and NT use it to render the generic sense of <em>ʾādām</em>. <strong class="em">Ἀδάμ</strong> (transliterated) is used for the proper name in genealogies (Luke 3:38), typological comparison (Rom. 5:14), and resurrection theology (1 Cor. 15:22, 45). Paul's "last Adam" / "second Adam" (1 Cor. 15:45, 47) is <em>Ἀδάμ</em> — the same word, now applied to Christ as the new representative human. The Hebrew fusion of person and species makes this typology legible in a way it would not be if Adam were merely a proper name.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 1:26 (ʾādām — collective)</th>
+              <th>Gen. 2:20 (ʾādām — personal name)</th>
+              <th>Gen. 5:2 (ʾādām — both)</th>
+              <th>Ps. 8:4 (ben-ʾādām)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"Let us make man"</td><td class="kjv">"And Adam gave names"</td><td class="kjv">"called their name Adam"</td><td class="kjv">"son of man"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"Let us make mankind"</td><td class="niv">"So the man gave names"</td><td class="kjv">"he named them 'Mankind'"</td><td class="niv">"human beings"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"Let us make humankind"</td><td class="nrsv">"The man gave names"</td><td class="nrsv">"named them 'Humankind'"</td><td class="nrsv">"mortals"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"Let Us make man"</td><td class="nkjv">"And Adam gave names"</td><td class="nkjv">"called them Mankind"</td><td class="nkjv">"son of man"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"Let Us make mankind"</td><td class="nasb">"The man gave names"</td><td class="nasb">"named them mankind"</td><td class="nasb">"son of man"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"Let us make man"</td><td class="esv">"The man gave names"</td><td class="esv">"named them Man"</td><td class="esv">"son of man"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> The gender inclusivity debate (man vs. mankind vs. humankind vs. humanity) in Gen. 1:26 turns on whether <em>ʾādām</em> is generic or gendered. The Hebrew word is grammatically masculine but functionally generic — it refers to the human species, male and female together (Gen. 1:27; 5:2). Modern translations that use "mankind" or "humankind" are more accurate to the collective sense; KJV and ESV's "man" is grammatically defensible but has historically been read as male-exclusive.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION: JUSTICE & ETHICS -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Justice &amp; Ethics</span><span class="section-sep-line"></span></div>
+
+  <!-- TSEDAQAH / MISHPAT / DIKAIOSYNE -->
+  <div class="word-card" id="tsedaqah">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Righteousness · Justice · Judgment</h2>
+        <div class="aliases">Hebrew: tsedaqah · mishpat &nbsp;|&nbsp; Greek: dikaiosynē · krisis · krima</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="warn-note"><strong>⚠ High-Impact Translation Choice:</strong> The decision to translate <em>tsedaqah</em> as "righteousness" (interior moral quality) vs. "justice" (active social obligation) directly shapes how readers understand the Hebrew prophets, the Psalms, and Paul. English has two words for one Hebrew/Greek concept; the translators' choice determines whether the concept is read as personal or structural, private or public.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew — Primary Pair</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">צְדָקָה / צֶדֶק</span>
+              <span class="transliteration">tsĕdāqāh / tsedeq</span>
+              <span class="strongs">H6666 / H6664</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">מִשְׁפָּט</span>
+              <span class="transliteration">mišpāṭ</span>
+              <span class="strongs">H4941</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">tsĕdāqāh</strong> (noun) and <strong class="em">tsedeq</strong> (abstract noun) describe being in right relationship — with God, with one's community, with the poor. The KJV renders it "righteousness" almost exclusively (~155 times for tsedeq/tsedaqah), with occasional "justice." But in the prophetic and wisdom literature, it regularly describes <em>active intervention on behalf of the vulnerable</em> — feeding the hungry, defending the orphan, not just personal virtue. Abraham's faith is "reckoned as <em>tsedaqah</em>" (Gen. 15:6) — but Isa. 1:27 says Zion will be redeemed by <em>mišpāṭ</em> and those who return by <em>tsedaqah</em>. <strong class="em">mišpāṭ</strong> is the legal/judicial complement — verdict, ordinance, the act of rendering a just decision. Together they form the hendiadys for a just social order (Amos 5:24; Micah 6:8; Isa. 5:7). The KJV pairs "judgment" (mišpāṭ) and "righteousness" (tsedaqah) — which in modern ears sounds like law and morality, separate domains. In Hebrew they are a single social concept: the just ordering of community life.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">δικαιοσύνη</span>
+              <span class="transliteration">dikaiosynē</span>
+              <span class="strongs">G1343</span>
+            </div>
+            <div class="lang-term-block">
+              <span class="original-script">δίκαιος / δικαίωμα</span>
+              <span class="transliteration">dikaios / dikaiōma</span>
+              <span class="strongs">G1342 / G1345</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">dikaiosynē</strong> is the NT's primary justice/righteousness word — the LXX uses it to translate <em>tsedaqah</em>. It spans: (1) <em>right standing before God</em> — the Pauline "righteousness of God" by faith (Rom. 1:17; 3:22); (2) <em>moral uprightness</em> — "hunger and thirst for righteousness" (Matt. 5:6); (3) <em>social justice</em> — "seek first the kingdom of God and his <em>dikaiosynē</em>" (Matt. 6:33) is not merely personal virtue in context. English systematically renders the entire <em>dik-</em> family as "right/righteous/righteousness" (KJV, ESV, NASB) or sometimes "just/justice" (NIV, NRSVue in OT-flavored contexts). The two English words carry different theological freight — "righteousness" points inward; "justice" points outward. The Greek word points both ways at once.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Amos 5:24 (mišpāṭ / tsedaqah)</th>
+              <th>Micah 6:8 (mišpāṭ)</th>
+              <th>Gen. 15:6 (tsedaqah)</th>
+              <th>Rom. 3:22 (dikaiosynē)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"judgment… righteousness"</td><td class="kjv">"to do justly, and to love mercy"</td><td class="kjv">"righteousness"</td><td class="kjv">"righteousness of God"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"justice… righteousness"</td><td class="niv">"to act justly and to love mercy"</td><td class="niv">"righteousness"</td><td class="niv">"righteousness of God"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"justice… righteousness"</td><td class="nrsv">"to do justice, and to love kindness"</td><td class="nrsv">"righteousness"</td><td class="nrsv">"righteousness of God"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"justice… righteousness"</td><td class="nkjv">"to do justly, to love mercy"</td><td class="nkjv">"righteousness"</td><td class="nkjv">"righteousness of God"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"justice… righteousness"</td><td class="nasb">"to do justice, to love kindness"</td><td class="nasb">"righteousness"</td><td class="nasb">"righteousness of God"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"justice… righteousness"</td><td class="esv">"to do justice, and to love kindness"</td><td class="esv">"righteousness"</td><td class="esv">"righteousness of God"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note — Psalm 23:6:</strong> "Surely <em>goodness</em> and <em>mercy</em> shall follow me" (KJV) — both words in the Hebrew are <em>ṭôb</em> and <em>ḥesed</em>, not <em>tsedaqah</em>. But Ps. 23:3 — "He leads me in paths of <em>righteousness</em>" — is <em>tsedeq</em>: paths of right-relatedness, not merely paths of personal virtue. The shepherd motif carries a social dimension the English "righteousness" does not convey.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION: TIME & ETERNITY -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">Time, Ages &amp; Eternity</span><span class="section-sep-line"></span></div>
+
+  <!-- OLAM / AIONIOS -->
+  <div class="word-card" id="olam">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Olam · Aiōnios — Everlasting · Eternal · Age · Forever · Ancient</h2>
+        <div class="aliases">Also rendered as: of old · perpetual · world · ages · long ago · enduring</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="warn-note"><strong>⚠ Matthew 25:46 — Same Greek Word, Two English Words in the Same Verse:</strong> "These shall go away into <em>everlasting</em> punishment: but the righteous into life <em>eternal</em>" (KJV). Both words translate the same Greek adjective <em>aiōnios</em>. This is not theological distinction — it is stylistic variation that has led generations of readers to imagine the two destinations have different temporal qualities. They are described by the same word. Whatever <em>aiōnios</em> means, it applies equally to both.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">עוֹלָם</span>
+              <span class="transliteration">ʿôlām</span>
+              <span class="strongs">H5769</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ʿôlām</strong> means a long, indefinite period — extending beyond human reckoning, in either direction (past or future). It does not carry the Greek philosophical sense of infinite eternal duration outside time. The KJV renders it: <em>"everlasting"</em> (Gen. 9:16: "everlasting covenant"; Isa. 9:6: "Everlasting Father"), <em>"for ever"</em> (Ps. 23:6; Gen. 3:22), <em>"of old"</em> (Micah 5:2: "whose goings forth have been from of old" — KJV margin: "Heb. the days of eternity"), <em>"ancient"</em> (Prov. 22:28: "ancient landmark"), <em>"world"</em> (Eccl. 3:11: "he hath set the world in their heart," i.e., eternity/indefinite time). A covenant described as <em>ʿôlām</em> is a covenant of indefinite, unbreakable duration — not necessarily one that existed before time began. The LXX translates <em>ʿôlām</em> with <em>aiōn</em> (age), which is then the root of <em>aiōnios</em>.</div>
+        </div>
+
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">αἰών / αἰώνιος</span>
+              <span class="transliteration">aiōn / aiōnios</span>
+              <span class="strongs">G165 / G166</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">aiōn</strong> = age, era, a period of time with a beginning and end (the present age vs. the age to come is a key NT distinction). <strong class="em">aiōnios</strong> = the adjective: "of the age / age-long / belonging to the [coming] age." The scholarly debate is whether it means (a) <em>eternal / everlasting</em> in the philosophical sense of infinite duration, or (b) <em>of the [coming] age</em> — qualitative rather than purely quantitative. The word derives from <em>aiōn</em> = age; linguistically it means "belonging to the age." The KJV renders <em>aiōnios</em> as "eternal" and "everlasting" interchangeably — even in the same verse (Matt. 25:46). John 17:3 defines <em>aiōnios</em> life: "this is <em>aiōnios</em> life, that they know thee." The definition is relational, not merely durational. Scholars including William Barclay, Marvin Vincent, and David Bentley Hart have argued "age-long" is more accurate; traditional scholarship (BDAG, Mounce) maintains "eternal" is the correct gloss in eschatological contexts.</div>
+        </div>
+      </div>
+
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Gen. 9:16 (ʿôlām)</th>
+              <th>Matt. 25:46 (aiōnios — both)</th>
+              <th>John 3:16 (aiōnios)</th>
+              <th>John 17:3 (aiōnios — defined)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"everlasting covenant"</td><td class="kjv">"everlasting punishment… life eternal"</td><td class="kjv">"everlasting life"</td><td class="kjv">"life eternal… know thee"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"everlasting covenant"</td><td class="niv">"eternal punishment… eternal life"</td><td class="niv">"eternal life"</td><td class="niv">"eternal life… they know you"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"everlasting covenant"</td><td class="nrsv">"eternal punishment… eternal life"</td><td class="nrsv">"eternal life"</td><td class="nrsv">"eternal life… know you"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"everlasting covenant"</td><td class="nkjv">"everlasting punishment… eternal life"</td><td class="nkjv">"everlasting life"</td><td class="nkjv">"eternal life… know You"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"everlasting covenant"</td><td class="nasb">"eternal punishment… eternal life"</td><td class="nasb">"eternal life"</td><td class="nasb">"eternal life… know You"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"everlasting covenant"</td><td class="esv">"eternal punishment… eternal life"</td><td class="esv">"eternal life"</td><td class="esv">"eternal life… know you"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="interch-note"><strong>⇄ KJV uses "everlasting" and "eternal" for the same Greek word in the same sentence (Matt. 25:46).</strong> Modern translations have corrected this inconsistency by using "eternal" consistently — but the underlying debate about whether <em>aiōnios</em> means "eternal" or "of the age" remains one of the most contested translation questions in NT scholarship, with direct implications for universalism, annihilationism, and eternal conscious torment.</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SECTION: NT SOTERIOLOGICAL & ECCLESIAL TERMS -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <div class="section-sep"><span class="section-sep-label">NT Soteriological &amp; Ecclesial Terms</span><span class="section-sep-line"></span></div>
+
+  <!-- CHARIS -->
+  <div class="word-card" id="charis">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Charis — Grace · Favour · Thanks</h2>
+        <div class="aliases">Also: gift · blessing · graciously accepted · goodwill</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">χάρις</span>
+              <span class="transliteration">charis</span>
+              <span class="strongs">G5485</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">charis</strong> is the primary NT word for divine grace, favour, and thanks. The KJV renders it: <strong class="em">"grace"</strong> — John 1:14 ("full of grace and truth"); Eph. 2:8 ("by grace are ye saved"); Rom. 6:14 ("under grace"). <strong class="em">"favour"</strong> — Luke 1:30 ("thou hast found favour with God"); Luke 2:52 ("in favour with God and man"). <strong class="em">"thanks"</strong> — 1 Cor. 15:57 ("thanks be to God"). The theological problem: Luke 1:28 says Mary is <em>kecharitōmenē</em> ("highly favoured / full of grace") and Luke 1:30 says she has "found <em>charis</em> with God" — both from the same root. John 1:14 says Christ came "full of <em>charis</em>." The KJV's use of "favoured" for Mary and "grace" for Christ makes them appear to be two different concepts. They are not — the same divine gift is at work in both. Protestant readers who reserve "grace" as a technical soteriological term (unmerited favor in salvation) and do not see it in Luke 1:28 may miss that Mary's situation is described in exactly those terms.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>John 1:14 (charis)</th>
+              <th>Luke 1:28 (kecharitōmenē)</th>
+              <th>Luke 1:30 (charis)</th>
+              <th>Eph. 2:8 (charis)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"full of grace"</td><td class="kjv">"highly favoured"</td><td class="kjv">"found favour"</td><td class="kjv">"by grace are ye saved"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"full of grace"</td><td class="niv">"you who are highly favored"</td><td class="niv">"found favor"</td><td class="niv">"it is by grace you have been saved"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"full of grace"</td><td class="nrsv">"favored one"</td><td class="nrsv">"found favor"</td><td class="nrsv">"saved by grace"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"full of grace"</td><td class="nkjv">"highly favored one"</td><td class="nkjv">"found favor"</td><td class="nkjv">"saved through faith… grace"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"full of grace"</td><td class="nasb">"favored one"</td><td class="nasb">"found favor"</td><td class="nasb">"saved by grace"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"full of grace"</td><td class="esv">"O favored one"</td><td class="esv">"found favor"</td><td class="esv">"saved through faith… grace"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> The Roman Catholic tradition reads <em>kecharitōmenē</em> (Luke 1:28) as "full of grace" — a title indicating Mary's unique endowment with divine grace. The Protestant tradition tends to read it as "favored" — God's act of choosing her, not a description of her inherent state. Both readings translate a form of <em>charis</em>. The difference is partly theological, partly grammatical: the perfect passive participle suggests a completed state of being graced, not merely an act of divine choice.</div>
+    </div>
+  </div>
+
+  <!-- EKKLESIA -->
+  <div class="word-card" id="ekklesia">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Ekklēsia — Church · Assembly · Congregation</h2>
+        <div class="aliases">Also: meeting · gathering · the called-out · the community</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT / LXX</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ἐκκλησία</span>
+              <span class="transliteration">ekklēsia</span>
+              <span class="strongs">G1577</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">ekklēsia</strong> is derived from <em>ek-kaleō</em> = "to call out" — but by the NT period it was simply the ordinary Greek word for any called-together assembly. It carried no inherently religious meaning. The KJV renders it <strong class="em">"church"</strong> for the Christian community (Matt. 16:18; 1 Cor. 1:2; Rev. 1:4); <strong class="em">"church"</strong> again in Acts 7:38 — "the church in the wilderness" referring to Israel assembled at Sinai (quoting the LXX, which uses <em>ekklēsia</em> for the Hebrew <em>qāhāl</em>, the assembly of Israel); but <strong class="em">"assembly"</strong> for the pagan civic gathering at Ephesus (Acts 19:32). Three uses, same word: Christian community, Israel at Sinai, pagan mob. The KJV's decision to translate the first two as "church" (with all its institutional connotations) and the third as "assembly" is a translator's theological distinction that the Greek word alone does not make. The word simply means: a group that has been called together. The <em>qāhāl</em> (H6951) background from the OT via the LXX means the Christian <em>ekklēsia</em> is deliberately presented as continuous with the assembly of Israel — a link the word "church" tends to obscure.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Matt. 16:18 (ekklēsia — Christian)</th>
+              <th>Acts 7:38 (ekklēsia — Israel)</th>
+              <th>Acts 19:32 (ekklēsia — pagan)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"my church"</td><td class="kjv">"the church in the wilderness"</td><td class="kjv">"the assembly"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"my church"</td><td class="niv">"the assembly in the wilderness"</td><td class="niv">"the assembly"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"my church"</td><td class="nrsv">"the congregation in the wilderness"</td><td class="nrsv">"the assembly"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"My church"</td><td class="nkjv">"the congregation in the wilderness"</td><td class="nkjv">"the assembly"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"My church"</td><td class="nasb">"the congregation in the wilderness"</td><td class="nasb">"the assembly"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"my church"</td><td class="esv">"the congregation in the wilderness"</td><td class="esv">"the assembly"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="interch-note"><strong>⇄ All six translations use "church" for Matt. 16:18 and "assembly" or "congregation" for Acts 19:32</strong> — despite the identical Greek word. This reflects a translation convention, not a distinction in the original. The NIV, NRSVue, NKJV, NASB, and ESV have partially corrected the KJV by using "congregation" rather than "church" for Acts 7:38 (Israel at Sinai), recovering the OT continuity of the concept.</div>
+    </div>
+  </div>
+
+  <!-- APOLLYMI -->
+  <div class="word-card" id="apollymi">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Apollymi — Destroy · Perish · Lose · Lost</h2>
+        <div class="aliases">Also: ruin · be lost · be undone · waste (as in "the lost sheep")</div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="interch-note"><strong>⇄ RANGE OF THE WORD:</strong> The Greek <em>apollymi</em> spans a range from "temporarily misplaced" (a lost sheep) to "utterly destroyed" (body and soul in Gehenna) — and the KJV renders all these uses with three different English words: <em>destroy, perish, lose/lost</em>. The English words suggest three different concepts; the Greek uses one word. This has direct implications for the eternal punishment debate.</div>
+
+      <div class="lang-entries mt-md">
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">ἀπόλλυμι</span>
+              <span class="transliteration">apollymi</span>
+              <span class="strongs">G622</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">apollymi</strong> is a compound of <em>apo</em> (away, completely) + <em>ollymi</em> (to destroy). Its semantic range runs from "lose temporarily" to "ruin entirely," with the context determining where on the spectrum a given instance falls. Key uses: <strong class="em">"destroy"</strong> — Matt. 10:28: "fear him which is able to <em>destroy</em> both soul and body in hell [Gehenna]." <strong class="em">"perish"</strong> — John 3:16: "whosoever believeth in him should not <em>perish</em>." <strong class="em">"lose"</strong> — Luke 15:4: "if he <em>lose</em> one of them"; Luke 15:8: "if she <em>lose</em> one piece." <strong class="em">"lost"</strong> — Luke 15:24: "he was <em>lost</em> and is found"; John 17:12: "none of them is <em>lost</em>." The lost sheep and the lost coin are <em>apollymi</em> — the same word used for those who "perish" in John 3:16 and are "destroyed" in Matt. 10:28. This is significant for annihilationism: if <em>apollymi</em> in Matt. 10:28 means destruction/cessation of existence, this is a plausible reading of the same word used elsewhere for temporary lostness. The word does not unambiguously mean "tortured forever while continuing to exist" in any of its NT uses.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Matt. 10:28 (apollymi)</th>
+              <th>John 3:16 (apollymi)</th>
+              <th>Luke 15:4 (apollymi)</th>
+              <th>Luke 15:24 (apollymi)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"destroy"</td><td class="kjv">"perish"</td><td class="kjv">"lose"</td><td class="kjv">"was lost"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"destroy"</td><td class="niv">"perish"</td><td class="niv">"lose"</td><td class="niv">"was lost"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"destroy"</td><td class="nrsv">"perish"</td><td class="nrsv">"lose"</td><td class="nrsv">"was lost"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"destroy"</td><td class="nkjv">"perish"</td><td class="nkjv">"lose"</td><td class="nkjv">"was lost"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"destroy"</td><td class="nasb">"perish"</td><td class="nasb">"lose"</td><td class="nasb">"was lost"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"destroy"</td><td class="esv">"perish"</td><td class="esv">"lose"</td><td class="esv">"was lost"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="warn-note"><strong>⚠ All six translations render <em>apollymi</em> with the same three English words in the same four passages</strong> — meaning the shared mistranslation (or imprecision) is not a KJV-only problem. Every major English version obscures the fact that "destroy" in Matt. 10:28, "perish" in John 3:16, and "lose" in Luke 15 are the same Greek word. D.A. Carson (<em>Exegetical Fallacies</em>) cautions against over-reading word-range arguments; annihilationists (Edward Fudge, <em>The Fire That Consumes</em>) and eternal-torment advocates (Robert Peterson) both use this word in their arguments.</div>
+    </div>
+  </div>
+
+  <!-- DOXA -->
+  <div class="word-card" id="doxa">
+    <div class="card-header">
+      <div class="card-header-left">
+        <h2>Doxa — Glory · Honour · Worship · Praise · Splendour</h2>
+        <div class="aliases">Hebrew background: כָּבוֹד (kavod) — weight, heaviness, substance</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="lang-entries">
+        <div class="lang-entry hebrew">
+          <div class="lang-badge heb">Hebrew Background</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">כָּבוֹד</span>
+              <span class="transliteration">kāḇôd</span>
+              <span class="strongs">H3519</span>
+            </div>
+          </div>
+          <div class="lang-def"><strong class="em">kāḇôd</strong> derives from the root <em>kāḇēd</em> = to be heavy, weighty. The "glory" of God in the OT is his overwhelming, substantive, palpable presence — his <em>weightiness</em>. When the glory of the LORD fills the tabernacle (Exod. 40:34–35) or the Temple (1 Kings 8:11), it is not an abstraction but a physical force that prevents the priests from standing. The LXX translates <em>kāḇôd</em> with <em>doxa</em> — which in classical Greek meant <em>opinion, reputation, seeming</em> (what people think of you). The LXX use of <em>doxa</em> for <em>kāḇôd</em> shifts the Greek word's meaning dramatically: it now carries the connotation of God's actual, weighty, brilliant presence — not merely his reputation.</div>
+        </div>
+        <div class="lang-entry greek">
+          <div class="lang-badge grk">Greek — NT</div>
+          <div class="lang-terms">
+            <div class="lang-term-block">
+              <span class="original-script">δόξα</span>
+              <span class="transliteration">doxa</span>
+              <span class="strongs">G1391</span>
+            </div>
+          </div>
+          <div class="lang-def">The NT inherits the LXX-enriched sense of <em>doxa</em> — God's actual splendour and self-disclosure — alongside the older Greek sense of reputation and honour. The KJV renders it: <strong class="em">"glory"</strong> — John 1:14 ("we beheld his glory"); Rom. 3:23 ("fallen short of the glory of God"); 1 Cor. 15:40–41 (different "glories" of sun, moon, stars). <strong class="em">"honour"</strong> — John 5:41 ("I receive not honour from men"); John 5:44. <strong class="em">"worship"</strong> — Luke 14:10 ("thou shalt have worship in the presence of them that sit at meat with thee"). <strong class="em">"praise"</strong> — occasional. The most important theological instance is Rom. 3:23: "all have sinned and fall short of the <em>glory</em> of God." This means more than failing to honor God — it means failing to <em>reflect</em> or <em>embody</em> what God actually is. Humanity was created in God's image (<em>tselem</em>) to be the <em>doxa</em> of God in the world; sin is the failure of that image-bearing. The scattering of <em>doxa</em> across glory/honour/worship/praise makes this unified concept invisible.</div>
+        </div>
+      </div>
+      <div class="trans-table-wrap">
+        <table class="trans-table">
+          <thead>
+            <tr>
+              <th>Version</th>
+              <th>Exod. 40:34 (kāḇôd)</th>
+              <th>John 1:14 (doxa)</th>
+              <th>Rom. 3:23 (doxa)</th>
+              <th>Luke 14:10 (doxa)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="version-tag vt-kjv">KJV</span></td><td class="kjv">"glory of the LORD"</td><td class="kjv">"his glory"</td><td class="kjv">"glory of God"</td><td class="kjv">"worship"</td></tr>
+            <tr><td><span class="version-tag vt-niv">NIV</span></td><td class="niv">"glory of the LORD"</td><td class="niv">"his glory"</td><td class="niv">"glory of God"</td><td class="niv">"honored"</td></tr>
+            <tr><td><span class="version-tag vt-nrsv">NRSVue</span></td><td class="nrsv">"glory of the LORD"</td><td class="nrsv">"his glory"</td><td class="nrsv">"glory of God"</td><td class="nrsv">"honored"</td></tr>
+            <tr><td><span class="version-tag vt-nkjv">NKJV</span></td><td class="nkjv">"glory of the LORD"</td><td class="nkjv">"His glory"</td><td class="nkjv">"glory of God"</td><td class="nkjv">"honor"</td></tr>
+            <tr><td><span class="version-tag vt-nasb">NASB</span></td><td class="nasb">"glory of the LORD"</td><td class="nasb">"His glory"</td><td class="nasb">"glory of God"</td><td class="nasb">"honor"</td></tr>
+            <tr><td><span class="version-tag vt-esv">ESV</span></td><td class="esv">"glory of the LORD"</td><td class="esv">"his glory"</td><td class="esv">"glory of God"</td><td class="esv">"honored"</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note — "Worship" in Luke 14:10 (KJV):</strong> The KJV renders <em>doxa</em> as "worship" in Luke 14:10 — one of the most striking translation choices in the NT. The verse is about table etiquette, not religious devotion. What will happen is that the host will "honour" you (<em>doxa</em>) — your status/reputation will be elevated before the other guests. Modern translations all use "honor." The KJV's "worship" in a dinner-party context illustrates both the word's range and the risks of a single English rendering.</div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div style="padding: 2.5rem 0 1rem; border-top: 1px solid var(--border); margin-top: 1rem;">
+    <div style="font-family:'Cinzel',serif;font-size:0.62rem;letter-spacing:0.2em;color:var(--text-dim);text-transform:uppercase;">Bible Study Language Guide · Original Languages &amp; English Translations</div>
+    <div style="font-size:0.8rem;color:var(--text-dim);margin-top:0.4rem;">Strong's numbers, lexical data from Brown-Driver-Briggs (BDB) and Thayer's Lexicon · Translation comparisons drawn from primary text sources · All translation quotations are for scholarly reference and study purposes.</div>
+    <div style="font-size:0.78rem;color:var(--text-dim);margin-top:1rem;border-top:1px solid var(--border);padding-top:0.8rem;">
+      <span style="font-family:'Cinzel',serif;font-size:0.60rem;letter-spacing:0.18em;color:var(--gold-dim);text-transform:uppercase;display:block;margin-bottom:0.5rem;">Scholarly Sources — Expanded Edition</span>
+      Trench, R.C. <em>Synonyms of the New Testament</em> (1876) · Barr, J. <em>The Semantics of Biblical Language</em>, OUP 1961 · Mounce, W.D. <em>Mounce's Complete Expository Dictionary</em>, Zondervan 2006 · Zodhiates, S. <em>Complete Word Study Dictionary: NT</em>, AMG 1992 · Baker &amp; Carpenter. <em>Complete Word Study Dictionary: OT</em>, AMG 2003 · Louw &amp; Nida. <em>Greek-English Lexicon Based on Semantic Domains</em>, UBS 1988 · Carson, D.A. <em>Exegetical Fallacies</em>, Baker 1984 · Wilson, M.R. <em>Our Father Abraham</em>, Eerdmans 1989 · Heschel, A.J. <em>The Prophets</em>, Harper &amp; Row 1962 · Fudge, E. <em>The Fire That Consumes</em>, Cascade 2011 · Smith, M.S. <em>The Early History of God</em>, Eerdmans 2002 · Hart, D.B. <em>The New Testament: A Translation</em>, Yale 2017
+    </div>
+  </div>
+
+
+  <p style="max-width:780px;margin:0 auto;padding:0 24px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:.22em;color:#8A6838;text-transform:uppercase;">Published 2026 &nbsp;&middot;&nbsp; Reviewed May 30, 2026 &nbsp;&middot;&nbsp; Scripture: NRSVue</p>
+
+  <!-- ── AUTHOR ── -->
+  <div style="max-width:780px;margin:0 auto;padding:0 24px 48px;">
+    <div style="border-top:1px solid rgba(138,96,24,.32);margin-top:20px;padding-top:20px;display:flex;align-items:flex-start;gap:14px;">
+      <div style="width:40px;height:40px;border-radius:50%;background:rgba(138,96,24,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <span style="font-family:'Cinzel',serif;font-size:.7rem;color:#C09030;font-weight:500;">LS</span>
+      </div>
+      <div>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:600;color:#181008;display:block;margin-bottom:4px;">Lee Sadler</span>
+        <span style="font-size:.92rem;font-style:italic;color:#8A6838;line-height:1.6;">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong&rsquo;s Concordance; biblical commentaries; and collaboration with Claude.</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<script>
+// Highlight active sidebar link on scroll
+const links = document.querySelectorAll('.sidebar nav a');
+const cards = document.querySelectorAll('.word-card[id]');
+
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.sidebar nav a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.25, rootMargin: '-80px 0px -60% 0px' });
+
+cards.forEach(c => obs.observe(c));
+</script>
+<footer style="background:#0E0A04;border-top:1px solid rgba(192,144,48,.14);padding:32px 24px;text-align:center;">
+  <p style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,204,118,.28);">
+    <a href="/" style="color:rgba(232,204,118,.45);text-decoration:none;">readthescripture.com</a>
+    &nbsp;&middot;&nbsp; These pages aim to inform, challenge, and invite honest engagement with biblical texts &nbsp;&middot;&nbsp; Scripture references NRSVue unless noted
+  </p>
+
+  <p style="margin-top:8px;"><a href="https://ko-fi.com/readthescripture" target="_blank" rel="noopener" style="color:rgba(232,204,118,.40);text-decoration:none;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;">Support this work on Ko-fi</a></p>
+</footer>
+<script src="/strongs.js" defer></script>
+</body>
+</html>

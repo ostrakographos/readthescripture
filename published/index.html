@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Read the Scripture — In-Depth Biblical Study</title>
+  <link rel="canonical" href="https://readthescripture.com/">
+
+<meta name="description" content="In-depth biblical studies on the character of God, the Canaanite conquest, Elijah, Jonah, Saul and David, Joab, 1 Kings, the history of the Bible's transmission, and how to read Scripture honestly.">
+<meta name="keywords" content="biblical studies, Bible study, in-depth Scripture reading, Bible commentary, Old Testament study, New Testament study, character of God, Canaanite conquest, Elijah Baal, Jonah mercy, Saul David 1 Samuel, Bible transmission history, honest Bible reading">
+<meta property="og:title" content="Read the Scripture — In-Depth Biblical Study">
+<meta property="og:description" content="In-depth biblical studies on the character of God, the Canaanite conquest, Elijah, Jonah, Saul and David, Joab, 1 Kings, the history of the Bible's transmission, and how to read Scripture honestly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://readthescripture.com/">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="images/x-icon" href="images/favicon.ico">
+
+<style>
+/* ── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --cream:     #FAF7F2;
+  --cream-d:   #F0EBE0;
+  --cream-dd:  #E2D9C8;
+  --ink:       #181008;
+  --ink-2:     #2C1E0A;
+  --ink-3:     #5A4020;
+  --ink-4:     #8A6838;
+  --sienna:    #8B3A1A;
+  --sienna-l:  #B85A30;
+  --gold:      #8A6018;
+  --gold-l:    #C09030;
+  --gold-pale: #E8CC76;
+  --nav-bg:    #0E0A04;
+  --font-d:    'Playfair Display', Georgia, serif;
+  --font-b:    'Crimson Pro', Georgia, serif;
+  --font-ui:   'Cinzel', serif;
+  --max-w:     1200px;
+  --shadow-s:  0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:  0 6px 28px rgba(18,13,6,.15);
+  --rule:      rgba(138,96,24,.15);
+  --rule-s:    rgba(138,96,24,.32);
+  --t:         all .22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--cream);
+  color: var(--ink-2);
+  font-family: var(--font-b);
+  font-size: 18px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ── HERO ───────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: var(--nav-bg);
+  overflow: hidden;
+  padding: 80px 24px 68px;
+  text-align: center;
+}
+
+/* layered glow */
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* bottom gold rule */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%);
+}
+
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .65rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.60);
+  display: block;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+}
+.hero h1 em { font-style: italic; color: var(--gold-pale); }
+
+.hero-sub {
+  font-family: var(--font-b);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: rgba(235,215,175,.62);
+  max-width: 540px;
+  margin: 0 auto 36px;
+  line-height: 1.65;
+}
+
+.hero-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto;
+}
+.hero-ornament .rule {
+  display: block; height: 1px; width: 80px;
+  background: linear-gradient(90deg, transparent, rgba(192,144,48,.55));
+}
+.hero-ornament .rule:last-child {
+  background: linear-gradient(90deg, rgba(192,144,48,.55), transparent);
+}
+.hero-ornament .gem {
+  width: 7px; height: 7px;
+  background: var(--gold-l);
+  transform: rotate(45deg);
+}
+.hero-ornament .gem.sm {
+  width: 4px; height: 4px;
+  opacity: .55;
+}
+
+/* ── NEW-VISITOR INTRO ──────────────────────────────────── */
+.site-intro {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px 0;
+  text-align: center;
+  font-family: var(--font-b);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink-3);
+  line-height: 1.7;
+}
+.site-intro a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(138,96,24,.28);
+  transition: var(--t);
+}
+.site-intro a:hover {
+  color: var(--sienna);
+  border-bottom-color: var(--sienna-l);
+}
+
+/* ── FILTER BAR ─────────────────────────────────────────── */
+.filter-bar {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 32px 24px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  background: none;
+  border: 1px solid var(--cream-dd);
+  border-radius: 3px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: var(--t);
+  white-space: nowrap;
+}
+.filter-btn:hover {
+  color: var(--gold);
+  border-color: rgba(138,96,24,.40);
+  background: rgba(138,96,24,.04);
+}
+.filter-btn.active {
+  color: var(--cream);
+  background: var(--ink-2);
+  border-color: var(--ink-2);
+}
+
+/* ── SECTION LABEL ──────────────────────────────────────── */
+.section-label {
+  font-family: var(--font-ui);
+  font-size: .62rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  padding: 52px 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.section-label::before,
+.section-label::after {
+  content: '';
+  display: block;
+  height: 1px; width: 60px;
+  background: var(--rule-s);
+}
+
+/* ── CARD GRID ──────────────────────────────────────────── */
+.cards {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--cream-dd);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-s);
+  text-decoration: none;
+  color: inherit;
+  transition: var(--t);
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-m);
+  border-color: rgba(138,96,24,.28);
+}
+.card:hover .card-arrow { transform: translateX(5px); opacity: 1; }
+
+/* top colour band */
+.card-band {
+  height: 5px;
+  flex-shrink: 0;
+}
+.band-amber  { background: linear-gradient(90deg, #7A5A1E, #C09030); }
+.band-blue   { background: linear-gradient(90deg, #1E3A6A, #4A78B8); }
+.band-teal   { background: linear-gradient(90deg, #1A5248, #38988A); }
+.band-purple { background: linear-gradient(90deg, #4A1E72, #8050B8); }
+.band-olive  { background: linear-gradient(90deg, #405218, #7A9835); }
+.band-rose   { background: linear-gradient(90deg, #721E40, #B84878); }
+.band-slate  { background: linear-gradient(90deg, #1E3050, #4068A0); }
+
+.card-body {
+  padding: 22px 24px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-tag {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 9px;
+}
+
+.card h2 {
+  font-family: var(--font-d);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.28;
+  margin-bottom: 10px;
+}
+.card h2 em { font-style: italic; color: var(--sienna); }
+
+.card p {
+  font-family: var(--font-b);
+  font-size: .94rem;
+  color: var(--ink-3);
+  line-height: 1.60;
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule);
+  padding-top: 13px;
+  margin-top: auto;
+}
+.card-cta {
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.card-arrow {
+  font-size: 1rem;
+  color: var(--gold-l);
+  transition: var(--t);
+  opacity: .55;
+  line-height: 1;
+}
+.card-meta {
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+
+/* ── START HERE STRIP ───────────────────────────────────── */
+.start-here .cards { padding-bottom: 28px; }
+.start-here .section-label { padding: 48px 24px 28px; }
+.start-here .site-intro { padding: 0 24px 36px; }
+
+/* featured wide card */
+@media (min-width: 720px) {
+  .card.wide {
+    grid-column: span 2;
+    flex-direction: row;
+  }
+  .card.wide .card-band {
+    width: 5px; height: auto;
+  }
+  .card.wide .card-body { padding: 28px 30px; }
+  .card.wide h2 { font-size: 1.42rem; }
+}
+
+/* ── CLUSTER LABEL ──────────────────────────────────────── */
+.cluster-label {
+  grid-column: 1 / -1;
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .20em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  padding: 8px 0 14px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2px;
+}
+.cluster-label:not(:first-child) {
+  margin-top: 20px;
+}
+
+/* ── CARD COMPANION NOTE ────────────────────────────────── */
+.card-companion {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px;
+  margin-top: -8px;
+  margin-bottom: 6px;
+  border-left: 2px solid rgba(114,30,64,.35);
+  background: rgba(114,30,64,.04);
+  border-radius: 0 4px 4px 0;
+  font-family: var(--font-ui);
+  font-size: .54rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  text-decoration: none;
+  transition: var(--t);
+}
+.card-companion:hover {
+  border-left-color: rgba(184,72,120,.6);
+  background: rgba(114,30,64,.08);
+  color: var(--sienna);
+}
+.card-companion .cc-label {
+  color: rgba(184,72,120,.65);
+  flex-shrink: 0;
+}
+.card-companion .cc-arrow {
+  color: rgba(184,72,120,.5);
+  font-size: .8rem;
+  flex-shrink: 0;
+}
+.card-companion:hover .cc-arrow { color: var(--sienna-l); }
+
+/* ── FOOTER ─────────────────────────────────────────────── */
+.site-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid rgba(192,144,48,.14);
+  padding: 32px 24px;
+  text-align: center;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.28);
+}
+.site-footer a {
+  color: rgba(232,204,118,.45);
+  text-decoration: none;
+  transition: var(--t);
+}
+.site-footer a:hover { color: var(--gold-pale); }
+</style>
+</head>
+<body>
+<!-- nav injected by nav.js -->
+<script src="/nav.js?v=18"></script>
+
+<!-- ══════════════════════════════════ HERO -->
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>Scripture Explored<br><em>With Care &amp; Depth</em></h1>
+  <p class="hero-sub">Bible study that shows its work — biases named up front, reasoning graded on the page, the hardest objections left standing.</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div>
+    <div class="gem sm"></div>
+    <div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════ START HERE -->
+<section class="start-here">
+  <p class="section-label">New Here? Three Ways In</p>
+  <p class="site-intro">Every study on this site names its bias up front, grades its own reasoning, and leaves the strongest objection standing — the grade block at the bottom of each page is explained on <a href="/how_we_grade.html">How We Grade</a>. Pick the door that fits you, or use the search at the top of the page to find a topic, passage, or word.</p>
+  <div class="cards">
+
+    <a href="/emotionally_charged_language.html" class="card">
+      <div class="card-band band-slate"></div>
+      <div class="card-body">
+        <span class="card-tag">If you're skeptical of all of this</span>
+        <h2>Start with <em>What We Hear When We Read</em></h2>
+        <p>Six habits for reading charged texts, tested on the hardest case the Bible offers — slavery. And for proof this site doesn't flinch, the Canaan pair weighs the hardest verses and reports what no defense reaches.</p>
+        <div class="card-footer">
+          <span class="card-meta">&#8776;22 min &middot; Challenging</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/what_god_is_like.html" class="card">
+      <div class="card-band band-amber"></div>
+      <div class="card-body">
+        <span class="card-tag">If you believe and want to go deeper</span>
+        <h2>Start with <em>What God Is Like</em></h2>
+        <p>The character portrait built from the whole canon — the names, the self-description, the deeds, the law, Jesus — including the weight it cannot resolve. Then <em>When God Relented</em> on Exodus 32, and <em>The Mercy He Feared</em> on Jonah.</p>
+        <div class="card-footer">
+          <span class="card-meta">&#8776;17 min &middot; Moderate</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/bible_book_summaries.html" class="card">
+      <div class="card-band band-olive"></div>
+      <div class="card-body">
+        <span class="card-tag">If you just need a reliable reference</span>
+        <h2>Start with <em>All 66 Books</em></h2>
+        <p>A concise map of every book of Scripture, then the Resources below — the language guide, the timelines, the covenant map. Accurate summaries with citations and no debate in the cards. Or open the <em>KJV Reader</em> and go straight to the text.</p>
+        <div class="card-footer">
+          <span class="card-meta">Reference &middot; Accessible</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ FILTER -->
+<div class="filter-bar" role="group" aria-label="Filter content by category">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="study-tools">Study Tools</button>
+  <button class="filter-btn" data-filter="resources">Resources</button>
+  <button class="filter-btn" data-filter="studies">Studies</button>
+  <button class="filter-btn" data-filter="marginalia">Marginalia</button>
+  <button class="filter-btn" data-filter="assessments">Assessments</button>
+</div>
+
+<main>
+
+  <!-- ══════════════════════════════════ STUDY TOOLS -->
+  <section class="content-section" data-section="study-tools">
+    <p class="section-label">Study Tools</p>
+    <div class="cards">
+
+      <a href="/kjv_reader.html" class="card wide" style="background:linear-gradient(135deg,#1A1208 0%,#0E0A04 100%);">
+        <div class="card-band" style="background:linear-gradient(90deg,#8B3A1A,#C09030,#E8CC76);"></div>
+        <div class="card-body">
+          <span class="card-tag" style="color:#E8CC76;">✦ Full Bible &middot; Interactive Reader</span>
+          <h2 style="color:#FAF7F2;font-size:1.55rem;">KJV Bible Reader</h2>
+          <p style="color:rgba(235,215,175,.70);">Read the complete King James Bible — all 66 books, 1,189 chapters. Navigate by book and chapter, search any keyword across all of Scripture, and open a split view to compare two passages side by side.</p>
+          <div class="card-footer" style="border-top-color:rgba(192,144,48,.20);">
+            <span class="card-cta" style="color:#C09030;">Open the Reader</span>
+            <span class="card-arrow" style="color:#E8CC76;opacity:.8;">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ RESOURCES -->
+  <section class="content-section" data-section="resources">
+    <p class="section-label">Resources</p>
+    <div class="cards">
+
+      <a href="/bible_book_summaries.html" class="card wide">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Reference</span>
+          <h2>All 66 Books of the Bible</h2>
+          <p>A comprehensive one-page reference covering every book of the Old and New Testaments — genre, key themes, authorship, and a concise summary to orient any reader navigating the full arc of Scripture.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read guide</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/bible_language_guide.html" class="card">
+        <div class="card-band band-slate"></div>
+        <div class="card-body">
+          <span class="card-tag">Languages &amp; Translation</span>
+          <h2>Bible Language Guide</h2>
+          <p>Hebrew, Aramaic, and Greek — the original tongues of Scripture — explained alongside a comparison of major English translations from KJV to ESV.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read guide</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/gospel_timeline.html" class="card">
+        <div class="card-band band-teal"></div>
+        <div class="card-body">
+          <span class="card-tag">Gospels · Timeline</span>
+          <h2>The Four Gospels — A Synoptic Timeline</h2>
+          <p>Matthew, Mark, Luke, and John mapped side by side — key events, parallel passages, and the unique perspective each evangelist brings to the life of Christ.</p>
+          <div class="card-footer">
+            <span class="card-cta">Explore timeline</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/the_law_resource.html" class="card">
+        <div class="card-band band-olive"></div>
+        <div class="card-body">
+          <span class="card-tag">Resource · Torah</span>
+          <h2>The Law</h2>
+          <p>A card-based guide to the Torah &mdash; the categories of law, their purpose, and how the commandments are read across Jewish and Christian traditions.</p>
+          <div class="card-footer">
+            <span class="card-cta">Open resource</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/judges_to_kings_timeline.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Resource · The Backbone</span>
+          <h2>From the Judges to the Throne</h2>
+          <p>The era laid out in order &mdash; the chaos at the end of Judges, Israel&rsquo;s demand for a king, Saul, David, Solomon, and the division &mdash; the timeline the character studies hang on, with a sidebar on how Chronicles retells it.</p>
+          <div class="card-footer">
+            <span class="card-cta">Open timeline</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/patriarchs_covenants_map.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Map · Covenant History</span>
+          <h2>Patriarchs, Peoples &amp; Covenants</h2>
+          <p>An illustrated map and study of Abraham, Isaac, and Jacob — their descendants, their journeys, and the covenant promises God wove through each generation.</p>
+          <div class="card-footer">
+            <span class="card-cta">Explore map</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/genealogy_adam_to_jesus.html" class="card">
+        <div class="card-band band-olive"></div>
+        <div class="card-body">
+          <span class="card-tag">Genealogy · History</span>
+          <h2>The Lineage from Adam to Jesus</h2>
+          <p>Tracing the unbroken line of descent from the first man in Genesis to the Messiah in the Gospels — a visual and narrative guide through seventy generations.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read guide</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ STUDIES -->
+  <section class="content-section" data-section="studies">
+    <p class="section-label">Studies</p>
+    <div class="cards">
+
+      <!-- ── On Reading ── -->
+      <p class="cluster-label">On Reading</p>
+
+      <a href="/emotionally_charged_language.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">On Reading · Foundational</span>
+          <h2>Emotionally Charged Language</h2>
+          <p>Words like <em>slavery</em> arrive pre-loaded, and the charge does your reading for you before you reach the text. Six habits for separating what a word means to you from what it meant where it was written — tested on the hardest case the Bible offers.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;22 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/author_and_the_object.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">On Reading · Foundational</span>
+          <h2><em>The Author and the Object</em></h2>
+          <p>Can the One who made time also act within it? An analogy from code and authorship for how God can stand outside the universe as the condition of its being, yet converse inside it.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;26 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── Concept & Theme ── -->
+      <p class="cluster-label">Concept &amp; Theme</p>
+
+      <a href="/what_god_is_like.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Doctrinal</span>
+          <h2>What God Is Like</h2>
+          <p>Names, self-descriptions, deeds, warnings, law, and the testimony of Jesus — five witnesses read together across both Testaments. What the portrait shows, what it cannot absorb, and why the popular Old Testament / New Testament contrast collapses under a full reading.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;17 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/mercy_extended.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Pastoral</span>
+          <h2><em>Mercy That Overflows</em></h2>
+          <p>How God's mercy toward the righteous spills over to bless those around them — a study tracing this pattern through Genesis, the Psalms, and the New Testament.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;11 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/relenting.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2><em>When God Relented</em></h2>
+          <p>What does it mean that God "relented" after the golden calf? A close reading of Exodus 32 exploring the nature of Moses' intercession and the divine response.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;17 min &middot; Challenging</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/when_the_rain_stopped.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>When the Rain Stopped</h2>
+          <p>Elijah, Ahab, and the contest on Mount Carmel — read as a deliberate duel with Baal on his own ground: drought, fire, and rain, with the Omride history that frames it.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;7 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/water_withheld_water_given.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Textual</span>
+          <h2>Water Withheld, <em>Water Given</em></h2>
+          <p>Drought and living water as two poles of one claim — from the covenant curse lists to Elijah at Carmel, the prophets, and the river of Ezekiel 47 and Revelation 22.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;14 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/water-before-the-word.html" class="card">
+        <div class="card-band band-teal"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Doctrinal</span>
+          <h2><em>Water Before the Word</em></h2>
+          <p>Genesis 1 opens with the deep already present before God speaks. A reading of the waters of creation — what the text says, and what it leaves unsaid.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;14 min &middot; Moderate</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/faith_in_action.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Pastoral</span>
+          <h2>Faith in Action</h2>
+          <p>Abraham leaving Ur, Rahab and the spies, the woman who touched the hem of his garment — a study of how Scripture consistently pairs belief with act, and what that pattern reveals about how faith works across both Testaments.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;20 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/when_the_answer_was_silence.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Thematic Study · Pastoral</span>
+          <h2>When the Answer Was Silence</h2>
+          <p>The companion to When Faith Moves — the faithful who cried out and met silence: Job, the laments, Psalm 88. The two silences Scripture refuses to confuse.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;6 min &middot; Accessible</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/sheol_hades_gehenna.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Word Study · Textual</span>
+          <h2>Sheol, Hades &amp; Gehenna</h2>
+          <p>Three words flattened into one English &ldquo;hell.&rdquo; A study of what the Hebrew and Greek terms for the afterlife actually mean, and how the biblical picture develops across the Testaments.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;26 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/lord_gods_and_the_satan.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Word Study · Textual</span>
+          <h2>The LORD, the Gods &amp; the Satan</h2>
+          <p>The divine names, the heavenly council, the question of one god or many, and the satan — reading the Hebrew first and letting the archaeology frame the question, not settle it.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;12 min &middot; Challenging</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/good_and_evil_word_study.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Word Study · Textual</span>
+          <h2>Good, and Evil</h2>
+          <p>A word study on <em>ṭôb</em> and <em>raʿ</em> — for believer and skeptic alike. What the Hebrew "good" and "evil" actually carry, the harmful spirit, and the tree.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;7 min &middot; Moderate</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── Passage Studies ── -->
+      <p class="cluster-label">Passage Studies</p>
+
+      <a href="/the_true_word_in_a_false_mouth.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Critical</span>
+          <h2>The True Word in a <em>False Mouth</em></h2>
+          <p>1 Kings 13: a man of God holds a clear word from the LORD, an old prophet deceives him into breaking it, and the deceiver's own mouth speaks the true word that condemns him. Deceived, sincere, judged anyway — what the chapter means, and what it refuses to say.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;12 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/samaritan_woman_at_the_well.html" class="card">
+        <div class="card-band band-teal"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Pastoral</span>
+          <h2>The Importance of the Well</h2>
+          <p>A deep-dive into John 4 — the cultural, theological, and personal dimensions of the conversation at Jacob's well that changed one woman's life forever.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;22 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/isaiah_7_14_immanuel.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>Isaiah 7:14 &amp; <em>Immanuel</em></h2>
+          <p>A close study of the &lsquo;almah / parthenos question &mdash; what the Hebrew says, how the Septuagint and Matthew read it, and what the sign of Immanuel meant in its own moment and beyond.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;12 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/hardening_pharaohs_heart.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>Hardening of the Heart</h2>
+          <p>Pharaoh's heart is hardened — sometimes by God, sometimes by Pharaoh himself. A close reading of the Exodus narrative that tracks every occurrence, weighs what the Hebrew says, and asks what it means that God hardened a heart he also calls to repentance.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;13 min &middot; Moderate</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── 1 Samuel ── -->
+      <p class="cluster-label">1 Samuel</p>
+
+      <a href="/forfeited_access.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>Forfeited <em>Access</em></h2>
+          <p>Two channels of contact with God — the Spirit and the ephod-oracle — and how both pass from Saul to David across 1 Samuel 16–31, with Saul's own violence as the hinge.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;8 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/the_answer_that_didnt_come_true.html" class="card">
+        <div class="card-band band-purple"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>The Answer That <em>Didn't Come True</em></h2>
+          <p>At Keilah, David asks God a direct question and gets a definite answer — Saul will come, the town will hand you over — then leaves, and neither happens. A close reading of 1 Samuel 23 and the one inquiry whose foretold outcome the narrative records as averted.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;5 min &middot; Moderate</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/david_saul_character_study.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Character Study · Critical</span>
+          <h2>After God's <em>Own Heart</em></h2>
+          <p>Two kings, both anointed and both given the Spirit — one rejected, one chosen. Read side by side through scholar, skeptic, and pastoral lenses, the difference the text marks is not success or sinlessness but the response to failure: whether a man turns back to God, or calls the substitution worship.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;15 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/joab_indispensable_adversary.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Character Study · Critical</span>
+          <h2>The Indispensable <em>Adversary</em></h2>
+          <p>Readers settle Joab fast — villain or loyal enforcer — and each verdict keeps only half of him. The trait that makes him indispensable to David is the one that makes him uncontrollable; he is treacherous in his methods and discerning when it counted. The argument stops where the narrator does, leaving the verdict on the man withheld.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;12 min &middot; Challenging</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/joab_from_gibeon_to_the_altar.html" class="card-companion">
+        <span class="cc-label">Narrative companion</span>
+        <span>Nine scenes told rather than argued &mdash; the same story, with the reading method shown in real time.</span>
+        <span class="cc-arrow">&rarr;</span>
+      </a>
+
+      <!-- ── Conquest & History ── -->
+      <p class="cluster-label">Conquest &amp; History</p>
+
+      <a href="/canaan_backdrop.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Historical Study · Critical &middot; Part 1</span>
+          <h2>The Long Road <em>to Canaan</em></h2>
+          <p>The history behind the conquest, read cold — the curse on Canaan, the genealogy of the nations, the four-hundred-year clock, the wall around one family, and what archaeology says about whether any of it happened as written. The backdrop, before the verdict.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;13 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/canaan_conquest.html" class="card">
+        <div class="card-band band-rose"></div>
+        <div class="card-body">
+          <span class="card-tag">Historical Study · Critical &middot; Part 2</span>
+          <h2>The Sword, <em>Weighed</em></h2>
+          <p>The Canaanite conquest at full strength — the commands, the killing of children, the archaeology, every mitigation marked for exactly how far it reaches, and the residue that survives them all. The good-God reading put on trial, and what is left when the testing is done.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;18 min &middot; Challenging</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── Prophets & Mercy ── -->
+      <p class="cluster-label">Prophets &amp; Mercy</p>
+
+      <a href="/jonah_the_mercy_he_feared.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Passage Study · Doctrinal</span>
+          <h2>The Mercy He <em>Feared</em></h2>
+          <p>Jonah flees not from danger but from pardon — sent to Israel’s great enemy, he fears God will forgive it, and throws the old creed of mercy back as an accusation. A reading of the whole book: the gentile sailors, the five-word sermon, the relenting, and the question God leaves hanging at the end.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;13 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ── Canon & Transmission ── -->
+      <p class="cluster-label">Canon &amp; Transmission</p>
+
+      <a href="/history_of_the_bible.html" class="card">
+        <div class="card-band band-amber"></div>
+        <div class="card-body">
+          <span class="card-tag">Historical Study · Textual</span>
+          <h2>How We Got <em>the Bible</em></h2>
+          <p>The Bible as a documented process — written across a thousand years, copied in hundreds of manuscripts, gathered into a canon through a traceable history of use and dispute, and carried into English in stages. The manuscripts, the canon formation, the books that didn't make it, and the passages where the seams still show.</p>
+          <div class="card-footer">
+            <span class="card-meta">&#8776;14 min &middot; Moderate</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ASSESSMENTS -->
+  <!-- ── Marginalia ── -->
+  <section class="content-section" data-section="marginalia">
+    <p class="section-label">Marginalia</p>
+    <div class="cards">
+
+      <a href="/a_hard_chapter_in_the_open.html" class="card">
+        <div class="card-band band-slate"></div>
+        <div class="card-body">
+          <span class="card-tag">Marginalia · Method · Behind the Scenes</span>
+          <h2>A Hard Chapter, <em>Read in the Open</em></h2>
+          <p>The workshop, not the showroom: how a reading actually gets built and stress-tested here &mdash; cold read, lexicon, commentaries, archaeology, and an AI turned into a skeptic &mdash; shown on 1 Kings 13, so you can see why what we publish can be trusted.</p>
+          <div class="card-footer">
+            <span class="card-cta">See how it's made</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/joab_from_gibeon_to_the_altar.html" class="card">
+        <div class="card-band band-slate"></div>
+        <div class="card-body">
+          <span class="card-tag">Marginalia · Narrative Companion</span>
+          <h2>Joab, <em>From Gibeon to the Altar</em></h2>
+          <p>Nine scenes told rather than argued &mdash; with fourth-wall &ldquo;Reading the scene&rdquo; boxes showing the interpretive moves in real time. A narrative companion to the argued Study.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read the narrative</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/jonah_marginalia.html" class="card">
+        <div class="card-band band-slate"></div>
+        <div class="card-body">
+          <span class="card-tag">Marginalia · Labeled Opinion</span>
+          <h2>Reading <em>Jonah</em></h2>
+          <p>A personal take, not a graded study: the book that taught me prophets are people, and left a question pointed at the reader &mdash; do I resent mercy when it lands on someone I&rsquo;d already written off? Notes in the margin of the text, with the bias on the table.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read the margin notes</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/contranyms_in_scripture.html" class="card">
+        <div class="card-band band-slate"></div>
+        <div class="card-body">
+          <span class="card-tag">Marginalia · Labeled Opinion · Language</span>
+          <h2>Words That Mean <em>Their Opposite</em></h2>
+          <p>Contranyms in Scripture &mdash; single words that face two ways at once. Two genuine cases (p&#257;qad, peir&#257;z&#333;), two homonyms wearing the same coat, one euphemism of reverence. Honest about which is which, and why the distinction matters for how you read a verse.</p>
+          <div class="card-footer">
+            <span class="card-cta">Read the margin notes</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="content-section" data-section="assessments">
+    <p class="section-label">Assessments</p>
+    <div class="cards">
+
+      <a href="/dispensationalism_test.html" class="card">
+        <div class="card-band band-blue"></div>
+        <div class="card-body">
+          <span class="card-tag">Theology · Assessment</span>
+          <h2>Where Do You Stand? <em>A Dispensationalism Assessment</em></h2>
+          <p>An interactive self-assessment to help you locate your own theological instincts on the spectrum of dispensational and covenantal interpretive frameworks.</p>
+          <div class="card-footer">
+            <span class="card-cta">Take assessment</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/spiritual_gifts.html" class="card">
+        <div class="card-band band-blue"></div>
+        <div class="card-body">
+          <span class="card-tag">Spiritual Gifts · Assessment</span>
+          <h2>Spiritual Gifts</h2>
+          <p>What are the spiritual gifts listed in Romans 12, 1 Corinthians 12, and Ephesians 4, and how do they work together in the body? A guide to the gifts and an assessment to help you identify your own.</p>
+          <div class="card-footer">
+            <span class="card-cta">Take assessment</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;&middot;&nbsp; These pages aim to inform, challenge, and invite honest engagement with biblical texts &nbsp;&middot;&nbsp; Scripture references NRSVue unless noted</p>
+  <p class="site-footer-nav"><a href="/about.html">About</a> &nbsp;&middot;&nbsp; <a href="/how_this_project_works.html">The Method</a> &nbsp;&middot;&nbsp; <a href="/how_we_grade.html">How We Grade</a> &nbsp;&middot;&nbsp; <a href="mailto:lee.sadler@readthescripture.com">Contact</a> &nbsp;&middot;&nbsp; <a href="https://ko-fi.com/readthescripture" target="_blank" rel="noopener">Support</a></p>
+</footer>
+
+<script>
+(function () {
+  var btns = document.querySelectorAll('.filter-btn');
+  var sections = document.querySelectorAll('.content-section');
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = this.dataset.filter;
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      sections.forEach(function (s) {
+        s.style.display = (filter === 'all' || s.dataset.section === filter) ? '' : 'none';
+      });
+    });
+  });
+}());
+</script>
+</body>
+</html>

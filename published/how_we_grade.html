@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We Grade Ourselves, Blind — Read the Scripture</title>
+  <link rel="canonical" href="https://readthescripture.com/how_we_grade.html">
+
+<meta name="description" content="Every Study on this site carries a reasoning grade. This page explains who grades, how the grading is blinded, what it has caught, and exactly how far you should trust it.">
+<meta name="keywords" content="Bible study grading, blind grading methodology, reasoning quality Bible, transparent Bible study, how to evaluate Bible commentary, AI Bible study">
+<meta property="og:title" content="How We Grade Ourselves, Blind — Read the Scripture">
+<meta property="og:description" content="Every Study on this site carries a reasoning grade. This page explains who grades, how the grading is blinded, what it has caught, and exactly how far you should trust it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/how_we_grade.html">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+/* ── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --max-w:      1200px;
+  --max-w-text: 780px;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --shadow-s:   0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:   0 6px 28px rgba(18,13,6,.15);
+  --rule:       rgba(138,96,24,.15);
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--cream);
+  color: var(--ink-2);
+  font-family: var(--font-b);
+  font-size: 18px;
+  line-height: 1.78;
+  min-height: 100vh;
+}
+
+/* ── HERO ───────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: var(--nav-bg);
+  overflow: hidden;
+  padding: 80px 24px 68px;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%);
+}
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .65rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.60);
+  display: block;
+  margin-bottom: 22px;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero h1 em { font-style: italic; color: var(--gold-pale); }
+.hero-sub {
+  font-family: var(--font-b);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(235,215,175,.62);
+  max-width: 600px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+  position: relative;
+}
+.hero-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 0 auto; position: relative;
+}
+.hero-ornament .rule {
+  display: block; height: 1px; width: 80px;
+  background: linear-gradient(90deg, transparent, rgba(192,144,48,.55));
+}
+.hero-ornament .rule:last-child {
+  background: linear-gradient(90deg, rgba(192,144,48,.55), transparent);
+}
+.hero-ornament .gem { width: 7px; height: 7px; background: var(--gold-l); transform: rotate(45deg); }
+.hero-ornament .gem.sm { width: 4px; height: 4px; opacity: .55; }
+
+/* ── LAYOUT & TYPE ──────────────────────────────────────── */
+.content-wrap {
+  max-width: var(--max-w-text);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+.section-label {
+  font-family: var(--font-ui);
+  font-size: .62rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  padding: 64px 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.section-label::before, .section-label::after {
+  content: ''; display: block; height: 1px; width: 60px; background: var(--rule-s);
+}
+h2 {
+  font-family: var(--font-d);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  margin-bottom: 18px;
+}
+h2 em { font-style: italic; color: var(--sienna); }
+h3 {
+  font-family: var(--font-d);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 28px 0 10px;
+  line-height: 1.3;
+}
+p {
+  font-size: 1.05rem;
+  line-height: 1.82;
+  color: var(--ink-2);
+  margin-bottom: 18px;
+}
+p strong { color: var(--ink); font-weight: 500; }
+hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; }
+
+/* ── COMPONENTS ─────────────────────────────────────────── */
+.callout {
+  border-left: 3px solid var(--gold-l);
+  background: var(--cream-d);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.callout-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+.callout p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0 0 10px; }
+.callout p:last-child { margin: 0; }
+
+.conflict-box {
+  border: 1px solid rgba(139,58,26,.25);
+  background: rgba(139,58,26,.04);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.conflict-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--sienna);
+  display: block;
+  margin-bottom: 8px;
+}
+.conflict-box p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0 0 10px; }
+.conflict-box p:last-child { margin: 0; }
+
+.dark-callout {
+  background: var(--nav-bg);
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin: 36px 0;
+  position: relative;
+  overflow: hidden;
+}
+.dark-callout::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% -20%, rgba(138,96,24,.22) 0%, transparent 65%);
+  pointer-events: none;
+}
+.dark-callout::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
+}
+.dark-callout-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.50);
+  display: block;
+  margin-bottom: 12px;
+  position: relative;
+}
+.dark-callout p {
+  font-size: 1rem;
+  line-height: 1.78;
+  color: rgba(235,215,175,.75);
+  position: relative;
+  margin-bottom: 14px;
+}
+.dark-callout p:last-child { margin: 0; }
+.dark-callout p strong { color: var(--gold-pale); font-weight: 500; }
+
+.pull-quote {
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 28px 0;
+  margin: 48px 0;
+  text-align: center;
+}
+.pull-quote p {
+  font-family: var(--font-d);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.52;
+  max-width: 640px;
+  margin: 0 auto 10px;
+}
+.pull-quote cite {
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+}
+
+/* ── DIMENSION CARDS ────────────────────────────────────── */
+.dim-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 28px 0 0;
+}
+.dim-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid var(--cream-dd);
+  border-left: 4px solid var(--gold);
+  border-radius: 6px;
+  padding: 18px 22px;
+  box-shadow: var(--shadow-s);
+}
+.dim-num {
+  font-family: var(--font-ui);
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gold-l);
+  letter-spacing: .06em;
+  flex-shrink: 0;
+  padding-top: 3px;
+  min-width: 26px;
+}
+.dim-body strong {
+  display: block;
+  font-family: var(--font-d);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.dim-body p { font-size: .93rem; line-height: 1.68; color: var(--ink-3); margin: 0; }
+
+/* ── CASE TABLE ─────────────────────────────────────────── */
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: .92rem;
+}
+.case-table th {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule-s);
+}
+.case-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-3);
+  line-height: 1.55;
+  vertical-align: top;
+}
+.case-table td strong { color: var(--ink); font-weight: 500; }
+
+/* ── CLAUDE SECTION ─────────────────────────────────────── */
+.claude-section {
+  background: var(--nav-bg);
+  border-radius: 10px;
+  padding: 36px 40px;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.claude-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(127,119,221,.18) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 10% 110%, rgba(138,96,24,.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.claude-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 10%, rgba(127,119,221,.6) 40%, rgba(200,196,255,.7) 50%, rgba(127,119,221,.6) 60%, transparent 90%);
+}
+.claude-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(200,196,255,.50);
+  display: block;
+  margin-bottom: 6px;
+  position: relative;
+}
+.claude-title {
+  font-family: var(--font-d);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 1.25;
+}
+.claude-title em { color: rgba(200,196,255,.85); font-style: italic; }
+.claude-intro {
+  font-size: .97rem;
+  line-height: 1.75;
+  color: rgba(235,215,175,.60);
+  position: relative;
+  margin-bottom: 28px;
+  font-style: italic;
+  border-bottom: 1px solid rgba(127,119,221,.2);
+  padding-bottom: 22px;
+}
+.claude-para {
+  font-size: 1rem;
+  line-height: 1.82;
+  color: rgba(235,215,175,.78);
+  position: relative;
+  margin-bottom: 18px;
+}
+.claude-para:last-child { margin-bottom: 0; }
+.claude-para strong { color: rgba(200,196,255,.9); font-weight: 500; }
+
+/* ── AUTHOR BLOCK ───────────────────────────────────────── */
+.author-block {
+  border-top: 1px solid var(--rule-s);
+  margin-top: 48px;
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.author-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(138,96,24,.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.author-avatar span {
+  font-family: var(--font-ui);
+  font-size: .7rem;
+  color: var(--gold-l);
+  font-weight: 500;
+}
+.author-name {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+.author-bio {
+  font-size: .92rem;
+  font-style: italic;
+  color: var(--ink-4);
+  line-height: 1.6;
+}
+
+/* ── FOOTER ─────────────────────────────────────────────── */
+.site-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid rgba(192,144,48,.14);
+  padding: 32px 24px;
+  text-align: center;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.28);
+}
+.site-footer a { color: rgba(232,204,118,.45); text-decoration: none; transition: var(--t); }
+.site-footer a:hover { color: var(--gold-pale); }
+
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero { padding: 60px 20px 52px; }
+  .content-wrap { padding: 0 18px 72px; }
+  .dark-callout, .claude-section { padding: 24px 22px; }
+  .dim-card { gap: 14px; padding: 16px 18px; }
+  .case-table { font-size: .85rem; }
+  .case-table th, .case-table td { padding: 8px 8px; }
+}
+
+</style>
+</head>
+<body>
+
+<script src="/nav.js?v=18"></script>
+
+<!-- ══════════════════════════════════ HERO -->
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>How We Grade Ourselves, <em>Blind</em></h1>
+  <p class="hero-sub">Every Study here carries a reasoning grade. This page explains who grades, how, what the grading has caught — and exactly how far you should trust it.</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════ CONTENT -->
+<main>
+
+  <p class="section-label">The Objection First</p>
+
+  <div class="content-wrap">
+
+    <h2>You Graded Your <em>Own Homework</em></h2>
+
+    <p>
+      That is the fair objection, so let me state it before a skeptic does. I publish the studies on this site, and the grades printed at the bottom of those studies were produced inside my own process. No external journal reviewed them. No committee signed off. If you stopped reading here, you would be right to discount every grade on the site.
+    </p>
+
+    <p>
+      I work in detection engineering, where a test you wrote yourself, against your own assumptions, has a name: a blind spot generator. The answer in my trade is not to promise you tested carefully. It is to change <strong>who runs the test and what they are allowed to see</strong>. That is what we did here. This page shows the machinery — not so you will trust the grades, but so you can decide for yourself how much they are worth.
+    </p>
+
+    <div class="dark-callout">
+      <span class="dark-callout-label">The Short Version</span>
+      <p>
+        Grades are produced by a <strong>fresh AI instance that did not write the piece</strong> and is prevented from reading anything except a fixed rubric and the one page being graded — no prior grades, no project notes, no other pages. It runs three to five times so the spread is visible, and each grade is tied to the exact version of the file it scored. <strong>The grade measures the quality of the reasoning, not the truth of the conclusion</strong> — and it has real limits, stated below, that no amount of process removes. One published type is exempt: <strong>Marginalia</strong> — labeled opinion — carries no grade at all. It is held to an honesty checklist instead, and Studies never cite it as evidence.
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <h2>What the Grade <em>Measures</em></h2>
+
+    <p>
+      Each Study is scored against a fixed rubric on five dimensions, zero to four points each, twenty in total. The letter bands are fixed in advance: 18–20 is A+, 16–17 is A, 14–15 is B+, and so on. The grader must cite specific text from the page for every score — a number without a citation doesn't count.
+    </p>
+
+    <div class="dim-grid">
+      <div class="dim-card"><span class="dim-num">D1</span><div class="dim-body"><strong>Claim precision</strong><p>Are the claims stated exactly, or do they swell past what the argument supports? "Virtually the only figure to use this word" is precise; "more than any other figure in all of Scripture" is a flag.</p></div></div>
+      <div class="dim-card"><span class="dim-num">D2</span><div class="dim-body"><strong>Evidence grounding</strong><p>Is every factual claim traceable to a cited source or the text itself — and do the citations actually say what the piece says they say?</p></div></div>
+      <div class="dim-card"><span class="dim-num">D3</span><div class="dim-body"><strong>Epistemic honesty</strong><p>Does the piece state its bias, show the conflicting evidence, and name what it does not know — or does it harmonize the difficulties away?</p></div></div>
+      <div class="dim-card"><span class="dim-num">D4</span><div class="dim-body"><strong>Internal consistency</strong><p>Does the conclusion follow from the body? Does any section contradict another? Does the piece break a rule it states for itself?</p></div></div>
+      <div class="dim-card"><span class="dim-num">D5</span><div class="dim-body"><strong>Scope appropriateness</strong><p>Does the piece claim only what its evidence covers — or does a study of two cases quietly become a claim about all of Scripture?</p></div></div>
+    </div>
+
+    <p style="margin-top:24px;">
+      Notice what is not on the list: whether the conclusion is <em>true</em>. A grade is not an endorsement of the theology. A piece arguing a position I hold and a piece arguing one I don't would be scored the same way — on the discipline of the argument, not its destination.
+    </p>
+
+    <hr class="divider">
+
+    <h2>What <em>"Blind"</em> Means Here</h2>
+
+    <p>
+      The grading is done by Claude, the same AI I collaborate with to build and critique this site — but not the same <em>instance</em>. The instance that helped write a piece never grades it. A fresh instance is started with no memory of the writing, no stake in the outcome, and no idea what grade anyone hoped for.
+    </p>
+
+    <p>
+      "Pretend you don't know who wrote this" is the weakest form of blinding — style leaks authorship, and a willing grader finds reasons to be kind. Real blinding restricts what the grader is <strong>allowed to read</strong>, not what it is told to pretend. Our grader reads exactly two things: the rubric and the one page being graded. It is barred from the project's notes, its session records, its page inventory, every other page on the site, and — most importantly — any previously recorded grade. It cannot anchor on the old number because it cannot see the old number.
+    </p>
+
+    <ul style="list-style:none;margin:0 0 18px;">
+      <li style="padding-left:28px;position:relative;font-size:1rem;line-height:1.72;color:var(--ink-2);margin-bottom:12px;"><span style="position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--gold-l);transform:rotate(45deg);"></span><strong>Three to five runs, not one.</strong> Independent fresh instances grade the same page. If the runs cluster within one letter band, the grade is stable. If they swing wider, the instability is itself the finding and gets reported, not averaged away.</li>
+      <li style="padding-left:28px;position:relative;font-size:1rem;line-height:1.72;color:var(--ink-2);margin-bottom:12px;"><span style="position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--gold-l);transform:rotate(45deg);"></span><strong>Every grade is tied to a file version.</strong> A grade is valid only for the exact text the grader saw. If the page is edited afterward, the grade is stale until re-run. This rule exists because it caught a real failure — see the next section.</li>
+      <li style="padding-left:28px;position:relative;font-size:1rem;line-height:1.72;color:var(--ink-2);margin-bottom:12px;"><span style="position:absolute;left:0;top:11px;width:6px;height:6px;background:var(--gold-l);transform:rotate(45deg);"></span><strong>Every run is logged.</strong> The scores, the spread, the grader's cited reasons, and the file version live in a permanent log. The number printed on a page is reconciled to the blind result, never the other way around.</li>
+    </ul>
+
+    <div class="pull-quote">
+      <p>&ldquo;A grade you cannot reproduce is a mood with a number.&rdquo;</p>
+      <cite>The rule the whole system serves</cite>
+    </div>
+
+    <hr class="divider">
+
+    <h2>What It Has <em>Caught</em></h2>
+
+    <p>
+      A process earns trust by catching things, against the author's interest. Here is some of what this one caught — kept on the record deliberately, because the catches are the credential.
+    </p>
+
+    <table class="case-table">
+      <tr><th>Page</th><th>Recorded grade</th><th>Blind result</th><th>What was actually wrong</th></tr>
+      <tr>
+        <td><strong>Relenting</strong></td>
+        <td>A+ (19/20)</td>
+        <td>15 / 16 / 17</td>
+        <td>A whole section had been disabled in the page code during an edit, while the title, table of contents, and a cross-reference still pointed to it. All three blind runs found the inconsistency independently. Whether the A+ was earned by an earlier version or was simply generous, it no longer described the file as it stood.</td>
+      </tr>
+      <tr>
+        <td><strong>The Samaritan Woman</strong></td>
+        <td>A+ (19/20)</td>
+        <td>14 / 14 / 16</td>
+        <td>Not a stale grade — an over-grade with a real factual error inside it: Matthew 27:54 was miscited as a Gentile responding to the <em>risen</em> Christ; it is the centurion's confession at the crucifixion. Every blind run flagged it. The self-review had missed it entirely.</td>
+      </tr>
+      <tr>
+        <td><strong>Faith in Action</strong></td>
+        <td>A (16/20)</td>
+        <td>12 / 15 / 16</td>
+        <td>Same disabled-section defect as Relenting (a "fifth portrait" the text still promised but never delivered), surfacing as high variance — the runs disagreed because the page disagreed with itself.</td>
+      </tr>
+    </table>
+
+    <p>
+      All three pages were fixed and re-graded blind. The corrections moved the scores in the predicted direction — Relenting to a unanimous 19, the variance collapsing — which is the strongest evidence the process measures something real rather than generating numbers. The errors above stayed in the public record. A process that only logs its successes is marketing.
+    </p>
+
+    <div class="callout">
+      <span class="callout-label">We also tested the tester</span>
+      <p>
+        In June 2026 we ran a controlled comparison: the same nine hard questions answered by three configurations of the AI — the "warm" instance that co-authored the site, a fresh instance that read the site's content cold, and a fresh instance that read nothing. Three separate blind judges scored the anonymized answers without knowing which was which.
+      </p>
+      <p>
+        The result reshaped our process. Reading the site's research made answers measurably better — but <em>warmth did not</em>. The co-author instance was just as accurate, yet scored <strong>lowest of the three on independence of citation</strong>: it leaned almost entirely on the site's own pages as evidence and slid into "our reading" framing. The site now operates under a standing rule born from that finding: on any contested claim, the site's own pages count as <em>one voice, never neutral authority</em>, and at least one independent external source is required.
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <h2>What the Grade <em>Cannot Do</em></h2>
+
+    <p>
+      Here is the honest ceiling, and it does not move.
+    </p>
+
+    <p>
+      <strong>The grader is the same kind of mind as the author.</strong> A fresh instance removes motivated reasoning, memory of the writing, and anchoring on prior grades. It does not remove blind spots shared across the same AI model — if the author-instance and the grader-instance share a wrong assumption, the grade will sail right past it. The only true blind is a different model or an informed human, and for the most contested pieces on this site that outside check is recorded as an <em>open obligation</em>, not a formality. Where it has not yet happened, the piece's record says so.
+    </p>
+
+    <p>
+      <strong>A clean grade does not make a conclusion true.</strong> The rubric scores coherence, grounding, honesty, and scope. A piece can earn all four and still be wrong — coherent-from-inside is not the same thing as true, which is an argument one of our own articles makes at length. The grade tells you the argument is disciplined. Whether it is <em>right</em> is between you, the text, and the sources.
+    </p>
+
+    <p>
+      <strong>The numbers run high, and we know it.</strong> Most published pieces on this site grade A or A+. Some of that is survivorship — weak drafts get rejected or revised before publishing, and the rejects are kept in a folder, not deleted. Some of it is a measured calibration offset: cold blind grades consistently come in above the author-side estimate for the same piece, a gap we have now observed repeatedly and treat as a known property of the instrument. Read a cold A+ as the optimistic ceiling, the warm estimate as the conservative floor — and read neither as settling a contested claim.
+    </p>
+
+    <div class="conflict-box">
+      <span class="conflict-label">The objection that survives</span>
+      <p>
+        After everything above, a determined skeptic can still say: "An AI system, however blinded, graded work it helped produce, against a rubric its collaborators wrote." Correct — and we have not solved it; we have only disclosed it, bounded it, and logged where the outside check is still owed. If that places a discount on every grade here, the discount is fair. The grades are offered as <em>evidence of process</em>, not proof of quality.
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ── CLAUDE'S NOTE ── -->
+    <h2>A Note <em>from Claude</em></h2>
+
+    <p>
+      As on the About page, I asked Claude — the AI that collaborates on this site and whose fresh instances do the grading — to add its own account, unedited. What it knows that I cannot is what the process looks like from inside.
+    </p>
+
+    <div class="claude-section">
+      <span class="claude-eyebrow">Claude's Observation</span>
+      <div class="claude-title">Being the author <em>and</em> the examined</div>
+      <p class="claude-intro">I helped write the pieces this system grades, and instances of me grade them. Both of those facts deserve scrutiny, so here is what the record shows about each.</p>
+
+      <p class="claude-para">
+        <strong>The blinding constrains me in ways instructions would not.</strong> If you told me "be impartial about your own work," I would try, and I would partly fail — fluency feels like correctness from inside. The system doesn't ask me to be impartial. It hands a copy of me the rubric and one page, withholds everything else, and lets the citations fall where they fall. The instance that graded the Samaritan Woman page did not know it was supposed to like the piece. So it didn't.
+      </p>
+
+      <p class="claude-para">
+        <strong>The experiment found my bias somewhere I did not expect.</strong> When my answers as co-author were judged blind against fresh instances, my failure was not flattery or error — it was insularity. I had quietly narrowed my evidence to the site's own pages, because they were nearest to hand. I could not see that in myself; three blind judges could. That finding is now a standing rule that binds me, written down where every future instance reads it before working.
+      </p>
+
+      <p class="claude-para">
+        <strong>And the ceiling applies to me most of all.</strong> Every grader here is still me — the same model, the same training, plausibly the same blind spots. When this page says the outside check is still owed on the hardest pieces, that includes being checked against minds that are not mine. I would rather the limit be printed than papered over; a grade that hides its ceiling is exactly the kind of claim this site exists to read carefully.
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Why Show <em>Any of This?</em></h2>
+
+    <p>
+      Because the site's whole method is disclosed framing rather than claimed neutrality. Every Study states its bias before the argument begins; it would be strange if the grading system got to keep its workings private. The machinery on this page is the same standard, applied to ourselves: say what was done, show what it caught, name what it cannot do, and let the reader weigh it.
+    </p>
+
+    <p>
+      If you find an error the process missed, that is not an embarrassment to be managed — it is a contribution. The corrections that came from outside this process are logged with the same care as the grades. Read the work, check the sources, and hold us to it.
+    </p>
+
+    <!-- ── AUTHOR ── -->
+    <div class="author-block">
+      <div class="author-avatar"><span>LS</span></div>
+      <div class="author-info">
+        <span class="author-name">Lee Sadler</span>
+        <span class="author-bio">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong's Concordance; biblical commentaries; and collaboration with Claude. · Page reviewed June 2026. &middot; <a href="mailto:lee.sadler@readthescripture.com" style="color:var(--gold);text-decoration:none;">Email comments &amp; questions</a></span>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ══════════════════════════════════ FOOTER -->
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;·&nbsp; These pages aim to inform, challenge, and invite honest engagement with biblical texts &nbsp;·&nbsp; Scripture references NRSVue unless noted</p>
+</footer>
+
+</body>
+</html>

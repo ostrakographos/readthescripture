@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Author and the Object — Read the Scripture</title>
+  <link rel="canonical" href="https://readthescripture.com/author_and_the_object.html">
+
+<meta name="description" content="A working analogy for how God can create time, stand outside the universe as the condition of its being, run the program he designed, and still converse within it — and where the picture rightly runs out.">
+<meta name="keywords" content="God and time Bible, God outside time, eternal God creation, author and object analogy, God transcendence, divine timelessness">
+<meta property="og:title" content="The Author and the Object — Read the Scripture">
+<meta property="og:description" content="A working analogy for how God can create time, stand outside the universe as the condition of its being, run the program he designed, and still converse within it — and where the picture rightly runs out.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/author_and_the_object.html">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --max-w:      1200px;
+  --max-w-text: 780px;
+  --shadow-s:   0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:   0 6px 28px rgba(18,13,6,.15);
+  --rule:       rgba(138,96,24,.15);
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  background: var(--cream);
+  color: var(--ink-2);
+  font-family: var(--font-b);
+  font-size: 18px;
+  line-height: 1.78;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: var(--nav-bg);
+  overflow: hidden;
+  padding: 80px 24px 68px;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%);
+}
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .65rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.60);
+  display: block;
+  margin-bottom: 22px;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero h1 em { font-style: italic; color: var(--gold-pale); }
+.hero-sub {
+  font-family: var(--font-b);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(235,215,175,.62);
+  max-width: 560px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+  position: relative;
+}
+.hero-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 0 auto; position: relative;
+}
+.hero-ornament .rule {
+  display: block; height: 1px; width: 80px;
+  background: linear-gradient(90deg, transparent, rgba(192,144,48,.55));
+}
+.hero-ornament .rule:last-child {
+  background: linear-gradient(90deg, rgba(192,144,48,.55), transparent);
+}
+.hero-ornament .gem { width: 7px; height: 7px; background: var(--gold-l); transform: rotate(45deg); }
+.hero-ornament .gem.sm { width: 4px; height: 4px; opacity: .55; }
+
+/* TYPE TAG */
+.type-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 14px 5px 10px;
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.tag-article {
+  background: rgba(192,144,48,.12);
+  color: var(--gold-pale);
+  border: 1px solid rgba(192,144,48,.3);
+}
+
+/* BODY */
+.content-wrap {
+  max-width: var(--max-w-text);
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+.kicker {
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: var(--font-d);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  margin-bottom: 18px;
+}
+h2 em { font-style: italic; color: var(--sienna); }
+h3 {
+  font-family: var(--font-d);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 32px 0 10px;
+  line-height: 1.3;
+}
+p {
+  font-size: 1.05rem;
+  line-height: 1.82;
+  color: var(--ink-2);
+  margin-bottom: 18px;
+}
+p strong { color: var(--ink); font-weight: 500; }
+em.lit { font-style: italic; }
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--rule-s);
+  margin: 56px 0;
+}
+.lead { font-size: 1.16rem; line-height: 1.8; color: var(--ink-2); }
+.lead::first-letter {
+  font-family: var(--font-d);
+  font-size: 3.4rem;
+  font-weight: 700;
+  float: left;
+  line-height: .78;
+  padding: 6px 10px 0 0;
+  color: var(--sienna);
+}
+
+/* CALLOUT */
+.callout {
+  border-left: 3px solid var(--gold-l);
+  background: var(--cream-d);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.callout-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+.callout p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0; }
+.callout p + p { margin-top: 12px; }
+
+/* CONFLICT BOX */
+.conflict-box {
+  border: 1px solid rgba(139,58,26,.25);
+  background: rgba(139,58,26,.04);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.conflict-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--sienna);
+  display: block;
+  margin-bottom: 8px;
+}
+.conflict-box p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0; }
+.conflict-box p + p { margin-top: 12px; }
+
+/* DARK CALLOUT */
+.dark-callout {
+  background: var(--nav-bg);
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin: 36px 0;
+  position: relative;
+  overflow: hidden;
+}
+.dark-callout::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% -20%, rgba(138,96,24,.22) 0%, transparent 65%);
+  pointer-events: none;
+}
+.dark-callout::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
+}
+.dark-callout-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.50);
+  display: block;
+  margin-bottom: 12px;
+  position: relative;
+}
+.dark-callout p {
+  font-size: 1rem;
+  line-height: 1.78;
+  color: rgba(235,215,175,.75);
+  position: relative;
+  margin: 0;
+}
+.dark-callout p + p { margin-top: 14px; }
+.dark-callout p strong { color: var(--gold-pale); font-weight: 500; }
+
+/* PULL QUOTE */
+.pull-quote {
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 28px 0;
+  margin: 48px 0;
+  text-align: center;
+}
+.pull-quote p {
+  font-family: var(--font-d);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.52;
+  max-width: 640px;
+  margin: 0 auto 10px;
+}
+.pull-quote cite {
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+}
+
+/* SCRIPTURE */
+.scripture {
+  border-left: 3px solid var(--gold-pale);
+  padding: 16px 22px;
+  margin: 28px 0;
+  background: rgba(138,96,24,.05);
+  border-radius: 0 6px 6px 0;
+}
+.scripture p {
+  font-family: var(--font-d);
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.scripture cite {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+}
+
+/* LANGUAGE CITATION */
+.lang-en    { color: var(--sienna); font-weight: 500; }
+.lang-orig  { color: var(--gold-l); }
+.lang-trans { color: var(--purple-mid); font-style: italic; }
+.lang-meta  { font-family: var(--font-ui); font-size: .72em; letter-spacing: .08em; color: var(--ink-4); }
+.lang-paren,
+.lang-sep   { color: var(--ink-4); }
+
+/* FOOTNOTES */
+sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); vertical-align: super; }
+.footnotes { border-top: 1px solid var(--rule); margin-top: 32px; padding-top: 16px; }
+.footnotes-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.fn-item { display: flex; gap: 8px; margin-bottom: 8px; }
+.fn-num { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); flex-shrink: 0; padding-top: 3px; }
+.fn-text { font-size: .9rem; line-height: 1.68; color: var(--ink-4); }
+
+/* SOURCE LIST */
+.source-list { border-top: 1px solid var(--rule-s); margin-top: 48px; padding-top: 24px; }
+.source-list-label {
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.source-card {
+  padding: 12px 16px;
+  border-left: 2px solid var(--cream-dd);
+  margin-bottom: 12px;
+}
+.source-ref { font-size: .95rem; color: var(--ink-3); margin: 0 0 4px; line-height: 1.6; }
+.source-position { font-size: .88rem; font-style: italic; color: var(--ink-4); margin: 0; }
+
+/* GRADE BLOCK */
+.grade-block {
+  background: var(--nav-bg);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 32px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.grade-block::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
+}
+.grade-inner { display: flex; align-items: center; gap: 16px; }
+.grade-letter {
+  font-family: var(--font-d);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-pale);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.grade-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.45);
+  display: block;
+  margin-bottom: 6px;
+}
+.grade-scores { display: flex; gap: 12px; flex-wrap: wrap; }
+.grade-score { font-size: .75rem; color: rgba(235,215,175,.55); }
+.grade-score strong { color: var(--gold-l); }
+
+/* AUTHOR BLOCK */
+.author-block {
+  border-top: 1px solid var(--rule-s);
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.author-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(138,96,24,.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.author-avatar span {
+  font-family: var(--font-ui);
+  font-size: .7rem;
+  color: var(--gold-l);
+  font-weight: 500;
+}
+.author-name {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+.author-bio {
+  font-size: .92rem;
+  font-style: italic;
+  color: var(--ink-4);
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid rgba(192,144,48,.14);
+  padding: 32px 24px;
+  text-align: center;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.28);
+}
+.site-footer a {
+  color: rgba(232,204,118,.45);
+  text-decoration: none;
+  transition: var(--t);
+}
+.site-footer a:hover { color: var(--gold-pale); }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=18"></script>
+
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>The Author and the <em>Object</em></h1>
+  <p class="hero-sub">How a maker can create time, hold the world as the condition of its being, run the program he designed, and still speak inside it — and where the picture rightly runs out.</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+  <span class="type-tag tag-study">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13 L8 3 L14 13"/><line x1="4.5" y1="9" x2="11.5" y2="9"/></svg>
+    Study
+  </span>
+</header>
+<style>
+/* ── ON-RAMP ─────────────────────────────────────── */
+.onramp-wrap{max-width:822px;margin:0 auto;padding:0 24px;}
+.onramp{margin:38px 0 4px;background:linear-gradient(180deg,#F0EBE0 0%,#FAF7F2 100%);border:1px solid rgba(138,96,24,.15);border-left:3px solid #C09030;border-radius:4px;padding:24px 28px 26px;box-shadow:0 2px 12px rgba(18,13,6,.10);}
+.onramp-meta{display:flex;flex-wrap:wrap;gap:9px 12px;align-items:center;padding-bottom:15px;margin-bottom:17px;border-bottom:1px solid rgba(138,96,24,.15);}
+.onramp-chip{display:inline-flex;align-items:center;gap:6px;font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#5A4020;background:#FAF7F2;border:1px solid #E2D9C8;border-radius:20px;padding:5px 12px;line-height:1;}
+.onramp-chip svg{stroke:#8A6018;flex:none;}
+.onramp-chip.is-diff{color:#8B3A1A;border-color:rgba(139,58,26,.3);}
+.onramp-dot{width:6px;height:6px;border-radius:50%;background:#B85A30;display:inline-block;}
+.onramp-dot.is-off{background:#E2D9C8;}
+.onramp-label{font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:#8A6018;display:block;margin-bottom:8px;}
+.onramp-summary{font-family:'Crimson Pro',Georgia,serif;font-size:1.04rem;line-height:1.7;color:#2C1E0A;margin:0;}
+.onramp-summary em{font-style:italic;}
+.onramp-summary strong{color:#181008;font-weight:600;}
+@media(max-width:560px){.onramp{padding:20px 18px 22px;}}
+</style>
+<!-- ON-RAMP -->
+<div class="onramp-wrap">
+  <div class="onramp">
+    <div class="onramp-meta">
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>&#8776;26 min read</span>
+      <span class="onramp-chip is-diff"><span class="onramp-dot"></span><span class="onramp-dot"></span><span class="onramp-dot"></span>Challenging</span>
+      <span class="onramp-chip">On reading</span>
+      <span class="onramp-chip">Foundational</span>
+    </div>
+    <span class="onramp-label">Abstract</span>
+    <p class="onramp-summary">Writing as a software and data professional, the author offers a working <strong>analogy</strong> — an <em>Author</em> who writes <em>Code</em> that runs as an <em>Object</em> — for how God can make time itself, stand outside the world as the condition of its being, run the program he designed, and still speak within it. It tests where the picture holds, where it strains, and where it stops, treating the analogy throughout as scaffolding rather than foundation.</p>
+    <p style="font-size:.92rem;font-style:italic;color:#5A4020;margin:12px 0 0;">Short on time? &ldquo;The Author and the Object&rdquo; and &ldquo;Three Problems It Dissolves&rdquo; carry the analogy; &ldquo;Three Places It Reaches Its Edge&rdquo; names its limits.</p>
+  </div>
+</div>
+
+<main class="content-wrap">
+
+<!-- ═══ INTRO ═══ -->
+<p class="lead">There is an old question that has no comfortable answer: if God made everything, what was God doing before he made it? The question assumes there was a <em>before</em> — a stretch of empty time in which God waited, then decided, then acted. Augustine met this question in the fourth century and gave an answer that still holds: there was no "before," because time itself is part of what was made. God did not begin to act inside an existing clock. He made the clock.<sup class="fn-ref">1</sup></p>
+
+<p>But there is a deeper confusion underneath the question of <em>when</em>, and it is a confusion about <em>what kind of thing</em> God is said to be. Rowan Williams, the former Archbishop of Canterbury, put it cleanly in a public debate: God is "not as though God is a kind of extra item in the universe who might or might not be there. God is the condition of there being anything at all." The question of God, he said, "is not like the question of whether there's a cat in the garden. It is the question of why there is a garden, why there is a cat, why there is a 'why.'"<sup class="fn-ref">2</sup></p>
+
+<p>That distinction sets the job of this article. The analogy I am about to offer is <strong>not</strong> a way of locating an Author somewhere inside the universe — you will never find him by searching the contents of the world, any more than you find a novelist by examining the furniture in his novel. The analogy is a way of seeing how a maker stands to a made thing: present to all of it, answerable to none of it, the reason there is a thing at all.</p>
+
+<p>An analogy is scaffolding, not foundation. It can help a person see how a claim could be coherent; it cannot prove the claim is true. I believe what the picture points to. I do not believe the picture proves it. Those are different statements, and I will keep them apart.</p>
+
+<hr class="divider">
+
+<!-- ═══ WHERE THIS COMES FROM ═══ -->
+<span class="kicker">Where This Comes From</span>
+<h2>Why I Reach for <em>Code</em></h2>
+
+<p>The vocabulary in the rest of this piece is not the usual vocabulary of theology, and it should not arrive out of nowhere. I spend my working life in software and data. I think in systems that are designed and written, that run on their own once they are started, that keep a record of what they do, and that answer to whoever authored them. So when I try to imagine how a maker relates to a made thing, the image that comes to me first is not the potter or the painter, the older images Scripture and tradition usually reach for, but a program and its author.</p>
+
+<p>That is a lens, and I would rather name it than pretend I do not have one. I am reaching for the tools I know best, and that carries a risk: the honest test is not whether a metaphor feels familiar to me but whether it <em>illuminates</em> the text or quietly <em>bends</em> it to fit my habits. If the technical words are unfamiliar, no background is needed; here is what matters for the rest:</p>
+
+<div class="callout">
+  <span class="callout-label">Plain-language glossary</span>
+  <p><strong>Object</strong> — the thing that gets made and then runs on its own: here, the universe and everything in it.</p>
+  <p><strong>Author</strong> — the one who makes it. <strong>Code</strong> — the act and the content of the making.</p>
+  <p><strong>Counter / loop</strong> — the internal clock a running thing keeps to track one step after another: here, time.</p>
+  <p><strong>Inheritance</strong> — when a change made in one thing is passed down to everything descended from it.</p>
+  <p><strong>Receipts / change control</strong> — the running log a well-built system keeps of every state it has passed through.</p>
+  <p><strong>Revert / rollback</strong> — using that log to undo changes and return the system to an earlier state.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ THE ANALOGY ═══ -->
+<span class="kicker">The Picture</span>
+<h2>The Author and the <em>Object</em></h2>
+
+<p>Imagine a maker at work. Call the maker the <strong>Author</strong>. He writes <strong>Code</strong>, and the Code, when it runs, produces an <strong>Object</strong>.</p>
+
+<p>Now map the picture onto the claim Genesis makes. The Author is God. The Object is the universe — matter, energy, physical law, life, and everything that runs inside it. The act of authoring is what Genesis calls creating: <span class="lang-term"><span class="lang-en">created</span><span class="lang-paren"> (</span><span class="lang-orig">בָּרָא</span><span class="lang-sep"> | </span><span class="lang-trans">bārāʾ</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H1254</span><span class="lang-paren">)</span></span>, a verb the Hebrew Bible reserves almost exclusively for God's action and never pairs with raw material he had to use.<sup class="fn-ref">3</sup> And the most important piece: <strong>time is a counter internal to the Object.</strong> It is the loop the Object runs in, the sequence by which one state follows another. It belongs to the made thing, not to the maker.</p>
+
+<blockquote class="scripture">
+  <p>"When God began to create the heavens and the earth&hellip;"</p>
+  <cite>Genesis 1:1 &middot; NRSVue (2021)</cite>
+</blockquote>
+
+<p>The picture points the same way on either translation of the verse and leans on neither.</p>
+
+<div class="callout">
+  <span class="callout-label">Why this register</span>
+  <p>I am using the language of code rather than the older language of the novel on purpose. Both work: a story has a maker who stands outside its timeline too. But code makes one feature unavoidable that prose can blur: an Object has a clock that is part of its own construction, and the one who wrote it does not live on that clock. The frame-rate of the world is a property of the world.</p>
+</div>
+
+<p>There is one more property worth naming now, because the rest of the article leans on it. A well-built program keeps <strong>receipts</strong>: a record of every state it passes through, change control not only over the code but over each action taken inside it. The Object logs itself as it runs. Scripture is full of this instinct: God "remembers" Noah, "remembers" his covenant, writes names in a book, keeps account. In the picture, history is the Object's own running log, and the question of what the Author does with that log turns out to be one of the deepest questions the analogy raises.</p>
+
+<p>John's Gospel reaches for the same structure with a different word. It opens not at the first event inside the sequence but behind it: "In the beginning was the <span class="lang-term"><span class="lang-en">Word</span><span class="lang-paren"> (</span><span class="lang-orig">λόγος</span><span class="lang-sep"> | </span><span class="lang-trans">lógos</span><span class="lang-sep"> | </span><span class="lang-meta">Gk - G3056</span><span class="lang-paren">)</span></span>." <em>Logos</em> means word, but also reason, account, the organizing logic of a thing.<sup class="fn-ref">4</sup> John places that organizing logic with God before the sequence starts — the Author and the source code, prior to the Object that runs from them.</p>
+
+<div class="dark-callout">
+  <span class="dark-callout-label">What the picture is being used to hold</span>
+  <p>God exists — not as the largest object in the universe but as the reason there is a universe to contain objects at all. He made all that is, and he is not a character inside the world who happens to be very powerful. He stands to the world as a maker stands to a made thing: <strong>before it without being earlier than it, outside it without being absent from it, the condition of its being rather than an item within it.</strong></p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ WHAT IT GETS RIGHT ═══ -->
+<span class="kicker">What the Picture Holds Well</span>
+<h2>Three Problems It <em>Dissolves</em></h2>
+
+<h3>1. Creation needs no "before"</h3>
+<p>The opening question disappears. Asking what the Author did "before" he wrote the Object is like asking what happened in chapter zero, or on the line of code before line one. There is no such chapter and no such line — not because we cannot find it, but because the sequence is part of the thing that was written. The Author is <em>prior</em> to the Object, but prior in the sense of source, not in the sense of an earlier date. This is exactly Augustine's move: God is the maker of time, so there is no time in which God had not yet made.<sup class="fn-ref">1</sup></p>
+
+<div class="callout">
+  <span class="callout-label">A note on the first verse</span>
+  <p>The opening words of Genesis lean the same way — not as proof, and not because the picture vouches for the translation or the translation for the picture. They simply point in the same direction. The Hebrew <span class="lang-term"><span class="lang-en">beginning</span><span class="lang-paren"> (</span><span class="lang-orig">רֵאשִׁית</span><span class="lang-sep"> | </span><span class="lang-trans">rēʾšît</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H7225</span><span class="lang-paren">)</span></span> can be read not as "in the beginning" — a point already sitting on some clock — but as the opening of an act. The NRSVue (2021) now renders Genesis 1:1, "When God began to create the heavens and the earth," keeping the older "In the beginning God created" as a footnoted alternative. On that reading the verse does not place creation <em>inside</em> a pre-existing beginning; it makes the beginning <em>coincide with</em> the making — the clock starts when the Author starts. The construct grammar is genuinely debated and "In the beginning" remains fully defensible; a reader who prefers it loses nothing in the argument. The only point worth noting is that where the NRSVue lands and where the picture points happen to be the same place.</p>
+</div>
+
+<div class="callout">
+  <span class="callout-label">A second, from an unexpected direction</span>
+  <p>Modern physics arrived at a structurally similar place from outside theology. In general relativity, time is not a backdrop the universe sits inside; it is a dimension of the universe itself, woven into spacetime and shaped by mass and energy. The standard cosmological models do not describe time stretching back infinitely before the beginning — time is a feature of the system, not a stage the system stands on. The maker-and-Object picture and the physicist's spacetime agree on the load-bearing point: the clock is internal.<sup class="fn-ref">5</sup></p>
+</div>
+
+<h3>2. Acting inside time without changing</h3>
+<p>How can a timeless, unchanging God respond to events, answer prayers, and grieve over a city without thereby changing? The picture offers a clean image. The Author can attend to one part of the Object and then another, can care about a character, can speak into a moment, and none of this alters who the Author <em>is</em>. The relation runs one way. The Object is genuinely related to its maker; the maker's essence is not made or unmade by the Object. This is close to what Aquinas argued: the creature is really related to God, but God's relation to the creature adds nothing to God and takes nothing away.<sup class="fn-ref">6</sup> The Author's attention can move; the Author's nature does not.</p>
+
+<h3>3. Miracles as authorship, not law-breaking</h3>
+<p>A miracle is usually framed as God breaking the laws of nature. The picture reframes it. The laws of nature are the Object's normal operating rules — the physics the Author wrote. A miracle is the Author acting on the Object directly: either a line already written into the program from the start, which looks like an interruption only to those reading from inside, or an edit reached in from outside the running process. Either way it is not the maker <em>violating</em> the work. It is the maker <em>making</em>. The wonder is not that a rule got broken; it is that the one who wrote the rules is still present to the page.</p>
+
+<div class="pull-quote">
+  <p>The clock is internal. The Author is not on it. That single sentence is most of what the picture is for.</p>
+  <cite>The load-bearing claim</cite>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ WHERE IT STRAINS ═══ -->
+<span class="kicker">Where the Picture Strains</span>
+<h2>Three Places It Reaches Its <em>Edge</em></h2>
+
+<p>An analogy that is only displayed at its strongest is being sold, not examined. Here are the three points where this one reaches its edge — two where it genuinely bends, and one where it simply stops, because our knowledge does.</p>
+
+<div class="conflict-box">
+  <span class="conflict-label">1 · We do not claim to know God's time</span>
+  <p>The most common objection to a picture like this is that it cheats: by taking time out of the Object, it quietly hands the Author a timeline of his own — every verb we use for him (<em>writes, revises, and then</em>) implies a sequence, so it does not abolish the problem of time, it merely relocates it up one level. The objection is right about the verbs. It is wrong about the claim. We are not arguing that the picture explains God's time: what time he is in, how it came to be, how he operates within it. We cannot know that: an Object cannot see outside its own sequence, and we are Objects. We leave it dark on purpose. The claim we actually make is narrower and defensible: <strong>our time is distinctly different from God's.</strong> It is internal to our universe, a property of the made thing, and therefore not a medium God is trapped inside or carried along by. What his relation to time is, we do not say; that ours is not his, we do. The classical tradition has tried to speak of God's side of this — the single, complete "now" that is not succession at all — and we can repeat the words, but we cannot picture them, because every picture we have is built out of sequence.<sup class="fn-ref">7</sup> The boundary of the analogy sits exactly here: it shows that our clock is ours, and it stops exactly where our knowledge stops.</p>
+</div>
+
+<div class="conflict-box">
+  <span class="conflict-label">2 · Free will is instilled</span>
+  <p>The picture takes it as given that the Author can <em>instill</em> agency — that he can write Objects which genuinely originate their own actions from their own goals, character, and love: real wills, not mere outputs. We cannot fully say how an instilled will is also a free one, but we cannot fully picture our own freedom either. What the analogy <em>can</em> hold cleanly is the compatibility of two things people often assume exclude each other: the Author can build Objects with real agency <strong>and</strong> retain the ability to act within the program he wrote. Authorship of a will and freedom of a will are not obviously opposed; a maker can give a thing the power to act on its own. The genuinely hard, unresolved knot is the joint where instilled agency, the Author's interventions, and the Author's knowledge of the outcome all meet. The picture holds that knot open. It does not untie it, and neither, honestly, has anyone.</p>
+</div>
+
+<div class="conflict-box">
+  <span class="conflict-label">3 · The picture is legible mainly from inside</span>
+  <p>This analogy persuades someone who already grants there is an Author. To a reader who does not, it shows at most that the claim is coherent, not that there is one — and Williams' point about verification is worth remembering here: you were never going to find the Author by inspecting the Object's contents, because he is not one of its contents. <em>(The author's view — not universally held; and see the criticism that this move can shade into making the claim untestable.)</em></p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ PLAN A ═══ -->
+<span class="kicker">The Program as Designed</span>
+<h2>Plan A, and the Object That <em>Modified Itself</em></h2>
+
+<p>If the Author is the condition of the world's being, then the world's story is not a series of patches over a design that went wrong. It is the design running. Consider the garden. The Author set the program going with a boundary written into it — one tree withheld. And then an Object did something to itself: through the use of another Object, the human changed its own state, and the change propagated. In the language of code it looks like inheritance — a modification in one instance handed down to every instance descended from it. "Sin came into the world through one man," Paul writes, "and so death spread to all."<sup class="fn-ref">8</sup></p>
+
+<p>The Author <em>knew</em> this would happen — not because he reached in and forced the keystroke, but because he wrote the system, instilled the agency, and understands how inheritance works in a world of free Objects. Foreknowledge of what a freely-acting Object will do is not the same as making it do so. And the texts present the response to the garden not as an improvisation but as something already intended: the redemption was, in Peter's phrase, "destined before the foundation of the world, but … revealed at the end of the ages."<sup class="fn-ref">8</sup> This is Plan A continuing, not Plan B beginning.</p>
+
+<div class="dark-callout">
+  <span class="dark-callout-label">The shape of Plan A</span>
+  <p>First, a world of Objects with real wills, capable of love because capable of refusal. Then — foreseen, not stumbled into — a long, patient self-disclosure inside the running program: the Author showing the Objects, again and again, what he is like, <strong>offering evidence of his nearness and his goodness while leaving their freedom intact.</strong> He does not overwrite the will he instilled in order to be believed. He shows himself, and waits to be received.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ CONVERSATION ═══ -->
+<span class="kicker">The Author in Conversation</span>
+<h2>How He Shows He Is Good, Present, and <em>Near</em></h2>
+
+<p>The second part of Plan A is one of the most visible things in the Hebrew Bible, once you look for it. The Author does not run the program in silence. He speaks, warns, questions, argues, relents — and, most striking of all, he builds Objects that begin to speak back with his own heart. What follows is a pattern, not a proof. But the pattern is remarkably consistent, and it is the texture of a present and conversational maker, not an absent or merely verdict-issuing one.</p>
+
+<p><strong>Cain.</strong> Before the first murder, the Author comes alongside the angry man and reasons with him: "Why are you angry? … If you do well, will you not be accepted? And if you do not do well, sin is lurking at the door; … but you must master it" (Gen 4:6–7). Warning before the act. Then, after it, a question — "Where is your brother?" Cain denies knowing; but the deed has already written its own receipt into the world: "Your brother's blood is crying out to me from the ground" (Gen 4:10). This is the receipts idea appearing in the text itself — the act logs itself, the ground keeps the record, and the Author reads what is written there even as the doer denies it. A proportioned consequence follows — and then, remarkably, a mark of protection even for the murderer. The Author does not force-quit the bad Object. He stays in the conversation.</p>
+
+<p><strong>Hagar.</strong> An enslaved, discarded woman runs into the wilderness with no standing and no future, and the Author meets her there — the one person in the narrative nobody else is watching. He sees her, names a future for her son, and she gives God a name in return:</p>
+
+<blockquote class="scripture">
+  <p>"So she named the LORD who spoke to her, 'You are El-roi'; for she said, 'Have I really seen God and remained alive after seeing him?'"</p>
+  <cite>Genesis 16:13 · NRSVue</cite>
+</blockquote>
+
+<p><em>El-roi</em> — "the God who sees me." The maker of the whole Object turns toward the one person no one else thought to look for. That is data about his character, deliberately recorded.</p>
+
+<p><strong>Jonah.</strong> The Author relents toward a violent foreign city when it turns, and then — when his own prophet sulks about it — does not strike him down but argues with him, using a withered plant as a teaching aid, and ends the entire book on an open question: "And should I not be concerned about Nineveh, that great city, in which there are more than a hundred and twenty thousand persons who do not know their right hand from their left?" (Jonah 4:11). The Author would rather reason an Object into seeing than override it.</p>
+
+<p><strong>Balaam.</strong> The Author is not confined to the channels we expect. He speaks through a pagan diviner hired to curse Israel, turns the curse into blessing, and opens the eyes of a man — and of a donkey — to see a reality that was there all along (Num 22–24). The picture's Author is not trapped in his own expected interfaces; he can address an Object through any part of the program he likes.</p>
+
+<p><strong>Moses at the mountain.</strong> This is the most arresting of all. After the golden calf, the Author says to Moses, "Now let me alone, so that my wrath may burn hot against them" (Exod 32:10) — and in the very act of saying <em>let me alone</em>, he leaves the door open for Moses not to. Moses argues back, appealing to the Author's own reputation and promises. And the text says:</p>
+
+<blockquote class="scripture">
+  <p>"And the LORD changed his mind about the disaster that he planned to bring on his people."</p>
+  <cite>Exodus 32:14 · NRSVue</cite>
+</blockquote>
+
+<p>The Hebrew is <span class="lang-term"><span class="lang-en">changed his mind</span><span class="lang-paren"> (</span><span class="lang-orig">נָחַם</span><span class="lang-sep"> | </span><span class="lang-trans">nāḥam</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H5162</span><span class="lang-paren">)</span></span> — to relent, to be moved to a different course.<sup class="fn-ref">9</sup> Whatever we decide about how an unchanging Author can "change his mind," the plain shape of the scene is unmistakable: the Author has written a world in which the voice of an Object genuinely counts. He invites the argument. Moses' intercession is not theater.</p>
+
+<p><strong>Moses in despair (Numbers 11).</strong> Crushed by the weight of the people, Moses prays one of the rawest prayers in Scripture: "I am not able to carry all this people alone, for they are too heavy for me. If this is the way you are going to treat me, put me to death at once" (Num 11:14–15). The Author does not rebuke the despair. He answers it — distributing the spirit that was on Moses among seventy elders so the burden is shared. Lament is heard and met, not punished.</p>
+
+<p><strong>Korah, and a man who acts on his own (Numbers 16).</strong> A rebellion ends in judgment, and a plague breaks out among the people. Then something happens that is easy to read past. Moses tells Aaron, on what reads as his own initiative, to take his censer and run:</p>
+
+<blockquote class="scripture">
+  <p>"Carry it quickly to the congregation and make atonement for them. For wrath has gone out from the LORD; the plague has begun. … He stood between the dead and the living, and the plague was stopped."</p>
+  <cite>Numbers 16:46–48 [Heb 17:11–13] · NRSVue</cite>
+</blockquote>
+
+<p>No command from the Author is recorded here. Moses sees the wrath, grasps what must be done, and sends Aaron into the middle of it to stand <em>between the dead and the living</em>. This is the second part of Plan A working exactly as designed: the Author has so formed his Objects that they begin to move with his own concern — interceding, atoning, putting themselves into the breach — without needing to be told. The maker who keeps entering the conversation has made creatures who enter it back. <em>(That Moses acts here without explicit instruction is a reading of the narrative's silence, not a claim the text makes outright; it is a fair and striking one.)</em></p>
+
+<div class="callout">
+  <span class="callout-label">The cumulative point</span>
+  <p>None of these scenes, alone or together, proves the Author is good. They are testimony, not proof, and a skeptic can read the same texts as the literary self-portrait of a people imagining their God. But if you are asking what kind of Author the Bible depicts, the answer is consistent across centuries of material: one who warns before he judges, sees the unseen, argues rather than overrides, relents when entreated, hears despair, and grows in his creatures the very heart that intercedes. Williams again: our point in being here is "to receive that, to realize it step by step, day by day." The evidence is offered. It is not forced.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ CHANGE CONTROL ═══ -->
+<span class="kicker">Change Control</span>
+<h2>The Author Could Revert. He Largely <em>Doesn't.</em></h2>
+
+<p>Return to the receipts. If the Object logs every state, then the Author, in principle, holds a complete version history of the world, and a maker who holds the full history of a running thing can, in principle, roll it back. He could revert to a prior state, overwrite a branch, reload from a save. Picture him starting the program, stepping away for coffee, returning, and finding he could undo whatever ran while he was gone. The analogy says he <em>can</em>. Power over the Object includes power over its log.</p>
+
+<p>And yet the testimony of the texts is that he largely <em>doesn't</em>. He works within the sequence — warning, conversing, interceding, even entering the program himself — rather than force-quitting and reloading. The great near-exception, the flood, is instructive precisely because of how it ends: with a covenant never to roll creation back that way again, a bow set in the clouds as a permanent change-control note to himself (Gen 8:21–9:17). After that, the pattern is restraint.</p>
+
+<div class="callout">
+  <span class="callout-label">My reading — flagged as such</span>
+  <p>I take this restraint to be fidelity, not inability. The Author honors the integrity of the world he made and the wills he instilled; he does not casually overwrite the Objects he gave the dignity of acting on their own. That God <em>could</em> revert but chooses to keep faith with his own design is a theological inference, not a plain statement of any single verse. But it fits the whole shape of the story better than a God who is either unable to intervene or constantly reloading until he gets the result he wants.</p>
+</div>
+
+<div class="conflict-box">
+  <span class="conflict-label">The flood — the hardest case for this section</span>
+  <p>The flood strains the claim just made. It is not a small intervention; it is the one place the texts describe the Author doing something very close to a <em>rollback</em> — wiping nearly every instance and re-seeding the world from a preserved remnant (Genesis 6–9). If the analogy's dignity-of-the-Objects argument is right, the flood looks like the counterexample: a mass overwrite of free creatures. I do not think this cleanly breaks the picture, but I will not pretend it sits comfortably inside it either.</p>
+  <p>Two things can be said. First, even as told, it is a <em>pruning that preserves</em> rather than a true reset — a remnant state is carried forward, not a blank reload; the program continues from saved data rather than starting over. Second, the narrative itself seems to treat the flood as the act the Author resolves <em>never to repeat</em>: it ends with a one-directional covenant and a sign in the sky, after which the whole biblical pattern shifts decisively toward conversation, warning, and intercession instead of overwrite. One can read that as the story marking the flood as the exception that defines the rule. But the problem of evil presses hardest right here, and the analogy does not dissolve it. This is a place the picture bends, and the reader should see it bend.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ═══ THE OPEN FORK ═══ -->
+<span class="kicker">The Question the Picture Exposes</span>
+<h2>Does the Author Read the Receipts <em>First?</em></h2>
+
+<p>Now the thought we were holding comes due. When the Author attends to the Object, does he already know everything written in its log — having, in effect, the whole history before him at once — or does he genuinely engage an outcome still open from within the sequence? The conversational scenes make the question sharp rather than settling it. When the Author "changes his mind" at Sinai, is he moving along a story he has always fully seen, or responding to a future not yet fixed?</p>
+
+<div class="callout">
+  <span class="callout-label">Reading A · Classical omniscience (the eternal "now")</span>
+  <p>The Author sees the whole Object at once. Cain's choice, Nineveh's repentance, Moses' argument — all are present to him the way every page of a finished book is present to its author. The warnings and the relenting are real addresses placed into the sequence, genuine on the creature's end, spoken by one who already beholds the outcome. On this reading the conversation is sincere but not suspenseful; "changed his mind" is the truest way to narrate, from inside the sequence, a mercy the Author always intended.<sup class="fn-ref">7</sup></p>
+</div>
+
+<div class="conflict-box">
+  <span class="conflict-label">Reading B · Open theism</span>
+  <p>The Author engages outcomes not yet fixed from within the sequence. The warning to Cain is a real attempt to move him; the relenting at Sinai is a real response to Moses; the grief over a city is exactly what it looks like. The receipts are written as the program runs, and the Author reads them as they come. The cost is that it qualifies classical omniscience; the gain is that the conversational texture of the whole Hebrew Bible reads at face value.<sup class="fn-ref">10</sup></p>
+</div>
+
+<p>I hold the conversation to be real and significant on either reading — the God of these texts argues, warns, and relents rather than merely executing. What I have not resolved is whether the receipts are read before they are written. The analogy makes the fork vivid; it does not choose for me, and I will not pretend the text forces one answer. <em>(Unsettled. Stated as a question, not a position.)</em></p>
+
+<hr class="divider">
+
+<!-- ═══ INCARNATION ═══ -->
+<span class="kicker">Where the Picture Is Exceeded</span>
+<h2>The Object That Was Always <em>There</em></h2>
+
+<p>Plan A reaches its point not with an edit from outside — and, this matters, not with the writing of a brand-new Object either. The Object was always there. John's Gospel is emphatic: "In the beginning was the Word, and the Word was with God, and the Word was God" (John 1:1) — the Word already <em>is</em>, with the Author and as the Author, before the sequence begins to run. The creeds later guarded exactly this in their own idiom: "begotten, not made" — not something the Author authored at a moment, but one eternally of him. So what happens at a point in the program is not that a new Object is created. It is that the Object who was always there is <em>invoked</em> into the running world — the eternal Word takes on flesh and runs as one of the Object's own, addressing the others from inside their runtime, in their own language: <em>my maker is the same as yours; but now he stands among you and speaks directly.</em></p>
+
+<p>And the invoking did not arrive unannounced or out of nowhere. It was named in advance — the prophets carry the notice, from Isaiah's promised sign-child onward (Isaiah 7:14: "the young woman is with child and shall bear a son" — the Hebrew <span class="lang-term"><span class="lang-en">young woman</span><span class="lang-paren"> (</span><span class="lang-orig">עַלְמָה</span><span class="lang-sep"> | </span><span class="lang-trans">ʿalmah</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H5959</span><span class="lang-paren">)</span></span> names a young woman of marriageable age, which does not exclude virginity; the Greek Old Testament rendered it explicitly as "virgin," the reading Matthew follows). That is Plan A showing its hand: the moment was set in the design from early on, even though the One it concerned always was. And when the moment came, it came <em>through</em> the system rather than around it — the eternal Word instantiated within an existing Object by the Author's own Spirit, then carried and born and grown like any other:</p>
+
+<blockquote class="scripture">
+  <p>"The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be holy; he will be called Son of God."</p>
+  <cite>Luke 1:35 · NRSVue</cite>
+</blockquote>
+
+<p>So the eternal Word entered on the clock, by the world's own processes rather than dropped in over them. What I am <em>not</em> claiming is that the analogy <em>solves</em> what this is. The old question — how one person can be at once fully the maker and fully one of the made — is a matter for doctrine, and it would overreach to say a code-image settles it. But notice the caveat is about the <em>theology</em>, not the <em>picture</em>. The analogical move is coherent as far as it goes: a maker can write into his own world a way to be present within it, and then be present — a doorway opened into the running framework, the author stepping through to stand among his characters on their own ground, never ceasing to be the one who wrote them.</p>
+
+<blockquote class="scripture">
+  <p>"And the Word became flesh and lived among us, and we have seen his glory, the glory as of a father's only son, full of grace and truth."</p>
+  <cite>John 1:14 · NRSVue</cite>
+</blockquote>
+
+<p>There is still an "and then" buried in the move — he opened the way <em>and then</em> stepped through — and "and then" borrows the Author's own sequence again, the same boundary named in the first strain: we have no grammar for God's time except the one we live in, so we describe it from inside our own clock and make no claim about how it looks from his. And there is a deeper edge than that one. The doorway image gets you a maker <em>present</em> in the world he wrote; what no analogy reaches is the step the claim actually makes — not a visitor wearing the world like a costume, but the maker becoming a real one of his own, fully: flesh, and clock, and death. No ordinary author can do that. That is exactly why the picture breaks here — and if it did not break, it would be describing something smaller than the thing it points at.</p>
+
+<hr class="divider">
+
+<!-- ═══ CONCLUSION ═══ -->
+<span class="kicker">Conclusion</span>
+<h2>Scaffolding, Not <em>Foundation</em></h2>
+
+<p>This picture is old furniture rearranged. Dorothy Sayers built a whole book on the maker analogy, reading the creative act of an author as a worn human image of the Trinity.<sup class="fn-ref">11</sup> C.S. Lewis used the novelist directly to explain divine timelessness: the author can put down the pen, and the time it takes him to do so is no part of the story's time at all.<sup class="fn-ref">12</sup> I have changed the register from page to program because code makes the internal clock — and the receipts — explicit. The lineage is worth naming. This is not a discovery; it is a clarification.</p>
+
+<p>And the clarification has a limit I keep returning to, because Williams names it better than I can. Faith, he said, "isn't a theory about the world; it's a way of being in the world. It's a way of holding the world, precisely in its brokenness and its mystery, and saying, 'This is held by something that is not just an accident.'" The inside of that is entered by trust before it is confirmed by sight, and then "realized step by step, day by day."</p>
+
+<p>The scaffolding is honest. I believe every plank of it. But it is scaffolding, and the house it stands against is not "a maker is conceivable." It is a person, with a name and a history, who is said to have written himself onto the clock he made — and who, the texts insist, is still keeping the conversation open. That is the part the analogy cannot reach and the part that matters most: not that the world has an Author, but that the Author is still speaking, and still waits to be received.</p>
+
+<hr class="divider">
+
+<!-- ═══ CRITICISMS ═══ -->
+<span class="kicker">Criticisms</span>
+<h2>Arguments Against <em>This Picture</em></h2>
+
+<p>An analogy that cannot survive its own criticism is not worth offering. Here are the strongest objections.</p>
+
+<p><strong>It proves coherence, then is used as if it proved existence.</strong> The article admits this in its third strain and again in the conclusion, but the admission does not remove the risk: a reader can finish feeling that the existence of an Author has been supported when only its <em>thinkability</em> has. Coherence is a low bar. Many false claims are coherent.</p>
+
+<p><strong>The "condition of being, not an item" move can shade into unfalsifiability.</strong> Defining God as the ground of there being anything — rather than as an item that might or might not be found — protects the claim from exactly the kind of disconfirmation that tests ordinary claims. A critic (Philip Goff and others press versions of this) can fairly say that a God who by definition cannot be found inside the world has been placed beyond the reach of evidence, and that "you wouldn't expect to find him anyway" is too convenient. The article leans on Williams' framing; it should concede that the framing answers one objection by inviting another.</p>
+
+<p><strong>The garden-and-inheritance framing sharpens the problem of evil rather than easing it.</strong> Saying the Author "knew it would happen because he designed the system" raises the obvious question of why he designed a system whose foreseen output was suffering and death on this scale, and the appeal to "Plan A, not Plan B" can sound like rebranding the difficulty as intention. Foreknowledge-without-coercion is a real and defensible distinction, but it does not by itself answer the theodicy question, and the article does not pretend to — it should be read as declining that question, not resolving it.</p>
+
+<p><strong>The flood is a rollback the article cannot fully absorb.</strong> The "change control" section claims the Author keeps faith with his design and largely declines to overwrite free Objects — and then must concede that the flood is exactly such an overwrite. The "pruning that preserves" and "exception that defines the rule" replies are reasonable but partial; a critic can fairly say the analogy's central virtue (a maker who respects the integrity of what he made) is contradicted by one of the tradition's foundational stories, and that naming the tension is not the same as resolving it.</p>
+
+<p><strong>Narrowing the time claim may look like moving the goalposts.</strong> The article concedes it does not explain God's time and asserts only that our time differs from his. That retreat is defensible — the "no before" point genuinely needs nothing more than our time being internal — but a critic can fairly say the picture's tidy appeal oversells what survives: it dissolves the puzzle only for our side of the clock and declares God's side off-limits, and "we cannot know God's time" is a stopping point, not an answer. A residual hazard remains that the narrowing does not remove: a maker who "writes," "revises," and acts "and then" is so thoroughly a temporal image that it can still train intuition toward a God who deliberates in sequence — exactly what the classical "eternal now" denies.</p>
+
+<p><strong>The free-will account still owes a mechanism.</strong> Saying "the Author can instill agency — Objects that freely originate their own actions" names the mystery in friendlier words rather than explaining it. The compatibility of authored wills, divine intervention, and divine knowledge is asserted as holdable; the article grants the knot is untied. A reader is entitled to find that thin.</p>
+
+<p><strong>"Leaving the omniscience fork open" can be evasion.</strong> Molinism (middle knowledge) and Boethian timeless-knowledge accounts are live options the article does not stage, and declining to choose between classical theism and open theism may be humility — or unwillingness to do the harder work. Naming a tension is not the same as resolving one.</p>
+
+<p>These objections do not sink the picture. They locate its limits: that it be used for what it can do — clarifying a coherent claim and the character of the God a tradition confesses — and not for what it cannot — establishing that the claim is true.</p>
+
+<!-- ═══ FOOTNOTES ═══ -->
+<div class="footnotes">
+  <span class="footnotes-label">Notes</span>
+  <div class="fn-item"><span class="fn-num">1</span><span class="fn-text">Augustine, <em>Confessions</em>, Book XI, esp. chs. 12–14. He dismisses the jest that God was "preparing hell for those who pry too deep," and argues instead that time was created with the world: "there could be no time had not creation been made." Time, for Augustine, is internal to the created order, not a medium God inhabits.</span></div>
+  <div class="fn-item"><span class="fn-num">2</span><span class="fn-text">Rowan Williams (former Archbishop of Canterbury), in "Debating God With The Archbishop of Canterbury, Philip Goff, and Elizabeth Oldfield," hosted by Alex O'Connor, recorded at the Royal Institution, London, 2024. The "extra item in the universe / condition of there being anything at all" and "cat in the garden / why there is a garden" formulations are from his opening remarks. The framing is classical theism's, not unique to Williams (cf. Aquinas; the modern "ground of being" idiom of Tillich and Herbert McCabe).</span></div>
+  <div class="fn-item"><span class="fn-num">3</span><span class="fn-text"><em>bārāʾ</em> (H1254), the verb in Genesis 1:1, takes only God as its subject in the Hebrew Bible and is never used with an accusative of the material worked upon — distinguishing it from ordinary verbs of fashioning such as <em>ʿāśâ</em> (to make) and <em>yāṣar</em> (to form). Verified against Blue Letter Bible / Strong's. The point is lexical, not metaphysical: the text reserves a special word for divine origination.</span></div>
+  <div class="fn-item"><span class="fn-num">4</span><span class="fn-text"><em>lógos</em> (G3056): word, account, reason, the rational principle of a thing. John 1:1 deliberately places the organizing <em>logos</em> with God prior to the created sequence of Genesis 1:1. Verified against Blue Letter Bible / Strong's.</span></div>
+  <div class="fn-item"><span class="fn-num">5</span><span class="fn-text">In general relativity time is a dimension of spacetime, not an external container; standard Big Bang cosmology treats time as originating with the universe rather than preceding it. This is a structural parallel to Augustine's claim, not a proof of it. I am not arguing that physics establishes the theology — only that the two independently locate the clock inside the system.</span></div>
+  <div class="fn-item"><span class="fn-num">6</span><span class="fn-text">Thomas Aquinas, <em>Summa Theologiae</em> I, q.13, a.7: the relation of creatures to God is real in the creature, but the corresponding relation in God is one "of reason" only — God is not really changed by being known, addressed, or related to. Cf. q.9 (God's immutability). This maps the analogy's claim that the Author's attention can move while the Author's nature does not.</span></div>
+  <div class="fn-item"><span class="fn-num">7</span><span class="fn-text">The classical "eternal now" derives from Boethius, <em>Consolation of Philosophy</em> V.6: eternity is "the whole, simultaneous and perfect possession of unending life" (<em>interminabilis vitae tota simul et perfecta possessio</em>) — not endless succession but the absence of succession. We can state this; we cannot imagine it, since imagination is built from sequence. Cited both at the "Author's own time" strain and at Reading A of the omniscience fork.</span></div>
+  <div class="fn-item"><span class="fn-num">8</span><span class="fn-text">Inheritance / Plan A: Romans 5:12 ("sin came into the world through one man, and death through sin, and so death spread to all because all have sinned"); the "always intended" reading rests on texts such as 1 Peter 1:20 (Christ "destined before the foundation of the world, but … revealed at the end of the ages") and Revelation 13:8. That redemption was intended from the first rather than improvised after the fall is a theological position (broadly the historic Christian view), not a neutral description of Genesis; I hold it but flag it as such.</span></div>
+  <div class="fn-item"><span class="fn-num">9</span><span class="fn-text"><em>nāḥam</em> (H5162): to be sorry, to relent, to be moved to a different course; used of God "relenting" in Exod 32:14, Jonah 3:10, and elsewhere, and also of God <em>not</em> relenting (Num 23:19; 1 Sam 15:29). The tension between these is itself the heart of the omniscience fork below. Such language is often classed as anthropopathism — describing God's action in human emotional terms — but whether that classification dissolves the scenes or merely labels them is exactly what is contested. Verified against Blue Letter Bible / Strong's.</span></div>
+  <div class="fn-item"><span class="fn-num">10</span><span class="fn-text">Open theism (e.g., John Sanders, <em>The God Who Risks</em>) holds that the future of free actions is not yet settled even for God, so divine warnings, relenting, and grief are genuine responses to an open future. It is a minority position, contested by most of the classical tradition; I include it not as endorsement but because the conversational narratives read naturally under it and the article declines to adjudicate. Middle-knowledge (Molinist) and Boethian accounts are further options not staged here.</span></div>
+  <div class="fn-item"><span class="fn-num">11</span><span class="fn-text">Dorothy L. Sayers, <em>The Mind of the Maker</em> (1941): the human creative act (Idea, Energy/Expression, and the Power by which it is known) as a created analogy of trinitarian making. Sayers is explicit that it is analogy, not proof.</span></div>
+  <div class="fn-item"><span class="fn-num">12</span><span class="fn-text">C.S. Lewis, <em>Mere Christianity</em>, Book IV, "Time and Beyond Time": God is not hurried along the time-stream of the universe any more than an author is hurried along by the time-line of his own novel; the author can attend to the heroine's single moment for as long as he likes, and that attention costs no story-time at all.</span></div>
+</div>
+
+<!-- ═══ SOURCES ═══ -->
+<div class="source-list">
+  <p class="source-list-label">Sources</p>
+  <div class="source-card">
+    <p class="source-ref">The Bible, NRSVue — esp. Genesis 1–4; 16; Exodus 32; Numbers 11; 16–17; Jonah; Numbers 22–24; Isaiah 7; John 1; Luke 1; Matthew 1; Romans 5; 1 Peter 1.</p>
+    <p class="source-position">Position: Primary text — quoted in NRSVue; original-language terms verified against Blue Letter Bible / Strong's.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Williams, Rowan. Opening remarks, "Debating God With The Archbishop of Canterbury, Philip Goff, and Elizabeth Oldfield," hosted by Alex O'Connor, Royal Institution, London (2024).</p>
+    <p class="source-position">Position: Mainline Protestant (Anglican) — classical theism / "ground of being"; God as the condition of being, not an item within the world.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Augustine of Hippo. <em>Confessions</em>, Book XI (c. 397–400).</p>
+    <p class="source-position">Position: Catholic / patristic — foundational Western theology; reads time as a created reality.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Thomas Aquinas. <em>Summa Theologiae</em> I, qq. 9, 13 (1265–1274).</p>
+    <p class="source-position">Position: Catholic / scholastic — classical theism; divine immutability and relation of reason.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Boethius. <em>The Consolation of Philosophy</em>, Book V (c. 524).</p>
+    <p class="source-position">Position: Catholic / late-antique — source of the "eternal now" account of divine eternity.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Sayers, Dorothy L. <em>The Mind of the Maker</em> (1941). Methuen.</p>
+    <p class="source-position">Position: Mainline Protestant (Anglican) — literary maker-analogy for the Trinity, offered explicitly as analogy.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Lewis, C.S. <em>Mere Christianity</em>, Book IV (1952). Geoffrey Bles.</p>
+    <p class="source-position">Position: Conservative evangelical / Anglican — popular apologetics; the novelist analogy for timelessness.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">Sanders, John. <em>The God Who Risks: A Theology of Divine Providence</em> (1998, rev. 2007). IVP Academic.</p>
+    <p class="source-position">Position: Evangelical (open theist) — minority view; future of free acts unsettled even for God.</p>
+  </div>
+  <div class="source-card">
+    <p class="source-ref">General relativity and standard Big Bang cosmology (time as a dimension of spacetime).</p>
+    <p class="source-position">Position: Secular / scientific — used as a structural parallel only, not as evidence for the theological claim.</p>
+  </div>
+<div style="border-left:2px solid var(--rule-s);padding:6px 0 6px 16px;margin-bottom:12px;">
+  <p style="font-size:.95rem;color:var(--ink);margin:0 0 3px;line-height:1.6;">Brown-Driver-Briggs, <em>A Hebrew and English Lexicon of the Old Testament</em> (1906; public domain), s.v. בָּרָא — <em>bārāʾ</em> (H1254).</p>
+  <p style="font-size:.88rem;font-style:italic;color:var(--ink-4);margin:0;">Position: Standard academic Hebrew lexicon. BDB notes the subject is always God in the Qal stem; no accusative of material is ever given. Distinguishes from yāṣar (to form/shape) and ʿāśâ (to make/do); carries the sense of distinctive creative action, though BDB does not define it as necessarily ex nihilo. HALOT (paywalled) not consulted.</p>
+</div>
+<div style="border-left:2px solid var(--rule-s);padding:6px 0 6px 16px;margin-bottom:12px;">
+  <p style="font-size:.95rem;color:var(--ink);margin:0 0 3px;line-height:1.6;">Danker, F. W. et al., <em>A Greek-English Lexicon of the New Testament and Other Early Christian Literature</em>, 3rd ed. (BDAG, 2000), s.v. λόγος — <em>lógos</em> (G3056).</p>
+  <p style="font-size:.88rem;font-style:italic;color:var(--ink-4);margin:0;">Position: Standard NT Greek lexicon. BDAG gives an extensive range — "word, speech, statement" through "reason, account" to the Johannine theological use. The use in John 1:1 is BDAG sense 3: a personified divine being, the pre-existent Word.</p>
+</div>
+</div>
+
+<p style="font-family:var(--font-ui);font-size:.62rem;letter-spacing:.22em;color:var(--ink-4);text-transform:uppercase;margin:8px 0 18px;">Published 2026 &nbsp;·&nbsp; Last reviewed 2026-06-23 &nbsp;·&nbsp; Scripture: NRSVue</p>
+
+<!-- ═══ GRADE BLOCK (inserted after reasoning-logic review) ═══ -->
+<div class="grade-block">
+  <div class="grade-inner">
+    <div class="grade-letter">A+</div>
+    <div class="grade-detail">
+      <span class="grade-label">Reasoning · Logic Review &middot; 19/20</span>
+      <div class="grade-scores">
+        <span class="grade-score">Claim precision <strong>4/4</strong></span>
+        <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
+        <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+        <span class="grade-score">Internal consistency <strong>4/4</strong></span>
+        <span class="grade-score">Scope <strong>4/4</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ AUTHOR BLOCK ═══ -->
+<div class="author-block">
+  <div class="author-avatar"><span>LS</span></div>
+  <div class="author-info">
+    <span class="author-name">Lee Sadler</span>
+    <span class="author-bio">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong's Concordance; biblical commentaries; and collaboration with Claude. &middot; <a href="mailto:lee.sadler@readthescripture.com" style="color:var(--gold);text-decoration:none;">Email comments &amp; questions</a></span>
+  </div>
+</div>
+
+<div style="border-top:1px solid var(--rule-s);margin-top:36px;padding-top:22px;">
+  <p style="font-family:var(--font-ui);font-size:.6rem;letter-spacing:.2em;color:var(--gold-l);text-transform:uppercase;margin:0 0 12px;">Read alongside</p>
+  <p style="font-size:.97rem;line-height:1.7;color:var(--ink-3);margin:0;">
+    <a href="/emotionally_charged_language.html" style="color:var(--sienna);text-decoration:none;">What We Hear When We Read</a>, on how a charged word can close a text before the reading begins.
+  </p>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;·&nbsp; All content for educational purposes &nbsp;·&nbsp; Scripture references NRSVue unless noted</p>
+</footer>
+<script src="/strongs.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patriarchs, Peoples &amp; Covenants — Read the Scripture</title>
+  <link rel="canonical" href="https://readthescripture.com/patriarchs_covenants_map.html">
+
+<meta name="description" content="An interactive map, timeline, covenant analysis, and peoples guide for the patriarchal narratives — Abraham, Isaac, and Jacob in Canaan.">
+<meta name="keywords" content="patriarchs covenants Bible, Abraham Isaac Jacob, Abrahamic covenant, patriarchal narratives map, biblical covenants Genesis">
+<meta property="og:title" content="Patriarchs, Peoples &amp; Covenants — Read the Scripture">
+<meta property="og:description" content="An interactive map, timeline, covenant analysis, and peoples guide for the patriarchal narratives — Abraham, Isaac, and Jacob in Canaan.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/patriarchs_covenants_map.html">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+  /* panel palette — site tokens applied to dark interactive content */
+  --p-bg:       #0E0A04;
+  --p-sand:     #F0E8D0;
+  --p-sand-d:   #D8C8A8;
+  --p-border:   rgba(192,144,48,.28);
+  --p-shadow:   rgba(18,10,4,.28);
+  --p-green:    #1A4A2A;
+  --p-green-l:  #2A6A3A;
+  --p-blue:     #1A2A4A;
+  --p-blue-l:   #2A4A7A;
+  --p-purple:   #3A1A4A;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-b);
+  background: var(--nav-bg);
+  color: var(--p-sand);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  background: var(--nav-bg);
+  overflow: hidden;
+  padding: 80px 24px 68px;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%);
+}
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .65rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.60);
+  display: block;
+  margin-bottom: 22px;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero h1 em { font-style: italic; color: var(--gold-pale); }
+.hero-sub {
+  font-family: var(--font-b);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: rgba(235,215,175,.62);
+  max-width: 560px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+  position: relative;
+}
+.hero-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 0 auto; position: relative;
+}
+.hero-ornament .rule {
+  display: block; height: 1px; width: 80px;
+  background: linear-gradient(90deg, transparent, rgba(192,144,48,.55));
+}
+.hero-ornament .rule:last-child { background: linear-gradient(90deg, rgba(192,144,48,.55), transparent); }
+.hero-ornament .gem { width: 7px; height: 7px; background: var(--gold-l); transform: rotate(45deg); }
+.hero-ornament .gem.sm { width: 4px; height: 4px; opacity: .55; }
+.type-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 5px 14px 5px 10px; border-radius: 4px;
+  font-family: var(--font-ui); font-size: .6rem; letter-spacing: .16em;
+  text-transform: uppercase; font-weight: 500; margin-top: 16px;
+}
+.tag-resource { background: rgba(61,110,17,.12); color: #a8d472; border: 1px solid rgba(61,110,17,.3); }
+
+/* ── TAB NAV ── */
+.tab-header {
+  background: linear-gradient(180deg, #0A0600 0%, var(--nav-bg) 100%);
+  border-bottom: 1px solid var(--p-border);
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px 0 0;
+}
+.tab {
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--gold);
+  transition: var(--t);
+  white-space: nowrap;
+}
+.tab:hover { color: var(--gold-pale); border-bottom-color: var(--gold); }
+.tab.active { color: var(--gold-pale); border-bottom-color: var(--gold-pale); }
+
+/* ── PANELS ── */
+.panel { display: none; padding: 24px 16px 60px; max-width: 980px; margin: 0 auto; }
+.panel.active { display: block; }
+.panel-intro { font-size: .92rem; color: var(--ink-4); line-height: 1.65; margin-bottom: 16px; }
+
+/* ── SECTION HEADER ── */
+.sec-head {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold-l);
+  margin: 28px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--p-border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MAP PANEL */
+#map-panel svg { width: 100%; height: auto; display: block; }
+
+.map-container {
+  position: relative;
+  background: #0D1A12;
+  border: 1px solid var(--p-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(18,10,4,0.6);
+  border-top: 1px solid var(--p-border);
+}
+
+.leg-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--p-sand-d); }
+.leg-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.leg-sq { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+
+/* TIMELINE */
+.tl-wrap { position: relative; padding-left: 32px; }
+.tl-wrap::before {
+  content: '';
+  position: absolute;
+  left: 10px; top: 0; bottom: 0; width: 1px;
+  background: var(--p-border);
+}
+.tl-event {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  background: rgba(232,204,118,0.03);
+  border: 1px solid var(--p-border);
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.tl-event:hover { background: rgba(232,204,118,0.06); }
+.tl-dot {
+  position: absolute;
+  left: -27px; top: 18px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--nav-bg);
+  flex-shrink: 0;
+}
+.tl-era {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tl-title {
+  font-family: var(--font-d);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gold-l);
+  margin-bottom: 4px;
+}
+.tl-ref { font-size: 11px; color: var(--gold); font-style: italic; margin-bottom: 6px; }
+.tl-body { font-size: 13px; color: var(--p-sand-d); line-height: 1.6; }
+.tl-markers { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.marker {
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-family: var(--font-ui);
+  letter-spacing: 0.04em;
+}
+.m-well { background: rgba(26,74,122,0.3); color: #7AAACA; border: 1px solid rgba(122,170,202,0.25); }
+.m-tree { background: rgba(26,74,42,0.3); color: #7ACA9A; border: 1px solid rgba(122,202,154,0.25); }
+.m-tent { background: rgba(192,144,48,0.2); color: var(--gold-pale); border: 1px solid rgba(192,144,48,0.25); }
+.m-covenant { background: rgba(139,58,26,0.25); color: #CA8A7A; border: 1px solid rgba(202,138,122,0.25); }
+.m-altar { background: rgba(127,119,221,0.2); color: #A8A2EE; border: 1px solid rgba(127,119,221,0.25); }
+.m-peoples { background: rgba(42,42,42,0.5); color: #A0A0A0; border: 1px solid rgba(160,160,160,0.2); }
+
+/* COVENANT CARDS */
+.cvt-card { border: 1px solid var(--p-border); border-radius: 8px; margin-bottom: 16px; overflow: hidden; }
+.cvt-head { padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px; }
+.cvt-num {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gold-l);
+  min-width: 28px;
+  line-height: 1;
+  padding-top: 2px;
+}
+.cvt-info { flex: 1; }
+.cvt-title { font-family: var(--font-d); font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.cvt-parties { font-size: 12px; color: var(--gold); font-style: italic; }
+.cvt-status {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+.status-kept { background: rgba(26,74,42,0.35); color: #7ACA9A; border: 1px solid rgba(122,202,154,0.3); }
+.status-breached { background: rgba(139,58,26,0.3); color: #CA8A7A; border: 1px solid rgba(202,138,122,0.3); }
+.status-partial { background: rgba(192,144,48,0.2); color: var(--gold-pale); border: 1px solid rgba(192,144,48,0.3); }
+.status-complex { background: rgba(127,119,221,0.2); color: #A8A2EE; border: 1px solid rgba(127,119,221,0.3); }
+.cvt-body {
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--p-border);
+  background: rgba(232,204,118,0.02);
+}
+.cvt-section {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 12px 0 4px;
+}
+.cvt-text { font-size: 13px; color: var(--p-sand-d); line-height: 1.6; }
+.cvt-commentary {
+  background: rgba(139,58,26,0.10);
+  border-left: 3px solid var(--sienna-l);
+  padding: 10px 12px;
+  margin-top: 10px;
+  border-radius: 0 4px 4px 0;
+  font-size: 13px;
+  color: #D4A888;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* PEOPLES */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+  margin-top: 8px;
+}
+.people-card { border: 1px solid var(--p-border); border-radius: 8px; overflow: hidden; background: rgba(232,204,118,0.02); }
+.people-head { padding: 12px 14px; background: rgba(232,204,118,0.04); border-bottom: 1px solid var(--p-border); }
+.people-name { font-family: var(--font-d); font-size: 17px; font-weight: 600; margin-bottom: 2px; }
+.people-origin { font-size: 12px; color: var(--gold); font-style: italic; }
+.people-body { padding: 12px 14px; font-size: 13px; color: var(--p-sand-d); line-height: 1.55; }
+.people-tag {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin: 4px 3px 0 0;
+}
+.tag-enemy { background: rgba(139,58,26,0.30); color: #CA8A7A; border: 1px solid rgba(202,138,122,0.3); }
+.tag-ally { background: rgba(26,74,42,0.35); color: #7ACA9A; border: 1px solid rgba(122,202,154,0.3); }
+.tag-neutral { background: rgba(42,42,42,0.5); color: #A0A0A0; border: 1px solid rgba(160,160,160,0.2); }
+
+/* NOTE */
+.note {
+  background: rgba(192,144,48,0.07);
+  border: 1px solid var(--p-border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--gold-pale);
+  line-height: 1.6;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* AUTHOR + FOOTER */
+.author-wrap { max-width: 780px; margin: 0 auto; padding: 0 24px 48px; }
+.author-block {
+  border-top: 1px solid var(--rule-s);
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.author-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(138,96,24,.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.author-avatar span { font-family: var(--font-ui); font-size: .7rem; color: var(--gold-l); font-weight: 500; }
+.author-name { font-family: var(--font-d); font-size: 1rem; font-weight: 600; color: var(--cream); display: block; margin-bottom: 4px; }
+.author-bio { font-size: .92rem; font-style: italic; color: var(--ink-4); line-height: 1.6; }
+.site-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid rgba(192,144,48,.14);
+  padding: 32px 24px;
+  text-align: center;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.28);
+}
+.site-footer a { color: rgba(232,204,118,.45); text-decoration: none; transition: var(--t); }
+.site-footer a:hover { color: var(--gold-pale); }
+
+@media (max-width: 600px) { .people-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=18"></script>
+
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>Patriarchs, Peoples <em>&amp; Covenants</em></h1>
+  <p class="hero-sub">Abraham, Isaac, and Jacob in Canaan — map, timeline, covenant analysis, and the peoples they lived among.</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+  <span class="type-tag tag-resource">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1"/><line x1="5" y1="7" x2="11" y2="7"/><line x1="5" y1="10" x2="8" y2="10"/></svg>
+    Resource
+  </span>
+</header>
+
+<div class="tab-header">
+  <nav class="tabs">
+    <button class="tab active" onclick="show('map-panel',this)">Map</button>
+    <button class="tab" onclick="show('timeline-panel',this)">Timeline</button>
+    <button class="tab" onclick="show('covenant-panel',this)">Covenants &amp; Oaths</button>
+    <button class="tab" onclick="show('peoples-panel',this)">Peoples &amp; Regions</button>
+  </nav>
+</div>
+
+<!-- ========== MAP ========== -->
+<div id="map-panel" class="panel active">
+  <p class="panel-intro">
+    An illustrated map of Canaan and surrounding regions showing the key locations in the lives of Abraham, Isaac, and Jacob, with special markers for <span class="marker m-well" style="display:inline">Wells</span>, <span class="marker m-tree" style="display:inline">Trees</span>, and <span class="marker m-tent" style="display:inline">Tents</span> mentioned in the text, as well as the territories of the Amorites, Philistines, and Amalekites.
+  </p>
+
+  <div class="map-container">
+    <svg viewBox="0 0 700 820" xmlns="http://www.w3.org/2000/svg">
+      <!-- Sea / ocean fills -->
+      <rect x="0" y="0" width="700" height="820" fill="#0D1A12"/>
+      <!-- Mediterranean -->
+      <rect x="0" y="0" width="165" height="820" fill="#0A1E2E" opacity="0.9"/>
+      <text x="60" y="380" fill="#1A4A6A" font-size="11" font-family="serif" transform="rotate(-90,60,380)" opacity="0.6">Mediterranean Sea</text>
+      <!-- Dead Sea -->
+      <ellipse cx="410" cy="500" rx="22" ry="48" fill="#0A1E2E" opacity="0.8"/>
+      <text x="440" y="495" fill="#1A4A6A" font-size="9" font-family="serif" opacity="0.7">Dead Sea</text>
+      <!-- Sea of Galilee -->
+      <ellipse cx="390" cy="210" rx="15" ry="22" fill="#0A1E2E" opacity="0.8"/>
+      <text x="408" y="208" fill="#1A4A6A" font-size="8" font-family="serif" opacity="0.7">Sea of Galilee</text>
+      <!-- Jordan River -->
+      <path d="M390 232 Q395 300 405 390 Q408 440 410 452" fill="none" stroke="#1A4A6A" stroke-width="2" opacity="0.5"/>
+
+      <!-- TERRITORY FILLS -->
+      <!-- Philistine coast region -->
+      <rect x="165" y="360" width="90" height="200" rx="6" fill="#7A4A1A" opacity="0.18"/>
+      <text x="200" y="400" fill="#C89060" font-size="10" font-family="serif" font-weight="bold" opacity="0.7" text-anchor="middle">PHILISTIA</text>
+
+      <!-- Amorite hill country -->
+      <ellipse cx="340" cy="300" rx="110" ry="90" fill="#4A6A1A" opacity="0.12"/>
+      <text x="340" y="270" fill="#80A040" font-size="10" font-family="serif" opacity="0.7" text-anchor="middle">AMORITE HILL COUNTRY</text>
+
+      <!-- Amalekite Negev / Sinai region -->
+      <rect x="165" y="640" width="280" height="160" rx="8" fill="#6A2A0A" opacity="0.15"/>
+      <text x="300" y="700" fill="#C06030" font-size="11" font-family="serif" font-weight="bold" opacity="0.7" text-anchor="middle">AMALEKITE TERRITORY</text>
+      <text x="300" y="715" fill="#C06030" font-size="9" font-family="serif" opacity="0.6" text-anchor="middle">(Negev / Sinai region)</text>
+
+      <!-- Edom / Seir region -->
+      <ellipse cx="530" cy="620" rx="80" ry="60" fill="#5A3A1A" opacity="0.15"/>
+      <text x="530" y="615" fill="#A07040" font-size="10" font-family="serif" opacity="0.7" text-anchor="middle">EDOM/SEIR</text>
+      <text x="530" y="628" fill="#A07040" font-size="8" font-family="serif" opacity="0.6" text-anchor="middle">(Esau/Amalek origin)</text>
+
+      <!-- ===== LOCATIONS ===== -->
+
+      <!-- Dan (north) -->
+      <circle cx="380" cy="120" r="5" fill="#B8892A" opacity="0.8"/>
+      <text x="390" y="123" fill="#D4A840" font-size="10" font-family="serif">Dan</text>
+      <text x="390" y="134" fill="#8A6020" font-size="8" font-family="serif">Abraham pursues kings</text>
+
+      <!-- Damascus -->
+      <circle cx="520" cy="100" r="5" fill="#B8892A" opacity="0.6"/>
+      <text x="530" y="103" fill="#D4A840" font-size="10" font-family="serif">Damascus</text>
+      <text x="530" y="114" fill="#8A6020" font-size="8" font-family="serif">Hobah (pursuit ends)</text>
+
+      <!-- Shechem / Moreh -->
+      <circle cx="330" cy="280" r="7" fill="#2A6A3A" opacity="0.9"/>
+      <circle cx="330" cy="280" r="4" fill="#7ACA9A"/>
+      <text x="343" y="276" fill="#7ACA9A" font-size="11" font-family="serif" font-weight="bold">Shechem</text>
+      <text x="343" y="287" fill="#4A8A5A" font-size="8" font-family="serif">🌳 Oak of Moreh — Abraham's altar</text>
+      <text x="343" y="298" fill="#4A8A5A" font-size="8" font-family="serif">🏕 Abraham's tent; God's promise (Gen 12)</text>
+
+      <!-- Bethel / Ai -->
+      <circle cx="320" cy="340" r="6" fill="#2A4A7A" opacity="0.9"/>
+      <circle cx="320" cy="340" r="3" fill="#7AAACA"/>
+      <text x="333" y="336" fill="#7AAACA" font-size="11" font-family="serif" font-weight="bold">Bethel / Ai</text>
+      <text x="333" y="348" fill="#4A6A9A" font-size="8" font-family="serif">🏕 Abraham's tent between Bethel & Ai</text>
+      <text x="333" y="358" fill="#4A6A9A" font-size="8" font-family="serif">Jacob's ladder vision; pillar & vow</text>
+
+      <!-- Mamre / Hebron -->
+      <circle cx="305" cy="440" r="8" fill="#B8892A" opacity="0.95"/>
+      <circle cx="305" cy="440" r="4" fill="#F2E8D5"/>
+      <text x="320" y="435" fill="#D4A840" font-size="12" font-family="serif" font-weight="bold">Mamre / Hebron</text>
+      <text x="320" y="447" fill="#8A6020" font-size="8" font-family="serif">🌳 Oaks of Mamre — Amorite territory</text>
+      <text x="320" y="457" fill="#8A6020" font-size="8" font-family="serif">Abraham's base; 3 visitors; covenant-allies</text>
+      <text x="320" y="467" fill="#8A6020" font-size="8" font-family="serif">Aner, Eshcol, Mamre — treaty with Abram</text>
+
+      <!-- Gerar -->
+      <circle cx="230" cy="500" r="7" fill="#7A4A1A" opacity="0.9"/>
+      <circle cx="230" cy="500" r="4" fill="#C89060"/>
+      <text x="243" y="496" fill="#C89060" font-size="11" font-family="serif" font-weight="bold">Gerar</text>
+      <text x="243" y="507" fill="#8A6030" font-size="8" font-family="serif">Philistine capital of Abimelech</text>
+      <text x="243" y="517" fill="#8A6030" font-size="8" font-family="serif">Abraham & Isaac both deceive here</text>
+      <text x="243" y="527" fill="#8A6030" font-size="8" font-family="serif">Sarah/Rebekah "sister" incidents</text>
+
+      <!-- Beersheba — CENTRAL NODE with multiple markers -->
+      <circle cx="275" cy="595" r="10" fill="#7A1C1C" opacity="0.95"/>
+      <circle cx="275" cy="595" r="5" fill="#CA7A7A"/>
+      <text x="292" y="588" fill="#CA7A7A" font-size="13" font-family="serif" font-weight="bold">Beersheba</text>
+      <text x="292" y="600" fill="#8A4040" font-size="8" font-family="serif">💧 WELL (×2) — Abraham + Isaac</text>
+      <text x="292" y="611" fill="#8A4040" font-size="8" font-family="serif">🌳 Tamarisk tree planted by Abraham</text>
+      <text x="292" y="622" fill="#8A4040" font-size="8" font-family="serif">⚖ Covenant: Abraham & Abimelech (Gen 21)</text>
+      <text x="292" y="633" fill="#8A4040" font-size="8" font-family="serif">⚖ Covenant: Isaac & Abimelech (Gen 26)</text>
+      <text x="292" y="644" fill="#8A4040" font-size="8" font-family="serif">🏕 Isaac's altar + tent + well (Gen 26:25)</text>
+      <text x="292" y="655" fill="#8A4040" font-size="8" font-family="serif">"Well of the seven / Well of the oath"</text>
+
+      <!-- Valley of Gerar — wells of Isaac -->
+      <circle cx="240" cy="545" r="5" fill="#1A4A7A" opacity="0.8"/>
+      <text x="252" y="542" fill="#7AAACA" font-size="10" font-family="serif" font-weight="bold">Valley of Gerar</text>
+      <text x="252" y="552" fill="#4A6A9A" font-size="8" font-family="serif">💧 Esek (quarrel) · Sitnah (enmity)</text>
+      <text x="252" y="562" fill="#4A6A9A" font-size="8" font-family="serif">💧 Rehoboth "room/spacious"</text>
+
+      <!-- Bethel (Jacob's pillar) -- already marked above but add Jacob note -->
+      <text x="333" y="368" fill="#4A6A9A" font-size="8" font-family="serif">🪨 Pillar consecrated by Jacob</text>
+
+      <!-- Mizpah / Gilead -->
+      <circle cx="510" cy="240" r="6" fill="#3A1A4A" opacity="0.9"/>
+      <circle cx="510" cy="240" r="3" fill="#CA7ACA"/>
+      <text x="522" y="236" fill="#CA7ACA" font-size="11" font-family="serif" font-weight="bold">Mizpah / Gilead</text>
+      <text x="522" y="247" fill="#7A5A8A" font-size="8" font-family="serif">🪨 Heap of stones — Jacob & Laban</text>
+      <text x="522" y="258" fill="#7A5A8A" font-size="8" font-family="serif">⚖ Covenant: Jacob & Laban (Gen 31)</text>
+
+      <!-- Peniel / Jabbok -->
+      <circle cx="465" cy="290" r="5" fill="#B8892A" opacity="0.8"/>
+      <text x="477" y="286" fill="#D4A840" font-size="10" font-family="serif" font-weight="bold">Peniel / Jabbok</text>
+      <text x="477" y="297" fill="#8A6020" font-size="8" font-family="serif">Jacob wrestles God; renamed Israel</text>
+
+      <!-- Sodom / Valley of Siddim -->
+      <circle cx="435" cy="555" r="5" fill="#8A6020" opacity="0.7"/>
+      <text x="447" y="551" fill="#C08030" font-size="10" font-family="serif" font-weight="bold">Sodom / Siddim</text>
+      <text x="447" y="562" fill="#8A6020" font-size="8" font-family="serif">War of 9 kings; Lot captured</text>
+      <text x="447" y="573" fill="#8A6020" font-size="8" font-family="serif">Amalekites & Amorites defeated here</text>
+
+      <!-- Egypt (implied) -->
+      <rect x="20" y="750" width="130" height="50" rx="4" fill="#2A1A0A" opacity="0.4"/>
+      <text x="85" y="778" fill="#7A6030" font-size="11" font-family="serif" text-anchor="middle">Egypt →</text>
+      <text x="85" y="790" fill="#5A4020" font-size="8" font-family="serif" text-anchor="middle">Abraham in famine (Gen 12)</text>
+
+      <!-- Haran (far north, off map implied) -->
+      <text x="560" y="60" fill="#7A6030" font-size="10" font-family="serif" opacity="0.7">← Haran (Paddan-aram)</text>
+      <text x="560" y="72" fill="#5A4020" font-size="8" font-family="serif" opacity="0.6">Jacob 20 years; meets Rachel</text>
+
+      <!-- Abraham's route -->
+      <path d="M340 280 Q330 310 320 340" fill="none" stroke="#B8892A" stroke-width="1" stroke-dasharray="5 3" opacity="0.4" marker-end="url(#arrow)"/>
+      <path d="M320 340 Q312 390 305 440" fill="none" stroke="#B8892A" stroke-width="1" stroke-dasharray="5 3" opacity="0.4"/>
+      <path d="M305 440 Q290 520 275 595" fill="none" stroke="#B8892A" stroke-width="1" stroke-dasharray="5 3" opacity="0.4"/>
+      <path d="M230 500 Q250 550 240 545" fill="none" stroke="#7AAACA" stroke-width="1" stroke-dasharray="4 3" opacity="0.3"/>
+
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="#B8892A" stroke-width="1.5"/>
+        </marker>
+      </defs>
+
+      <!-- Compass -->
+      <g transform="translate(648,740)">
+        <circle r="22" fill="#0A0600" stroke="#B8892A" stroke-width="0.5" opacity="0.7"/>
+        <polygon points="0,-16 3,-4 0,0 -3,-4" fill="#B8892A"/>
+        <polygon points="0,16 3,4 0,0 -3,4" fill="#4A3010"/>
+        <text y="-20" text-anchor="middle" fill="#B8892A" font-size="9" font-family="serif">N</text>
+      </g>
+
+      <!-- Title block -->
+      <rect x="8" y="8" width="156" height="58" rx="4" fill="#0A0600" opacity="0.7"/>
+      <text x="86" y="26" text-anchor="middle" fill="#B8892A" font-size="10" font-family="Cinzel,serif" letter-spacing="0.06em">CANAAN & SURROUNDS</text>
+      <text x="86" y="40" text-anchor="middle" fill="#7A6030" font-size="8" font-family="serif">c. 2166–1800 BC</text>
+      <text x="86" y="54" text-anchor="middle" fill="#5A4020" font-size="7" font-family="serif">Abraham · Isaac · Jacob</text>
+    </svg>
+
+    <div class="map-legend">
+      <div class="leg-item"><div class="leg-dot" style="background:#CA7A7A"></div>Key location</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#7AAACA"></div>💧 Well dug</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#7ACA9A"></div>🌳 Tree mentioned</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#D4A840"></div>🏕 Tent mentioned</div>
+      <div class="leg-item"><div class="leg-sq" style="background:#7A4A1A;opacity:0.5"></div>Philistia</div>
+      <div class="leg-item"><div class="leg-sq" style="background:#4A6A1A;opacity:0.5"></div>Amorite Hills</div>
+      <div class="leg-item"><div class="leg-sq" style="background:#6A2A0A;opacity:0.5"></div>Amalekite Negev</div>
+      <div class="leg-item"><div class="leg-sq" style="background:#5A3A1A;opacity:0.5"></div>Edom/Seir</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== TIMELINE ========== -->
+<div id="timeline-panel" class="panel">
+  <p class="panel-intro">A chronological account of all major events, marked with wells, trees, tents, covenants, altars, and the peoples involved. Approximate dates follow traditional biblical chronology.</p>
+
+  <div class="tl-wrap">
+
+    <!-- EVENT 1 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#B8892A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2091 BC — Genesis 12:1–9</div>
+      <div class="tl-title">Abraham's Call & Journey Through Canaan</div>
+      <div class="tl-ref">Genesis 12:1–9 · Ur → Haran → Canaan</div>
+      <div class="tl-body">God calls Abram from Ur of the Chaldees. He travels to Canaan and arrives at Shechem at the <strong>Oak of Moreh</strong> — the first tree mentioned in the patriarchal narratives. God appears and promises the land to his descendants. Abraham builds an altar. He moves southeast, <strong>pitching his tent</strong> between Bethel and Ai, and builds a second altar. He continues south through the Negev and ultimately into Egypt during a famine (Gen 12:10), where he deceives Pharaoh by calling Sarah his sister. Pharaoh sends them away enriched.</div>
+      <div class="tl-markers">
+        <span class="marker m-tree">🌳 Oak of Moreh at Shechem</span>
+        <span class="marker m-tent">🏕 Tent between Bethel & Ai</span>
+        <span class="marker m-altar">🕍 Two altars built</span>
+        <span class="marker m-peoples">Amorites in hill country</span>
+      </div>
+    </div>
+
+    <!-- EVENT 2 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#7A4A1A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2082 BC — Genesis 13</div>
+      <div class="tl-title">Abraham & Lot Separate; Oaks of Mamre</div>
+      <div class="tl-ref">Genesis 13:14–18 · Bethel → Hebron</div>
+      <div class="tl-body">After strife between their herdsmen, Abraham and Lot divide the land. Lot chooses the well-watered Jordan Plain (near Sodom). God renews the covenant promise to Abraham. Abraham <strong>moves his tent</strong> and settles near <strong>the Oaks (or Terebinths) of Mamre</strong> at Hebron — the great tree-grove owned by Mamre the Amorite. Abraham builds an altar there. This grove becomes his primary dwelling place for much of the rest of his life. The oaks of Mamre are mentioned explicitly as trees (Genesis 13:18; 14:13; 18:1).</div>
+      <div class="tl-markers">
+        <span class="marker m-tree">🌳 Oaks of Mamre, Hebron</span>
+        <span class="marker m-tent">🏕 Tent at Mamre</span>
+        <span class="marker m-altar">🕍 Altar at Hebron</span>
+        <span class="marker m-peoples">Amorites — landowners Mamre, Eshcol, Aner</span>
+      </div>
+    </div>
+
+    <!-- EVENT 3 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#4A6A1A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2081 BC — Genesis 14</div>
+      <div class="tl-title">War of the Nine Kings — Abraham's Military Covenant</div>
+      <div class="tl-ref">Genesis 14:1–24 · Valley of Siddim → Dan → Hobah</div>
+      <div class="tl-body">King Chedorlaomer of Elam leads three allied kings against the five kings of the Jordan plain (Sodom, Gomorrah, etc.) after twelve years of tribute and a rebellion. On their route, the eastern kings defeat the Rephaim, Zuzim, Emim, Horites, and specifically "<strong>the Amalekites and the Amorites at Hazazon-tamar</strong>" (Gen 14:7). Lot is captured when Sodom is sacked. Abraham, encamped at <strong>the oaks of Mamre</strong>, is informed. He musters 318 trained men born in his household plus his Amorite allies — Mamre, Eshcol, and Aner, described as <em>ba'alei berit</em> ("those bound by a treaty") with Abraham — and pursues north as far as Dan, then Hobah (north of Damascus), rescuing Lot and all the goods. Returning, he meets Melchizedek of Salem and the king of Sodom. Abraham refuses the spoils but insists his allies receive their share per their covenant agreement.</div>
+      <div class="tl-markers">
+        <span class="marker m-tree">🌳 Oaks of Mamre (command post)</span>
+        <span class="marker m-covenant">⚖ Treaty: Abraham + Mamre, Eshcol, Aner</span>
+        <span class="marker m-peoples">Amalekites defeated at Kadesh</span>
+        <span class="marker m-peoples">Amorites at Hazazon-tamar defeated</span>
+        <span class="marker m-peoples">Amorites as Abraham's allies</span>
+      </div>
+    </div>
+
+    <!-- EVENT 4 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#1A4A2A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2081 BC — Genesis 15</div>
+      <div class="tl-title">The Covenant of the Pieces — Abrahamic Covenant</div>
+      <div class="tl-ref">Genesis 15:1–21 · Mamre/Hebron</div>
+      <div class="tl-body">In a vision at night, God makes his unconditional covenant with Abraham. He announces that Abraham's descendants will be enslaved 400 years, then inherit the land. The land grant specifically names the <strong>Amorites</strong> among the ten peoples whose land will be given to Abraham's seed. God declares: "In the fourth generation they shall come back here, for the iniquity of the Amorites is not yet complete" (Gen 15:16) — showing that the Amorites are being allowed historical time to continue in the land before judgment. God passes between the pieces of the covenant sacrifice as a smoking firepot and flaming torch while Abraham sleeps — binding God alone to the covenant unilaterally.</div>
+      <div class="tl-markers">
+        <span class="marker m-covenant">⚖ Abrahamic Covenant (unconditional)</span>
+        <span class="marker m-peoples">Amorites — future judgment deferred</span>
+      </div>
+    </div>
+
+    <!-- EVENT 5 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#7A1C1C;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2080 BC — Genesis 20</div>
+      <div class="tl-title">Abraham at Gerar — "Sarah is my Sister" Deception</div>
+      <div class="tl-ref">Genesis 20:1–18 · Gerar (Philistine territory)</div>
+      <div class="tl-body">Abraham moves south through the Negev and sojourns in Gerar, the Philistine city ruled by Abimelech ("my father the king" — likely a title, not a personal name). Fearing the Philistines will kill him for his beautiful wife, Abraham deceives Abimelech by claiming Sarah is his sister (technically a half-truth; she was a half-sister). God appears to Abimelech in a dream, warning him. Abimelech had not touched Sarah; he returns her with gifts of sheep, oxen, servants, and 1,000 pieces of silver. Abimelech rebukes Abraham for the deception — a pagan king publicly reproves the patriarch. Abraham prays and God heals Abimelech's household, which had been struck with barrenness. The Philistines here are moral actors and show restraint.</div>
+      <div class="tl-markers">
+        <span class="marker m-peoples">Philistines — Abimelech of Gerar</span>
+        <span class="marker m-covenant">⚖ Implicit obligation: Abraham to be honest</span>
+      </div>
+    </div>
+
+    <!-- EVENT 6 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#B8892A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 2067 BC — Genesis 21:22–34</div>
+      <div class="tl-title">Beersheba Covenant: Abraham & Abimelech — Well of the Oath</div>
+      <div class="tl-ref">Genesis 21:22–34 · Beersheba</div>
+      <div class="tl-body">Abimelech and his army commander Phicol approach Abraham, acknowledging "God is with you in everything you do." They request a covenant of mutual non-aggression extending through future generations. Before sealing it, Abraham raises a grievance: Abimelech's servants had <strong>seized a well Abraham had dug</strong>. Abimelech claims ignorance. Abraham then: (1) gives Abimelech sheep and oxen as covenant animals; (2) sets apart seven ewe lambs as legal witness that Abraham dug the well — the lambs function as earnest money securing Abraham's perpetual rights to the well; (3) both men swear. The place is named <strong>Beersheba</strong> (Beer = well; Sheba = seven OR oath — the Hebrew words share a root, creating a deliberate double meaning). Abraham then <strong>plants a tamarisk tree</strong> at Beersheba and worships the LORD, the Everlasting God (<em>El Olam</em>). Abraham dwells in the land of the Philistines for many days.</div>
+      <div class="tl-markers">
+        <span class="marker m-well">💧 Well at Beersheba — "Abraham dug this"</span>
+        <span class="marker m-tree">🌳 Tamarisk tree planted</span>
+        <span class="marker m-covenant">⚖ Covenant: Abraham & Abimelech of Gerar</span>
+        <span class="marker m-peoples">Philistines — parties to the covenant</span>
+      </div>
+    </div>
+
+    <!-- EVENT 7 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#2A4A7A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 1977 BC — Genesis 26:1–33</div>
+      <div class="tl-title">Isaac at Gerar & Beersheba — The Pattern Repeats</div>
+      <div class="tl-ref">Genesis 26:1–33 · Gerar → Valley of Gerar → Beersheba</div>
+      <div class="tl-body">A second famine sends Isaac toward Egypt, but God intervenes: "Do not go to Egypt." Isaac stays in Gerar. He too calls Rebekah his sister, and Abimelech (same title, possibly same king or his son) discovers the deception when he sees Isaac caressing Rebekah from a window. Isaac's crops yield a hundredfold and he becomes very wealthy — the Philistines envy him. Abimelech orders him to leave; "you have become much more powerful than we are." The Philistines then <strong>stopped up all the wells Abraham had dug</strong>, filling them with earth — a serious breach of the earlier covenant's spirit. Isaac moves to the Valley of Gerar and <strong>re-opens Abraham's wells</strong>, calling them by their original names. His servants dig a new well; the herdsmen of Gerar quarrel and claim it — Isaac names it <strong>Esek</strong> (quarrel/contention). He digs another; contested again — <strong>Sitnah</strong> (enmity/hostility). He moves and digs again — no contest: he names it <strong>Rehoboth</strong> (room/spacious). At Beersheba, God reaffirms the covenant for Abraham's sake. Isaac builds an altar, <strong>pitches his tent</strong>, and his servants <strong>dig a well</strong>. Abimelech, Ahuzzath, and Phicol then visit, acknowledge God is with Isaac, and propose a new covenant. Isaac agrees. They feast and the next morning exchange oaths. The same day, water is found in the new well — Isaac names it <strong>Shibah/Shebah</strong> (oath), renewing the name Beersheba.</div>
+      <div class="tl-markers">
+        <span class="marker m-well">💧 Wells re-opened (Abraham's) + Esek, Sitnah, Rehoboth</span>
+        <span class="marker m-well">💧 Well at Beersheba (Shibah/oath)</span>
+        <span class="marker m-tent">🏕 Isaac's tent at Beersheba</span>
+        <span class="marker m-altar">🕍 Altar at Beersheba</span>
+        <span class="marker m-covenant">⚖ Covenant: Isaac & Abimelech + Phicol</span>
+        <span class="marker m-peoples">Philistines — contested wells, renewed treaty</span>
+      </div>
+    </div>
+
+    <!-- EVENT 8 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#3A1A4A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 1930 BC — Genesis 28:10–22</div>
+      <div class="tl-title">Jacob's Ladder at Bethel — Vow to God</div>
+      <div class="tl-ref">Genesis 28:10–22 · Bethel</div>
+      <div class="tl-body">Fleeing to Haran, Jacob stops at a "certain place" (later revealed as Bethel) and sleeps on a stone for a pillow. He sees a ladder reaching heaven with angels ascending and descending. God confirms the Abrahamic covenant to Jacob. Jacob awakens, sets up the stone as a <strong>pillar</strong>, anoints it with oil, and names the place <strong>Bethel</strong> ("House of God"). He makes a conditional vow: if God brings him back safely, the LORD will be his God, he will give tithes, and the pillar will be a house of God. This is Jacob's first individual covenant commitment — conditional on God's protection.</div>
+      <div class="tl-markers">
+        <span class="marker m-covenant">⚖ Vow: Jacob to God (conditional)</span>
+        <span class="marker m-altar">🕍 Stone pillar anointed</span>
+      </div>
+    </div>
+
+    <!-- EVENT 9 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#3A1A4A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 1910 BC — Genesis 31:44–55</div>
+      <div class="tl-title">Covenant at Mizpah — Jacob & Laban</div>
+      <div class="tl-ref">Genesis 31:44–55 · Hill country of Gilead</div>
+      <div class="tl-body">After 20 years, Jacob flees Laban with his wives and flocks. Laban pursues and catches him in the hill country of Gilead. God has warned Laban not to harm Jacob. They argue bitterly — Laban claims everything is his; Jacob lists 20 years of faithful service and Laban's deceit in changing his wages ten times. Laban proposes a covenant. Elements: (1) Jacob sets a <strong>stone pillar</strong>; kinsmen gather a <strong>heap of stones</strong>; (2) Laban names it <em>Jegar-sahadutha</em> (Aramaic: "heap of witness"); Jacob calls it <em>Galeed</em> (Hebrew: same meaning); the place is also called <strong>Mizpah</strong> (watchtower/watchpost); (3) Laban's terms: God watches when you are absent — if you mistreat my daughters or take other wives, God judge you; (4) the heap is a physical border — neither party shall cross it to harm the other; (5) Jacob swears by "the Fear of his father Isaac"; (6) Jacob offers a sacrifice; they share a covenant meal; they sleep, and Laban departs at dawn. This is a separation-covenant, not an alliance — it formally ends Jacob's family connection to Laban's household.</div>
+      <div class="tl-markers">
+        <span class="marker m-covenant">⚖ Covenant: Jacob & Laban at Mizpah</span>
+        <span class="marker m-tent">🏕 Jacob's tent in Gilead (Gen 31:25)</span>
+        <span class="marker m-altar">🕍 Stone heap + pillar as witness</span>
+      </div>
+    </div>
+
+    <!-- EVENT 10 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#B8892A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 1909 BC — Genesis 32–33</div>
+      <div class="tl-title">Jacob Wrestles God; Reconciles with Esau</div>
+      <div class="tl-ref">Genesis 32–33 · Peniel / Jabbok → Shechem</div>
+      <div class="tl-body">At the Jabbok ford, Jacob wrestles a divine "man" through the night — identified as God (Hosea 12:3–4) — and receives the new name <strong>Israel</strong>. Jacob names the place <strong>Peniel</strong> ("face of God"). He then encounters Esau, the feared reunion culminating not in conflict but in peace. They reconcile and embrace. Jacob purchases land at Shechem and <strong>pitches his tent</strong> there. He builds an altar and names it <em>El Elohe Israel</em> ("God, the God of Israel"). Note: Esau is the grandfather (through Eliphaz and Timna) of the future Amalekites — a detail Genesis 36 will record.</div>
+      <div class="tl-markers">
+        <span class="marker m-tent">🏕 Jacob's tent at Shechem</span>
+        <span class="marker m-altar">🕍 Altar El Elohe Israel</span>
+        <span class="marker m-peoples">Esau — ancestor of Amalekites (Gen 36:12)</span>
+      </div>
+    </div>
+
+    <!-- EVENT 11 -->
+    <div class="tl-event">
+      <div class="tl-dot" style="background:#1A4A2A;"></div>
+      <div class="tl-era" style="color:#7A6030;">c. 1907 BC — Genesis 35:1–15</div>
+      <div class="tl-title">Jacob Returns to Bethel — Renewal of Vow; Pillar</div>
+      <div class="tl-ref">Genesis 35:1–15 · Bethel</div>
+      <div class="tl-body">God commands Jacob to return to Bethel and fulfill his earlier vow. Jacob commands his household to put away their foreign gods (including the household gods Rachel stole from Laban). They bury the gods and earrings under the <strong>oak at Shechem</strong> — a terebinth tree specifically mentioned. Jacob builds an altar at Bethel. God appears again, confirms the name Israel, and renews the Abrahamic covenant. Jacob sets up a <strong>stone pillar</strong> and pours a drink offering and oil on it. The great tragedy here: Rachel dies giving birth to Benjamin near Bethlehem. Jacob sets a <strong>pillar over her tomb</strong>.</div>
+      <div class="tl-markers">
+        <span class="marker m-tree">🌳 Oak/terebinth at Shechem (foreign gods buried)</span>
+        <span class="marker m-altar">🕍 Altar at Bethel</span>
+        <span class="marker m-covenant">⚖ Jacob's Bethel vow fulfilled</span>
+        <span class="marker m-altar">🕍 Pillar over Rachel's tomb</span>
+      </div>
+    </div>
+
+  </div><!-- end tl-wrap -->
+</div>
+
+<!-- ========== COVENANTS ========== -->
+<div id="covenant-panel" class="panel">
+  <p class="panel-intro">
+    Every formal agreement, oath, and covenant in the patriarchal narratives, with analysis of whether it was kept, breached, or complicated, and commentary on the motivations and consequences.
+  </p>
+
+  <!-- COVENANT 1: Abraham/Amorite alliance -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">1</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#7ACA9A;">Military Alliance — Abraham & the Amorites</div>
+        <div class="cvt-parties">Parties: Abraham and Mamre, Eshcol, Aner (Amorite brothers) · Genesis 14:13 · c. 2081 BC</div>
+      </div>
+      <div class="cvt-status status-kept">Kept</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms</div>
+      <div class="cvt-text">A defensive treaty of mutual protection between Abraham and three Amorite chieftains based in the Hebron region. The Hebrew phrase is <em>ba'alei berit</em> — "lords of a covenant" or "those bound by treaty." When Lot is captured, all three honor the covenant and join Abraham's rescue mission (Gen 14:24).</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">Yes — all three participated in the battle, and Abraham specifically ensured their rightful share of the spoils at the end, refusing to take any for himself while insisting his allies be paid (Gen 14:24). This is one of the most straightforwardly honored covenants in the patriarchal narrative.</div>
+      <div class="cvt-commentary">Commentary: This alliance is remarkable because Abraham (a Semite) is in covenant partnership with Amorites (Canaanites, descendants of Ham) — precisely the people whose land God has promised to give Abraham's seed. Genesis 15:16 explains God's patience: "the iniquity of the Amorites is not yet complete." Abraham lived alongside the Amorites as allies for decades. His friendship with them did not compromise his loyalty to God, but it stands in deliberate tension with the later Mosaic command to make no covenants with the Canaanites (Deut 7:2).</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 2: Genesis 20 implicit -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">2</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#CA7A7A;">Implicit Obligation — Abraham's Deception at Gerar</div>
+        <div class="cvt-parties">Parties: Abraham and Abimelech (Philistine king of Gerar) · Genesis 20 · c. 2080 BC</div>
+      </div>
+      <div class="cvt-status status-breached">Breached by Abraham</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms (implicit)</div>
+      <div class="cvt-text">No formal covenant existed, but as a guest in Abimelech's territory, Abraham owed basic honesty to his host. The ancient Near Eastern code of hospitality created obligations on both host and guest. Abraham violated this by calling Sarah his sister — endangering Abimelech's household and kingdom through divine punishment without Abimelech's knowledge or fault.</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">No. Abraham's excuse ("there is no fear of God in this place") was ironically disproved by Abimelech's own moral conduct. Abimelech behaved with more ethical integrity than Abraham in this episode. When Abimelech later seeks a formal covenant (Gen 21), he explicitly says "swear to me you will not deceive me" — showing that Abraham's prior conduct was a genuine reputational liability requiring formal remedy.</div>
+      <div class="cvt-commentary">Commentary: Abraham repeated this same deception twice (once in Egypt, Gen 12, and here in Gerar). Isaac later repeated it with Rebekah in the same city (Gen 26:7). The pattern suggests a family-level moral blind spot — a failure to trust God in vulnerable situations, substituting strategy for faith. The generational repetition in the same location with the same "Abimelech" is almost certainly deliberate literary theology: God protects the promise despite the patriarch's failure.</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 3: Beersheba Abraham -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">3</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#7AAACA;">Beersheba Treaty — Abraham & Abimelech (Well of the Seven/Oath)</div>
+        <div class="cvt-parties">Parties: Abraham and Abimelech + Phicol · Genesis 21:22–34 · c. 2067 BC</div>
+      </div>
+      <div class="cvt-status status-complex">Complex / Partially broken later</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms</div>
+      <div class="cvt-text">A formal bilateral covenant (berit). Abraham swore not to deal falsely with Abimelech, his children, or descendants. Seven ewe lambs witnessed Abraham's exclusive rights to the well he dug. Abimelech acknowledged the well's ownership. A tamarisk tree was planted as a lasting physical memorial. The covenant explicitly extended to future generations — "you and your offspring and your descendants" (Gen 21:23).</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">Abraham kept it. But approximately 90 years later, during Isaac's time, "the Philistines stopped up all the wells which his father's servants had dug in the days of Abraham, filling them with earth" (Gen 26:15). This was a material breach of the spirit of the covenant by Abimelech's successors — denying Isaac access to wells his father had legally secured by treaty.</div>
+      <div class="cvt-commentary">Commentary: The Philistines' stopping up of Abraham's wells is one of the most politically revealing moments in the patriarchal narrative. The covenant had explicitly extended to "offspring and descendants" — meaning the very wells that were plugged should have been protected by treaty obligation. The Philistines' motivation is transparently stated: envy of Isaac's divinely-blessed prosperity (Gen 26:14). Stopping the wells was an act of economic warfare short of open combat — a passive-aggressive covenant breach. It forced Isaac into a series of confrontations that ultimately led to a new treaty on essentially the same terms as his father's, suggesting the original covenant had become unenforceable.</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 4: Isaac deception -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">4</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#CA7A7A;">Isaac's Deception at Gerar — "Rebekah is my Sister"</div>
+        <div class="cvt-parties">Parties: Isaac and Abimelech (Philistine king) · Genesis 26:6–11 · c. 1977 BC</div>
+      </div>
+      <div class="cvt-status status-breached">Breach of guest ethics</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms (implicit)</div>
+      <div class="cvt-text">Like his father before him, Isaac called his wife his sister. God had explicitly told him to stay in Gerar (Gen 26:2) — making this location-specific cowardice in a place God had designated safe. Abimelech discovered the truth by observing Isaac and Rebekah showing marital affection from a palace window.</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">No. Abimelech reproved Isaac: "What is this you have done to us? One of the people might easily have lain with your wife, and you would have brought guilt upon us." Once again a Philistine king rebukes a patriarch for moral failure in the patriarch's own territory. Abimelech was more righteous in this moment than the man through whom God's covenant ran.</div>
+      <div class="cvt-commentary">Commentary: The near-identical repetition of the "wife/sister" deception across two generations, in the same city, with a ruler bearing the same title, is almost certainly a theological comment on inherited sin patterns. Isaac did not learn from Abraham's failure — he repeated it. The irony is profound: God had just promised Isaac extraordinary blessing (Gen 26:2–5), yet Isaac immediately resorted to deception rather than trusting that divine protection. The pattern underlines that the patriarchs were chosen not because of personal righteousness but despite frequent moral failure — the covenant was God's faithfulness, not theirs.</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 5: Isaac wells -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">5</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#7AAACA;">Beersheba Treaty II — Isaac & Abimelech (Shibah)</div>
+        <div class="cvt-parties">Parties: Isaac and Abimelech + Ahuzzath + Phicol · Genesis 26:26–33 · c. 1977 BC</div>
+      </div>
+      <div class="cvt-status status-kept">Kept (immediately)</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms</div>
+      <div class="cvt-text">Abimelech requests a sworn treaty of mutual non-aggression. Isaac initially questions ("you hate me and sent me away") — a reference to being expelled from Gerar. Abimelech acknowledges "the LORD is with you" and proposes: "swear that you will not harm us, just as we have not harmed you." Isaac accepts. They feast; the next morning exchange oaths. Isaac names the new well Shibah (oath), giving Beersheba a second layer of covenant naming.</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">The text records no breach. The well of Shibah/Beersheba became one of the longest-standing landmarks in Israelite geography — "from Dan to Beersheba" became the standard expression for the full extent of Israel's territory (Judges 20:1; 1 Samuel 3:20).</div>
+      <div class="cvt-commentary">Commentary: Isaac's question — "why have you come to me since you hate me and sent me away?" — reveals real political tension. The Philistines had expelled him because he was becoming "much mightier than we" (Gen 26:16). Their proposal of a new treaty was motivated by fear of his growing strength, not affection. Abimelech's claim that they had "not harmed" Isaac skirts around the plugging of Abraham's wells and the well-disputes in the valley. Isaac's acceptance shows pragmatic grace — he did not insist on full accounting for past grievances but accepted the terms that secured peace going forward.</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 6: Jacob's Bethel vow -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">6</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#CA7ACA;">Jacob's Vow at Bethel</div>
+        <div class="cvt-parties">Parties: Jacob and God · Genesis 28:20–22 · c. 1930 BC</div>
+      </div>
+      <div class="cvt-status status-partial">Conditional / Later Fulfilled</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms</div>
+      <div class="cvt-text">Jacob's vow is explicitly conditional: "If God will be with me and will watch over me on this journey I am taking and will give me food to eat and clothes to wear so that I return safely to my father's household, then the LORD will be my God and this stone that I have set up as a pillar will be God's house, and of all that you give me I will give you a tenth." This is a conditional personal vow — not a covenant God initiated but one Jacob proposed. Some scholars note that a man bargaining with God in this way shows Jacob's characteristic mercantile mindset (he also bargained with Laban and with Esau).</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">Yes — eventually. In Genesis 35, God commands Jacob to return to Bethel, and Jacob obeys, fulfilling his vow by building an altar and consecrating the pillar. But fulfillment came only after 20 years in Haran, considerable wealth accumulation, and a divine command that may have been necessary to remind Jacob to follow through.</div>
+      <div class="cvt-commentary">Commentary: The 20-year gap before fulfillment raises a legitimate question about Jacob's intentions. Having received everything he asked for, was he slow to return to Bethel? God's specific command in Genesis 35:1 ("Go up to Bethel and settle there") suggests Jacob needed prompting. The vow was fulfilled, but the delay and the divine prod suggest it was not uppermost in Jacob's priorities during the Haran years. The theft of Laban's household gods by Rachel (and Jacob's ignorance of it) further complicated the household's theological integrity going into Bethel — Jacob had to first command his family to put away foreign gods before approaching Bethel (Gen 35:2).</div>
+    </div>
+  </div>
+
+  <!-- COVENANT 7: Jacob/Laban -->
+  <div class="cvt-card">
+    <div class="cvt-head">
+      <div class="cvt-num">7</div>
+      <div class="cvt-info">
+        <div class="cvt-title" style="color:#CA7ACA;">Covenant of Mizpah — Jacob & Laban</div>
+        <div class="cvt-parties">Parties: Jacob and Laban the Aramean · Genesis 31:44–55 · c. 1910 BC · Hill country of Gilead</div>
+      </div>
+      <div class="cvt-status status-kept">Kept — final separation</div>
+    </div>
+    <div class="cvt-body">
+      <div class="cvt-section">Terms</div>
+      <div class="cvt-text">A separation-covenant with five elements: (1) stone pillar + heap of stones as physical boundary marker; (2) Laban's claim that God watches between them when absent — a divine surveillance clause; (3) Jacob's promise not to mistreat Laban's daughters or take additional wives; (4) a border: neither party shall cross the heap to harm the other; (5) oath in the name of "the God of Abraham, the God of Nahor, the God of their father." Jacob swears by "the Fear of his father Isaac." Sacrifice + covenant meal seal it.</div>
+      <div class="cvt-section">Was it kept?</div>
+      <div class="cvt-text">Yes — Laban departs and is never mentioned again. Jacob goes on to fulfil his obligations to his wives. The physical frontier at Galeed/Mizpah marked the permanent separation of Jacob's line from Laban's clan. This is the last mention of the family of Nahor in Scripture.</div>
+      <div class="cvt-commentary">Commentary: There is deep irony in Laban proposing the covenant. He had been the one who changed Jacob's wages ten times (Gen 31:41), who deceived Jacob over Leah and Rachel, and who now frames himself as the wronged party needing protection. The "Mizpah blessing" beloved in Christian tradition ("the LORD watch between you and me when we are absent one from another") was in its original context a surveillance threat, not a benediction — essentially: "May God watch you when I cannot, to make sure you keep this agreement." Jacob's complaint about 20 years of unjust treatment (Gen 31:36–42) is one of the most impassioned speeches in Genesis and goes unanswered by Laban, who can only claim kinship rights while acknowledging he cannot enforce them against God's clear blessing of Jacob.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ========== PEOPLES ========== -->
+<div id="peoples-panel" class="panel">
+  <p class="panel-intro">
+    The peoples and regions encountered by the patriarchs, with their biblical origin, territory, relationship to Abraham/Isaac/Jacob, and significance in the broader narrative.
+  </p>
+
+  <div class="people-grid">
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #C89060;">
+        <div class="people-name" style="color:#C89060;">Philistines</div>
+        <div class="people-origin">Origin: Casluhim (son of Mizraim/Egypt) · Gen 10:14; Amos 9:7</div>
+      </div>
+      <div class="people-body">
+        Originally sea peoples from the Aegean / Caphtor (Crete). By Abraham's time they had settled the coastal plain of Canaan around Gerar. Their king bore the title <strong>Abimelech</strong> ("my father the king") — a dynastic title, not a personal name. Their commander bore the title <strong>Phicol</strong> ("mouth of all").<br><br>
+        <strong>Interactions:</strong> Abraham deceives Abimelech (Gen 20) → Abimelech acts morally. Covenant at Beersheba (Gen 21). Abraham "sojourned many days in the land of the Philistines." Isaac's wells disputed and stopped up (Gen 26). Second covenant at Beersheba renewed (Gen 26:26–33).<br><br>
+        <strong>Notable:</strong> In both encounters, the Philistine king rebuked the patriarch for moral failure. The Philistines were not Israel's enemy yet — that would come much later, after the Sea Peoples' mass migration (c. 1200 BC).
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-ally">Ally (Abraham)</span>
+          <span class="people-tag tag-neutral">Mixed (Isaac)</span>
+          <span class="people-tag tag-enemy">Enemy (later kings)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #80A040;">
+        <div class="people-name" style="color:#80A040;">Amorites</div>
+        <div class="people-origin">Origin: Canaan son of Ham · Gen 10:16; descend from Amorite eponymous ancestor</div>
+      </div>
+      <div class="people-body">
+        The dominant people of the Canaanite hill country at the time of the patriarchs. Their name appears in Egyptian and Mesopotamian records as "Amurru" — originally referring to peoples from the western highlands. In Genesis they occupy the central hill country around Hebron, Shechem, and Hazazon-tamar.<br><br>
+        <strong>Mamre, Eshcol, and Aner</strong> — three Amorite brothers who were Abraham's covenant-allies at Hebron (Gen 14:13). Their grove at Mamre became Abraham's primary dwelling. They fought alongside Abraham to rescue Lot. Their land was Abraham's neighborhood.<br><br>
+        <strong>Tension:</strong> God declares the Amorites' "iniquity is not yet complete" (Gen 15:16), indicating future judgment deferred — they are allowed continued residence in the land temporarily. The Ugaritic texts (c. 1400 BC) describe Amorite religious practices involving violence and sexual perversion that would eventually warrant their dispossession.<br><br>
+        <strong>Shechem</strong> — called an "Amorite city" (Gen 48:22) — was the city near which Jacob purchased land.
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-ally">Allies (Gen 14)</span>
+          <span class="people-tag tag-enemy">Future enemy (Josh)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #C06030;">
+        <div class="people-name" style="color:#C06030;">Amalekites</div>
+        <div class="people-origin">Origin: Amalek, son of Eliphaz, grandson of Esau · Gen 36:12,16</div>
+      </div>
+      <div class="people-body">
+        Descended from Esau's son Eliphaz and his concubine Timna (a Horite princess). They inhabited the Negev and Sinai peninsula — nomadic semi-pastoralists in the border region between Canaan and Egypt. Genesis 14:7 references "the country of the Amalekites" at Kadesh in Abraham's time — likely a prolepsis (later name used for the region they would occupy), since Amalek himself was not yet born.<br><br>
+        <strong>Genesis-era role:</strong> Genesis 14 records their defeat alongside the Amorites by Chedorlaomer's coalition — they were in the vicinity of Kadesh when the eastern kings swept through. They were not yet called "Israel's enemy" in the patriarchal period.<br><br>
+        <strong>Future:</strong> Their enmity begins in Exodus 17 (attack at Rephidim). God declares perpetual war. Saul is commanded to destroy them (1 Sam 15) but fails. David defeats them repeatedly. The last biblical Amalekite may be Haman in Esther — identified as an Agagite.
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-neutral">Tangential (Genesis)</span>
+          <span class="people-tag tag-enemy">Arch-enemy (Exodus onward)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #A07040;">
+        <div class="people-name" style="color:#A07040;">Edomites (& Esau)</div>
+        <div class="people-origin">Origin: Esau, twin brother of Jacob · Gen 25:30; 36:1–43</div>
+      </div>
+      <div class="people-body">
+        Esau — also called Edom ("red") — is Jacob's twin brother and founder of the nation of Edom, which settled in the hill country of Seir (modern Jordan/southern Israel). Their enmity began in the womb (Gen 25:22) and was codified through the stolen birthright and blessing.<br><br>
+        <strong>Covenant interaction:</strong> Esau harbored murderous intentions after Jacob stole his blessing (Gen 27:41). When they reunite (Gen 33), it is one of the most emotionally complex reconciliations in Scripture — no formal covenant is made, but peace is established. Esau's son Eliphaz fathered Amalek through the concubine Timna.<br><br>
+        <strong>Territory:</strong> God explicitly told Israel not to seize Edom's land (Deut 2:5) since it belonged to Esau's descendants as their inheritance — a parallel to the Moabite and Ammonite protections.
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-neutral">Brother (Jacob)</span>
+          <span class="people-tag tag-enemy">Contested (later history)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #7A5A9A;">
+        <div class="people-name" style="color:#9A7ACA;">Arameans (Laban's clan)</div>
+        <div class="people-origin">Origin: Aram, son of Shem · Gen 10:22; Laban = "Laban the Aramean"</div>
+      </div>
+      <div class="people-body">
+        Laban lived in Paddan-aram (Haran region, upper Mesopotamia) — the ancestral homeland of Abraham's family. Both Rebekah and Rachel/Leah were daughters of this family, making Jacob's wives his cousins. The Arameans used Aramaic (related to Hebrew), which explains why Laban gives the stone heap its Aramaic name while Jacob gives it the Hebrew name.<br><br>
+        <strong>Key interactions:</strong> Jacob worked 14 years for his wives and 6 more for his flocks. Laban changed Jacob's wages ten times. Jacob fled secretly. Laban pursued. God warned Laban in a dream. Covenant at Mizpah permanently separated the family lines.<br><br>
+        <strong>Significance:</strong> Deuteronomy 26:5 — the confession Israel recited at firstfruits: "a wandering Aramean was my father" (referring to Jacob/Laban's region). The Mizpah covenant is the moment the House of Israel finally separates from its Aramean roots in obedience to God's original call to Abraham: "leave your kindred."
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-ally">Extended family</span>
+          <span class="people-tag tag-enemy">Oppressor (later history)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-card">
+      <div class="people-head" style="border-left: 3px solid #6A9A4A;">
+        <div class="people-name" style="color:#8ACA6A;">Canaanites (general)</div>
+        <div class="people-origin">Origin: Canaan, son of Ham · Gen 10:6,15–19</div>
+      </div>
+      <div class="people-body">
+        The general designation for the peoples of the land of Canaan — including Hittites, Jebusites, Perizzites, Hivites, Girgashites, and Amorites as sub-groups. Genesis 12:6 notes "the Canaanite was then in the land" when Abraham arrived — indicating the land was occupied but that the narrator views it as a temporary arrangement.<br><br>
+        <strong>Patriarchal era:</strong> The patriarchs lived among the Canaanites as resident aliens (gerim) — tolerated by the local populations, purchasing land by treaty (Abraham buys the cave of Machpelah from Hittite Ephron, Gen 23), and maintaining complex relationships of commerce, friendship, and occasional conflict.<br><br>
+        <strong>Notable:</strong> The Dinah incident (Gen 34) — Shechem the Hivite violates Dinah; Simeon and Levi massacre the Shechemites in revenge, violating a deceptive circumcision covenant. Jacob is appalled ("you have brought trouble on me by making me a stench to the Canaanites and Perizzites," Gen 34:30) — showing the patriarchs depended on Canaanite goodwill.
+        <div style="margin-top:8px;">
+          <span class="people-tag tag-neutral">Coexistence (patriarchs)</span>
+          <span class="people-tag tag-enemy">Dispossession commanded (Moses)</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note" style="margin-top:20px;">
+    <strong>The Great Irony of the Patriarchal Period:</strong> Throughout Genesis, the peoples destined to be Israel's enemies — Philistines, Amorites, Canaanites — are often depicted as more morally upright in specific incidents than the patriarchs themselves. Abimelech rebukes Abraham twice and Isaac once. The Amorite chieftains honor their treaty faithfully. Laban, for all his faults, correctly notes that Jacob left secretly without allowing him to say goodbye to his daughters. This consistent pattern is not accidental — it is the biblical narrator's way of showing that Israel's privilege was rooted in divine grace and covenant, not in innate moral superiority. The covenant ran through flawed people, protected by a faithful God.
+  </div>
+
+</div>
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+  <div class="author-wrap">
+    <p style="font-family:var(--font-ui);font-size:.6rem;letter-spacing:.22em;color:var(--ink-4);text-transform:uppercase;margin-top:40px;">Published 2026 &nbsp;·&nbsp; Reviewed May 30, 2026 &nbsp;·&nbsp; Scripture: NRSVue</p>
+    <div class="author-block">
+      <div class="author-avatar"><span>LS</span></div>
+      <div>
+        <span class="author-name">Lee Sadler</span>
+        <span class="author-bio">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong&rsquo;s Concordance; biblical commentaries; and generative AI by Claude. &middot; <a href="mailto:lee.sadler@readthescripture.com" style="color:var(--gold);text-decoration:none;">Email comments &amp; questions</a></span>
+      </div>
+    </div>
+  </div>
+
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;·&nbsp; All articles for educational purposes &nbsp;·&nbsp; Scripture references NRSVue unless noted</p>
+
+  <p style="margin-top:8px;"><a href="https://ko-fi.com/readthescripture" target="_blank" rel="noopener" style="color:rgba(232,204,118,.40);text-decoration:none;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;">Support this work on Ko-fi</a></p>
+</footer>
+</body>
+</html>

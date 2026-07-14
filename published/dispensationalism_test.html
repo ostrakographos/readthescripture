@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Where Do You Stand? — A Dispensationalism Assessment</title>
+  <link rel="canonical" href="https://readthescripture.com/dispensationalism_test.html">
+
+<meta name="description" content="An interactive theological assessment: explore whether your reading of Scripture aligns with dispensationalist or covenant theology, with explanations of what each position holds and how they differ on the Law, Israel, and the Church.">
+<meta name="keywords" content="dispensationalism test, dispensationalist theology quiz, covenant theology vs dispensationalism, theological assessment Bible, eschatology quiz, Israel and the Church theology, rapture theology quiz">
+<meta property="og:title" content="Where Do You Stand? — A Dispensationalism Assessment">
+<meta property="og:description" content="An interactive theological assessment: explore whether your reading of Scripture aligns with dispensationalist or covenant theology, with explanations of what each position holds and how they differ on the Law, Israel, and the Church.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/dispensationalism_test.html">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="images/x-icon" href="images/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+  :root {
+    --sand: #F5EDD8;
+    --sand-mid: #E8D9B5;
+    --sand-dark: #D4C090;
+    --ink: #1C1209;
+    --ink-mid: #3D2B14;
+    --ink-light: #6B4E2A;
+    --gold: #9A6B1A;
+    --gold-light: #C4922A;
+    --gold-pale: #E8CC7A;
+    --red: #7A1C1C;
+    --red-light: #A03030;
+    --green-d: #1A4A2A;
+    --green-l: #2A6A3A;
+    --blue-d: #1A2A4A;
+    --rule: rgba(154,107,26,0.25);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background-color: var(--sand);
+    color: var(--ink);
+    min-height: 100vh;
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239A6B1A' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    text-align: center;
+    padding: 56px 20px 44px;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before, header::after {
+    content: '✦';
+    position: absolute;
+    font-size: 32px;
+    color: var(--rule);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header::before { left: 32px; }
+  header::after { right: 32px; }
+
+  .kicker {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .sub-head {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(15px, 2.5vw, 22px);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink-light);
+    margin-bottom: 20px;
+  }
+
+  .header-rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px auto 0;
+    max-width: 400px;
+  }
+
+  .header-rule::before, .header-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .header-rule span {
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+
+  /* ===== MAIN ===== */
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ===== INTRO ===== */
+  .intro-box {
+    border-left: 3px solid var(--gold);
+    padding: 20px 24px;
+    margin-bottom: 48px;
+    background: rgba(154,107,26,0.05);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .intro-box p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    margin-bottom: 12px;
+  }
+
+  .intro-box p:last-child { margin-bottom: 0; }
+
+  .intro-box strong { font-weight: 500; color: var(--ink); }
+
+  /* ===== QUESTIONS ===== */
+  .question-block {
+    margin-bottom: 44px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid var(--rule);
+    animation: fadeIn 0.3s ease both;
+  }
+
+  .question-block:last-of-type { border-bottom: none; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .q-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .q-num {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--sand-dark);
+    background: var(--ink-mid);
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+
+  .q-cat {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .q-text {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.45;
+    color: var(--ink);
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  /* ===== OPTION BUTTONS ===== */
+  .options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .opt-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.18s;
+    background: rgba(245,237,216,0.5);
+    user-select: none;
+  }
+
+  .opt-label:hover {
+    border-color: var(--gold);
+    background: rgba(154,107,26,0.06);
+  }
+
+  .opt-label.selected {
+    border-color: var(--gold);
+    background: rgba(154,107,26,0.1);
+  }
+
+  .opt-label input[type="radio"] { display: none; }
+
+  .opt-pip {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1.5px solid var(--ink-light);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.18s;
+  }
+
+  .opt-label.selected .opt-pip {
+    border-color: var(--gold);
+    background: var(--gold);
+  }
+
+  .opt-label.selected .opt-pip::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--sand);
+  }
+
+  .opt-text {
+    font-size: 15px;
+    color: var(--ink-mid);
+    line-height: 1.4;
+  }
+
+  .opt-label.selected .opt-text {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* ===== SUBMIT ===== */
+  .submit-area {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .submit-btn {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 16px 48px;
+    background: var(--ink);
+    color: var(--sand);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+
+  .submit-btn:hover { background: var(--ink-mid); transform: translateY(-1px); }
+  .submit-btn:active { transform: translateY(0); }
+
+  .reset-btn {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    color: var(--ink-light);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .reset-btn:hover { color: var(--ink); }
+
+  .err-msg {
+    font-size: 14px;
+    color: var(--red);
+    font-style: italic;
+    margin-top: 12px;
+    display: none;
+  }
+
+  /* ===== PROGRESS ===== */
+  .progress-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--sand);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .progress-label {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--ink-light);
+    white-space: nowrap;
+  }
+
+  .progress-bar-wrap {
+    flex: 1;
+    height: 3px;
+    background: var(--sand-mid);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+    width: 0%;
+  }
+
+  .progress-count {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+
+  /* ===== RESULTS ===== */
+  #result-section {
+    display: none;
+  }
+
+  .result-hero {
+    text-align: center;
+    padding: 48px 24px 40px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .result-kicker {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .result-label {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .result-score {
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    color: var(--ink-light);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+
+  /* Spectrum bar */
+  .spectrum-wrap {
+    max-width: 560px;
+    margin: 0 auto 8px;
+    position: relative;
+  }
+
+  .spectrum-bar {
+    height: 12px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #1D9E75, #3B6D11 22%, #888780 50%, #BA7517 78%, #D85A30);
+    position: relative;
+  }
+
+  .spectrum-needle {
+    position: absolute;
+    top: -5px;
+    width: 22px;
+    height: 22px;
+    background: var(--sand);
+    border: 2px solid var(--ink);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: left 0.7s cubic-bezier(0.34,1.56,0.64,1);
+    box-shadow: 0 2px 6px rgba(28,18,9,0.3);
+  }
+
+  .spectrum-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    color: var(--ink-light);
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  /* Result description */
+  .result-desc-box {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin-bottom: 36px;
+    background: rgba(245,237,216,0.4);
+  }
+
+  .result-desc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .result-desc-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    margin-bottom: 16px;
+  }
+
+  .result-examples {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-light);
+    font-style: italic;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* Breakdown */
+  .breakdown-title {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 18px;
+  }
+
+  .breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .bk-card {
+    padding: 14px 16px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: rgba(245,237,216,0.3);
+  }
+
+  .bk-card-label {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 8px;
+  }
+
+  .bk-track {
+    height: 4px;
+    background: var(--sand-mid);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+
+  .bk-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+
+  .bk-value {
+    font-size: 13px;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-light);
+    font-style: italic;
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: white; }
+    .progress-wrap { display: none; }
+    .submit-area { display: none; }
+    #result-section { display: block !important; }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 520px) {
+    header::before, header::after { display: none; }
+    .opt-label { padding: 10px 12px; }
+    .result-desc-box { padding: 20px; }
+    .breakdown-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=18"></script>
+
+
+<header>
+  <span class="kicker">A theological self-assessment</span>
+  <h1>Where Do You Stand?</h1>
+  <p class="sub-head">A test of dispensational belief across fifteen questions</p>
+  <div class="header-rule"><span>✦</span></div>
+</header>
+
+<div class="progress-wrap" id="progress-bar-container">
+  <span class="progress-label">Progress</span>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="prog-bar"></div>
+  </div>
+  <span class="progress-count" id="prog-count">0 / 15</span>
+</div>
+
+<main>
+
+  <div class="intro-box">
+    <p>This assessment uses <strong>fifteen theological questions</strong> drawn from the core debates between covenant theology and dispensationalism to place you on a spectrum ranging from strongly <strong>non-dispensational</strong> (covenant / amillennial) to <strong>classical dispensational</strong>.</p>
+    <p>For each statement, choose your honest level of agreement. There are no correct or incorrect answers — only different theological traditions, each with serious biblical scholarship behind it. Answer as you actually believe, not as you think you should believe.</p>
+    <p>Your result will place you on the spectrum, describe the tradition your views most closely align with, and show a category-by-category breakdown of your dispensational leanings.</p>
+  </div>
+
+  <div id="questions-container"></div>
+
+  <div class="submit-area">
+    <button class="submit-btn" onclick="scoreQuiz()">See My Result</button>
+    <button class="reset-btn" onclick="resetQuiz()">Reset all answers</button>
+    <p class="err-msg" id="err-msg">Please answer all 15 questions before continuing.</p>
+  </div>
+
+  <div id="result-section">
+    <div class="result-hero">
+      <span class="result-kicker">Your result</span>
+      <p class="result-label" id="res-label"></p>
+      <p class="result-score" id="res-score"></p>
+      <div class="spectrum-wrap">
+        <div class="spectrum-bar">
+          <div class="spectrum-needle" id="res-needle"></div>
+        </div>
+        <div class="spectrum-labels">
+          <span>Covenant / Amil</span>
+          <span>Historic Premil</span>
+          <span>Classical Disp.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-desc-box">
+      <p class="result-desc-title" id="res-title"></p>
+      <p class="result-desc-text" id="res-desc"></p>
+      <p class="result-examples" id="res-examples"></p>
+    </div>
+
+    <p class="breakdown-title">Score by theological category</p>
+    <div class="breakdown-grid" id="breakdown-grid"></div>
+
+    <div style="text-align:center; padding: 20px 0 40px;">
+      <button class="submit-btn" onclick="window.print()">Print / save as PDF</button>
+      <button class="reset-btn" onclick="resetQuiz()">Take the test again</button>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Theological positions represented on the spectrum include: covenant amillennialism, historic premillennialism, progressive dispensationalism, and classical dispensationalism.
+  This assessment is for educational reflection — no single test can fully represent the richness of any theological tradition.
+</footer>
+
+<script>
+const questions = [
+  {
+    cat: "Hermeneutics",
+    text: "Old Testament prophecies about Israel should be interpreted as literally referring to the ethnic nation of Israel, not the church.",
+  },
+  {
+    cat: "Israel & the church",
+    text: "Israel and the church are two distinct peoples of God with separate programs, purposes, and eternal destinies.",
+  },
+  {
+    cat: "Israel & the church",
+    text: "Israel has not been replaced by the church — God still has a specific future plan for ethnic national Israel as a nation.",
+  },
+  {
+    cat: "The rapture",
+    text: "Believers will be caught up ('raptured') before the seven-year tribulation described in Daniel and Revelation.",
+  },
+  {
+    cat: "The rapture",
+    text: "The rapture and the second coming of Christ are two distinct events separated by an interval of time.",
+  },
+  {
+    cat: "The millennium",
+    text: "The 'thousand years' in Revelation 20 refers to a literal, future thousand-year reign of Christ on earth.",
+  },
+  {
+    cat: "The millennium",
+    text: "During the millennium, Christ will reign from a rebuilt temple in Jerusalem, and Old Testament sacrificial practices will be reinstated as memorials.",
+  },
+  {
+    cat: "Dispensational ages",
+    text: "History is divided by God into distinct ages (dispensations) in which he tests humanity under different principles of responsibility.",
+  },
+  {
+    cat: "Dispensational ages",
+    text: "The Sermon on the Mount (Matthew 5–7) was primarily given to a Jewish audience living under the kingdom program, not as the primary ethical guide for the church age.",
+  },
+  {
+    cat: "Covenant theology",
+    text: "The Abrahamic covenant promises of land, nation, and blessing must be fulfilled literally for national Israel — they cannot simply be 'spiritually' transferred to the church.",
+  },
+  {
+    cat: "Covenant theology",
+    text: "The church age was not fully revealed in the Old Testament — Paul calls it a 'mystery' that was hidden for ages (Ephesians 3:5–6).",
+  },
+  {
+    cat: "Eschatology",
+    text: "The book of Revelation is primarily about future events still to come, not about the first-century Roman world.",
+  },
+  {
+    cat: "Israel & the church",
+    text: "The Davidic covenant — the promise of an eternal throne — will be physically fulfilled in a future reign of Christ from Jerusalem, not merely in Christ's present heavenly reign.",
+  },
+  {
+    cat: "Eschatology",
+    text: "The 70th week of Daniel (Daniel 9:27) refers to a future seven-year tribulation, not to events surrounding the first coming of Christ.",
+  },
+  {
+    cat: "Hermeneutics",
+    text: "A consistent, literal interpretation of Scripture is the essential safeguard against spiritualizing away God's specific promises to national Israel.",
+  }
+];
+
+const optionLabels = [
+  "Strongly disagree",
+  "Disagree",
+  "Uncertain / neutral",
+  "Agree",
+  "Strongly agree"
+];
+
+const resultBands = [
+  {
+    min: 0, max: 14, pct: 3,
+    label: "Covenant / amillennial",
+    title: "Strong covenant theology alignment",
+    desc: "Your answers align closely with the Reformed covenant theology tradition. You likely see the church as the continuation of God's covenant people across both Testaments, read Old Testament prophecy through the lens of New Testament fulfillment, and interpret Revelation 20 as symbolic of the present church age rather than a literal future millennium. This is the historic position of the Catholic, Orthodox, Lutheran, Reformed, and Anglican churches, maintained without interruption from Augustine through the Reformation.",
+    examples: "Theologians in your tradition: Augustine, John Calvin, Louis Berkhof, Anthony Hoekema, R.C. Sproul, Michael Horton, Kim Riddlebarger, J.I. Packer."
+  },
+  {
+    min: 15, max: 27, pct: 18,
+    label: "Leaning covenant, with openness",
+    title: "Mostly covenant theology with some openness to premillennial readings",
+    desc: "You hold broadly to covenant or Reformed theology but remain genuinely open to some premillennial arguments — perhaps especially around a future role for national Israel or a more literal reading of certain prophetic passages. You likely reject a pre-tribulation rapture and are cautious about the Israel/church separation, but you engage seriously with the biblical data on prophetic fulfillment rather than dismissing it as merely figurative.",
+    examples: "Theologians in your range: George Eldon Ladd (historic premillennialism), Oscar Cullmann, Wayne Grudem (who holds historic premillennialism while firmly rejecting dispensationalism)."
+  },
+  {
+    min: 28, max: 37, pct: 38,
+    label: "Historic premillennialism",
+    title: "Historic premillennialism — a principled middle position",
+    desc: "You expect a literal future millennial reign of Christ on earth following his second coming, but you reject many distinctively dispensational features. You likely do not hold to a pre-tribulation rapture, you see the church as the one covenant people of God across both Testaments, and you resist the sharp Israel/church separation. You read prophecy more literally than amillennialists but interpret it more organically — without the parenthetical Israel-program — than classical dispensationalists.",
+    examples: "Theologians in your range: Irenaeus, Justin Martyr (early church fathers), George Eldon Ladd, Craig Keener, Wayne Grudem, Gordon Fee, J. Ramsey Michaels."
+  },
+  {
+    min: 38, max: 48, pct: 66,
+    label: "Progressive / moderate dispensationalism",
+    title: "Progressive or moderate dispensationalism",
+    desc: "Your views align with progressive dispensationalism or moderate evangelical dispensationalism. You affirm a future for national Israel and likely hold to a literal millennium, but you soften some of the sharper Israel/church distinctions of classical dispensationalism and see greater continuity between the covenants than Darby or Scofield taught. You may be uncertain about or only moderately committed to the pre-tribulation rapture. You represent the direction dispensationalism has moved among its most academically rigorous practitioners.",
+    examples: "Theologians in your range: Craig Blaising, Darrell Bock (progressive dispensationalism), Robert Saucy, Millard Erickson, many contemporary Southern Baptist scholars."
+  },
+  {
+    min: 49, max: 60, pct: 94,
+    label: "Classical dispensationalism",
+    title: "Classical or revised dispensationalism",
+    desc: "Your views align closely with classical or revised dispensationalism as taught by Darby, Scofield, and Ryrie, and popularized through Dallas Theological Seminary and the Scofield Reference Bible. You hold to a sharp distinction between Israel and the church, a literal thousand-year millennium with national Israel restored to the land, and almost certainly a pre-tribulation rapture. You believe that consistent literal interpretation of Scripture requires keeping these programs distinct, and that any 'spiritualizing' of God's promises to Israel amounts to replacement theology.",
+    examples: "Theologians in your tradition: John Nelson Darby, C.I. Scofield, Lewis Sperry Chafer, Charles Ryrie, John Walvoord, Charles Swindoll, most Dallas Theological Seminary faculty, John MacArthur (modified)."
+  }
+];
+
+const catColors = {
+  "Hermeneutics": "#378ADD",
+  "Israel & the church": "#1D9E75",
+  "The rapture": "#D85A30",
+  "The millennium": "#BA7517",
+  "Dispensational ages": "#7F77DD",
+  "Covenant theology": "#E24B4A",
+  "Eschatology": "#639922"
+};
+
+let answers = new Array(questions.length).fill(null);
+
+function buildQuestions() {
+  const container = document.getElementById('questions-container');
+  container.innerHTML = '';
+  questions.forEach((q, qi) => {
+    const block = document.createElement('div');
+    block.className = 'question-block';
+    block.id = `qblock-${qi}`;
+
+    const meta = document.createElement('div');
+    meta.className = 'q-meta';
+    meta.innerHTML = `<span class="q-num">Q${qi + 1}</span><span class="q-cat">${q.cat}</span>`;
+
+    const text = document.createElement('p');
+    text.className = 'q-text';
+    text.textContent = q.text;
+
+    const grid = document.createElement('div');
+    grid.className = 'options-grid';
+
+    optionLabels.forEach((label, vi) => {
+      const lbl = document.createElement('label');
+      lbl.className = 'opt-label';
+      lbl.id = `opt-${qi}-${vi}`;
+      lbl.innerHTML = `
+        <input type="radio" name="q${qi}" value="${vi}">
+        <span class="opt-pip"></span>
+        <span class="opt-text">${label}</span>
+      `;
+      lbl.addEventListener('click', () => selectAnswer(qi, vi));
+      grid.appendChild(lbl);
+    });
+
+    block.appendChild(meta);
+    block.appendChild(text);
+    block.appendChild(grid);
+    container.appendChild(block);
+  });
+}
+
+function selectAnswer(qi, vi) {
+  answers[qi] = vi;
+  optionLabels.forEach((_, v) => {
+    const el = document.getElementById(`opt-${qi}-${v}`);
+    if (el) {
+      el.classList.toggle('selected', v === vi);
+      el.querySelector('input').checked = (v === vi);
+    }
+  });
+  updateProgress();
+}
+
+function updateProgress() {
+  const answered = answers.filter(a => a !== null).length;
+  const pct = Math.round((answered / questions.length) * 100);
+  document.getElementById('prog-bar').style.width = pct + '%';
+  document.getElementById('prog-count').textContent = answered + ' / ' + questions.length;
+}
+
+function scoreQuiz() {
+  const missing = answers.indexOf(null);
+  const errEl = document.getElementById('err-msg');
+  if (missing !== -1) {
+    errEl.style.display = 'block';
+    document.getElementById(`qblock-${missing}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+  errEl.style.display = 'none';
+
+  const total = answers.reduce((a, b) => a + b, 0);
+  const res = resultBands.find(r => total >= r.min && total <= r.max) || resultBands[resultBands.length - 1];
+
+  document.getElementById('res-label').textContent = res.label;
+  document.getElementById('res-score').textContent = 'Total score: ' + total + ' out of 60';
+  document.getElementById('res-title').textContent = res.title;
+  document.getElementById('res-desc').textContent = res.desc;
+  document.getElementById('res-examples').textContent = res.examples;
+
+  setTimeout(() => {
+    document.getElementById('res-needle').style.left = res.pct + '%';
+  }, 200);
+
+  const catMap = {};
+  questions.forEach((q, i) => {
+    if (!catMap[q.cat]) catMap[q.cat] = { total: 0, max: 0 };
+    catMap[q.cat].total += answers[i];
+    catMap[q.cat].max += 4;
+  });
+
+  const grid = document.getElementById('breakdown-grid');
+  grid.innerHTML = '';
+  Object.entries(catMap).forEach(([cat, { total: t, max: m }]) => {
+    const pct = Math.round((t / m) * 100);
+    const color = catColors[cat] || '#888';
+    const card = document.createElement('div');
+    card.className = 'bk-card';
+    card.innerHTML = `
+      <p class="bk-card-label">${cat}</p>
+      <div class="bk-track"><div class="bk-fill" style="width:${pct}%; background:${color};"></div></div>
+      <p class="bk-value">${t} / ${m} &mdash; ${pct}% dispensational</p>
+    `;
+    grid.appendChild(card);
+  });
+
+  document.getElementById('result-section').style.display = 'block';
+  document.querySelector('.submit-area').style.display = 'none';
+  document.getElementById('result-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+function resetQuiz() {
+  answers = new Array(questions.length).fill(null);
+  buildQuestions();
+  updateProgress();
+  document.getElementById('result-section').style.display = 'none';
+  document.querySelector('.submit-area').style.display = 'block';
+  document.getElementById('err-msg').style.display = 'none';
+  document.getElementById('res-needle').style.left = '50%';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+buildQuestions();
+updateProgress();
+</script>
+</body>
+</html>

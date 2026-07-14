@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Before the Word — Read the Scripture</title>
+  <link rel="canonical" href="https://readthescripture.com/water-before-the-word.html">
+
+<meta name="description" content="A thread running from the uncreated waters of Genesis 1 through Jacob's well to Jesus's offer of living water — and what it might mean.">
+<meta name="keywords" content="water in Genesis 1, creation waters Bible, Jacob's well John 4, living water Jesus, biblical water theme, Genesis creation theology">
+<meta property="og:title" content="Water Before the Word — Read the Scripture">
+<meta property="og:description" content="A thread running from the uncreated waters of Genesis 1 through Jacob's well to Jesus's offer of living water — and what it might mean.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/water-before-the-word.html">
+<meta property="og:site_name" content="Read the Scripture">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --max-w:      1200px;
+  --max-w-text: 780px;
+  --shadow-s:   0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:   0 6px 28px rgba(18,13,6,.15);
+  --rule:       rgba(138,96,24,.15);
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--cream);
+  color: var(--ink-2);
+  font-family: var(--font-b);
+  font-size: 18px;
+  line-height: 1.78;
+  min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: var(--nav-bg);
+  overflow: hidden;
+  padding: 80px 24px 68px;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%);
+}
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: .65rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.60);
+  display: block;
+  margin-bottom: 22px;
+  position: relative;
+}
+.hero h1 {
+  font-family: var(--font-d);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero h1 em { font-style: italic; color: var(--gold-pale); }
+.hero-sub {
+  font-family: var(--font-b);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(235,215,175,.62);
+  max-width: 560px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+  position: relative;
+}
+.hero-ornament {
+  display: flex; align-items: center; justify-content: center;
+  gap: 14px; margin: 0 auto 20px; position: relative;
+}
+.hero-ornament .rule {
+  display: block; height: 1px; width: 80px;
+  background: linear-gradient(90deg, transparent, rgba(192,144,48,.55));
+}
+.hero-ornament .rule:last-child {
+  background: linear-gradient(90deg, rgba(192,144,48,.55), transparent);
+}
+.hero-ornament .gem { width: 7px; height: 7px; background: var(--gold-l); transform: rotate(45deg); }
+.hero-ornament .gem.sm { width: 4px; height: 4px; opacity: .55; }
+
+/* Type tag */
+.type-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 14px 5px 10px;
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+  position: relative;
+}
+.tag-article {
+  background: rgba(53,130,220,.12);
+  color: #7AB4EE;
+  border: 1px solid rgba(53,130,220,.3);
+}
+
+/* Layout */
+.content-wrap {
+  max-width: var(--max-w-text);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+.section-label {
+  font-family: var(--font-ui);
+  font-size: .62rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  padding: 64px 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.section-label::before, .section-label::after {
+  content: ''; display: block; height: 1px; width: 60px; background: var(--rule-s);
+}
+
+h2 {
+  font-family: var(--font-d);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  margin-bottom: 18px;
+}
+h2 em { font-style: italic; color: var(--sienna); }
+h3 {
+  font-family: var(--font-d);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+p {
+  font-size: 1.05rem;
+  line-height: 1.82;
+  color: var(--ink-2);
+  margin-bottom: 18px;
+}
+p strong { color: var(--ink); font-weight: 500; }
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--rule-s);
+  margin: 56px 0;
+}
+
+/* Scripture block */
+.scripture {
+  border-left: 3px solid var(--gold-pale);
+  padding: 16px 22px;
+  margin: 28px 0;
+  background: rgba(138,96,24,.05);
+  border-radius: 0 6px 6px 0;
+}
+.scripture p {
+  font-family: var(--font-d);
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.scripture cite {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+}
+
+/* Callout */
+.callout {
+  border-left: 3px solid var(--gold-l);
+  background: var(--cream-d);
+  border-radius: 0 6px 6px 0;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.callout-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 8px;
+}
+.callout p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0; }
+
+/* Conflict box */
+.conflict-box {
+  border: 1px solid rgba(139,58,26,.25);
+  background: rgba(139,58,26,.04);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 28px 0;
+}
+.conflict-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--sienna);
+  display: block;
+  margin-bottom: 8px;
+}
+.conflict-box p { font-size: .97rem; line-height: 1.75; color: var(--ink-3); margin: 0; }
+
+/* Pull quote */
+.pull-quote {
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 28px 0;
+  margin: 48px 0;
+  text-align: center;
+}
+.pull-quote p {
+  font-family: var(--font-d);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.52;
+  max-width: 640px;
+  margin: 0 auto 10px;
+}
+.pull-quote cite {
+  font-family: var(--font-ui);
+  font-size: .55rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+}
+
+/* Language terms */
+.lang-en    { color: var(--sienna); font-weight: 500; }
+.lang-orig  { color: var(--gold-l); }
+.lang-trans { color: var(--purple-mid); font-style: italic; }
+.lang-meta  { font-family: var(--font-ui); font-size: .72em; letter-spacing: .08em; color: var(--ink-4); }
+.lang-paren,
+.lang-sep   { color: var(--ink-4); }
+
+/* Footnotes */
+sup.fn-ref { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); vertical-align: super; }
+.footnotes { border-top: 1px solid var(--rule); margin-top: 32px; padding-top: 16px; }
+.footnotes-label {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 12px;
+}
+.fn-item { display: flex; gap: 8px; margin-bottom: 8px; }
+.fn-num { font-size: .65rem; color: var(--gold); font-family: var(--font-ui); flex-shrink: 0; padding-top: 3px; }
+.fn-text { font-size: .9rem; line-height: 1.68; color: var(--ink-4); }
+
+/* Source list */
+.source-list { border-top: 1px solid var(--rule-s); margin-top: 48px; padding-top: 24px; }
+.source-list-label {
+  font-family: var(--font-ui);
+  font-size: .6rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+.source-card {
+  padding: 12px 16px;
+  border-left: 2px solid var(--cream-dd);
+  margin-bottom: 12px;
+}
+.source-ref { font-size: .95rem; color: var(--ink-3); margin: 0 0 4px; line-height: 1.6; }
+.source-position { font-size: .88rem; font-style: italic; color: var(--ink-4); margin: 0; }
+
+/* Grade block */
+.grade-block {
+  background: var(--nav-bg);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 32px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.grade-block::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%);
+}
+.grade-inner { display: flex; align-items: center; gap: 16px; }
+.grade-letter {
+  font-family: var(--font-d);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-pale);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.grade-label {
+  font-family: var(--font-ui);
+  font-size: .56rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.45);
+  display: block;
+  margin-bottom: 6px;
+}
+.grade-scores { display: flex; gap: 12px; flex-wrap: wrap; }
+.grade-score { font-size: .75rem; color: rgba(235,215,175,.55); }
+.grade-score strong { color: var(--gold-l); }
+
+/* Author block */
+.author-block {
+  border-top: 1px solid var(--rule-s);
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.author-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(138,96,24,.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.author-avatar span {
+  font-family: var(--font-ui);
+  font-size: .7rem;
+  color: var(--gold-l);
+  font-weight: 500;
+}
+.author-name {
+  font-family: var(--font-d);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+.author-bio {
+  font-size: .92rem;
+  font-style: italic;
+  color: var(--ink-4);
+  line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid rgba(192,144,48,.14);
+  padding: 32px 24px;
+  text-align: center;
+}
+.site-footer p {
+  font-family: var(--font-ui);
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(232,204,118,.28);
+}
+.site-footer a {
+  color: rgba(232,204,118,.45);
+  text-decoration: none;
+  transition: var(--t);
+}
+.site-footer a:hover { color: var(--gold-pale); }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=18"></script>
+
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>Water Before <em>the Word</em></h1>
+  <p class="hero-sub">Genesis never says God created water — and that single silence pulls a thread running all the way to a well in Samaria.</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+  <span class="type-tag tag-study">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13 L8 3 L14 13"/><line x1="4.5" y1="9" x2="11.5" y2="9"/></svg>
+    Study
+  </span>
+</header>
+<style>
+/* ── ON-RAMP ─────────────────────────────────────── */
+.onramp-wrap{max-width:822px;margin:0 auto;padding:0 24px;}
+.onramp{margin:38px 0 4px;background:linear-gradient(180deg,#F0EBE0 0%,#FAF7F2 100%);border:1px solid rgba(138,96,24,.15);border-left:3px solid #C09030;border-radius:4px;padding:24px 28px 26px;box-shadow:0 2px 12px rgba(18,13,6,.10);}
+.onramp-meta{display:flex;flex-wrap:wrap;gap:9px 12px;align-items:center;padding-bottom:15px;margin-bottom:17px;border-bottom:1px solid rgba(138,96,24,.15);}
+.onramp-chip{display:inline-flex;align-items:center;gap:6px;font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:#5A4020;background:#FAF7F2;border:1px solid #E2D9C8;border-radius:20px;padding:5px 12px;line-height:1;}
+.onramp-chip svg{stroke:#8A6018;flex:none;}
+.onramp-chip.is-diff{color:#8B3A1A;border-color:rgba(139,58,26,.3);}
+.onramp-dot{width:6px;height:6px;border-radius:50%;background:#B85A30;display:inline-block;}
+.onramp-dot.is-off{background:#E2D9C8;}
+.onramp-label{font-family:'Cinzel',serif;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:#8A6018;display:block;margin-bottom:8px;}
+.onramp-summary{font-family:'Crimson Pro',Georgia,serif;font-size:1.04rem;line-height:1.7;color:#2C1E0A;margin:0;}
+.onramp-summary em{font-style:italic;}
+.onramp-summary strong{color:#181008;font-weight:600;}
+@media(max-width:560px){.onramp{padding:20px 18px 22px;}}
+</style>
+<!-- ON-RAMP -->
+<div class="onramp-wrap">
+  <div class="onramp">
+    <div class="onramp-meta">
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>&#8776;14 min read</span>
+      <span class="onramp-chip is-diff"><span class="onramp-dot"></span><span class="onramp-dot"></span><span class="onramp-dot is-off"></span>Moderate</span>
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Water as a motif &middot; Genesis to Revelation</span>
+    </div>
+    <span class="onramp-label">The short version</span>
+    <p class="onramp-summary">Genesis 1 never says God created water — it is simply already there when the narrative opens, with the Spirit hovering over it. Starting from that quiet silence, this piece follows water as a recurring image: the stream that rises from below in Genesis 2, Jacob's well of <em>living water</em>, the spring Jesus offers the Samaritan woman in John 4, and the river flowing from the throne in Ezekiel 47 and Revelation 22. The author is careful to call this a literary and theological <em>pattern</em>, not a doctrine — <strong>an intertextual reading, not an exegetical certainty</strong> that each writer had the others in mind.</p>
+    <p style="font-size:.92rem;font-style:italic;color:#5A4020;margin:12px 0 0;">Short on time? The Genesis sections and the closing synthesis carry the thread.</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <p class="section-label">The Question</p>
+
+  <p>Read the first chapter of Genesis carefully and you will notice something quietly strange: God speaks light into existence, separates the waters, gathers the seas, fills them with creatures — but nowhere does the text say he <em>created</em> water. When the narrative opens, water is simply already there.</p>
+
+  <blockquote class="scripture">
+    <p>"When God began to create the heavens and the earth, the earth was a formless void and darkness covered the face of the deep, while a wind from God swept over the face of the waters."</p>
+    <cite>Genesis 1:1–2 · NRSVue 2021</cite>
+  </blockquote>
+
+  <div class="callout">
+    <span class="callout-label">Translation note</span>
+    <p>Most English translations read "In the beginning God created…" (KJV, ESV, NIV, NKJV). The NRSVue 2021 departs from this by rendering the Hebrew <span class="lang-term"><span class="lang-en">bərēʾšît</span><span class="lang-paren"> (</span><span class="lang-orig">בְּרֵאשִׁית</span><span class="lang-sep"> | </span><span class="lang-trans">bərēʾšît</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H7225</span><span class="lang-paren">)</span></span> in the <em>construct state</em> — meaning it functions as a temporal clause: <em>when</em> God began to create, the earth was already a formless void and the deep already existed. This is how the medieval rabbi Rashi read the passage, and it is the reading of the Jewish Publication Society Tanakh (1985) and the Common English Bible. It is a defensible grammatical choice, and it is significant: on this reading, verse 2 — the formless void, the darkness, the deep, the waters — describes the state of things <em>at the moment creation begins</em>, not a state produced by an initial creative act. The NRSVue translators made a deliberate decision here. The site uses NRSVue as its standard translation, and this article reflects that rendering.<sup class="fn-ref">1</sup></p>
+  </div>
+
+  <p>The text does not say "and God made water." It says God's
+    <span class="lang-term">
+      <span class="lang-en">wind</span><span class="lang-paren"> (</span><span class="lang-orig">רוּחַ</span><span class="lang-sep"> | </span><span class="lang-trans">rûaḥ</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H7307</span><span class="lang-paren">)</span>
+    </span>
+    — a word whose range spans wind, breath, and Spirit, and which context must decide in each verse, though this one has been read all three ways — was already hovering over water that was already there. The deep, the
+    <span class="lang-term">
+      <span class="lang-en">tehom</span><span class="lang-paren"> (</span><span class="lang-orig">תְּהוֹם</span><span class="lang-sep"> | </span><span class="lang-trans">tĕhôm</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H8415</span><span class="lang-paren">)</span>
+    </span>,
+    is not something God makes. It is the environment into which the first creative word is spoken.<sup class="fn-ref">1</sup></p>
+
+  <p>This article is an attempt to follow that thread forward — through the mist of Genesis 2, through a well dug by a patriarch, to a conversation in the heat of midday in Samaria, and finally to a river that flows from a throne at the end of all things.</p>
+
+  <hr class="divider">
+
+  <p class="section-label">Genesis 1 &amp; 2</p>
+
+  <h2>The Spirit <em>Over</em> the Waters</h2>
+
+  <p>The verb translated "swept" or "moved" in Genesis 1:2 is
+    <span class="lang-term">
+      <span class="lang-en">hovered</span><span class="lang-paren"> (</span><span class="lang-orig">מְרַחֶפֶת</span><span class="lang-sep"> | </span><span class="lang-trans">meraḥepet</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H7363</span><span class="lang-paren">)</span>
+    </span>,
+    a participle suggesting sustained, active presence rather than a single action. The same root appears in Deuteronomy 32:11 for an eagle hovering over its young — watchful, protective, generative. The Spirit is not passing over water. The Spirit is attending to it.</p>
+
+  <p>What happens next matters: God speaks, and things come into being. But water is not among the things spoken into existence. On the NRSVue reading, water isn't even a product of verse 1 — it is part of the scene that verse 1 introduces as already underway. The separation of waters above and below (Gen 1:6–8), the gathering of waters to reveal dry land (Gen 1:9–10) — these are organizational acts, not creative ones. God does not make water; he works with it.</p>
+
+  <div class="callout">
+    <span class="callout-label">Supporting observation</span>
+    <p>Jon Levenson's work on Genesis 1 in the context of Ancient Near Eastern creation literature notes that <em>tehom</em> is linguistically related to the Akkadian <em>Tiamat</em>, the chaos-sea deity of Babylonian myth — though Assyriologists dispute whether this is a direct borrowing or simply a shared Semitic root, since Hebrew <em>tehom</em> shows none of the grammatical markers (a definite article's presence or forced absence) that would signal a demythologized proper name. Either way, the contrast with Enuma Elish is instructive: unlike Marduk, who defeats Tiamat to create the world, Israel's God does not destroy the deep — he hovers over it and orders it. The chaos is subdued, not annihilated. It remains. This has implications for why water continues to appear throughout Scripture as both threat and gift.</p>
+  </div>
+
+  <div class="conflict-box">
+    <span class="conflict-label">Conflicting view</span>
+    <p>Many theologians, particularly in the tradition of <em>creatio ex nihilo</em>, reject the construct reading and read Genesis 1:1 as an absolute statement: God created everything, full stop, and verse 2 describes what that initial creation looked like before God ordered it. On this reading, Genesis 1:1 is a summary of the entire act — water included — and the absence of an explicit "God made water" is simply a matter of narrative focus, not a gap in the account. This is the position of Augustine, Aquinas, and the majority of classical Christian tradition, and it is reflected in the KJV, ESV, NIV, and NKJV. The NRSVue's departure from this consensus is a minority grammatical position, though a defensible one with serious scholarly support.</p>
+  </div>
+
+  <p>The honest answer is that the text does not settle this question, and the translation you read will shape how you hear it. What is unambiguous in either reading: water is present at the opening of the narrative, prior to light, prior to any separations, and the Spirit of God is in direct, sustained relationship with it. That relationship is where creation — however it began — is underway.</p>
+
+  <h2>The <em>Mist</em> That Preceded Life</h2>
+
+  <p>Genesis 2 opens a second creation account — different in sequence, different in focus — and its opening movement is also marked by water.</p>
+
+  <blockquote class="scripture">
+    <p>"In the day that the Lord God made the earth and the heavens, when no plant of the field was yet in the earth and no herb of the field had yet sprung up — for the Lord God had not caused it to rain upon the earth, and there was no one to till the ground; but a stream would rise from the earth, and water the whole face of the ground — then the Lord God formed man from the dust of the ground…"</p>
+    <cite>Genesis 2:4b–7 · NRSVue</cite>
+  </blockquote>
+
+  <p>The word translated "stream" here is
+    <span class="lang-term">
+      <span class="lang-en">stream</span><span class="lang-paren"> (</span><span class="lang-orig">אֵד</span><span class="lang-sep"> | </span><span class="lang-trans">'ēd</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H108</span><span class="lang-paren">)</span>
+    </span>,
+    a rare word appearing only twice in the Hebrew Bible (here and in Job 36:27). The KJV translated it "mist." The NRSVue and many modern translations prefer "stream" or "flow," aligning with its probable Akkadian cognate <em>edu</em>, meaning "underground water" or "subterranean stream."<sup class="fn-ref">2</sup></p>
+
+  <p>What is clear in the narrative is the sequence: before rain, before cultivation, before human life — water rises from beneath the earth and covers the ground. Then humanity is formed from that moistened dust. Life, in both the botanical and human sense, follows water that rises from below rather than falls from above. The source of life in Genesis 2 is subterranean. It is hidden. It rises.</p>
+
+  <div class="pull-quote">
+    <p>"Life, in Genesis 2, follows water that rises from beneath — before rain, before cultivation, before humanity itself."</p>
+    <cite>Author's observation</cite>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Jacob's Well</p>
+
+  <h2>A Well <em>Over Living Water</em></h2>
+
+  <p>The well associated with the patriarch Jacob appears in biblical narrative not in Genesis itself but in John 4, where the Samaritan woman identifies it: <em>"our ancestor Jacob, who gave us the well"</em> (John 4:12). Genesis 33:18–20 records Jacob purchasing land near Shechem and erecting an altar there, which likely places the well in that vicinity — near the modern city of Nablus in the West Bank.<sup class="fn-ref">3</sup></p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">Factual note</span>
+    <p>The claim that Jacob's well was dug over a live underground stream is not stated in Scripture. It is supported by archaeological observation: the well that has been identified with Jacob's well since at least the 4th century draws from a deep underground water source rather than collected rainwater — making it, by the ancient definition, a well of "living water." But this is extra-biblical evidence. The Bible does not describe the well's hydrology; John 4 treats it as a given that the well is deep and reliably sourced (v. 11). The "living" quality of its water matters to the story, but as dramatic backdrop rather than theological assertion.</p>
+  </div>
+
+  <p>The ancient distinction between types of water is important here. Cistern water — collected rainwater, standing and still — was common but considered inferior. Spring water, or water from a flowing underground source, was called
+    <span class="lang-term">
+      <span class="lang-en">living water</span><span class="lang-paren"> (</span><span class="lang-orig">מַיִם חַיִּים</span><span class="lang-sep"> | </span><span class="lang-trans">mayim ḥayyîm</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H4325, H2416</span><span class="lang-paren">)</span>
+    </span>
+    in Hebrew — literally <em>living waters</em>, waters that move, that flow, that are connected to their source. Jeremiah 2:13 uses this exact phrase when God indicts Israel: <em>"they have forsaken me, the fountain of living water."</em></p>
+
+  <p>Jacob's well drew from that kind of water. Not a cistern. A source.</p>
+
+  <hr class="divider">
+
+  <p class="section-label">John 4</p>
+
+  <h2>"Give Me <em>This Water</em>"</h2>
+
+  <p>Jesus arrives at Jacob's well at midday, alone, tired, and thirsty. A Samaritan woman comes to draw water — an encounter already freighted with tension on multiple social axes: gender, ethnicity, the long history of Jewish-Samaritan hostility. He asks her for a drink. She is surprised. Then he says this:</p>
+
+  <blockquote class="scripture">
+    <p>"If you knew the gift of God, and who it is that is saying to you, 'Give me a drink,' you would have asked him, and he would have given you living water."</p>
+    <cite>John 4:10 · NRSVue</cite>
+  </blockquote>
+
+  <p>The phrase is
+    <span class="lang-term">
+      <span class="lang-en">living water</span><span class="lang-paren"> (</span><span class="lang-orig">ὕδωρ ζῶν</span><span class="lang-sep"> | </span><span class="lang-trans">hydōr zōn</span><span class="lang-sep"> | </span><span class="lang-meta">Gk - G5204, G2198</span><span class="lang-paren">)</span>
+    </span>,
+    and in Greek as in Hebrew it has two registers simultaneously active. In ordinary usage, <em>hydōr zōn</em> meant running water — spring water, stream water, water connected to its source rather than standing in a cistern. The Samaritan woman hears it in this register first, and her response is reasonable skepticism: <em>"Sir, you have no bucket, and the well is deep. Where do you get that living water?"</em> (v. 11). She is standing at a well that is already a source of living water in the technical sense. Where would he get more, and better?</p>
+
+  <p>Jesus's answer does not correct her hearing. It elevates it.</p>
+
+  <blockquote class="scripture">
+    <p>"Everyone who drinks of this water will be thirsty again, but those who drink of the water that I will give them will never be thirsty. The water that I will give will become in them a spring of water gushing up to eternal life."</p>
+    <cite>John 4:13–14 · NRSVue</cite>
+  </blockquote>
+
+  <p>The wordplay is not accidental. Jesus is standing at a well of living water — water that flows from a hidden underground source — and offering water that will itself become an interior spring. The image is of water that internalizes its source. You no longer come to the well because the well is in you, and it flows upward — the same direction as the <em>'ēd</em> of Genesis 2, the stream that rose from beneath the earth before life existed.</p>
+
+  <div class="callout">
+    <span class="callout-label">Language note</span>
+    <p>The verb translated "gushing up" in verse 14 is <span class="lang-term"><span class="lang-en">springing up</span><span class="lang-paren"> (</span><span class="lang-orig">ἁλλομένου</span><span class="lang-sep"> | </span><span class="lang-trans">hallomenou</span><span class="lang-sep"> | </span><span class="lang-meta">Gk - G242</span><span class="lang-paren">)</span></span>, a present participle suggesting continuous, active rising. It is used elsewhere for jumping or leaping — it is not a slow seep. The water Jesus describes does not merely pool; it surges. The directionality — upward, outward — echoes both the subterranean stream of Genesis 2 and the expanding river of Ezekiel 47.</p>
+  </div>
+
+  <p>The woman's response — <em>"Sir, give me this water, so that I may never be thirsty or have to keep coming here to draw water"</em> (v. 15) — is often read as comic misunderstanding, and so it partly is. But she is also tracking the logic: if the water is self-replenishing and interior, the well becomes unnecessary. She grasps the implication before she grasps the meaning.</p>
+
+  <hr class="divider">
+
+  <p class="section-label">John 7 &amp; Zechariah 14</p>
+  <h2>The Shout at <em>the Festival</em></h2>
+
+  <p>The thread surfaces once more in John's Gospel, and this time Jesus names its source. The setting is Sukkot, the autumn feast of Booths — the festival that closed the agricultural year and prayed for the coming rains; later rabbinic tradition (Mishnah, Sukkah 4) describes a water-drawing rite in which a golden pitcher was carried up from the pool of Siloam and poured out at the altar each morning of the feast. Whether that exact ceremony was already practiced in Jesus's day rests on those later sources, but the festival's association with water and rain is old and secure. Into that setting John places this:</p>
+
+  <blockquote class="scripture">
+    <p>"On the last day of the festival, the great day, while Jesus was standing there, he cried out, 'Let anyone who is thirsty come to me, and let the one who believes in me drink. As the scripture has said, "Out of the believer's heart shall flow rivers of living water."' Now he said this about the Spirit, which believers in him were to receive."</p>
+    <cite>John 7:37–39 · NRSVue</cite>
+  </blockquote>
+
+  <p>Two things in that passage belong to this study's thread. First, "as the scripture has said" matches no single verse — and the nearest candidates are exactly the festival's own texts: Zechariah 14:8, read at Sukkot, where "living water shall flow out from Jerusalem… in summer as in winter" — a river that no longer keeps seasons, the exact negation of drought — and Ezekiel 47's temple river, which the next section takes up. Second, John does what no earlier text in the chain does: he glosses the image himself. The living water "he said about the Spirit." The rising stream of Genesis 2, the interior spring of John 4, and the rivers of this shout are, on John's own reading, one referent finally named.</p>
+
+  <p>Two cautions. The verse's punctuation is genuinely disputed: the rivers flow either from the <em>believer's</em> heart (the traditional reading, printed above) or from <em>Christ's</em> (an equally ancient reading, favored by some modern scholars because the passage's logic has the thirsty coming to <em>him</em>); the Greek allows both, and the difference decides whether believers become secondary springs or remain drinkers at the one source. And Zechariah's own chapter cuts both ways: the same oracle that promises unseasonal living waters still withholds rain from nations that skip the feast (14:17) — the unconditional river and the conditional rain sit side by side to the end, which is worth seeing plainly before the thread is called finished.</p>
+
+  <p class="section-label">Ezekiel &amp; Revelation</p>
+
+  <h2>The River From <em>the Throne</em></h2>
+
+  <p>The thread does not end in Samaria. Ezekiel 47 describes a vision of the restored temple in which a stream emerges from beneath the threshold of the sanctuary — from the south side of the altar — and flows eastward. The prophet is walked into it: ankle-deep, knee-deep, waist-deep, then too deep to cross. The river grows as it flows, without any apparent tributaries. Everything the water touches comes alive.</p>
+
+  <blockquote class="scripture">
+    <p>"Wherever the river goes, every living creature that swarms will live, and there will be very many fish, once these waters reach there. It will become fresh, and everything will live where the river goes."</p>
+    <cite>Ezekiel 47:9 · NRSVue</cite>
+  </blockquote>
+
+  <p>The origin of the water in Ezekiel's vision is significant: it flows <em>from beneath</em> the threshold of the temple, from the place where God's presence rests. It is not rain. It is not a cistern. It rises from the place of divine habitation and grows as it moves outward — the same directional logic as the Genesis 2 stream, the same self-generating quality as the water Jesus offers in John 4.</p>
+
+  <p>Revelation 22 brings this to its end:</p>
+
+  <blockquote class="scripture">
+    <p>"Then the angel showed me the river of the water of life, bright as crystal, flowing from the throne of God and of the Lamb through the middle of the street of the city."</p>
+    <cite>Revelation 22:1–2a · NRSVue</cite>
+  </blockquote>
+
+  <p>The water of life flows from the throne — the seat of divine presence — and runs through the city. On its banks grow the trees of life bearing fruit twelve times a year, their leaves for the healing of the nations. The river of Genesis 2, which watered Eden and divided into four to water the world (Gen 2:10–14), is here restored and amplified. The Edenic image is intentional: what was lost is returned, but larger.</p>
+
+  <div class="callout">
+    <span class="callout-label">Intertextual connection</span>
+    <p>G.K. Beale's commentary on Revelation argues that the river of Revelation 22 is a conscious recapitulation of Ezekiel 47 and Genesis 2. The Eden-to-Eschaton arc is one of Revelation's governing structural patterns: what the beginning established, the end fulfills — not merely restores. The eschatological river is not a return to the garden; it is the garden's completion, expanded to city scale, flowing from the very throne of God rather than rising from earth's subterranean depths.</p>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Synthesis</p>
+
+  <h2>What the Thread Suggests — <em>and What It Doesn't</em></h2>
+
+  <p>Traced honestly, the pattern runs like this: water precedes the first act of creation and receives the Spirit's attention before anything else exists. The first breath of human life is preceded by water rising from below. The life-sustaining water of a patriarch's well becomes the site where Jesus offers water that rises from within. The eschatological vision of Scripture ends with a river that flows from the throne of God outward and upward through a healed world.</p>
+
+  <p>In each instance: the water is hidden or subterranean in origin. It wells up, or flows outward from its source — rising in the garden and the well, streaming out from the throne. It precedes and enables life. It is associated with the presence or gift of God.</p>
+
+  <p>What does this mean? <em>The author's view — not universally held:</em> the biblical authors are not writing a philosophy of water. But they are consistently reaching for the same image when they want to describe the life-giving presence of God — an unseen source, hidden beneath, rising, flowing out. That consistency is real and worth attending to.</p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">Important limit</span>
+    <p>What is being traced here is a <em>pattern</em>, not a systematic doctrine — a reading visible from outside the individual texts, across writings composed centuries apart, in different genres, by different authors, for different audiences. It does not follow that each author had the others in mind, or that the pattern was intentional at every point. The pattern may be theologically significant precisely because it is not manufactured: similar images recur because they are reaching for the same reality. But this remains an interpretive claim, not an exegetical certainty.</p>
+  </div>
+
+  <p>The Bible does not treat water as a neutral substance. From Genesis 1 to Revelation 22, water carries freight. It is there before creation begins, it enables the first human life, it is the medium of Israel's deliverance and judgment, and it is the final image of God's gift to a healed world. That the same Greek phrase Jesus uses — <em>hydōr zōn</em>, living water — echoes the Hebrew <em>mayim ḥayyîm</em> of Jeremiah and the subterranean logic of Genesis 2 suggests the theme is not accidental.</p>
+
+  <p>Genesis does not narrate water's creation the way it narrates light, sky, and land — it is simply present from the first verse, receiving the Spirit's attention before anything else exists. Read alongside the well, the offer in John 4, and the river of Ezekiel and Revelation, a reader can trace water as a recurring image across the canon, without needing to claim any author had the others — or this gap specifically — in view. Across those texts, water functions less as something made than as something present: not a creation, but a medium. A place where the Spirit moves.</p>
+
+  <div class="footnotes">
+    <span class="footnotes-label">Notes</span>
+    <div class="fn-item">
+      <span class="fn-num">1</span>
+      <span class="fn-text">The NRSVue 2021 update to Genesis 1:1 is one of the more theologically consequential changes from the 1989 NRSV. The NRSV read "In the beginning when God created" — closer to the construct but still ambiguous. The NRSVue sharpens this to "When God began to create," fully committing to the temporal clause reading. The <em>creatio ex nihilo</em> tradition (Theophilus of Antioch, c. 180 CE; Augustine; Aquinas) holds that God created all things from nothing, including water, and that Genesis 1:2 describes the initial state of what was just created. This doctrine is not contradicted by the construct reading per se — the "when" clause doesn't require water to be uncreated — but it does complicate the picture by making water part of the scene <em>as creation begins</em> rather than its first product. The NRSVue's choice aligns more naturally with the construct theology but does not explicitly endorse it.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">2</span>
+      <span class="fn-text">The Hebrew <em>'ēd</em> (H108) appears in Gen 2:6 and Job 36:27. The LXX (Septuagint) translates it with <em>pēgē</em> (spring or fountain) in Genesis, which supports the "rising stream" or "underground source" interpretation over "mist." The KJV's "mist" follows an older tradition. Modern translations are split: the NRSVue and NIV render it "stream"/"streams," while the ESV and NKJV retain "mist." The ambiguity is genuine and not fully resolved.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">3</span>
+      <span class="fn-text">The well identified as Jacob's well is located near Tell Balata (ancient Shechem), about 2km east of Nablus. It is housed within a Greek Orthodox church and remains accessible to visitors. The well is approximately 32 meters deep. Its identification with the biblical site dates at least to the 4th-century pilgrimage tradition. The connection to Jacob rests on John 4:12 and the geographic association with Gen 33:18–20, where Jacob buys the land; the Bible does not explicitly record Jacob digging a well at this location.</span>
+    </div>
+  </div>
+
+  <div class="source-list">
+    <span class="source-list-label">Sources</span>
+    <div class="source-card">
+      <p class="source-ref">Levenson, J. D. (1988). <em>Creation and the Persistence of Evil: The Jewish Drama of Divine Omnipotence</em>. Harper & Row.</p>
+      <p class="source-position">Position: Historical-critical; Jewish scholarly tradition. Reads Genesis in the context of ANE literature without faith commitment to Christian doctrine.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Beale, G. K. (1999). <em>The Book of Revelation: A Commentary on the Greek Text</em>. Eerdmans / Paternoster.</p>
+      <p class="source-position">Position: Conservative evangelical. Affirms Johannine authorship of Revelation; applies rigorous intertextual method rooted in OT allusions.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Wenham, G. J. (1987). <em>Genesis 1–15</em> (Word Biblical Commentary, Vol. 1). Word Books.</p>
+      <p class="source-position">Position: Conservative evangelical. Thorough engagement with ANE parallels while maintaining historical reliability of the text.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Keener, C. S. (2003). <em>The Gospel of John: A Commentary</em> (2 vols). Hendrickson.</p>
+      <p class="source-position">Position: Conservative evangelical with engagement of historical-critical methods. Extensive treatment of cultural and linguistic background.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Block, D. I. (1998). <em>The Book of Ezekiel: Chapters 25–48</em> (NICOT). Eerdmans.</p>
+      <p class="source-position">Position: Conservative evangelical. Detailed exegesis of the temple vision in Ezekiel 40–48.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Blue Letter Bible. (n.d.). <em>Strong's Concordance and Lexicon</em>. Retrieved 2026 from blueletterbible.org. — Hebrew <em>rûaḥ</em> (H7307), <em>tehom / tĕhôm</em> (H8415), <em>mayim ḥayyîm</em> (H4325, H2416).</p>
+      <p class="source-position">Position: Reference index only — used to locate lemmas; semantic ranges are grounded in HALOT and Brown-Driver-Briggs (next card).</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Koehler, L., Baumgartner, W., et al. <em>The Hebrew and Aramaic Lexicon of the Old Testament</em> (HALOT). Brill. — Brown, F., Driver, S. R., &amp; Briggs, C. A. <em>A Hebrew and English Lexicon of the Old Testament</em> (BDB). Oxford / Hendrickson.</p>
+      <p class="source-position">Position: Historical-critical; foundational reference lexicons. <em>Rûaḥ</em> (H7307) "wind, breath, spirit" — the range the piece's translation choice depends on. <em>Tĕhôm</em> (H8415) "the deep, primeval ocean, abyss": HALOT notes the term is old and comparable to Akkadian <em>tiāmtu</em> and Ugaritic <em>thm</em>, but — as Assyriologists including D. Tsumura have argued — the Hebrew word shows no grammatical trace of a mythologized proper name (no definite article is required or excluded the way a personified being's name would behave), which is why the comparative-philology point should be read as a shared Semitic root, not a demonstrated direct borrowing from the Babylonian chaos deity; the piece's Levenson citation states the cognate relationship more flatly than the current lexical consensus supports. <em>Mayim ḥayyîm</em> (H4325 + H2416) "living water" — literally "water of the living" or "flowing/running water" as opposed to stagnant cistern water; the double sense (physically flowing vs. life-giving) is lexically real, not imported. HALOT paginated entries not individually cited; general lemma consulted.</p>
+    </div>
+  </div>
+
+  <div class="grade-block">
+    <div class="grade-inner">
+      <div class="grade-letter">A</div>
+      <div class="grade-detail">
+        <span class="grade-label">Reasoning · Logic Review &middot; 16/20 &middot; Fidelity 9/12 &middot; cross-model blind (Sonnet 5, 2026-07-05)</span>
+        <div class="grade-scores">
+          <span class="grade-score">Claim precision <strong>3/4</strong></span>
+          <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
+          <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+          <span class="grade-score">Internal consistency <strong>3/4</strong></span>
+          <span class="grade-score">Scope <strong>3/4</strong></span>
+        </div>
+      </div>
+    </div>
+    <p class="grade-note">A fresh, blind, different-model-family read (Sonnet 5, single run) landed one point lower (16 vs. 17) and confirmed the same fault line: the tehom/Tiamat callout in the body still states the cognate relationship more flatly than the source list itself now admits the lexical consensus supports. Fidelity 9/12 — lexical grounding is now in HALOT/BDB rather than Strong's alone. Single blind run — a second independent read is owed before this grade is fully trusted.</p>
+  </div>
+
+  <div style="border-top:1px solid var(--rule-s);margin-top:36px;padding-top:22px;">
+    <p style="font-family:var(--font-ui);font-size:.6rem;letter-spacing:.2em;color:var(--gold-l);text-transform:uppercase;margin:0 0 12px;">Read alongside &mdash; Faith and Prayer, and Water</p>
+    <p style="font-size:.97rem;line-height:1.7;color:var(--ink-3);margin:0;">
+      <a href="/faith_in_action.html" style="color:var(--sienna);text-decoration:none;">When Faith Moves</a>, four portraits of faith and what God does next.<br>
+      <a href="/water_withheld_water_given.html" style="color:var(--sienna);text-decoration:none;">Water Withheld, Water Given</a>, drought and living water as two ends of the same claim about who holds the rain.
+    </p>
+  </div>
+
+  <div class="author-block">
+    <div class="author-avatar"><span>LS</span></div>
+    <div class="author-info">
+      <span class="author-name">Lee Sadler</span>
+      <span class="author-bio">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong's Concordance; biblical commentaries; and collaboration with Claude. &middot; <a href="mailto:lee.sadler@readthescripture.com" style="color:var(--gold);text-decoration:none;">Email comments &amp; questions</a></span>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;·&nbsp; All articles for educational purposes &nbsp;·&nbsp; Scripture references NRSVue unless noted</p>
+
+  <p style="margin-top:8px;"><a href="https://ko-fi.com/readthescripture" target="_blank" rel="noopener" style="color:rgba(232,204,118,.40);text-decoration:none;font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.14em;text-transform:uppercase;">Support this work on Ko-fi</a></p>
+</footer>
+<script src="/strongs.js" defer></script>
+</body>
+</html>
