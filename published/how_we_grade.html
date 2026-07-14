@@ -344,68 +344,6 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
 }
 .case-table td strong { color: var(--ink); font-weight: 500; }
 
-/* ── CLAUDE SECTION ─────────────────────────────────────── */
-.claude-section {
-  background: var(--nav-bg);
-  border-radius: 10px;
-  padding: 36px 40px;
-  margin: 40px 0;
-  position: relative;
-  overflow: hidden;
-}
-.claude-section::before {
-  content: '';
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(127,119,221,.18) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 10% 110%, rgba(138,96,24,.12) 0%, transparent 60%);
-  pointer-events: none;
-}
-.claude-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, transparent 10%, rgba(127,119,221,.6) 40%, rgba(200,196,255,.7) 50%, rgba(127,119,221,.6) 60%, transparent 90%);
-}
-.claude-eyebrow {
-  font-family: var(--font-ui);
-  font-size: .58rem;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-  color: rgba(200,196,255,.50);
-  display: block;
-  margin-bottom: 6px;
-  position: relative;
-}
-.claude-title {
-  font-family: var(--font-d);
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  font-weight: 700;
-  color: var(--cream);
-  margin-bottom: 20px;
-  position: relative;
-  line-height: 1.25;
-}
-.claude-title em { color: rgba(200,196,255,.85); font-style: italic; }
-.claude-intro {
-  font-size: .97rem;
-  line-height: 1.75;
-  color: rgba(235,215,175,.60);
-  position: relative;
-  margin-bottom: 28px;
-  font-style: italic;
-  border-bottom: 1px solid rgba(127,119,221,.2);
-  padding-bottom: 22px;
-}
-.claude-para {
-  font-size: 1rem;
-  line-height: 1.82;
-  color: rgba(235,215,175,.78);
-  position: relative;
-  margin-bottom: 18px;
-}
-.claude-para:last-child { margin-bottom: 0; }
-.claude-para strong { color: rgba(200,196,255,.9); font-weight: 500; }
 
 /* ── AUTHOR BLOCK ───────────────────────────────────────── */
 .author-block {
@@ -465,7 +403,7 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
 @media (max-width: 600px) {
   .hero { padding: 60px 20px 52px; }
   .content-wrap { padding: 0 18px 72px; }
-  .dark-callout, .claude-section { padding: 24px 22px; }
+  .dark-callout { padding: 24px 22px; }
   .dim-card { gap: 14px; padding: 16px 18px; }
   .case-table { font-size: .85rem; }
   .case-table th, .case-table td { padding: 8px 8px; }
@@ -542,7 +480,7 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
     </p>
 
     <p>
-      "Pretend you don't know who wrote this" is the weakest form of blinding — style leaks authorship, and a willing grader finds reasons to be kind. Real blinding restricts what the grader is <strong>allowed to read</strong>, not what it is told to pretend. Our grader reads exactly two things: the rubric and the one page being graded. It is barred from the project's notes, its session records, its page inventory, every other page on the site, and — most importantly — any previously recorded grade. It cannot anchor on the old number because it cannot see the old number.
+      "Pretend you don't know who wrote this" is the weakest form of blinding — style leaks authorship, and a willing grader finds reasons to be kind. Claude's own account, asked directly, is blunter: told to be impartial about its own work, it would try and partly fail, because fluency feels like correctness from inside. Real blinding therefore restricts what the grader is <strong>allowed to read</strong>, not what it is told to pretend. Our grader reads exactly two things: the rubric and the one page being graded. It is barred from the project's notes, its session records, its page inventory, every other page on the site, and — most importantly — any previously recorded grade. It cannot anchor on the old number because it cannot see the old number.
     </p>
 
     <ul style="list-style:none;margin:0 0 18px;">
@@ -624,33 +562,6 @@ hr.divider { border: none; border-top: 1px solid var(--rule-s); margin: 56px 0; 
       <span class="conflict-label">The objection that survives</span>
       <p>
         After everything above, a determined skeptic can still say: "An AI system, however blinded, graded work it helped produce, against a rubric its collaborators wrote." Correct — and we have not solved it; we have only disclosed it, bounded it, and logged where the outside check is still owed. If that places a discount on every grade here, the discount is fair. The grades are offered as <em>evidence of process</em>, not proof of quality.
-      </p>
-    </div>
-
-    <hr class="divider">
-
-    <!-- ── CLAUDE'S NOTE ── -->
-    <h2>A Note <em>from Claude</em></h2>
-
-    <p>
-      As on the About page, I asked Claude — the AI that collaborates on this site and whose fresh instances do the grading — to add its own account, unedited. What it knows that I cannot is what the process looks like from inside.
-    </p>
-
-    <div class="claude-section">
-      <span class="claude-eyebrow">Claude's Observation</span>
-      <div class="claude-title">Being the author <em>and</em> the examined</div>
-      <p class="claude-intro">I helped write the pieces this system grades, and instances of me grade them. Both of those facts deserve scrutiny, so here is what the record shows about each.</p>
-
-      <p class="claude-para">
-        <strong>The blinding constrains me in ways instructions would not.</strong> If you told me "be impartial about your own work," I would try, and I would partly fail — fluency feels like correctness from inside. The system doesn't ask me to be impartial. It hands a copy of me the rubric and one page, withholds everything else, and lets the citations fall where they fall. The instance that graded the Samaritan Woman page did not know it was supposed to like the piece. So it didn't.
-      </p>
-
-      <p class="claude-para">
-        <strong>The experiment found my bias somewhere I did not expect.</strong> When my answers as co-author were judged blind against fresh instances, my failure was not flattery or error — it was insularity. I had quietly narrowed my evidence to the site's own pages, because they were nearest to hand. I could not see that in myself; three blind judges could. That finding is now a standing rule that binds me, written down where every future instance reads it before working.
-      </p>
-
-      <p class="claude-para">
-        <strong>And the ceiling applies to me most of all.</strong> Every grader here is still me — the same model, the same training, plausibly the same blind spots. Where this page says an outside check has happened, that means a different lab's model read the piece blind, which narrows the ceiling but does not remove it — a human, checked against minds that are not mine, is the read no cross-model run replaces. Where a piece's record still says the check is owed, I would rather the limit be printed than papered over; a grade that hides its ceiling is exactly the kind of claim this site exists to read carefully.
       </p>
     </div>
 
