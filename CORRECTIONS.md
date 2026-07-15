@@ -35,3 +35,12 @@ The reader's underlying KJV dataset (a widely-circulated digital lineage) was mi
 
 **2026-06-16 — Joab study — a dictionary quotation replaced with the verified text.**
 A condemnation of Joab attributed to Easton's Bible Dictionary did not appear in Easton's actual entry; the page's quotation was replaced with Easton's verified wording ("hoary conspirator … character is deeply stained"). A search-engine summary had "confirmed" the original wording; the primary text did not. Settled by: Easton's *Illustrated Bible Dictionary* (1897), fetched and read.
+
+---
+
+## Repository corrections (infrastructure, not a published page)
+
+*The corrections above are about page content. This section logs errors in the repository's own machinery — the same "corrected in the open" commitment applied to the tooling that guards this record.*
+
+**2026-07-15 — `tools/check_public.py` leaked the personal identifiers it exists to block, into its own public history.**
+The boundary check's forbidden-token list hardcoded the exact tokens it was built to keep out of this repository (an account-linking identifier and the names of quarantined personal files), and the file exempted itself from its own scan. That made the one file violating the rule the one file excluded from enforcement. It had been present since this repository's initial commit. Fixed by externalizing the token list to a private sidecar file (outside this repository, read at commit-hook time — see the current `tools/check_public.py`, which now fails closed if the sidecar is missing) and rewriting this repository's git history to remove the tokens from every prior commit, then force-pushing the corrected history. Settled by: a full scan of every historical blob in this repository, confirmed clean after the rewrite.
