@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sons of Zeruiah — Read the Scripture</title>
+<meta name="description" content="Asahel, Abishai, and Joab — three brothers, three loyalties, and the deaths the narrative does and does not tell. Read through scholar, skeptic, and commentary lenses, deliberately left unsynthesized.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --max-w:      1200px;
+  --max-w-text: 780px;
+  --shadow-s:   0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:   0 6px 28px rgba(18,13,6,.15);
+  --rule:       rgba(138,96,24,.15);
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;}
+body{background:var(--cream);color:var(--ink-2);font-family:var(--font-b);font-size:18px;line-height:1.78;min-height:100vh;}
+
+/* Hero */
+.hero{position:relative;background:var(--nav-bg);overflow:hidden;padding:80px 24px 68px;text-align:center;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(138,96,24,.32) 0%,transparent 68%),radial-gradient(ellipse 40% 50% at 15% 110%,rgba(139,58,26,.18) 0%,transparent 60%),radial-gradient(ellipse 40% 50% at 85% 110%,rgba(138,96,24,.14) 0%,transparent 60%);pointer-events:none;}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 5%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 95%);}
+.hero-eyebrow{font-family:var(--font-ui);font-size:.65rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(232,204,118,.60);display:block;margin-bottom:22px;position:relative;}
+.hero h1{font-family:var(--font-d);font-size:clamp(2.4rem,5vw,4rem);font-weight:700;color:var(--cream);line-height:1.12;letter-spacing:-.01em;margin-bottom:20px;position:relative;}
+.hero h1 em{font-style:italic;color:var(--gold-pale);}
+.hero-sub{font-family:var(--font-b);font-size:1.1rem;font-style:italic;color:rgba(235,215,175,.62);max-width:560px;margin:0 auto 28px;line-height:1.65;position:relative;}
+.hero-ornament{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;position:relative;}
+.hero-ornament .rule{display:block;height:1px;width:80px;background:linear-gradient(90deg,transparent,rgba(192,144,48,.55));}
+.hero-ornament .rule:last-child{background:linear-gradient(90deg,rgba(192,144,48,.55),transparent);}
+.hero-ornament .gem{width:7px;height:7px;background:var(--gold-l);transform:rotate(45deg);}
+.hero-ornament .gem.sm{width:4px;height:4px;opacity:.55;}
+
+/* Type tag */
+.type-tag{display:inline-flex;align-items:center;gap:7px;padding:5px 14px 5px 10px;border-radius:4px;font-family:var(--font-ui);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;margin-top:16px;}
+.tag-study{background:rgba(192,144,48,.12);color:var(--gold-pale);border:1px solid rgba(192,144,48,.3);}
+
+/* Layout */
+.content-wrap{max-width:var(--max-w-text);margin:0 auto;padding:0 24px 96px;}
+.section-label{font-family:var(--font-ui);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);text-align:center;padding:64px 24px 40px;display:flex;align-items:center;justify-content:center;gap:16px;}
+.section-label::before,.section-label::after{content:'';display:block;height:1px;width:60px;background:var(--rule-s);}
+h2{font-family:var(--font-d);font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--ink);line-height:1.2;letter-spacing:-.01em;margin-bottom:18px;}
+h2 em{font-style:italic;color:var(--sienna);}
+h3{font-family:var(--font-d);font-size:1.2rem;font-weight:600;color:var(--ink);margin:26px 0 10px;line-height:1.3;}
+p{font-size:1.05rem;line-height:1.82;color:var(--ink-2);margin-bottom:18px;}
+p strong{color:var(--ink);font-weight:500;}
+hr.divider{border:none;border-top:1px solid var(--rule-s);margin:56px 0;}
+
+/* Callouts */
+.callout{border-left:3px solid var(--gold-l);background:var(--cream-d);border-radius:0 6px 6px 0;padding:18px 22px;margin:28px 0;}
+.callout-label{font-family:var(--font-ui);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px;}
+.callout p{font-size:.97rem;line-height:1.75;color:var(--ink-3);margin:0;}
+.callout p+p{margin-top:10px;}
+
+.conflict-box{border:1px solid rgba(139,58,26,.25);background:rgba(139,58,26,.04);border-radius:6px;padding:18px 22px;margin:28px 0;}
+.conflict-label{font-family:var(--font-ui);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sienna);display:block;margin-bottom:8px;}
+.conflict-box p{font-size:.97rem;line-height:1.75;color:var(--ink-3);margin:0;}
+.conflict-box p+p{margin-top:10px;}
+
+.dark-callout{background:var(--nav-bg);border-radius:8px;padding:28px 32px;margin:36px 0;position:relative;overflow:hidden;}
+.dark-callout::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% -20%,rgba(138,96,24,.22) 0%,transparent 65%);pointer-events:none;}
+.dark-callout::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
+.dark-callout-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(232,204,118,.50);display:block;margin-bottom:12px;position:relative;}
+.dark-callout p{font-size:1rem;line-height:1.78;color:rgba(235,215,175,.75);position:relative;margin:0;}
+.dark-callout p+p{margin-top:12px;}
+.dark-callout p strong{color:var(--gold-pale);font-weight:500;}
+
+/* Pull quote */
+.pull-quote{border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:28px 0;margin:48px 0;text-align:center;}
+.pull-quote p{font-family:var(--font-d);font-size:clamp(1.1rem,2.5vw,1.4rem);font-style:italic;color:var(--ink);line-height:1.52;max-width:640px;margin:0 auto 10px;}
+.pull-quote cite{font-family:var(--font-ui);font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:block;}
+
+/* Scripture */
+.scripture{border-left:3px solid var(--gold-pale);padding:16px 22px;margin:28px 0;background:rgba(138,96,24,.05);border-radius:0 6px 6px 0;}
+.scripture p{font-family:var(--font-d);font-style:italic;font-size:1.08rem;color:var(--ink);line-height:1.7;margin:0 0 8px;}
+.scripture cite{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:block;}
+
+/* Original language */
+.lang-en{color:var(--sienna);font-weight:500;}
+.lang-orig{color:var(--gold-l);}
+.lang-trans{color:var(--purple-mid);font-style:italic;}
+.lang-meta{font-family:var(--font-ui);font-size:.72em;letter-spacing:.08em;color:var(--ink-4);}
+.lang-paren,.lang-sep{color:var(--ink-4);}
+
+/* Lens grid */
+.lens-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:28px 0;}
+.lens-card{background:var(--cream-d);border:1px solid var(--cream-dd);border-radius:6px;padding:18px 20px;}
+.lens-card-label{font-family:var(--font-ui);font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:8px;}
+.lens-card-title{font-family:var(--font-d);font-size:.98rem;font-weight:600;color:var(--ink);margin-bottom:8px;}
+.lens-card p{font-size:.92rem;line-height:1.72;color:var(--ink-3);margin:0;}
+
+/* Residue block */
+.residue-block{border:1px dashed rgba(138,96,24,.3);border-radius:6px;padding:20px 24px;margin:28px 0;background:rgba(138,96,24,.03);}
+.residue-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);display:block;margin-bottom:10px;}
+.residue-block ul{list-style:none;padding:0;}
+.residue-block ul li{font-size:.96rem;line-height:1.74;color:var(--ink-3);padding:6px 0 6px 16px;border-bottom:1px solid var(--rule);position:relative;}
+.residue-block ul li:last-child{border-bottom:none;}
+.residue-block ul li::before{content:'?';position:absolute;left:0;color:var(--gold-l);font-family:var(--font-ui);font-size:.7em;}
+
+/* Grade block */
+.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
+.grade-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
+.grade-inner{display:flex;align-items:center;gap:16px;}
+.grade-letter{font-family:var(--font-d);font-size:2.2rem;font-weight:700;color:var(--gold-pale);line-height:1;flex-shrink:0;}
+.grade-label{font-family:var(--font-ui);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(232,204,118,.45);display:block;margin-bottom:6px;}
+.grade-scores{display:flex;gap:12px;flex-wrap:wrap;}
+.grade-score{font-size:.75rem;color:rgba(235,215,175,.55);}
+.grade-score strong{color:var(--gold-l);}
+
+/* Source list */
+.source-list{border-top:1px solid var(--rule-s);margin-top:48px;padding-top:24px;}
+.source-list-label{font-family:var(--font-ui);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.source-card{padding:12px 16px;border-left:2px solid var(--cream-dd);margin-bottom:12px;}
+.source-ref{font-size:.95rem;color:var(--ink-3);margin:0 0 4px;line-height:1.6;}
+.source-position{font-size:.88rem;font-style:italic;color:var(--ink-4);margin:0;}
+
+/* Author block */
+.author-block{border-top:1px solid var(--rule-s);margin-top:20px;padding-top:20px;display:flex;align-items:flex-start;gap:14px;}
+.author-avatar{width:40px;height:40px;border-radius:50%;background:rgba(138,96,24,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.author-avatar span{font-family:var(--font-ui);font-size:.7rem;color:var(--gold-l);font-weight:500;}
+.author-name{font-family:var(--font-d);font-size:1rem;font-weight:600;color:var(--ink);display:block;margin-bottom:4px;}
+.author-bio{font-size:.92rem;font-style:italic;color:var(--ink-4);line-height:1.6;}
+
+/* Footnotes */
+sup.fn-ref{font-size:.65rem;color:var(--gold);font-family:var(--font-ui);vertical-align:super;}
+.footnotes{border-top:1px solid var(--rule);margin-top:32px;padding-top:16px;}
+.footnotes-label{font-family:var(--font-ui);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;}
+.fn-item{display:flex;gap:8px;margin-bottom:8px;}
+.fn-num{font-size:.65rem;color:var(--gold);font-family:var(--font-ui);flex-shrink:0;padding-top:3px;}
+.fn-text{font-size:.9rem;line-height:1.68;color:var(--ink-4);}
+
+/* Footer */
+.site-footer{background:var(--nav-bg);border-top:1px solid rgba(192,144,48,.14);padding:32px 24px;text-align:center;}
+.site-footer p{font-family:var(--font-ui);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(232,204,118,.28);}
+.site-footer a{color:rgba(232,204,118,.45);text-decoration:none;transition:var(--t);}
+.site-footer a:hover{color:var(--gold-pale);}
+</style>
+</head>
+<body>
+<script src="/nav.js?v=4"></script>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>The Sons of <em>Zeruiah</em></h1>
+  <p class="hero-sub">Asahel, Abishai, and Joab — three brothers, three loyalties, and the deaths the narrative does and does not tell</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+  <span class="type-tag tag-study">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13 L8 3 L14 13"/><line x1="4.5" y1="9" x2="11.5" y2="9"/></svg>
+    Study
+  </span>
+</header>
+
+<!-- BODY -->
+<div class="content-wrap">
+
+  <!-- BIAS CALLOUT -->
+  <div class="dark-callout" style="margin-top:56px;">
+    <span class="dark-callout-label">Stated Perspective</span>
+    <p>This study reads from an <strong>orthodox confessional standpoint</strong>: the narrator of Samuel–Kings is taken as a reliable theological witness, and the killings, burials, and silences are treated as data the text means us to weigh, not as accidents of editing. The <strong>named bias</strong>: that posture predisposes the study to trust the narrator's framing and to expect the deaths to <em>mean</em> something. The strongest counterweight — that the so-called Court History (2 Sam 9–20; 1 Kgs 1–2) is Davidic apologetic, engineered to keep David's hands clean while his kinsmen do the bleeding — is a serious challenge and is engaged directly, not as a settled verdict.</p>
+    <p><strong>A deliberate method choice.</strong> This piece runs three lenses — scholar, skeptic, and the commentary tradition — and <em>does not synthesize them</em>. That is not evasion; it is the argument. The genuine residue these brothers leave is precisely the thing no single lens closes, and forcing a reconciliation would manufacture an answer the text withholds. Where the lenses disagree, the disagreement is left standing.</p>
+  </div>
+
+  <!-- BOUNDARY CALLOUT -->
+  <div class="callout">
+    <span class="callout-label">Boundary with Companion Studies</span>
+    <p>This study is about the three <em>sons of Zeruiah</em> and lives mostly in 2 Samuel and 1 Kings 1–2. It is not a character study of David and Saul, whose arcs through 1 Samuel belong to the companion study <em>After God's Own Heart</em> (which shares this piece's three-lens format and several of the same commentators, but owns the kings, not their nephews); and it is not the account of how divine access transferred from Saul to David, which is the territory of <a href="/forfeited_access.html" style="color:var(--gold);">Forfeited Access</a>. Where those pieces touch this one (the wilderness years, the apologetic shape of the David traditions), the observations are made here from the primary text directly; their conclusions are not imported as support, and the apology thesis is treated as one lens among several, never as a foundation.</p>
+  </div>
+
+  <p>They are never given a father's name. Across more than a dozen episodes they are "the sons of Zeruiah" — named for their mother, who is named in turn as David's sister, making the three of them the king's nephews (1 Chr 2:16). The matronymic is unusual enough to be deliberate, and the father surfaces exactly once, and only as a grave: when Asahel is killed, they carry him to "the tomb of his father, which was at Bethlehem" (2 Sam 2:32). The man has a sepulchre but no name.</p>
+
+  <p>Three brothers, three temperaments, and the tradition has long reached for shorthand. The gazelle: Asahel, fast and young, who dies on a battlefield. The first to volunteer: Abishai, always the one who steps forward with a drawn blade and has to be told no. The enforcer: Joab, commander of the army, who kills whomever the throne needs killed and a few it did not. The shorthand holds. What the shorthand hides is the asymmetry this study is built on: <strong>two of the three deaths are narrated in detail, and the middle brother's is never told at all</strong> — and over all three, from beginning to end, no prophet of YHWH ever speaks a word of judgment.</p>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- PART ZERO: NAMES -->
+  <!-- ============================================================ -->
+  <p class="section-label">The Names, and the Mother</p>
+
+  <h2>One Parent <em>Named</em>, and She Is the Mother</h2>
+
+  <p>Before the deeds, the names — because in this household the names carry an argument of their own. Hebrew personal names are frequently miniature theological sentences, and these four are no exception. Three of them are about a father; the one parent the text actually names is the mother.</p>
+
+  <p>Start with her. <span class="lang-term"><span class="lang-en">Zeruiah</span><span class="lang-paren"> (</span><span class="lang-orig">צְרוּיָה</span><span class="lang-sep"> | </span><span class="lang-trans">ṣərûyâ</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H6870</span><span class="lang-paren">)</span></span> carries the <span class="lang-term"><span class="lang-en">-yah</span><span class="lang-paren"> (</span><span class="lang-orig">יָה</span><span class="lang-paren">)</span></span> ending — the short form of the divine name YHWH. Its root is contested. The likeliest candidates are the word for balsam or balm (<span class="lang-term"><span class="lang-en">balm</span><span class="lang-paren"> (</span><span class="lang-orig">צֳרִי</span><span class="lang-sep"> | </span><span class="lang-trans">ṣŏrî</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H6875</span><span class="lang-paren">)</span></span>, the "balm of Gilead"), giving something like "balm/fragrance of YHWH"; or a root meaning to bind, press, or wound, giving "wounded" or "cleft." Lexicons hedge, and so should we. What is not in doubt is the theophoric ending: the mother's name binds her to YHWH, and it is <em>her</em> name the three sons carry through the narrative.<sup class="fn-ref">5</sup></p>
+
+  <p>Then the sons:</p>
+
+  <div class="callout">
+    <span class="callout-label">The three names</span>
+    <p><strong>Joab</strong> — <span class="lang-term"><span class="lang-orig">יוֹאָב</span><span class="lang-sep"> | </span><span class="lang-trans">yôʾāb</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H3097</span></span> — "YHWH is father." The most transparent of the three: the divine name (Yô-) joined to <em>ʾāb</em>, father.</p>
+    <p><strong>Asahel</strong> — <span class="lang-term"><span class="lang-orig">עֲשָׂהאֵל</span><span class="lang-sep"> | </span><span class="lang-trans">ʿăśāhʾēl</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H6214</span></span> — "God has made" or "God acts," from <em>ʿāśâ</em> (to make, to do) + <em>ʾēl</em> (God). The brother defined by motion bears a name about divine <em>doing</em>.</p>
+    <p><strong>Abishai</strong> — <span class="lang-term"><span class="lang-orig">אֲבִישַׁי</span><span class="lang-sep"> | </span><span class="lang-trans">ʾăbîšay</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H52</span></span> — built on <em>ʾăbî</em>, "my father (is)…," but the second element is genuinely uncertain; standard glosses range from "my father is a gift" to "my father is Jesse." This is the one name the lexicons cannot confidently complete.</p>
+  </div>
+
+  <p>Set them together and a pattern surfaces that the text never states but does not hide either. <strong>The human father is erased from every reference to these men</strong> — they are only ever "sons of Zeruiah," and he appears once, as an unnamed tomb. Yet the names of the household keep putting fatherhood and divine agency in the same breath: <em>YHWH is father</em>, <em>God has made</em>, <em>my father is</em>—. The one parent the narrative names is the mother, and her name ends in the name of God. <em>This is the author's observation and is not a claim the text argues:</em> a family whose earthly father is blotted out, carrying names that assign fatherhood and making to God, and bearing their mother's God-marked name as their only patronymic. It is suggestive, and it will rhyme, at the very end, with a God who stays utterly silent over what these God-named men actually do.</p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">An unresolved knot in the genealogy</span>
+    <p>Who exactly was Zeruiah's father is itself a textual crux. 1 Chronicles 2:16 lists Zeruiah and Abigail as sisters of David among the children of Jesse; but 2 Samuel 17:25 calls Amasa's mother Abigail "daughter of Nahash, sister of Zeruiah." So Zeruiah is David's sister (or half-sister) — and her father is either Jesse, or Nahash, or the two texts preserve a discrepancy or a second name. The proposals (Nahash as an alternate name for Jesse; Zeruiah and Abigail as David's half-sisters by a different father; simple textual corruption) are all old and none is decisive. The erasure of the brothers' own father sits on top of an already-tangled question about their grandfather.<sup class="fn-ref">6</sup></p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- PART I: ASAHEL -->
+  <!-- ============================================================ -->
+  <p class="section-label">Part One · Asahel — the Gazelle</p>
+
+  <h2>The <em>Swift One</em> Who Would Not Turn</h2>
+
+  <p>Asahel is introduced and killed inside a single chapter. After the battle at the pool of Gibeon between the men of Joab and the men of Abner, the narrator pauses on the youngest brother:</p>
+
+  <blockquote class="scripture">
+    <p>"Now there were three sons of Zeruiah there, Joab, Abishai, and Asahel. Asahel was as swift of foot as a wild gazelle."</p>
+    <cite>2 Samuel 2:18 · NRSVue</cite>
+  </blockquote>
+
+  <p>The simile is not decoration. <span class="lang-term"><span class="lang-en">gazelle</span><span class="lang-paren"> (</span><span class="lang-orig">צְבִי</span><span class="lang-sep"> | </span><span class="lang-trans">ṣəbî</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H6643</span><span class="lang-paren">)</span></span> sets up the chase that kills him. Asahel fixes on Abner, the commander of Saul's house, and runs him down, "turning neither to the right nor to the left" (2:19). Abner, fleeing, twice tells the boy to break off — and the second warning carries a detail worth lingering on:</p>
+
+  <blockquote class="scripture">
+    <p>"Abner said to him again, 'Turn away from following me; why should I strike you to the ground? How then could I show my face to your brother Joab?'"</p>
+    <cite>2 Samuel 2:22 · NRSVue</cite>
+  </blockquote>
+
+  <div class="callout">
+    <span class="callout-label">A Detail Easy to Miss</span>
+    <p>One verse earlier, Abner tells Asahel to "turn aside… and seize one of the young men, and take his spoil" (2:21). The instruction implies that Asahel is chasing a fully armed general <em>without proper arms of his own</em> — Abner is telling him to go equip himself off a lesser opponent first. The gazelle's gift is speed, and speed is all he is carrying. It is what lets him catch Abner, and it is exactly what gets him killed: he closes a distance he has no weapon to survive.</p>
+  </div>
+
+  <p>Abner kills him almost reluctantly, and with the wrong end of the weapon:</p>
+
+  <blockquote class="scripture">
+    <p>"But he refused to turn away. So Abner struck him in the stomach with the butt of his spear, and the spear came out at his back. He fell there and died where he lay."</p>
+    <cite>2 Samuel 2:23 · NRSVue</cite>
+  </blockquote>
+
+  <p>The manner of death matters for everything that follows. Abner is in flight, warns his pursuer twice, and kills with the <em>butt</em> of the spear — the narrator builds a death that is, in legal terms, a battlefield killing in self-defense, not murder. That distinction will be quietly trampled when Joab and Abishai "avenge" it. Asahel is later listed among David's elite Thirty (2 Sam 23:24); his death is the only one of the three brothers the text presents as that of a victim.</p>
+
+  <h3>Three Lenses on Asahel</h3>
+  <div class="lens-grid">
+    <div class="lens-card">
+      <span class="lens-card-label">Scholar Lens</span>
+      <div class="lens-card-title">What the text establishes</div>
+      <p>The gazelle simile and the double warning are deliberate narrative engineering: the text takes pains to make Asahel's death lawful (a fleeing man, repeated warning, the blunt end of the spear). This removes the legal ground for blood-vengeance, which makes Joab's later killing of Abner a transgression dressed as a duty — the narrator sets the trap four chapters early.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Skeptic Lens</span>
+      <div class="lens-card-title">Whose interest does it serve?</div>
+      <p>However it happened, Asahel's death is convenient. It hands Joab the one pretext that lets him kill Abner — a rival commander negotiating his way into David's court — and call it family honor rather than politics. A suspicious reader notes how load-bearing one young man's recklessness becomes.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Commentary Lens</span>
+      <div class="lens-card-title">The tradition's reading</div>
+      <p>Alter reads the scene as a taut tragic vignette of youthful overreach; the critical commentaries (McCarter, Bodner) treat Asahel's death primarily as the blood-feud trigger the larger narrative needs to motivate Joab while insulating David. <em>Attributions here are drawn from memory and flagged for verification before publication.</em></p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- PART II: ABISHAI -->
+  <!-- ============================================================ -->
+  <p class="section-label">Part Two · Abishai — the First to Volunteer</p>
+
+  <h2>The Blade That Was <em>Always Told No</em></h2>
+
+  <p>Abishai is characterized by a single recurring beat: he steps forward, weapon ready, eager to kill the king's enemy — and David stops him. It happens first in the wilderness, when David needs a volunteer to enter Saul's camp by night:</p>
+
+  <blockquote class="scripture">
+    <p>"David said to Ahimelech the Hittite and to Joab's brother Abishai son of Zeruiah, 'Who will go down with me into the camp to Saul?' Abishai said, 'I will go down with you.'"</p>
+    <cite>1 Samuel 26:6 · NRSVue</cite>
+  </blockquote>
+
+  <p>Inside the camp, Abishai sees opportunity where David sees a line he will not cross. "God has given your enemy into your hand today; now let me pin him to the ground with one stroke of the spear; I will not strike him twice" (26:8). David refuses — Saul is the LORD's anointed. But notice <em>how</em> they got in:</p>
+
+  <div class="callout">
+    <span class="callout-label">The Sleep on the Camp — Lee's parallel</span>
+    <p>David and Abishai do not fight their way past the guard. They walk through a sleeping army: "No one saw it or knew it, nor did anyone awake, for they were all asleep, because <strong>a deep sleep from the LORD</strong> had fallen upon them" (1 Sam 26:12). The word <span class="lang-term"><span class="lang-en">deep sleep</span><span class="lang-paren"> (</span><span class="lang-orig">תַּרְדֵּמָה</span><span class="lang-sep"> | </span><span class="lang-trans">tardēmâ</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H8639</span><span class="lang-paren">)</span></span> is the same word for the sleep God casts on Adam in Genesis 2:21 and on Abram in Genesis 15:12 — a divinely imposed unconsciousness. The infiltration that gives Abishai his chance is staged by YHWH. The text frames the brothers' opportunities, here at least, as <em>provided</em> — and then frames David's restraint as the thing that distinguishes him from the man beside him who wanted to use the opening. The same providence that opens the door does not endorse what Abishai wants to do once through it.</p>
+  </div>
+
+  <p>The pattern repeats. When Shimei curses the fleeing David, Abishai is instantly at his shoulder: "Why should this dead dog curse my lord the king? Let me go over and take off his head" (2 Sam 16:9). David refuses again, and rebukes the impulse a second time when Abishai renews it (19:21–22). Between these restraints, Abishai is the throne's most effective instrument of force: he stands with Joab in the killing of Abner (3:30), commands a wing of the army against the Ammonites and Arameans (10:10), is sent as one of three commanders against Absalom (18:2), and — most strikingly — saves David's life, striking down the Philistine giant Ishbi-benob when the aging king flags in battle (21:17). He is chief of the Thirty, credited with three hundred slain by his own spear (23:18).</p>
+
+  <p>And then he is simply gone. The narrative never reports Abishai's death.</p>
+
+  <div class="dark-callout">
+    <span class="dark-callout-label">The Death That Is Not Told</span>
+    <p>Asahel is speared and buried in a named tomb. Joab is executed at the altar and buried in his own house. Abishai — the brother who volunteered first and never stopped — is given <strong>no death scene, no burial, no last word.</strong> He performs his last recorded act, saving the king, and exits the story unremarked. For a figure this present across two books, the silence is conspicuous. The text knows how to end a man; with Abishai it declines to.</p>
+  </div>
+
+  <div class="conflict-box">
+    <span class="conflict-label">A crack in the record</span>
+    <p>Abishai also sits at the center of a numbers problem the text never reconciles. The slaughter of Edomites in the Valley of Salt is credited to Abishai (18,000) in 1 Chronicles 18:12, to David in 2 Samuel 8:13, and is hung on Joab by the superscription of Psalm 60. Three texts, three agents, two body counts.<sup class="fn-ref">1</sup> Whatever this tells us about the sources, it should make a reader cautious about treating any single heroic portrait of the brothers as straight reportage.</p>
+  </div>
+
+  <h3>Three Lenses on Abishai</h3>
+  <div class="lens-grid">
+    <div class="lens-card">
+      <span class="lens-card-label">Scholar Lens</span>
+      <div class="lens-card-title">What the text establishes</div>
+      <p>Abishai is loyalty in its least-governed form: devotion to David's <em>person</em>, expressed as a standing readiness to kill, that the king must repeatedly restrain. The narrative defines him almost entirely by the restraint — he is the foil that lets David's principle (the LORD's anointed; mercy to Shimei) show. That the text gives him no death is characterization by omission: an instrument is set down, not buried.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Skeptic Lens</span>
+      <div class="lens-card-title">Whose interest does it serve?</div>
+      <p>Watch the displacement. Every time Abishai offers to kill — Saul, Shimei — the violence David might be suspected of wanting is voiced by someone else and then nobly declined. Abishai functions as the deniable hand: the apologetic gains David's mercy <em>and</em> the satisfaction of having the threat named aloud. The credit-drift over the Edomite slaughter fits the same pattern of a tradition unsure who did what.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Commentary Lens</span>
+      <div class="lens-card-title">The tradition's reading</div>
+      <p>Halpern reads the "let me take off his head" refrains as the narrative displacing David's own violence onto a deniable kinsman; the Anchor tradition (McCarter) treats the Zeruiah brothers collectively as the violent agents the David apology must both deploy and disown. <em>Attributions drawn from memory; flagged for verification.</em></p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- PART III: JOAB -->
+  <!-- ============================================================ -->
+  <p class="section-label">Part Three · Joab — the Enforcer</p>
+
+  <h2>The Man Who Did <em>What the Throne Needed</em></h2>
+
+  <p>Joab is the commander of David's army for almost the whole of David's reign, and one of the most morally complicated figures in the books of Samuel. He earns his command, by the Chronicler's account, by being first up the water shaft into Jebus (1 Chr 11:6). What he does with it is a sequence of killings — and a parallel sequence of moments in which he is the only man around David who tells the truth.</p>
+
+  <h3>The four killings</h3>
+
+  <p><strong>Abner.</strong> When Saul's commander Abner defects to David and leaves Hebron "in peace" (2 Sam 3:21–23), Joab follows him, calls him back, and "took him aside in the gate to speak with him privately, and there he struck him in the stomach. So he died, for shedding the blood of Asahel" (3:27). David's response is immediate and public: "I and my kingdom are forever guiltless before the LORD for the blood of Abner" (3:28), and he curses Joab's house. This is the killing that least survives the "practical and reasonable" test, on two firm counts and a suggestive third:</p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">Why this one is not clean</span>
+    <p>First, it violates a standing truce — Abner had come and gone "in peace" under David's safe-conduct. Second, the blood-vengeance pretext is hollow: Asahel died in battle, lawfully (the text built that in, 2:22–23), so there is no legal blood-debt to collect. Third, and more suggestive than decisive: it happens <strong>in Hebron, a city of refuge</strong> (Josh 20:7) — the one kind of place set apart so that a killer is <em>not</em> struck down before judgment. Joab does in the gate of a refuge city, by stealth, exactly what the institution of that city exists to prevent. The narrative does not itself invoke the refuge law here, so this is the reader's irony to notice, not the text's stated charge.<sup class="fn-ref">2</sup> Mixed in with the law is politics: Abner was a rival for influence at David's court, and his death removes him.</p>
+  </div>
+
+  <p><strong>Absalom.</strong> When David's son leads a rebellion and is routed, David gives an order every soldier hears: "Deal gently for my sake with the young man Absalom" (2 Sam 18:5). Joab finds Absalom hanging by his hair in an oak, alive, and kills him anyway:</p>
+
+  <blockquote class="scripture">
+    <p>"He took three spears in his hand and thrust them into the heart of Absalom, while he was still alive in the oak."</p>
+    <cite>2 Samuel 18:14 · NRSVue</cite>
+  </blockquote>
+
+  <p>This is the killing Lee rightly flags as the strange one — because what follows is not punishment but <em>correction running the other way</em>. When David collapses into grief, Joab walks into the king's presence and rebukes him to his face: by mourning the man who tried to kill him, the king has "covered with shame the faces of all your servants who have this day saved your life" (19:5), and if he does not get up and speak to the troops, not a man will be left with him by nightfall (19:7). David gets up. He does not rebuke Joab; he obeys him.</p>
+
+  <div class="callout">
+    <span class="callout-label">"No punishment" — with one qualification</span>
+    <p>Lee's observation is essentially right: Joab kills the king's son against an explicit, public, protective order, and David neither punishes nor even reproaches him. The single consequence that does land comes later and obliquely — David offers Joab's command to Amasa, Absalom's former general (2 Sam 19:13). It reads as a demotion and a grudge, not a sentence; and Joab erases it himself, with a knife, at the next opportunity. So: not <em>no</em> consequence, but nothing resembling justice — and the consequence, such as it was, Joab simply reversed.</p>
+  </div>
+
+  <p><strong>Amasa.</strong> Sent to muster Judah and slow to return, Amasa — now David's appointed commander in Joab's place — meets Joab on the road:</p>
+
+  <blockquote class="scripture">
+    <p>"Joab said to Amasa, 'Is it well with you, my brother?' And Joab took Amasa by the beard with his right hand to kiss him. But Amasa did not notice the sword in Joab's hand; Joab struck him in the belly so that his entrails poured out on the ground, and he died."</p>
+    <cite>2 Samuel 20:9–10 · NRSVue</cite>
+  </blockquote>
+
+  <p>This is the second killing that fails the "reasonable" test, and it fails it the same way Abner's did: a kinsman (Amasa was also a son of one of Zeruiah's sisters, 17:25), killed by guile, with a feigned greeting, while the rival's guard is down. One can construct a military rationale — Amasa was slow, the Sheba revolt was urgent — but the manner is assassination of a competitor, not the dispatch of an enemy.</p>
+
+  <p><strong>Uriah.</strong> The fourth killing is the one Joab does <em>not</em> perform with his own hand, and it may be the most damning. When David sends the letter ordering Uriah set in the front line and abandoned to die, Joab carries it out and manages the cover story (2 Sam 11:14–21). Here the enforcer's loyalty is total and entirely practical — and that is exactly the problem. Joab obstructs David constantly when he judges the throne is endangered; he does <em>not</em> obstruct when obstruction would have protected an innocent man and the king's own righteousness. His loyalty, the text quietly shows, is to the reign, not to the king's soul.</p>
+
+  <h3>The other face: the only one who tells the truth</h3>
+
+  <p>Against the four killings stands a second, genuinely countervailing record. Joab is <em>right</em> about the census, and says so to the king's face — "Why does my lord the king want to do this?" (2 Sam 24:3); the Chronicler notes he found the order "abhorrent" and did not even complete it (1 Chr 21:6). He is right, and effective, in dragging David out of a self-destructive grief (19:5–7). And in a moment of striking deference, when Rabbah is about to fall, Joab sends for David so that the city will be taken in the king's name and "be called by my name" — Joab's — only if David fails to come (2 Sam 12:27–28). The man who defies the king's order over Absalom is the same man who refuses to steal the king's glory at Rabbah. The contradiction is not resolved by the text, and this study does not resolve it either.</p>
+
+  <h3>Why did Joab back Adonijah? — left open</h3>
+
+  <p>At the very end, with David dying, Joab makes the choice that kills him: he throws his support behind Adonijah's bid for the throne rather than Solomon's (1 Kgs 1:7). Lee's question is the honest one — <em>why?</em> — and the answer is that the text never says. What can be laid out are the possibilities, none of which the narrative confirms:</p>
+
+  <div class="callout">
+    <span class="callout-label">The candidates, none endorsed by the text</span>
+    <p>Adonijah was the eldest surviving son, born after Absalom (1 Kgs 1:6), with the strongest claim by primogeniture — Joab may have backed the legal heir. Or Joab and the priest Abiathar were David's wilderness-era old guard, being displaced by a younger faction (Zadok, Benaiah, Nathan) gathered around Bathsheba and Solomon — a court-factional read, the loyalties of decades hardening into a losing alliance. Or, given Joab's history, a protective instinct simply attached itself to the wrong heir. The text supplies the fact and withholds the motive. It is one of the genuine blanks of the Court History.</p>
+  </div>
+
+  <h3>The death — by decree, at the altar</h3>
+
+  <p>David's last instructions to Solomon name Joab specifically. The charge is built on the two gate-killings — Abner and Amasa — in a phrase the KJV renders memorably:</p>
+
+  <blockquote class="scripture">
+    <p>"…whom he slew, and shed the blood of war in peace, and put the blood of war upon his girdle that was about his loins, and in his shoes that were on his feet."</p>
+    <cite>1 Kings 2:5 · KJV (verified) — NRSVue: "retaliated in a time of peace for blood that had been shed in war"</cite>
+  </blockquote>
+
+  <p>When the reckoning comes, Joab does not run for the border. He runs to God:</p>
+
+  <blockquote class="scripture">
+    <p>"So Joab fled to the tent of the LORD and grasped the horns of the altar."</p>
+    <cite>1 Kings 2:28 · NRSVue</cite>
+  </blockquote>
+
+  <p>Ordered out, he refuses — he will die at the altar or not at all. Solomon sends Benaiah, who, when Joab will not move, strikes him down where he clings (2:29–34). The execution is justified by the law of the altar itself: "if a man willfully attacks another to kill him by treachery, you shall take him from my altar, that he may die" (Exod 21:14). The altar gives no asylum to a man who kills by guile — and guile, the gate and the kiss, is precisely Joab's signature. He is then "buried in his own house in the wilderness" (2:34). It is an execution by royal decree, not a trial; and it settles only two of his four killings — not Uriah, whom David commissioned, and not Absalom, whom David mourned.</p>
+
+  <h3>Three Lenses on Joab</h3>
+  <div class="lens-grid">
+    <div class="lens-card">
+      <span class="lens-card-label">Scholar Lens</span>
+      <div class="lens-card-title">What the text establishes</div>
+      <p>Joab's loyalty is to the office, not the man's wishes: he defies David's explicit order (Absalom), corrects the king's conduct (the grief, the census), and refuses his glory (Rabbah), yet kills two rivals by guile when the reign is served. The altar death is exegetically exact — Exodus 21:14 strips sanctuary from precisely the kind of killer (by treachery) that Joab is. The text executes him by the letter of the law his own method violated.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Skeptic Lens</span>
+      <div class="lens-card-title">Whose interest does it serve?</div>
+      <p>The deathbed charge is realpolitik in the costume of justice. David profited from every Joab killing and disowned each one; the blood is settled only when David is dying and Solomon needs the old guard removed. Tellingly, the two killings that go unavenged are the two that most implicate David himself — Uriah (his order) and Absalom (his son). Joab dies for the deaths that embarrassed the dynasty, not the ones that were most clearly murder.</p>
+    </div>
+    <div class="lens-card">
+      <span class="lens-card-label">Commentary Lens</span>
+      <div class="lens-card-title">The tradition's reading</div>
+      <p>Baden and Halpern read Joab as the apology's indispensable scapegoat — the man who does what David needs and absorbs what David cannot be seen doing. Brueggemann presses the countercurrent: Joab is <em>right</em> about the census and right to break David's paralysis, the truth-teller the court lacks. <em>Attributions drawn from memory; flagged for verification.</em></p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- PART IV: CONVERGENCE -->
+  <!-- ============================================================ -->
+  <p class="section-label">Part Four · The Silence Over the Three</p>
+
+  <h2>Too Violent for <em>the King</em></h2>
+
+  <p>After Abner's murder, David says the line that gives this study its center of gravity:</p>
+
+  <blockquote class="scripture">
+    <p>"Today I am powerless, even though anointed king; these men, the sons of Zeruiah, are too violent for me. May the LORD pay back the one who does evil according to his evil!"</p>
+    <cite>2 Samuel 3:39 · NRSVue</cite>
+  </blockquote>
+
+  <p>"Too violent for me" — <span class="lang-term"><span class="lang-en">too hard / too harsh for me</span><span class="lang-paren"> (</span><span class="lang-orig">קָשִׁים מִמֶּנִּי</span><span class="lang-sep"> | </span><span class="lang-trans">qāšîm mimmennî</span><span class="lang-sep"> | </span><span class="lang-meta">Heb - H7186</span><span class="lang-paren">)</span></span>. The king who commands armies says his own nephews are beyond his control. And here is the irony Lee names — offered as observation, not thesis, because the text offers it the same way:</p>
+
+  <div class="pull-quote">
+    <p>The king who could not build the temple because he had "shed so much blood" hands the bloodguilt of his reign to the three men he calls too bloody to manage.</p>
+    <cite>2 Samuel 3:39 with 1 Chronicles 22:8</cite>
+  </div>
+
+  <p>David is himself the man of blood par excellence — the LORD denies him the temple precisely because "you have shed so much blood in my sight on the earth" (1 Chr 22:8). He routs Canaanite and Philistine and Moabite and Aramean across two books. Yet he is the one who declares himself "guiltless" of Abner's blood, curses Joab's house for it, and on his deathbed routes the blood-debt for the peace-time killings onto Joab's head. The text does not editorialize. It simply lets the man of blood disown the bloodshed of his own kinsmen, and leaves the irony sitting in plain view — where, as Lee notes, it tends to pass unremarked by readers who have already sorted David into the column of the clean.<sup class="fn-ref">3</sup></p>
+
+  <h3>What no lens closes</h3>
+
+  <p>Set the three deaths side by side and a single, strange fact organizes them. Every other major shedder of blood in these books meets a <em>prophet</em>. Saul is confronted by Samuel; David, after Uriah, is confronted by Nathan — "You are the man" — and after the census by Gad. The verdict comes from God, through a named voice. The sons of Zeruiah never once receive that. No prophet ever indicts Joab, or Abishai, or Asahel. They are weighed only by men — by David's curse, by Solomon's decree — and only politically, and only for two of the four killings. The divine register, so vocal over the kings, stays shut over these three.</p>
+
+  <p>The honest qualification: the comparison class is mostly <em>kings</em>. Prophets in these books overwhelmingly confront the crowned — Samuel and Saul, Nathan and Gad and David — so part of the silence over Joab may reduce to the plainer pattern that prophets address kings, not commanders. But the reduction is not complete. Joab is no ordinary general: he is the king's blood, a maker and breaker of successions, and the man whose killings the narrative itself moralizes through David's mouth (3:28–29; 1 Kgs 2:5). The text is willing to render verdicts on him; what it never does is route one through a <em>prophet</em> or attribute one to <em>God</em>. That narrower silence is the residue, and the comparison-class caveat narrows it without dissolving it.</p>
+
+  <div class="dark-callout">
+    <span class="dark-callout-label">The Residue, Stated Plainly</span>
+    <p>Two of the brothers' deaths are told and one is withheld. The one execution that occurs is by royal decree, not prophetic word, and clings to an altar that the law then overrides. And across the whole arc, <strong>God is silent about the sons of Zeruiah</strong> — no oracle, no "you are the man," no Nathan and no Gad. The apology thesis explains why David benefits from this silence. It does not explain the silence itself. This study does not explain it either. It marks it, and leaves it open.</p>
+  </div>
+
+  <h3>The thing Lee saw: fiction-shaped, fact-textured</h3>
+
+  <p>One last observation, because it is the right one to end on. These chapters read, in their shape, like literature — the matronymic that withholds a father, the gazelle whose speed is his death, the brother who is never allowed to strike, the enforcer killed by the law his own knife mocked, the symmetry of guile answered by guile. It has the architecture of a made thing. And yet the specifics cut the other way: the butt of a spear coming out a man's back, entrails on a road, the beard taken in a hand, a body buried "in his own house in the wilderness," the exact split of credit over eighteen thousand Edomites. These are the textures of record, not of invention — the grit a storyteller smooths away and an archive keeps. The Court History has long struck readers as <em>both</em> at once: among the most artful narrative in the Hebrew Bible and among the most plausibly historical.<sup class="fn-ref">4</sup> This study does not adjudicate between the two impressions. It registers that the brothers sit exactly on that seam — and that the seam may be the most honest thing about them.</p>
+
+  <h3>What this study leaves open</h3>
+  <div class="residue-block">
+    <span class="residue-label">Named Residue — open questions this study does not resolve</span>
+    <ul>
+      <li>Why is there no prophetic or divine word — no Samuel, no Nathan, no Gad — against any son of Zeruiah, when the kings who shed blood receive one? The pattern partly reduces to "prophets confront kings," but Joab (king's blood, kingmaker, openly moralized over) is not fully covered by that, and the apology thesis explains David's benefit, not God's silence.</li>
+      <li>Why is Abishai's death never told? The text ends Asahel and Joab with care and lets the middle brother simply vanish after his last act. Omission, accident of sources, or meaning?</li>
+      <li>Why did Joab back Adonijah over Solomon (1 Kgs 1:7)? Legal primogeniture, old-guard factional loyalty, or misplaced protective instinct — the text gives the fact and withholds the motive.</li>
+      <li>Is the better master-frame for the brothers the <em>apologetic</em> one (deniable hands that keep David clean) or a <em>providential-instrument</em> one (an unmastered force David himself calls "too hard for me")? The text supports elements of both and crowns neither.</li>
+      <li>Do these chapters read as they do because they are artful theology or because they are close to the events? The fiction-shaped architecture and the fact-textured detail are both really present, and the study does not collapse them.</li>
+    </ul>
+  </div>
+
+  <!-- FOOTNOTES -->
+  <div class="footnotes">
+    <span class="footnotes-label">Notes</span>
+    <div class="fn-item">
+      <span class="fn-num">1</span>
+      <span class="fn-text">The Valley of Salt victory is credited to Abishai (18,000 Edomites) in 1 Chr 18:12; to David in 2 Sam 8:13 (the Hebrew of which names Aram/Edom variously across witnesses); and the superscription of Psalm 60 attaches the campaign to Joab. The agent and the number both vary by source. The specific figures and the Hebrew of the Psalm 60 heading are flagged for firsthand verification before publication.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">2</span>
+      <span class="fn-text">Hebron is named among the cities of refuge in Josh 20:7 ("Kiriath-arba, that is, Hebron, in the hill country of Judah"). The cities of refuge (Num 35; Deut 19; Josh 20) exist so that a person who has killed is protected from the avenger of blood until a lawful hearing — the precise protection Joab denies Abner by killing him privately in the gate. Whether the narrator intends the reader to feel this irony, or whether Hebron is simply where the court then sat, is not stated; the legal geography is, however, on the page.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">3</span>
+      <span class="fn-text">This is offered as Lee's observation and a noted irony, not as a thesis the study argues. The text places David's "I am guiltless of Abner's blood" (2 Sam 3:28), his "too violent for me" (3:39), and his deathbed charge against Joab (1 Kgs 2:5) on one side, and the LORD's "you have shed so much blood" (1 Chr 22:8) on the other, without comment. The juxtaposition is the datum; what to make of it is left to the reader.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">4</span>
+      <span class="fn-text">The "Court History" or "Succession Narrative" (broadly 2 Sam 9–20 + 1 Kgs 1–2) has been read since Leonhard Rost as a literary unity of unusual artistry, and by many historians as containing some of the most plausibly early and historically grounded material in the Deuteronomistic History. The two judgments are not in tension; both are widely held. Specific source-critical positions named in this study are flagged for verification against the actual commentaries before publication.</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">5</span>
+      <span class="fn-text">Hebrew name etymologies here follow standard lexical glosses (Strong's / BDB): Zeruiah H6870, Joab H3097, Asahel H6214, Abishai H52, with balm <em>ṣŏrî</em> H6875. The meaning of Zeruiah and the second element of Abishai are both genuinely uncertain in the lexicons; the glosses are given as the leading options, not as settled. All Hebrew forms and Strong's numbers are flagged for firsthand verification against Blue Letter Bible / a critical lexicon before publication (the local concordance tool does not yet index these lemmas).</span>
+    </div>
+    <div class="fn-item">
+      <span class="fn-num">6</span>
+      <span class="fn-text">The Zeruiah/Abigail "daughter of Nahash" problem (2 Sam 17:25 vs 1 Chr 2:16) is a long-standing crux. Common harmonizations: Nahash was an alternate name for Jesse; Nahash was the women's mother (an unusual matronymic in the Samuel verse); or Zeruiah and Abigail were David's half-sisters by a man named Nahash, with Jesse their stepfather. The Chronicler's list and the Samuel notice are not easily reconciled, and the study does not adjudicate it. References flagged for verification.</span>
+    </div>
+  </div>
+
+  <!-- GRADE BLOCK — PLACEHOLDER -->
+  <div class="grade-block" style="margin-top:40px;">
+    <div class="grade-inner">
+      <div class="grade-letter">A+</div>
+      <div class="grade-detail">
+        <span class="grade-label">Reasoning · Logic Review — Cold Blind (fresh instance) · 19/20</span>
+        <div class="grade-scores">
+          <span class="grade-score">Claim precision <strong>4/4</strong></span>
+          <span class="grade-score">Evidence grounding <strong>3/4</strong></span>
+          <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+          <span class="grade-score">Internal consistency <strong>4/4</strong></span>
+          <span class="grade-score">Scope <strong>4/4</strong></span>
+        </div>
+        <p style="font-size:.75rem;color:rgba(235,215,175,.40);margin-top:8px;font-style:italic;">Draft. Cold blind grade by a fresh input-blinded instance (A+ 19/20); Warrant 14/16 Keep. Same-model ceiling applies (rule 17) — a cold A+ does not close it. Before publish: firsthand external verification of every NRSVue quotation, every Hebrew lemma, and every commentator attribution (the one soft joint the grade flags), plus a different-model or human check.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOURCE LIST -->
+  <div class="source-list">
+    <p class="source-list-label">Sources</p>
+
+    <div class="source-card">
+      <p class="source-ref">Alter, R. (1999). <em>The David Story: A Translation with Commentary of 1 and 2 Samuel</em>. W. W. Norton.</p>
+      <p class="source-position">Position: Secular / literary-critical. Reads Samuel as ancient literary art of the first rank; brackets confessional claims while taking the text fully seriously.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">McCarter, P. K. (1984). <em>II Samuel</em> (Anchor Bible, Vol. 9). Doubleday.</p>
+      <p class="source-position">Position: Historical-critical; mainline. The standard critical commentary; detailed source and redaction analysis of the David traditions and their apologetic shaping.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Brueggemann, W. (1990). <em>First and Second Samuel</em> (Interpretation series). Westminster John Knox.</p>
+      <p class="source-position">Position: Mainline Protestant. Theological reading engaging historical-critical questions; presses the prophetic and political dimensions of the narrative.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Halpern, B. (2001). <em>David's Secret Demons: Messiah, Murderer, Traitor, King</em>. Eerdmans.</p>
+      <p class="source-position">Position: Historical-critical. Reads the David narrative as apologetic responding to real accusations; foregrounds the deaths that benefited David and the role of his agents.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Baden, J. (2013). <em>The Historical David: The Real Life of an Invented Hero</em>. HarperOne.</p>
+      <p class="source-position">Position: Secular / skeptical. Argues the David narrative is largely court apologetic; the Zeruiah brothers function as the deniable agents of its violence.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Bodner, 
