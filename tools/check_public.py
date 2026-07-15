@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Boundary check for the public repository.
 
-Two tiers of forbidden tokens:
+The actual forbidden tokens live outside this repo, in a sidecar file on the
+private side (../private/tools/forbidden_tokens.json, a sibling of this repo
+under the shared parent directory). That file is never committed here — only
+its two categories are described below:
 
-1. FORBIDDEN_EVERYWHERE — personal identifiers, private paths, and the names of
-   quarantined personal files. These may never appear anywhere in the public
-   tree, exhibits included.
+1. FORBIDDEN_EVERYWHERE — personal identifiers, private paths, and the names
+   of quarantined personal files. These may never appear anywhere in the
+   public tree, exhibits included.
 2. FORBIDDEN_OUTSIDE_EXHIBITS — names of internal workbench files and
    directories. Barred from the authored public record (which must stand
    alone), but permitted inside exhibits/: an exhibit is a workbench document
@@ -15,59 +18,42 @@ Two tiers of forbidden tokens:
 
 Run from the repo root:  python tools/check_public.py
 Wired as a pre-commit hook; a hit is a hard stop, not a warning.
+This check requires the private sidecar to be present alongside this repo;
+it fails closed (blocks the commit) if the sidecar cannot be read, rather
+than silently skipping the scan.
 """
 
+import json
 import sys
 from pathlib import Path
 
-FORBIDDEN_EVERYWHERE = [
-    # personal identifiers
-    "REDACTED-IDENTIFIER",
-    "REDACTED-DOMAIN",
-    # quarantined personal files / private paths
-    "REDACTED-PATH",
-    "REDACTED-PATH",
-    "REDACTED-PATH",
-    # environment remnants
-    "AppData",
-    "C:\\Users",
-    "C:/Users",
-]
-
-FORBIDDEN_OUTSIDE_EXHIBITS = [
-    # internal workbench file and directory names
-    "STANDING-CORRECTION",  # singular form also catches the plural
-    "START-HERE",
-    "OPEN-GATES",
-    "RECEIPT-TEMPLATE",
-    "INVENTORY",  # bare all-caps form also catches INVENTORY.md
-    "TOPIC-BACKLOG",
-    "receipts/",
-    "rejected/",
-    "drafts/",
-    "notes/",
-    "transcripts/",
-    # internal environment vocabulary
-    "Cowork",
-    "cowork",
-]
-
 TEXT_EXT = {".html", ".md", ".js", ".json", ".txt", ".xml", ".py", ".css", ".jsonl"}
 SKIP_DIRS = {".git"}
-SKIP_FILES = {"tools/check_public.py"}  # this file names the tokens it hunts
+
+
+def load_tokens(repo_root: Path):
+    sidecar = repo_root.parent / "private" / "tools" / "forbidden_tokens.json"
+    try:
+        data = json.loads(sidecar.read_text(encoding="utf-8"))
+        return data["FORBIDDEN_EVERYWHERE"], data["FORBIDDEN_OUTSIDE_EXHIBITS"]
+    except (OSError, KeyError, json.JSONDecodeError) as exc:
+        print(f"check_public: cannot load token sidecar at {sidecar}: {exc}")
+        print("check_public: BLOCKED - boundary check requires the private sidecar file.")
+        sys.exit(1)
 
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
+    forbidden_everywhere, forbidden_outside_exhibits = load_tokens(root)
     hits = []
     for path in sorted(root.rglob("*")):
         if not path.is_file() or path.suffix.lower() not in TEXT_EXT:
             continue
         rel = path.relative_to(root).as_posix()
-        if any(part in SKIP_DIRS for part in path.parts) or rel in SKIP_FILES:
+        if any(part in SKIP_DIRS for part in path.parts):
             continue
         in_exhibits = rel.startswith("exhibits/")
-        tokens = FORBIDDEN_EVERYWHERE if in_exhibits else FORBIDDEN_EVERYWHERE + FORBIDDEN_OUTSIDE_EXHIBITS
+        tokens = forbidden_everywhere if in_exhibits else forbidden_everywhere + forbidden_outside_exhibits
         try:
             text = path.read_text(encoding="utf-8", errors="replace")
         except OSError as exc:
