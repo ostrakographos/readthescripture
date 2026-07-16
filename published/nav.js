@@ -32,7 +32,8 @@
         { label: 'Forfeited Access',          file: 'forfeited_access.html',              tag: 'Saul & David'           },
         { label: 'The Answer That Didn\'t Come True', file: 'the_answer_that_didnt_come_true.html', tag: 'Keilah · Inquiry' },
         { label: 'The Mercy He Feared',       file: 'jonah_the_mercy_he_feared.html',      tag: 'Jonah · Mercy'          },
-        { label: 'How We Got the Bible',       file: 'history_of_the_bible.html',           tag: 'Canon · Transmission'   }
+        { label: 'How We Got the Bible',       file: 'history_of_the_bible.html',           tag: 'Canon · Transmission'   },
+        { label: 'The Making of the Canon',    file: 'the_canon.html',                      tag: 'Canon · Formation'      }
       ]
     },
     {
@@ -108,7 +109,7 @@
       'samaritan_woman_at_the_well.html':    { pub: '2026-03-01', mod: '2026-07-15'                      },
       'faith_in_action.html':                { pub: '2026-04-20', mod: '2026-07-02'                      },
       'isaiah_7_14_immanuel.html':           { pub: '2026-05-01', mod: '2026-07-01'                      },
-      'sheol_hades_gehenna.html':            { pub: '2026-02-01', mod: '2026-07-15'                      },
+      'sheol_hades_gehenna.html':            { pub: '2026-02-01', mod: '2026-07-16'                      },
       'lord_gods_and_the_satan.html':        { pub: '2026-05-15', mod: '2026-07-02'                      },
       'when_the_rain_stopped.html':          { pub: '2026-05-01', mod: '2026-07-01'                      },
       'when_the_answer_was_silence.html':    { pub: '2026-05-10', mod: '2026-06-22'                      },
@@ -123,6 +124,7 @@
       'the_answer_that_didnt_come_true.html':{ pub: '2026-06-15', mod: '2026-06-22'                      },
       'jonah_the_mercy_he_feared.html':      { pub: '2026-06-24', mod: '2026-07-01'                      },
       'history_of_the_bible.html':           { pub: '2026-06-25', mod: '2026-07-14'                      },
+      'the_canon.html':                      { pub: '2026-07-16'                                          },
       'jonah_marginalia.html':               { pub: '2026-06-24', mod: '2026-06-24', type: 'BlogPosting' },
       'contranyms_in_scripture.html':        { pub: '2026-06-25', mod: '2026-06-25', type: 'BlogPosting' },
       'the_true_word_in_a_false_mouth.html': { pub: '2026-06-28', mod: '2026-06-29'                      },
@@ -685,6 +687,7 @@
     'the_answer_that_didnt_come_true.html': 'keilah 1 samuel 23 averted oracle conditional prophecy david foreknowledge',
     'jonah_the_mercy_he_feared.html': 'jonah nineveh mercy raah wordplay relenting angry at mercy prophet',
     'history_of_the_bible.html': 'how we got the bible canon dead sea scrolls masoretic septuagint textual criticism manuscripts transmission nicaea',
+    'the_canon.html': 'making of the canon formation athanasius festal letter 367 marcion muratorian fragment antilegomena deuterocanon apocrypha council trent ethiopian enoch jubilees eusebius hebrews shepherd hermas josephus jerome luther disputed books',
     'good_and_evil_word_study.html': 'good and evil hebrew tov ra tree of knowledge genesis word study semantics',
     'lord_gods_and_the_satan.html': 'divine council el elohim yhwh the satan job sons of god monotheism deuteronomy 32:8 unseen world',
     'sheol_hades_gehenna.html': 'sheol hades gehenna hell afterlife underworld pit greek words for hell eschatology death',

@@ -6,9 +6,11 @@ Mechanically verifies the failure modes that have repeatedly cost time on this
 project (truncation, NUL bytes, inconsistent nav cache-bust, missing or
 truncated SEO wiring). Run it before any commit that touches published/.
 
-  python tools/check_published.py
+  python tools/check_published.py             # defaults to <repo>/published
+  python tools/check_published.py published   # or name the directory
 
 Exit code 0 = clean, 1 = at least one ERROR. WARN lines never block.
+An empty or missing target directory is an ERROR, never a silent pass.
 
 Per-file ERRORS:
   * NUL byte present            (bash-mount write artifact / corruption)
@@ -37,7 +39,13 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-PUB = os.path.join(REPO, 'published')
+# Optional argv override; the pre-commit hook passes "published" explicitly.
+# Relative paths resolve against the repo root, not the caller's cwd, so the
+# gate checks the same tree no matter where it is invoked from.
+if len(sys.argv) > 1:
+    PUB = sys.argv[1] if os.path.isabs(sys.argv[1]) else os.path.join(REPO, sys.argv[1])
+else:
+    PUB = os.path.join(REPO, 'published')
 
 
 def attr(text, pattern):

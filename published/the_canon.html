@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Making of the Canon — Read the Scripture</title>
+<meta name="description" content="How the biblical canon formed: the Old Testament's three shelves, Marcion, the Muratorian Fragment, Eusebius's ledger, Athanasius's 367 list, the disputed books, and the edges that differ by communion.">
+<meta name="keywords" content="biblical canon, canon of scripture, Athanasius 39th festal letter, Marcion, Muratorian fragment, antilegomena, deuterocanon, apocrypha, Council of Trent, Ethiopian canon, 1 Enoch, how the Bible was assembled, disputed books, Eusebius">
+<link rel="canonical" href="https://readthescripture.com/the_canon.html">
+<meta property="og:title" content="The Making of the Canon — Read the Scripture">
+<meta property="og:description" content="How the biblical canon formed: the Old Testament's three shelves, Marcion, the Muratorian Fragment, Eusebius's ledger, Athanasius's 367 list, the disputed books, and the edges that differ by communion.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://readthescripture.com/the_canon.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream:      #FAF7F2;
+  --cream-d:    #F0EBE0;
+  --cream-dd:   #E2D9C8;
+  --ink:        #181008;
+  --ink-2:      #2C1E0A;
+  --ink-3:      #5A4020;
+  --ink-4:      #8A6838;
+  --sienna:     #8B3A1A;
+  --sienna-l:   #B85A30;
+  --gold:       #8A6018;
+  --gold-l:     #C09030;
+  --gold-pale:  #E8CC76;
+  --purple-mid: #7F77DD;
+  --nav-bg:     #0E0A04;
+  --font-d:     'Playfair Display', Georgia, serif;
+  --font-b:     'Crimson Pro', Georgia, serif;
+  --font-ui:    'Cinzel', serif;
+  --max-w:      1200px;
+  --max-w-text: 780px;
+  --shadow-s:   0 2px 12px rgba(18,13,6,.10);
+  --shadow-m:   0 6px 28px rgba(18,13,6,.15);
+  --rule:       rgba(138,96,24,.15);
+  --rule-s:     rgba(138,96,24,.32);
+  --t:          all .22s cubic-bezier(.4,0,.2,1);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--cream); color:var(--ink-2); font-family:var(--font-b); font-size:18px; line-height:1.78; min-height:100vh; }
+.hero { position:relative; background:var(--nav-bg); overflow:hidden; padding:80px 24px 68px; text-align:center; }
+.hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 60% at 50% -10%, rgba(138,96,24,.32) 0%, transparent 68%),radial-gradient(ellipse 40% 50% at 15% 110%, rgba(139,58,26,.18) 0%, transparent 60%),radial-gradient(ellipse 40% 50% at 85% 110%, rgba(138,96,24,.14) 0%, transparent 60%); pointer-events:none; }
+.hero::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent 5%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 95%); }
+.hero-eyebrow { font-family:var(--font-ui); font-size:.65rem; letter-spacing:.26em; text-transform:uppercase; color:rgba(232,204,118,.60); display:block; margin-bottom:22px; position:relative; }
+.hero h1 { font-family:var(--font-d); font-size:clamp(2.4rem,5vw,4rem); font-weight:700; color:var(--cream); line-height:1.12; letter-spacing:-.01em; margin-bottom:20px; position:relative; }
+.hero h1 em { font-style:italic; color:var(--gold-pale); }
+.hero-sub { font-family:var(--font-b); font-size:1.1rem; font-style:italic; color:rgba(235,215,175,.62); max-width:560px; margin:0 auto 28px; line-height:1.65; position:relative; }
+.hero-ornament { display:flex; align-items:center; justify-content:center; gap:14px; margin:0 auto; position:relative; }
+.hero-ornament .rule { display:block; height:1px; width:80px; background:linear-gradient(90deg, transparent, rgba(192,144,48,.55)); }
+.hero-ornament .rule:last-child { background:linear-gradient(90deg, rgba(192,144,48,.55), transparent); }
+.hero-ornament .gem { width:7px; height:7px; background:var(--gold-l); transform:rotate(45deg); }
+.hero-ornament .gem.sm { width:4px; height:4px; opacity:.55; }
+.type-tag { display:inline-flex; align-items:center; gap:7px; padding:5px 14px 5px 10px; border-radius:4px; font-family:var(--font-ui); font-size:.6rem; letter-spacing:.16em; text-transform:uppercase; font-weight:500; margin-top:16px; position:relative; }
+.tag-study { background:rgba(192,144,48,.12); color:var(--gold-pale); border:1px solid rgba(192,144,48,.3); }
+.onramp-wrap { max-width:822px; margin:0 auto; padding:0 24px; }
+.onramp { margin:38px 0 4px; background:linear-gradient(180deg,#F0EBE0 0%,#FAF7F2 100%); border:1px solid rgba(138,96,24,.15); border-left:3px solid #C09030; border-radius:4px; padding:24px 28px 26px; box-shadow:var(--shadow-s); }
+.onramp-meta { display:flex; flex-wrap:wrap; gap:9px 12px; align-items:center; padding-bottom:15px; margin-bottom:17px; border-bottom:1px solid rgba(138,96,24,.15); }
+.onramp-chip { display:inline-flex; align-items:center; gap:6px; font-family:var(--font-ui); font-size:.64rem; letter-spacing:.12em; text-transform:uppercase; color:#5A4020; background:#FAF7F2; border:1px solid #E2D9C8; border-radius:20px; padding:5px 12px; line-height:1; }
+.onramp-chip svg { stroke:#8A6018; flex:none; }
+.onramp-chip.is-diff { color:#8B3A1A; border-color:rgba(139,58,26,.3); }
+.onramp-dot { width:6px; height:6px; border-radius:50%; background:#B85A30; display:inline-block; }
+.onramp-dot.is-off { background:#E2D9C8; }
+.onramp-label { font-family:var(--font-ui); font-size:.64rem; letter-spacing:.18em; text-transform:uppercase; color:#8A6018; display:block; margin-bottom:8px; }
+.onramp-summary { font-family:var(--font-b); font-size:1.04rem; line-height:1.7; color:#2C1E0A; margin:0; }
+.onramp-summary em { font-style:italic; }
+.onramp-summary strong { color:#181008; font-weight:600; }
+@media(max-width:560px){ .onramp { padding:20px 18px 22px; } }
+.content-wrap { max-width:var(--max-w-text); margin:0 auto; padding:0 24px 96px; }
+.section-label { font-family:var(--font-ui); font-size:.62rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); text-align:center; padding:64px 24px 40px; display:flex; align-items:center; justify-content:center; gap:16px; }
+.section-label::before, .section-label::after { content:''; display:block; height:1px; width:60px; background:var(--rule-s); }
+h2 { font-family:var(--font-d); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; color:var(--ink); line-height:1.2; letter-spacing:-.01em; margin-bottom:18px; }
+h2 em { font-style:italic; color:var(--sienna); }
+h3 { font-family:var(--font-d); font-size:1.2rem; font-weight:600; color:var(--ink); margin:26px 0 10px; line-height:1.3; }
+p { font-size:1.05rem; line-height:1.82; color:var(--ink-2); margin-bottom:18px; }
+p strong { color:var(--ink); font-weight:500; }
+hr.divider { border:none; border-top:1px solid var(--rule-s); margin:56px 0; }
+.callout { border-left:3px solid var(--gold-l); background:var(--cream-d); border-radius:0 6px 6px 0; padding:18px 22px; margin:28px 0; }
+.callout-label { font-family:var(--font-ui); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:8px; }
+.callout p { font-size:.97rem; line-height:1.75; color:var(--ink-3); margin:0 0 10px; }
+.callout p:last-child { margin-bottom:0; }
+.conflict-box { border:1px solid rgba(139,58,26,.25); background:rgba(139,58,26,.04); border-radius:6px; padding:18px 22px; margin:28px 0; }
+.conflict-label { font-family:var(--font-ui); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--sienna); display:block; margin-bottom:8px; }
+.conflict-box p { font-size:.97rem; line-height:1.75; color:var(--ink-3); margin:0 0 10px; }
+.conflict-box p:last-child { margin-bottom:0; }
+.dark-callout { background:var(--nav-bg); border-radius:8px; padding:28px 32px; margin:36px 0; position:relative; overflow:hidden; }
+.dark-callout::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 70% at 50% -20%, rgba(138,96,24,.22) 0%, transparent 65%); pointer-events:none; }
+.dark-callout::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent 10%, var(--gold-l) 40%, var(--gold-pale) 50%, var(--gold-l) 60%, transparent 90%); }
+.dark-callout-label { font-family:var(--font-ui); font-size:.56rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(232,204,118,.50); display:block; margin-bottom:12px; position:relative; }
+.dark-callout p { font-size:1rem; line-height:1.78; color:rgba(235,215,175,.75); position:relative; margin:0 0 12px; }
+.dark-callout p:last-child { margin-bottom:0; }
+.dark-callout p strong { color:var(--gold-pale); font-weight:500; }
+.scripture { border-left:3px solid var(--gold-pale); padding:16px 22px; margin:28px 0; background:rgba(138,96,24,.05); border-radius:0 6px 6px 0; }
+.scripture p { font-family:var(--font-d); font-style:italic; font-size:1.08rem; color:var(--ink); line-height:1.7; margin:0 0 8px; }
+.scripture cite { font-family:var(--font-ui); font-size:.56rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); display:block; }
+.lang-en { color:var(--sienna); font-weight:500; }
+.lang-orig { color:var(--gold-l); }
+.lang-trans { color:var(--purple-mid); font-style:italic; }
+.lang-meta { font-family:var(--font-ui); font-size:.72em; letter-spacing:.08em; color:var(--ink-4); }
+.lang-paren, .lang-sep { color:var(--ink-4); }
+table.canon-table { width:100%; border-collapse:collapse; margin:28px 0; font-size:.95rem; }
+table.canon-table th { font-family:var(--font-ui); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); text-align:left; padding:10px 14px; border-bottom:2px solid var(--rule-s); }
+table.canon-table td { padding:10px 14px; border-bottom:1px solid var(--rule); color:var(--ink-3); line-height:1.6; vertical-align:top; }
+table.canon-table td strong { color:var(--ink); font-weight:600; }
+.grade-block{background:var(--nav-bg);border-radius:6px;padding:16px 20px 20px;margin:32px 0 0;position:relative;overflow:hidden;}
+.grade-block::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 10%,var(--gold-l) 40%,var(--gold-pale) 50%,var(--gold-l) 60%,transparent 90%);}
+.grade-label{font-family:var(--font-ui);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-pale);display:block;margin-bottom:12px;}
+.grade-scores{display:flex;gap:14px;flex-wrap:wrap;font-size:.84rem;color:rgba(235,215,175,.62);}
+.grade-scores strong{color:var(--cream);font-weight:500;}
+.grade-note{font-size:.84rem;font-style:italic;color:rgba(235,215,175,.55);margin:12px 0 0;line-height:1.65;}
+.grade-final{display:flex;align-items:baseline;justify-content:flex-end;gap:3px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(192,144,48,.25);}
+.grade-final-label{font-family:var(--font-ui);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-pale);margin-right:auto;}
+.grade-final-num{font-family:var(--font-d);font-size:1.5rem;font-weight:700;color:var(--gold-pale);line-height:1;}
+.grade-final-den{font-family:var(--font-ui);font-size:.75rem;color:var(--gold-l);}
+sup.fn-ref { font-size:.65rem; color:var(--gold); font-family:var(--font-ui); vertical-align:super; }
+.footnotes { border-top:1px solid var(--rule); margin-top:32px; padding-top:16px; }
+.footnotes-label { font-family:var(--font-ui); font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:12px; }
+.fn-item { display:flex; gap:8px; margin-bottom:8px; }
+.fn-num { font-size:.65rem; color:var(--gold); font-family:var(--font-ui); flex-shrink:0; padding-top:3px; }
+.fn-text { font-size:.9rem; line-height:1.68; color:var(--ink-4); }
+.source-list { border-top:1px solid var(--rule-s); margin-top:48px; padding-top:24px; }
+.source-list-label { font-family:var(--font-ui); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
+.source-card { padding:12px 16px; border-left:2px solid var(--cream-dd); margin-bottom:12px; }
+.source-ref { font-size:.95rem; color:var(--ink-3); margin:0 0 4px; line-height:1.6; }
+.source-position { font-size:.88rem; font-style:italic; color:var(--ink-4); margin:0; }
+.companion-block { border:1px solid var(--cream-dd); background:#fff; border-radius:6px; padding:20px 24px; margin:40px 0 0; box-shadow:var(--shadow-s); }
+.companion-label { font-family:var(--font-ui); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:10px; }
+.companion-block p { font-size:.95rem; margin-bottom:8px; color:var(--ink-3); }
+.companion-block a { color:var(--sienna); text-decoration:none; }
+.companion-block a:hover { text-decoration:underline; }
+.author-block { border-top:1px solid var(--rule-s); margin-top:20px; padding-top:20px; display:flex; align-items:flex-start; gap:14px; }
+.author-avatar { width:40px; height:40px; border-radius:50%; background:rgba(138,96,24,.12); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.author-avatar span { font-family:var(--font-ui); font-size:.7rem; color:var(--gold-l); font-weight:500; }
+.author-name { font-family:var(--font-d); font-size:1rem; font-weight:600; color:var(--ink); display:block; margin-bottom:4px; }
+.author-bio { font-size:.92rem; font-style:italic; color:var(--ink-4); line-height:1.6; }
+.site-footer { background:var(--nav-bg); border-top:1px solid rgba(192,144,48,.14); padding:32px 24px; text-align:center; }
+.site-footer p { font-family:var(--font-ui); font-size:.58rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(232,204,118,.28); }
+.site-footer a { color:rgba(232,204,118,.45); text-decoration:none; transition:var(--t); }
+.site-footer a:hover { color:var(--gold-pale); }
+</style>
+</head>
+<body>
+<script src="/nav.js?v=21"></script>
+
+<header class="hero">
+  <span class="hero-eyebrow">readthescripture.com</span>
+  <h1>The Making of <em>the Canon</em></h1>
+  <p class="hero-sub">How the books came to count as Scripture — the lists, the arguments, the books that almost made it, and the edges that never quite closed</p>
+  <div class="hero-ornament">
+    <span class="rule"></span>
+    <div class="gem"></div><div class="gem sm"></div><div class="gem"></div>
+    <span class="rule"></span>
+  </div>
+  <span class="type-tag tag-study">
+    <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 13 L8 3 L14 13"/><line x1="4.5" y1="9" x2="11.5" y2="9"/></svg>
+    Study
+  </span>
+</header>
+
+<!-- ON-RAMP -->
+<div class="onramp-wrap">
+  <div class="onramp">
+    <div class="onramp-meta">
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>&#8776;14 min read</span>
+      <span class="onramp-chip is-diff"><span class="onramp-dot"></span><span class="onramp-dot"></span><span class="onramp-dot is-off"></span>Moderate</span>
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Historical study</span>
+      <span class="onramp-chip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>Textual</span>
+    </div>
+    <span class="onramp-label">Abstract</span>
+    <p class="onramp-summary">This study traces how the biblical canon formed, from the settling of the Hebrew Scriptures through the four centuries in which the church received, disputed, and listed the New Testament books. It works from the primary record — the early lists, the councils, the surviving manuscripts, and the books that were argued over — and ends with the question the history cannot answer.</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <!-- ============================================================ -->
+  <!-- I. THE QUESTION -->
+  <!-- ============================================================ -->
+  <div class="section-label">One question</div>
+  <h2>Who decided what goes <em>in the Bible?</em></h2>
+
+  <p>Every Bible on a shelf makes a silent claim before a word of it is read: <em>these</em> books, and not others. The claim raises a question that deserves a plain answer. Who drew the line? When, and on what grounds? And why does the line sit in different places for a Protestant, a Catholic, an Orthodox, and an Ethiopian believer, all of whom call their book the Bible?</p>
+
+  <p>The word itself is a piece of the answer. "Canon" is <span class="lang-term"><span class="lang-en">rule, measuring rod</span><span class="lang-paren"> (</span><span class="lang-orig">&kappa;&alpha;&nu;&#974;&nu;</span><span class="lang-sep"> | </span><span class="lang-trans">kan&#333;n</span><span class="lang-sep"> | </span><span class="lang-meta">Gk - G2583</span><span class="lang-paren">)</span></span> — a straight reed used for measuring, and from there a standard, and from there a list of what meets the standard. Paul uses the word for a rule of conduct (Gal 6:16). Applied to books, it carries both senses at once: the books that measure the faith, and the list that measures the books.<sup class="fn-ref">17</sup></p>
+
+  <p>This study is written for a site with a stated confession, and the writer believes the books in question are the word of God. That belief is exactly why the history deserves to be told straight: a canon whose formation cannot survive honest description would not be worth confessing. What follows is the process as the record preserves it — slower, messier, and more argued-over than most church introductions suggest, and better documented than most skeptical summaries allow.</p>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- II. THE OLDER SHELF -->
+  <!-- ============================================================ -->
+  <div class="section-label">The older shelf</div>
+  <h2>The Hebrew Scriptures: three tiers, <em>settling slowly</em></h2>
+
+  <p>The Hebrew Bible describes some of its own contents being recognized in real time. A "book of the law" found in the temple under Josiah is read to the king, who tears his clothes and binds the nation to it (2 Kgs 22–23). Ezra reads "the book of the law of Moses" to the restored community "from early morning until midday," and the people weep (Neh 8:1–9). Whatever else canon means, this is its raw material: a community treating a written text as binding on itself.</p>
+
+  <p>By the second century BC the shape is visible. The grandson of Ben Sira, translating his grandfather's book into Greek around 132 BC, refers three times in his short prologue to "the Law and the Prophets and the other books of our ancestors" — a three-part collection, named as a known thing, with the third shelf still loosely titled.<sup class="fn-ref">1</sup> That matches the structure the Hebrew Bible carries to this day: <strong>Torah</strong> (Law), <strong>Nevi'im</strong> (Prophets), <strong>Ketuvim</strong> (Writings) — the <em>Tanakh</em>, from the three initials. The Law settled first, the Prophets second, the Writings last; the prologue's vague "other books" is the third shelf photographed while still being arranged.</p>
+
+  <p>Jesus, in Luke's Gospel, names the same three-part shape:</p>
+
+  <blockquote class="scripture">
+    <p>"Then he said to them, 'These are my words that I spoke to you while I was still with you — that everything written about me in the law of Moses, the prophets, and the psalms must be fulfilled.'"</p>
+    <cite>Luke 24:44 · NRSVue</cite>
+  </blockquote>
+
+  <p>"The psalms" here is most naturally the Writings, named for their largest book. By the end of the first century AD, two Jewish witnesses count the collection: Josephus defends "twenty-two books" that Jews hold sacred, claiming no one has dared add, remove, or alter them<sup class="fn-ref">2</sup>; the apocalypse called 4 Ezra, written about the same time, counts twenty-four public books alongside seventy reserved ones.<sup class="fn-ref">3</sup> The two numbers are almost certainly the same list differently grouped (Ruth folded into Judges, Lamentations into Jeremiah, and similar combinations), and both match the books in the Hebrew Bible now — which are the same books, differently divided, as the Protestant Old Testament's thirty-nine.</p>
+
+  <p>The Dead Sea Scrolls put physical evidence under the claim: the Qumran library preserves copies of every Hebrew Bible book except Esther. It also preserves Tobit, Jubilees, and 1 Enoch in quantity — a reminder that a first-century Jewish bookshelf was broader than the collection later counted sacred, and that owning a book and canonizing it are different acts.</p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">The edges were still argued</span>
+    <p>Settled shape is not the same as closed list. The Mishnah records rabbis still debating, into the second century AD, whether Ecclesiastes and the Song of Songs "defile the hands" — the rabbinic category for sacred books — and Esther's status drew discussion later still.<sup class="fn-ref">4</sup> On the Christian side, the earliest surviving Old Testament list from a church writer — Melito of Sardis, around AD 170 — omits Esther altogether.<sup class="fn-ref">5</sup> These were arguments about books already on the shelf rather than a gate deciding what got in, but they are arguments, preserved in the record, at dates later than a tidy account would like. No decree closed the Hebrew canon; use and consensus closed it, and the last edges stayed warm for centuries.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- III. THE FORCING MOVE -->
+  <!-- ============================================================ -->
+  <div class="section-label">The forcing move</div>
+  <h2>Marcion publishes <em>a shorter Bible</em></h2>
+
+  <p>The New Testament books were written across the second half of the first century, and the churches used them from the start — read in worship, copied, exchanged. Two passages inside the New Testament show the collection already becoming conscious of itself. Paul instructs one congregation to swap letters with another: "when this letter has been read among you, have it read also in the church of the Laodiceans, and see that you read also the letter from Laodicea" (Col 4:16) — letters written for one city already circulating as church property at large, and one of them, the Laodicean letter, now lost. And 2 Peter, likely the latest book in the collection, speaks of Paul's letters as a known corpus that can be misread the way Scripture is misread:</p>
+
+  <blockquote class="scripture">
+    <p>"So also our beloved brother Paul wrote to you according to the wisdom given him, speaking of this as he does in all his letters. There are some things in them hard to understand, which the ignorant and unstable twist to their own destruction, as they do the other scriptures."</p>
+    <cite>2 Peter 3:15–16 · NRSVue</cite>
+  </blockquote>
+
+  <p>"As they do the <em>other</em> scriptures": inside the New Testament itself, Paul's letters are already being shelved with the sacred books. What did not yet exist was a boundary. The first person known to have drawn one was not a council or a bishop of the consensus — it was <strong>Marcion of Sinope</strong>, around AD 144. Marcion taught that the God of the Hebrew Scriptures was a lesser deity, not the Father of Jesus Christ, and he built a Bible to match: one edited Gospel (a shortened Luke) and ten letters of Paul, with the Old Testament rejected entire. The church at Rome expelled him; his movement outlived him by centuries.</p>
+
+  <p>Marcion's role in the story is debated in an instructive way. An older scholarly view made him the inventor of the very idea of a Christian canon, with the church's list a defensive copy of his; most scholarship now reads him as an accelerant rather than an originator — the four Gospels and the Pauline corpus were already functioning collections before him.<sup class="fn-ref">6</sup> Either way, the effect is not in dispute. A rival list forces the question a working consensus can defer: <em>which books, exactly, and why these?</em></p>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- IV. THE WORKING TESTS -->
+  <!-- ============================================================ -->
+  <div class="section-label">The working tests</div>
+  <h2>How the churches <em>argued about a book</em></h2>
+
+  <p>The churches never adopted a formula. What the record shows instead is a set of working tests, visible in how actual cases were argued: <strong>apostolicity</strong> — does the book come from an apostle or an apostle's circle; <strong>antiquity</strong> — does it date from the apostolic age; <strong>catholicity</strong> — is it received and read across the churches, not in one region or faction; and <strong>conformity to the rule of faith</strong> — does it square with the teaching the churches already carried. The tests are best seen in operation.</p>
+
+  <h3>A gospel fails on doctrine: Serapion and the Gospel of Peter</h3>
+  <p>Around AD 200, Serapion, bishop of Antioch, found the church at Rhossus reading a "Gospel of Peter" in worship. He first allowed it, unread; then he read it, found teaching in it that cut against the reality of Christ's body, and revoked the permission — remarking, as Eusebius preserves the letter, that the churches receive the apostles, but reject writings that falsely circulate under their names.<sup class="fn-ref">7</sup> The case shows the tests interlocking: the book failed the rule of faith, and its apostolic name could not save it, because the name was judged part of the forgery.</p>
+
+  <h3>A beloved book fails on date: the Shepherd of Hermas</h3>
+  <p>The Shepherd of Hermas — a book of visions and moral teaching from second-century Rome — was among the most read and copied Christian texts of its era. The Muratorian Fragment, the earliest surviving canon list (traditionally dated to the late second century, though some scholars argue for the fourth<sup class="fn-ref">8</sup>), draws the line with unusual clarity: the Shepherd may be read privately, but not in public worship among the prophets or apostles, because it was written "very recently, in our times."<sup class="fn-ref">9</sup> Not heretical; loved; too late. Antiquity was a real test, and it excluded a popular book.</p>
+
+  <h3>A canonical book almost fails on authorship: Hebrews</h3>
+  <p>Hebrews names no author. The East received it early as Pauline; the West doubted it for two centuries precisely because the attribution would not hold still. Origen, the third century's greatest textual scholar, reviewed the options — the thoughts are Paul's, the style is someone else's — and ended with the sentence that became the classic verdict: who wrote the epistle, God knows.<sup class="fn-ref">10</sup> Hebrews entered the canon anyway, carried by its antiquity, its content, and eventually the West's deference to the East's usage. The case matters because it shows the tests were weighed rather than mechanically applied: a book with an unanswerable authorship question was received on the strength of everything else.</p>
+
+  <div class="callout">
+    <span class="callout-label">What the tests were doing</span>
+    <p>Notice what all four tests have in common: they are backward-looking. None of them asks "is this book inspiring?" or "does it teach what we wish were true?" They ask whether the book comes from the apostolic deposit — the right people, the right period, the whole church's usage, the received teaching. The churches understood themselves to be identifying an inheritance, not curating an anthology. Whether that self-understanding was accurate is a separate question, taken up at the end; that it <em>was</em> the self-understanding is what the cases show.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- V. THE LEDGER AND THE LIST -->
+  <!-- ============================================================ -->
+  <div class="section-label">The ledger</div>
+  <h2>Eusebius sorts; <em>Athanasius lists</em></h2>
+
+  <p>Writing around 325, the church historian Eusebius took stock of where the argument stood. His ledger has four bins, and the honesty of the middle two is the most valuable thing in it<sup class="fn-ref">11</sup>:</p>
+
+  <table class="canon-table">
+    <tr><th>Category</th><th>Contents (abridged)</th></tr>
+    <tr><td><strong>Acknowledged</strong> (homologoumena)</td><td>The four Gospels, Acts, the letters of Paul, 1 John, 1 Peter — and Revelation, "if it really seem proper," a hedge Eusebius could not resist repeating.</td></tr>
+    <tr><td><strong>Disputed</strong> (antilegomena)</td><td>James, Jude, 2 Peter, 2 and 3 John — "spoken against," yet "known to most."</td></tr>
+    <tr><td><strong>Spurious</strong> (notha)</td><td>The Shepherd of Hermas, the Epistle of Barnabas, the Didache, the Apocalypse of Peter — books the churches used but did not receive as Scripture.</td></tr>
+    <tr><td><strong>Heretical forgeries</strong></td><td>Gospels under the names of Peter, Thomas, and Matthias; acts under the names of Andrew and John — "to be cast aside as absurd and impious."</td></tr>
+  </table>
+
+  <p>Forty-two years later, the first list that matches a modern New Testament page for page. In his Easter letter of <strong>AD 367</strong>, Athanasius of Alexandria named twenty-seven books — the twenty-seven — and wrote of them: "in these alone is proclaimed the doctrine of godliness. Let no man add to these, neither let him take ought from these."<sup class="fn-ref">12</sup> Synods at Hippo (393) and Carthage (397) ratified the same list for the West. No ecumenical council of the early church ever ruled on the canon; the lists that survive are bishops and synods writing down what their churches had come to hold.</p>
+
+  <p>Two details in Athanasius's letter keep it honest history rather than a triumph scene. His <em>Old</em> Testament list omits Esther — the book's old instability visible even here, in the very letter that fixes the New Testament.<sup class="fn-ref">12</sup> And after the canon he appends a second shelf: books "not included in the canon, but appointed to be read" to newcomers — Wisdom, Sirach, Esther, Judith, Tobit, the Didache, the Shepherd. Esther, missing from his canon, lands one shelf down in the same letter. The church that drew the line kept the books just outside it in the room.</p>
+
+  <h3>The books themselves disagree politely</h3>
+
+  <p>Lists are one witness; bindings are another. The two oldest complete Christian Bibles that survive were both copied within living memory of Athanasius's letter, and neither matches it exactly. <strong>Codex Sinaiticus</strong> (fourth century) ends its New Testament with the Epistle of Barnabas and the Shepherd of Hermas. <strong>Codex Alexandrinus</strong> (fifth century) appends 1 and 2 Clement. Whoever commissioned those volumes bound the disputed shelf into the book — which is roughly what a library does with books it values and has not quite decided about. The canon on paper and the canon in bindings converged over the following century; the gap between them is the settling process caught in the act.</p>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- VI. THE EDGES -->
+  <!-- ============================================================ -->
+  <div class="section-label">The edges</div>
+  <h2>Where the line still sits <em>differently</em></h2>
+
+  <p>Ask "how many books are in the Bible?" and the answer depends on where the question is asked. The differences are old, documented, and almost entirely about the Old Testament's Greek shelf.</p>
+
+  <p>The Septuagint — the Greek Old Testament the early church carried into the world — included books with no place in the Hebrew canon: Tobit, Judith, Wisdom, Sirach, Baruch, 1 and 2 Maccabees, with expansions of Daniel and Esther. The churches read them for centuries. Jerome, translating the Vulgate around 400, pressed the distinction: as the church reads Judith, Tobit, and the books of Maccabees "but does not admit them among the canonical Scriptures," so it may read these books "for the edification of the people, not to give authority to doctrines of the Church."<sup class="fn-ref">13</sup> The Reformation took Jerome's side; Luther's 1522 German Bible grouped these books under the heading "Apocrypha: books not held equal to Holy Scripture, yet useful and good to read." Rome answered at the <strong>Council of Trent in 1546</strong> by defining them as canonical — the "deuterocanon," the second-listed. The Orthodox churches receive a wider Greek shelf still, and the <strong>Ethiopian Orthodox Tewahedo Church</strong> holds the widest canon in Christendom, with 1 Enoch and Jubilees inside it — which means the book Jude quotes as prophecy (Jude 14–15, citing 1 Enoch 1:9) is Scripture in Addis Ababa and background reading nearly everywhere else.</p>
+
+  <p>Luther's New Testament carried its own quieter edge. His 1522 edition moved Hebrews, James, Jude, and Revelation to the back, unnumbered in the table of contents, and his preface famously called James "really an epistle of straw" next to John and Romans — a line dropped from editions after 1537, and a judgment no Lutheran church body adopted.<sup class="fn-ref">14</sup> The episode is worth keeping in view for what it shows: the antilegomena were still feelable as a category a millennium after Eusebius named it. The seams did not vanish; the churches decided, repeatedly, to live with them.</p>
+
+  <div class="callout">
+    <span class="callout-label">A verse that is not about the canon</span>
+    <p>"If anyone adds to them, God will add to that person the plagues described in this book" (Rev 22:18–19) is sometimes quoted as though it sealed the Bible shut. In context it is a curse protecting the integrity of <em>that book</em> — the Revelation of John — using a formula ancient scribes attached to individual works (compare Deut 4:2, which does the same for the law of Moses and was never taken to forbid the prophets that followed). Revelation sits last in the modern binding; it was not written last, and its curse guards its own text, not the table of contents.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- VII. TWO ACCOUNTS -->
+  <!-- ============================================================ -->
+  <div class="section-label">Two accounts</div>
+  <h2>Did the church make the canon, <em>or find it?</em></h2>
+
+  <p>The facts above are largely common ground. What they mean is not, and the disagreement sorts into two live accounts.</p>
+
+  <p>On one account, the canon is the church's product. Books became Scripture <em>by</em> being received: the community conferred the status, and a different history — a Marcion who won, a West that kept doubting Hebrews — would have produced a different Bible. Scholars in this line distinguish "scripture" (a book functioning authoritatively) from "canon" (a closed list), and date the canon proper late, to the fourth century's lists and synods.<sup class="fn-ref">15</sup> Rome's version of this account gives it doctrinal form: the church, teaching with authority, defined the canon — which is why Trent could rule on it.</p>
+
+  <p>On the other account, the church's role was recognition, not conferral. The books carried their authority intrinsically — from their origin in the apostolic witness, and behind that from their inspiration — and the community's reception was the effect of that authority rather than its source. Advocates point to the pattern in the record itself: the lists ratify prior usage; Athanasius's own language is of handing down what was received; no council claims to be granting status.<sup class="fn-ref">16</sup> On this account the canon was functionally present as soon as the books existed and were heard, and the fourth-century lists are the paperwork, not the event.</p>
+
+  <div class="conflict-box">
+    <span class="conflict-label">Where the two accounts actually differ</span>
+    <p>The accounts agree on more than their partisans advertise: both grant that reception took centuries, that real books were really disputed, and that the process ran on human argument. The genuine fork is behind the history: whether there existed a fact of the matter — a right list — that the church could be correct or mistaken about. That is not a question the surviving evidence can settle, because every piece of evidence is an act of reception, and reception is what both accounts predict. The reader should know that this study's author stands, by confession, in the second account; the history in the sections above has been told so that a reader in the first account can check every step of it.</p>
+  </div>
+
+  <div class="dark-callout">
+    <span class="dark-callout-label">Where this lands</span>
+    <p>The history establishes this much: <strong>the canon was recognized far more than it was decreed.</strong> No council invented it; the lists wrote down what long usage had already sorted; the disputed books were argued about openly, for generations, and the record kept the arguments. The edges — the Greek Old Testament shelf, the wider Eastern canons — were drawn in different places by different communions and remain where they were drawn.</p>
+    <p>And the history cannot establish this: <strong>that the books received are the right books.</strong> That the process happened as described is documentation; that the process was providential is confession. The line between those two is exactly where this site's method stops the sentence, and the honest reader is owed the stop.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- VIII. CRITICISM -->
+  <!-- ============================================================ -->
+  <div class="section-label">Criticism</div>
+  <h2>The strongest objections, <em>left standing</em></h2>
+
+  <p><strong>The recognition story is the winners' story.</strong> Every document in this study's evidence base — Eusebius's ledger, Athanasius's letter, Serapion's ruling — was preserved by the party that prevailed. Communities that read the Gospel of Peter or kept Enoch on the top shelf mostly did not get to keep archives. When the record shows "the churches" converging on twenty-seven books, it is showing the convergence of the network that won; a fuller record might show the consensus as narrower, later, and more enforced than it looks. The response that the surviving usage evidence is broad and geographically dispersed has weight, but it is drawn from the same curated survivals it defends.</p>
+
+  <p><strong>The criteria may be rationalizations.</strong> Apostolicity, antiquity, catholicity, and the rule of faith read less like a gate the books passed through and more like a description, after the fact, of the books that were already loved. Hebrews shows the tests bending for a book the church wanted (an unknown author waved through); the Shepherd shows them tightening against a book that was arguably more widely read than 2 Peter. And catholicity is circular on its face: "received by the whole church" means received by the network doing the receiving. A defender can answer that criteria which bend under judgment are how all canons of judgment work — precedent, evidence law, textual criticism — but the objection stands: the tests did not operate as an algorithm, and presenting them as one flatters the process.</p>
+
+  <p><strong>The tidy first-century Old Testament may be apologetic.</strong> The claim that the Hebrew canon was effectively settled by Jesus' day leans hard on Josephus, who was writing a defense of Judaism for a hostile audience and had every motive to overstate the fixity and unanimity of the collection. Qumran's broad library, Melito's missing Esther, and the Mishnah's live debates all suggest softer edges than "twenty-two books no one has dared alter." The three-tier shape by the second century BC is well evidenced; the closed list by the first century AD is an inference with an apologist as its chief witness.</p>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- IX. CONCLUSION -->
+  <!-- ============================================================ -->
+  <div class="section-label">Conclusion</div>
+  <h2>A confession, <em>dated and placed</em></h2>
+
+  <p>The canon did not fall from the sky bound in leather. It was written over a millennium, sorted over centuries, argued about by name, listed late, and bound with its runners-up. A reader who finds that history unsettling is reacting to a story the church's own archivists chose to preserve — Eusebius did not have to record the disputes; Athanasius did not have to append the second shelf. They kept the seams in view, and a site devoted to reading texts as they are can do no less.</p>
+
+  <p>Where the author lands, said plainly and held as confession rather than conclusion: I receive these books as the word of God, and I take the long, argumentative, human process by which they were gathered to be the ordinary way providence works — through use, testimony, and time, rather than around them. Nothing in this study proves that reading, and the criticism section names real cracks in any attempt to prove it. What the history does supply is this: the collection I confess was not assembled carelessly, or quickly, or in the dark. The church knew which books were disputed, said so for centuries, and left the record where I could check it. That is not the same as a guarantee. It is the difference between an inheritance with a paper trail and an inheritance with a story — and it is the paper trail that lets the question stay open on the table, where a reader who does not share the confession can still handle every document in the case.</p>
+
+  <!-- FOOTNOTES -->
+  <div class="footnotes">
+    <span class="footnotes-label">Notes — quotations verbatim per the translation named; attributions confirmed 2026-07-16</span>
+    <div class="fn-item"><span class="fn-num">1</span><span class="fn-text">Prologue to Sirach (Ecclesiasticus), the translator's preface, c. 132 BC. The threefold phrase appears three times with slight variations; "the Law and the Prophets and the other books of our ancestors" is the NRSV(ue) rendering. Confirmed against the NRSV Apocrypha text, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">2</span><span class="fn-text">Josephus, <em>Against Apion</em> 1.37–43: twenty-two books; "no one has been so bold as either to add any thing to them, to take any thing from them, or to make any change in them" (Whiston). Josephus is an apologist and the criticism section weighs his motive. Confirmed against the Whiston text, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">3</span><span class="fn-text">4 Ezra (2 Esdras) 14:44–46 — ninety-four books written; twenty-four made public; seventy withheld. Date c. AD 100. Confirmed against NRSVue 2 Esdras, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">4</span><span class="fn-text">Mishnah <em>Yadayim</em> 3:5 (the Song of Songs and Ecclesiastes dispute — R. Judah, R. Yose, and Akiba's "holy of holies" defense); Esther's status, b. <em>Megillah</em> 7a (Shmuel: Esther "does not render the hands impure"). Both confirmed against the Sefaria editions, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">5</span><span class="fn-text">Melito of Sardis's Old Testament list survives in Eusebius, <em>Ecclesiastical History</em> 4.26.13–14; Esther is absent from the enumeration. Confirmed against the NPNF translation, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">6</span><span class="fn-text">The maximal view of Marcion's role is associated with Adolf von Harnack and later John Knox; the accelerant reading is the mainstream position in Metzger and more recent canon scholarship (e.g., Barton). Positions confirmed at survey level 2026-07-16; no direct quotation is used, and none should be added without a primary page-pull.</span></div>
+    <div class="fn-item"><span class="fn-num">7</span><span class="fn-text">Serapion on the Gospel of Peter: Eusebius, <em>Ecclesiastical History</em> 6.12 — "we reject intelligently the writings falsely ascribed to them" (NPNF). The body paraphrases; reference and wording confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">8</span><span class="fn-text">Traditional late-2nd-century dating vs. the 4th-century case (A. C. Sundberg, 1973; G. M. Hahneman, 1992). The later dating has not displaced the consensus. Confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">9</span><span class="fn-text">Muratorian Fragment, lines 73–77 on the Shepherd (<em>nuperrime temporibus nostris</em> — "very recently, in our times"): to be read privately, "but it cannot be made public in the Church to the people, nor placed among the prophets... nor among the apostles." Confirmed against the standard English text, 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">10</span><span class="fn-text">Origen on Hebrews, preserved in Eusebius, <em>Ecclesiastical History</em> 6.25.11–14: "But who wrote the epistle, in truth, God knows" (NPNF); the thoughts admirable and apostolic, the diction more polished Greek than Paul's. Confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">11</span><span class="fn-text">Eusebius, <em>Ecclesiastical History</em> 3.25. The table abridges; Revelation appears in both the acknowledged and (implicitly) doubted discussion, which is Eusebius's own tension. Quoted fragments ("if it really seem proper"; "cast aside as absurd and impious") per the NPNF translation, confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">12</span><span class="fn-text">Athanasius, <em>Festal Letter</em> 39 (AD 367): the 27; the quotation per the NPNF translation; Esther absent from his 22-book Old Testament list and present on the "appointed to be read" shelf (Wisdom, Sirach, Esther, Judith, Tobit, the Teaching of the Apostles, the Shepherd). List contents and quotation confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">13</span><span class="fn-text">Jerome, Preface to the Books of Solomon (NPNF): "As, then, the Church reads Judith, Tobit, and the books of Maccabees, but does not admit them among the canonical Scriptures, so let it read these two volumes for the edification of the people, not to give authority to doctrines of the Church." The <em>Prologus Galeatus</em> to Samuel–Kings makes the companion move, listing the Hebrew books and filing the rest as apocrypha. Anchor corrected and wording confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">14</span><span class="fn-text">Luther's 1522 September Testament: back-placement of Hebrews, James, Jude, and Revelation; "Therefore St. James' epistle is really an epistle of straw, compared to these others, for it has nothing of the nature of the gospel about it" — 1522 Preface to the New Testament, dropped from editions after 1537 (LW 35). Confirmed 2026-07-16.</span></div>
+    <div class="fn-item"><span class="fn-num">15</span><span class="fn-text">The scripture/canon distinction and late dating: A. C. Sundberg; Lee Martin McDonald, <em>The Biblical Canon</em>. Positions confirmed at survey level 2026-07-16; no direct quotation is used.</span></div>
+    <div class="fn-item"><span class="fn-num">16</span><span class="fn-text">The self-authenticating / recognition model: Michael J. Kruger, <em>Canon Revisited</em> (2012). Position confirmed at survey level 2026-07-16; no direct quotation is used.</span></div>
+    <div class="fn-item"><span class="fn-num">17</span><span class="fn-text">The semantic chain — measuring reed, then standard, then list — is the standard lexical account of κανών (LSJ s.v.; Metzger, <em>The Canon of the New Testament</em>, Appendix I surveys the word's history). Gal 6:16 ("those who will follow this rule") shows the conduct sense inside the New Testament.</span></div>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="source-list">
+    <p class="source-list-label">Sources</p>
+    <div class="source-card">
+      <p class="source-ref">The Holy Bible, <em>New Revised Standard Version, Updated Edition</em> (NRSVue), 2021. Primary text for scripture quotations.</p>
+      <p class="source-position">Primary source. All scripture quotations verified verbatim against NRSVue, 2026-07-16.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Eusebius of Caesarea, <em>Ecclesiastical History</em> (c. 325), esp. 3.25; 4.26; 6.12; 6.25.</p>
+      <p class="source-position">Primary source (4th c., pro-Nicene court historian; preserves earlier documents — its selections reflect the winning party, as the Criticism section notes).</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Athanasius, <em>Festal Letter</em> 39 (AD 367).</p>
+      <p class="source-position">Primary source (Alexandrian bishop; anti-Arian).</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">The Muratorian Fragment; Prologue to Sirach; Josephus, <em>Against Apion</em>; 4 Ezra 14; Mishnah <em>Yadayim</em>.</p>
+      <p class="source-position">Primary sources of mixed provenance; each confirmed at its note against the edition named, 2026-07-16.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Metzger, B. M. (1987). <em>The Canon of the New Testament: Its Origin, Development, and Significance</em>. Oxford University Press.</p>
+      <p class="source-position">Position: Mainline Protestant; the standard critical survey. Cited for framework and the κανών appendix; no direct quotations.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">Kruger, M. J. (2012). <em>Canon Revisited: Establishing the Origins and Authority of the New Testament Books</em>. Crossway.</p>
+      <p class="source-position">Position: Conservative evangelical (Reformed); the self-authenticating model surveyed in §Two accounts. Position confirmed at survey level; no direct quotations.</p>
+    </div>
+    <div class="source-card">
+      <p class="source-ref">McDonald, L. M. (2007). <em>The Biblical Canon: Its Origin, Transmission, and Authority</em>. Hendrickson.</p>
+      <p class="source-position">Position: Historical-critical; the community-formation account surveyed in §Two accounts. Position confirmed at survey level; no direct quotations.</p>
+    </div>
+  </div>
+
+  <div class="grade-block">
+    <span class="grade-label">Reasoning · Logic Review · Fidelity 11/12 · blind panel ×3, 2026-07-16</span>
+    <div class="grade-scores">
+      <span class="grade-score">Claim precision <strong>4/4</strong></span>
+      <span class="grade-score">Evidence grounding <strong>4/4</strong></span>
+      <span class="grade-score">Epistemic honesty <strong>4/4</strong></span>
+      <span class="grade-score">Internal consistency <strong>4/4</strong></span>
+      <span class="grade-score">Scope <strong>4/4</strong></span>
+    </div>
+    <p class="grade-note">Blind gate panel (2026-07-16, this version, after the primary-source verification pass): three independent cold Claude Opus&nbsp;4.8 runs — 20, 20, 20; Fidelity 12, 11, 11. A different-lab blind read the same day (ChatGPT, default model) scored the core 20/20; its fidelity half is pending and recorded in the ledger. The residual two panel runs name is F1 (3/4): the scholar-position footnotes (Harnack/Knox vs. Metzger/Barton; Sundberg/McDonald; Kruger) are confirmed at survey level rather than from primary page-pulls, and the Qumran "every book except Esther" commonplace rides on the survey literature. All quotations verified verbatim against the editions named, 2026-07-16.</p>
+    <div class="grade-final">
+      <span class="grade-final-label">Overall</span>
+      <span class="grade-final-num">20</span><span class="grade-final-den">/20</span>
+    </div>
+  </div>
+
+  <!-- READ ALONGSIDE -->
+  <div class="companion-block">
+    <span class="companion-label">Read alongside</span>
+    <p><a href="/history_of_the_bible.html">How We Got the Bible</a> — the full pipeline (writing, transmission, canon, translation) surveyed in one sitting; this study is the canon chapter of that story slowed down and given its arguments back.</p>
+  </div>
+
+  <!-- AUTHOR BLOCK -->
+  <div class="author-block">
+    <div class="author-avatar"><span>LS</span></div>
+    <div class="author-info">
+      <span class="author-name">Lee Sadler</span>
+      <span class="author-bio">Driven by data and curiosity. Studies informed by NRSVue, NKJV, NIV, and ESV; Blue Letter Bible; Strong's Concordance; biblical commentaries; and collaboration with Claude.</span>
+    </div>
+  </div>
+
+</div><!-- /.content-wrap -->
+
+<footer class="site-footer">
+  <p><a href="/">readthescripture.com</a> &nbsp;·&nbsp; All articles for educational purposes &nbsp;·&nbsp; Scripture references NRSVue unless noted</p>
+</footer>
+</body>
+</html>
