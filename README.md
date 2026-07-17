@@ -30,4 +30,4 @@ The site is written and edited by Lee Sadler in collaboration with Claude (Anthr
 
 ## Contact
 
-`info@readthescripture.com` · [readthescripture.com/about.html](https://readthescripture.com/about.html)
+`lee.sadler@readthescripture.com` · [readthescripture.com/about.html](https://readthescripture.com/about.html)
