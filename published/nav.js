@@ -40,6 +40,7 @@
       label: 'Lexical',
       pages: [
         { label: 'Good, and Evil',                 file: 'good_and_evil_word_study.html',   tag: 'Word Study'   },
+        { label: 'One Word, Four Questions',       file: 'moral_word_study.html',           tag: 'Word Study'   },
         { label: 'The LORD, the Gods & the Satan', file: 'lord_gods_and_the_satan.html',    tag: 'Unseen World' },
         { label: 'Sheol, Hades & Gehenna',         file: 'sheol_hades_gehenna.html',        tag: 'Eschatology'  }
       ]
@@ -117,6 +118,7 @@
       'when_the_answer_was_silence.html':    { pub: '2026-05-10', mod: '2026-06-22'                      },
       'water_withheld_water_given.html':     { pub: '2026-05-05', mod: '2026-07-01'                      },
       'good_and_evil_word_study.html':       { pub: '2026-04-01', mod: '2026-07-01'                      },
+      'moral_word_study.html':               { pub: '2026-07-18', mod: '2026-07-18'                      },
       'forfeited_access.html':               { pub: '2026-06-01', mod: '2026-06-22'                      },
       'david_saul_character_study.html':     { pub: '2026-06-18', mod: '2026-07-01'                      },
       'joab_indispensable_adversary.html':   { pub: '2026-06-16', mod: '2026-07-01'                      },
@@ -693,6 +695,7 @@
     'history_of_the_bible.html': 'how we got the bible canon dead sea scrolls masoretic septuagint textual criticism manuscripts transmission nicaea',
     'the_canon.html': 'making of the canon formation athanasius festal letter 367 marcion muratorian fragment antilegomena deuterocanon apocrypha council trent ethiopian enoch jubilees eusebius hebrews shepherd hermas josephus jerome luther disputed books',
     'good_and_evil_word_study.html': 'good and evil hebrew tov ra tree of knowledge genesis word study semantics',
+    'moral_word_study.html': 'moral morality word study ethics four axes harm sin verdict authority culpability euthyphro herem uzzah trolley dudley stephens conscience purity divine command',
     'lord_gods_and_the_satan.html': 'divine council el elohim yhwh the satan job sons of god monotheism deuteronomy 32:8 unseen world',
     'sheol_hades_gehenna.html': 'sheol hades gehenna hell afterlife underworld pit greek words for hell eschatology death',
     'david_saul_character_study.html': 'saul david character 1 samuel anointed king after gods own heart apology of david brueggemann alter',
