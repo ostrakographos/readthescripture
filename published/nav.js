@@ -60,6 +60,7 @@
         { label: 'Reading Jonah',                    file: 'jonah_marginalia.html',          tag: 'Labeled Opinion' },
         { label: 'Words That Mean Their Opposite',   file: 'contranyms_in_scripture.html',   tag: 'Labeled Opinion' },
         { label: 'The Indispensable Adversary: A Narrative', file: 'joab_from_gibeon_to_the_altar.html', tag: 'Labeled Opinion' },
+        { label: 'The Prophet Who Couldn\'t Sleep',  file: 'the_prophet_who_couldnt_sleep.html', tag: 'Labeled Opinion' },
         { label: 'A Hard Chapter, Read in the Open', file: 'a_hard_chapter_in_the_open.html', tag: 'Method · Companion' }
       ]
     },
@@ -127,6 +128,7 @@
       'the_canon.html':                      { pub: '2026-07-16'                                          },
       'jonah_marginalia.html':               { pub: '2026-06-24', mod: '2026-06-24', type: 'BlogPosting' },
       'contranyms_in_scripture.html':        { pub: '2026-06-25', mod: '2026-06-25', type: 'BlogPosting' },
+      'the_prophet_who_couldnt_sleep.html':  { pub: '2026-07-17', mod: '2026-07-17', type: 'BlogPosting' },
       'the_true_word_in_a_false_mouth.html': { pub: '2026-06-28', mod: '2026-06-29'                      },
       'a_hard_chapter_in_the_open.html':     { pub: '2026-06-28', mod: '2026-06-28', type: 'BlogPosting' },
       'author_and_the_object.html':          { pub: '2026-03-15', mod: '2026-07-01'                      },
@@ -699,6 +701,7 @@
     'jonah_marginalia.html': 'jonah personal reading opinion mercy prophet believer reflection',
     'contranyms_in_scripture.html': 'contranyms barak bless curse opposite meanings wordplay peirazo tempt test semantic range',
     'joab_from_gibeon_to_the_altar.html': 'joab narrative gibeon altar retelling asahel abishai 2 samuel 1 kings story',
+    'the_prophet_who_couldnt_sleep.html': 'samuel prophet 1 samuel endor witch of endor saul naked prophesying dagon ark gold mice personal reading opinion',
     'a_hard_chapter_in_the_open.html': 'bible study method transparent 1 kings 13 process difficult passage rigorous research',
     'gospel_timeline.html': 'gospel timeline four gospels matthew mark luke john harmony jesus chronology synoptic',
     'the_law_resource.html': 'law of moses torah commandments ceremonial moral civil mosaic law',
