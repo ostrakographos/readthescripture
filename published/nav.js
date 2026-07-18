@@ -88,6 +88,7 @@
       pages: [
         { label: 'How This Project Works',   file: 'how_this_project_works.html',    tag: 'Original Language First' },
         { label: 'How We Grade, Blind',      file: 'how_we_grade.html',              tag: 'Transparency'            },
+        { label: 'On Truth — An Invitation', file: 'on_truths.html',                 tag: 'Reading'                 },
         { label: 'The Author & the Object',  file: 'author_and_the_object.html',     tag: 'God & Time'              },
         { label: 'Emotionally Charged Language', file: 'emotionally_charged_language.html', tag: 'Reading'         },
         { label: 'A Hard Chapter, Read in the Open', file: 'a_hard_chapter_in_the_open.html', tag: 'A Study, Built in the Open' }
@@ -131,6 +132,7 @@
       'the_prophet_who_couldnt_sleep.html':  { pub: '2026-07-17', mod: '2026-07-17', type: 'BlogPosting' },
       'the_true_word_in_a_false_mouth.html': { pub: '2026-06-28', mod: '2026-06-29'                      },
       'a_hard_chapter_in_the_open.html':     { pub: '2026-06-28', mod: '2026-06-28', type: 'BlogPosting' },
+      'on_truths.html':                      { pub: '2026-03-01', mod: '2026-07-18'                      },
       'author_and_the_object.html':          { pub: '2026-03-15', mod: '2026-07-01'                      },
       'emotionally_charged_language.html':   { pub: '2026-04-01', mod: '2026-07-16'                      },
       'hardening_pharaohs_heart.html':       { pub: '2026-04-15', mod: '2026-07-02'                      },
@@ -714,6 +716,7 @@
     'spiritual_gifts.html': 'spiritual gifts assessment gifts of the spirit 1 corinthians 12 romans 12 ephesians 4 test',
     'how_this_project_works.html': 'how to study the bible original language methodology honest reading genesis 1 deir alla balaam',
     'how_we_grade.html': 'blind grading methodology reasoning quality transparent evaluation',
+    'on_truths.html': 'truth in fiction invitation to read the bible emet firmness reliability lord of the flies parables good samaritan taste and see accept the framework godel gravity proverb cheaters never win pope little learning',
     'author_and_the_object.html': 'god and time outside time eternal transcendence timelessness author object analogy',
     'emotionally_charged_language.html': 'slavery emotionally charged language difficult texts doulos ebed eisegesis exegesis'
   };
