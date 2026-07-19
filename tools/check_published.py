@@ -24,6 +24,11 @@ Per-file ERRORS:
   * <meta name="description"> missing or empty
   * <meta name="keywords"> missing or empty
   * og:description present but != description  (apostrophe-truncation / drift)
+  * draft hx paragraph tags present  (class="hx" spans are draft-only reference
+                                 apparatus for review conversations; they must
+                                 be stripped at the gate — leaked 2026-07-17
+                                 on the_prophet_who_couldnt_sleep, caught
+                                 2026-07-19)
 
 Cross-file ERROR:
   * nav.js?v= values not identical across all pages
@@ -140,6 +145,13 @@ def main():
         desc = attr(text, r'<meta name="description" content="([^"]*)"')
         if not desc:
             errors.append(f'{name}: missing or empty <meta name="description">')
+
+        # --- draft apparatus leak (rule: hx tags never publish) ---
+        hx = len(re.findall(r'class="hx"', text))
+        if hx:
+            errors.append(f'{name}: {hx} draft hx paragraph tag(s) present — '
+                          f'strip class="hx" spans (and the .hx CSS rule) '
+                          f'before publishing')
 
         kw = attr(text, r'<meta name="keywords" content="([^"]*)"')
         if not kw:
