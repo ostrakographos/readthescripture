@@ -14,6 +14,10 @@ An empty or missing target directory is an ERROR, never a silent pass.
 
 Per-file ERRORS:
   * NUL byte present            (bash-mount write artifact / corruption)
+  * not valid UTF-8             (wrong-codec write)
+  * mojibake signature          (UTF-8 read as cp1252 and re-saved — the
+                                 2026-07-18 nav-v24 re-stamp corrupted all 46
+                                 pages this way and the gate passed it)
   * </html> missing             (truncation)
   * no nav.js?v= reference       (nav not wired)
   * <link rel="canonical"> missing
@@ -53,6 +57,43 @@ def attr(text, pattern):
     return m.group(1) if m else None
 
 
+# --- mojibake detection -----------------------------------------------------
+# A UTF-8 file read as cp1252 and re-saved as UTF-8 turns every non-ASCII
+# character into a run of cp1252 characters whose byte values spell the
+# original UTF-8 sequence ("—" -> "â€”"). Detector: a character whose cp1252
+# byte is a UTF-8 lead byte (0xC2-0xF4), followed by characters whose cp1252
+# bytes are continuation bytes (0x80-0xBF), the whole run reversing to valid
+# UTF-8. Legitimate accented text (transliterations like "qādôš") never
+# satisfies the full-sequence condition, so this flags only real garbling.
+_CP1252_BYTE = {}
+for _i in range(256):
+    try:
+        _CP1252_BYTE[bytes([_i]).decode('cp1252')] = _i
+    except UnicodeDecodeError:
+        _CP1252_BYTE[chr(_i)] = _i  # undefined slots pass through
+
+
+def mojibake_runs(text):
+    """Return up to 3 sample garbled runs found in text (empty list = clean)."""
+    samples = []
+    i, n = 0, len(text)
+    while i < n and len(samples) < 3:
+        b = _CP1252_BYTE.get(text[i])
+        if b is not None and 0xC2 <= b <= 0xF4:
+            need = 2 if b < 0xE0 else 3 if b < 0xF0 else 4
+            chunk = text[i:i + need]
+            if len(chunk) == need and all(c in _CP1252_BYTE for c in chunk):
+                try:
+                    bytes(_CP1252_BYTE[c] for c in chunk).decode('utf-8')
+                    samples.append(chunk)
+                    i += need
+                    continue
+                except UnicodeDecodeError:
+                    pass
+        i += 1
+    return samples
+
+
 def main():
     errors = []
     warns = []
@@ -70,7 +111,16 @@ def main():
         # --- corruption checks (raw bytes) ---
         if b'\x00' in raw:
             errors.append(f'{name}: contains NUL byte(s) ({raw.count(bytes([0]))} found)')
+        try:
+            raw.decode('utf-8')
+        except UnicodeDecodeError as e:
+            errors.append(f'{name}: not valid UTF-8 (byte 0x{raw[e.start]:02x} '
+                          f'at offset {e.start}) — wrong-codec write')
         text = raw.decode('utf-8', errors='replace')
+        garbled = mojibake_runs(text)
+        if garbled:
+            errors.append(f'{name}: mojibake (UTF-8 read as cp1252 and re-saved) — '
+                          f'e.g. {garbled!r}')
         if '</html>' not in text.lower():
             errors.append(f'{name}: missing </html> (truncated?)')
 

@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Strong's Concordance â€” Read the Scripture</title>
+<title>Strong's Concordance — Read the Scripture</title>
   <link rel="canonical" href="https://readthescripture.com/strongs.html">
 
-<meta name="description" content="Searchable Strong's Concordance â€” Hebrew and Greek dictionary of every word in the Bible, with definitions, transliteration, and KJV usage.">
+<meta name="description" content="Searchable Strong's Concordance — Hebrew and Greek dictionary of every word in the Bible, with definitions, transliteration, and KJV usage.">
 <meta name="keywords" content="Strong's concordance online, Strong's Hebrew dictionary, Strong's Greek dictionary, Bible word study tool, interlinear Bible, Hebrew Greek lexicon, biblical word definitions, Strong's numbers">
-<meta property="og:title" content="Strong's Concordance â€” Read the Scripture">
-<meta property="og:description" content="Searchable Strong's Concordance â€” Hebrew and Greek dictionary of every word in the Bible, with definitions, transliteration, and KJV usage.">
+<meta property="og:title" content="Strong's Concordance — Read the Scripture">
+<meta property="og:description" content="Searchable Strong's Concordance — Hebrew and Greek dictionary of every word in the Bible, with definitions, transliteration, and KJV usage.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://readthescripture.com/strongs.html">
 <meta property="og:site_name" content="Read the Scripture">
@@ -151,7 +151,7 @@ body{background:var(--cream);color:var(--ink-2);font-family:var(--font-b);font-s
        (dict[next]?'<a href="#'+next+'">'+next+' &rarr;</a>':'<span></span>')+'</div>';
     h+='</div>';
     out.innerHTML=h;
-    document.title="Strong's "+ref+(e.l?' â€” '+e.l:'')+" â€” Read the Scripture";
+    document.title="Strong's "+ref+(e.l?' — '+e.l:'')+" — Read the Scripture";
   }
 
   function search(term){
@@ -170,7 +170,7 @@ body{background:var(--cream);color:var(--ink-2);font-family:var(--font-b);font-s
     var h='<div class="results">';
     res.forEach(function(k){var e=dict[k];
       h+='<a class="res-item" href="#'+k+'"><span class="res-lemma" lang="'+lang(k)+'">'+esc(e.l||'')+'</span>'+
-         '<span class="res-num">'+k+'</span><span class="res-def">'+esc((e.x?e.x+' â€” ':'')+(e.d||e.k||''))+'</span></a>';
+         '<span class="res-num">'+k+'</span><span class="res-def">'+esc((e.x?e.x+' — ':'')+(e.d||e.k||''))+'</span></a>';
     });
     h+='</div>'; if(res.length>=120) h+='<p class="muted">Showing first 120 matches &mdash; refine your search.</p>';
     out.innerHTML=h;
